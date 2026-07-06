@@ -1,0 +1,460 @@
+Test Case ID,"Module*
+(Feature)","Case*
+(-/+/edge)","Test Case Name*
+(Scenario)","Precondition*
+(GIVEN)","Steps to execute*
+(WHEN)",Test Data*,"Expected Result*
+(THEN)",As Expected,"Result*
+(PASS/FAIL)",Remark
+Case Halaman Antarmuka,,,,,,,,,,
+TC01,Assessment,positif,Halaman Import Assessment,"- User telah membuka browser
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > create pada url berikut http://localhost:8000/dosen/assessment/create","1. Tekan tab ""Import""",-,"1. User dapat melihat judul ""Create Assessment""
+2. User dapat melihat tab ""Export"" dan ""Import""
+3. User dapat melihat input tanggal akhir pengisian assessment
+4. User dapat melihat input import data excel","Terlihat craete assessent, tab export dan import, serta field untuk mengatur tanggal akhir pengisian serta file upload",PASS,
+TC02,Reflective,positif,Halaman Import Reflective Assessment,"- User telah membuka browser
+- User telah melakukan login sebagai dosen
+- User berada di halaman reflective pada url berikut http://localhost:8000/dosen/assessment/projects-reflective","1. Tekan tombol ""Import""",-,"1. User dapat melihat judul ""Reflective Writting""
+2. User dapat melihat tab ""Export"", ""Import"", dan ""List Reflective""
+3. User dapat melihat input tanggal akhir pengisian assessment
+4. User dapat melihat input import data excel","Terlihat judul reflective writting, tab export inport dan list reflective, serta field untuk input tanggal dan file excel",PASS,
+TC03,Assessment,positif,Halaman Daftar Self Assessment,"- User telah membuka browser
+- Terdapat setidaknya satu data self assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > self assessment pada url berikut http://localhost:8000/dosen/assessment/projects-self",-,-,"1. User dapat melihat judul ""Self Assessment Project List""
+2. User dapat melihat tabel assessment yang terdiri dari kolom no, batch year, project name, order, status, created date, publish, dan action
+3. User dapat melihat teks untuk kolom ""No"" pada setiap assessment
+4. User dapat melihat teks untuk kolom ""Batch Year"" pada setiap assessment
+5. User dapat melihat teks untuk kolom ""Project Name"" pada setiap assessment
+6. User dapat melihat teks untuk kolom ""order"" pada setiap assessment
+7. User dapat melihat teks untuk kolom ""status"" pada setiap assessment
+8. User dapat melihat teks untuk kolom ""Created Date"" pada setiap assessment
+9. User dapat melihat tombol toggle untuk kolom ""Publish"" pada setiap assessment
+10. User dapat melihat tombol Detail dan List Answer untuk kolom ""Action"" pada setiap assessment","Terlihat judul self assessment poject list, dan tabel yang memiliki kolom yang sama dengan expected",PASS,
+TC04,Assessment,positif,Halaman Daftar Peer Assessment,"- User telah membuka browser
+- Terdapat setidaknya satu data peer assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > peer assessment pada url berikut http://localhost:8000/dosen/assessment/projects-peer",-,-,"1. User dapat melihat judul ""Peer Assessment Project List""
+2. User dapat melihat tabel assessment yang terdiri dari kolom no, batch year, project name, order, status, created date, publish, dan action
+3. User dapat melihat teks untuk kolom ""No"" pada setiap assessment
+4. User dapat melihat teks untuk kolom ""Batch Year"" pada setiap assessment
+5. User dapat melihat teks untuk kolom ""Project Name"" pada setiap assessment
+6. User dapat melihat teks untuk kolom ""order"" pada setiap assessment
+7. User dapat melihat teks untuk kolom ""status"" pada setiap assessment
+8. User dapat melihat teks untuk kolom ""Created Date"" pada setiap assessment
+9. User dapat melihat tombol toggle untuk kolom ""Publish"" pada setiap assessment
+10. User dapat melihat tombol Detail dan List Answer untuk kolom ""Action"" pada setiap assessment",Terlihat judul peer assessment project list dengan tabel yang memiliki kolom serupa dengan expected,PASS,
+TC05,Reflective,positif,Halaman Daftar Reflective Assessment,"- User telah membuka browser
+- Terdapat setidaknya satu data reflective writting pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman reflective pada url berikut http://localhost:8000/dosen/assessment/projects-reflective","1. Tekan tab ""List Reflective""
+2. Tekan sub tab ""Reflective Assessment""",-,"1. User dapat melihat judul ""Reflective Assessment""
+2. User dapat melihat tabel assessment yang terdiri dari kolom no, batch year, project name, order, status, created date, publish, dan action
+3. User dapat melihat teks untuk kolom ""No"" pada setiap assessment
+4. User dapat melihat teks untuk kolom ""Batch Year"" pada setiap assessment
+5. User dapat melihat teks untuk kolom ""Project Name"" pada setiap assessment
+6. User dapat melihat teks untuk kolom ""order"" pada setiap assessment
+7. User dapat melihat teks untuk kolom ""status"" pada setiap assessment
+8. User dapat melihat teks untuk kolom ""Created Date"" pada setiap assessment
+9. User dapat melihat tombol toggle untuk kolom ""Publish"" pada setiap assessment
+10. User dapat melihat tombol Detail dan List Answer untuk kolom ""Action"" pada setiap assessment
+11. User dapat melihat sub tab ""Reflective Assessment"" dan ""Reflective Writting""",Terlihat judul reflective assessment dengan tabel yang memilliki kolom seperti expected,PASS,
+TC06,Assessment,positif,Halaman Detail Self Assessment,"- User telah membuka browser
+- Terdapat setidaknya satu data self assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > self assessment pada url berikut http://localhost:8000/dosen/assessment/projects-self","1. Tekan tombol ""Detail"" pada salah satu assessment",-,"1. User dapat melihat judul ""Self Assessment""
+2. User dapat melihat nama project dan batch year
+3. User dapat melihat tombol toggle ""Gunakan Scaffolding""
+4. User dapat melihat tombol Start Assessment
+5. User dapat melihat data pertanyaan dan rubrik assessment","Terlihat judul self assessment, nama project, batch year, toggle gunakan scaffolding, tombol start assessment, serta pertanyaan",PASS,
+TC07,Assessment,positif,Halaman Detail Peer Assessment,"- User telah membuka browser
+- Terdapat setidaknya satu data peer assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > peer assessment pada url berikut http://localhost:8000/dosen/assessment/projects-peer","1. Tekan tombol ""Detail"" pada salah satu assessment",-,"1. User dapat melihat judul ""Peer Assessment""
+2. User dapat melihat nama project dan batch year
+3. User dapat melihat tombol toggle ""Gunakan Scaffolding""
+4. User dapat melihat tombol Start Assessment
+5. User dapat melihat data pertanyaan dan rubrik assessment","Terlihat judul peer assessment, nama project, batch year, toggle gunakan scaffolding, tombol start assessment, serta pertanyaan",PASS,
+TC08,Reflective,positif,Halaman Detail Reflective Assessessment,"- User telah membuka browser
+- Terdapat setidaknya satu data reflective writting pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman reflective pada url berikut http://localhost:8000/dosen/assessment/projects-reflective","1. Tekan tab ""List Reflective""
+2. Tekan sub tab ""Reflective Assessment""
+3. Tekan tombol ""Detail"" pada salah satu reflective assessment",-,"1. User dapat melihat judul ""Reflective Assessment""
+2. User dapat melihat nama project dan batch year
+3. User dapat melihat tombol toggle ""Gunakan Scaffolding""
+4. User dapat melihat Assessment Overview
+5. User dapat melihat data pertanyaan dan rubrik assessment","Terlihat judul reflectice assessment, batch year, toggle gunakan scaffolding, assessment overview, dan pertanyaan rubrik",PASS,
+TC09,Assessment,positif,Halaman pengisian self assessment oleh dosen,"- User telah membuka browser
+- Terdapat setidaknya satu data self assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > self assessment pada url berikut http://localhost:8000/dosen/assessment/projects-self","1. Tekan tombol ""Detail"" pada salah satu assessment
+2. Tekan tombol ""Start Assessment""",-,"1. User dapat melihat judul ""Formulir Pengisian Self Assessment""
+2. User dapat melihat NIP
+3. User dapat melihat Nama Dosen
+4. User dapat melihat Proyek
+5. User dapat melihat Tanggal Pengisian
+6. User dapat melihat pertanyaan
+7. User dapat melihat aspek dan kriteria
+8. User dapat melihat tabel bobot
+9. User dapat melihat input skor
+10. User dapat melihat input narasi",Terlihat judul formulir pengisian self assessment dan seluruh properti pada expected,PASS,
+TC10,Assessment,positif,Halaman pengisian peer assessment oleh dosen,"- User telah membuka browser
+- Terdapat setidaknya satu data peer assessment pada database
+- User telah melakukan login sebagai dosen
+- User berada di halaman assessment > peer assessment pada url berikut http://localhost:8000/dosen/assessment/projects-peer","1. Tekan tombol ""Detail"" pada salah satu assessment
+2. Tekan tombol ""Start Assessment""",-,"1. User dapat melihat judul ""Formulir Pengisian Peer Assessment""
+2. User dapat melihat NIP
+3. User dapat melihat Nama Dosen
+4. User dapat melihat Proyek
+5. User dapat melihat Tanggal Pengisian
+6. User dapat melihat pertanyaan
+7. User dapat melihat aspek dan kriteria
+8. User dapat melihat tabel bobot
+9. User dapat melihat input skor
+10. User dapat melihat input narasi",Terlihat judul formulir pengisian peer assessment dan seluruh properti pada expected,PASS,
+TC11,Assessment,positif,Halaman pengisan self assessment oleh mahasiwa,"- User telah membuka browser
+- Terdapat setidaknya satu data peer assessment pada database
+- User telah melakukan login sebagai mahasiswa
+- User berada di halaman assessment > self assessment pada url berikut http://localhost:8000/mahasiswa/assessment/self","1. Tekan tombol ""Answer"" pada salah satu assessment",-,"1. User dapat melihat judul ""Formulir Pengisian Self Assessment""
+2. User dapat melihat NIM
+3. User dapat melihat Nama Lengkap
+4. User dapat melihat Kelas
+5. User dapat melihat Kelompok
+6. User dapat melihat proyek
+5. User dapat melihat Tanggal Pengisian
+7. User dapat melihat pertanyaan
+8. User dapat melihat aspek dan kriteria
+9. User dapat melihat tabel bobot
+10. User dapat melihat input skor
+11. User dapat melihat input narasi",Terlihat judul formulir pengisian self assessment dan seluruh properti pada expected,PASS,
+TC12,Assessment,positif,Halaman pengisian peer assessment oleh mahasiswa,"- User telah membuka browser
+- Terdapat setidaknya satu data peer assessment pada database
+- Terdapat setidaknya dua mahasiswa termasuk user dalam satu kelompok dalam database
+- User telah melakukan login sebagai mahasiswa
+- User berada di halaman assessment > peer assessment pada url berikut http://localhost:8000/mahasiswa/assessment/peer","1. Tekan tombol ""Answer"" pada salah satu assessment
+2. Pilih mahasiswa yang akan dinilai pada dropdown",-,"1. User dapat melihat judul ""Formulir Pengisian Peer Assessment""
+2. User dapat melihat NIM
+3. User dapat melihat Nama Lengkap
+4. User dapat melihat Kelas
+5. User dapat melihat Kelompok
+6. User dapat melihat proyek
+5. User dapat melihat Tanggal Pengisian
+7. User dapat melihat pertanyaan
+8. User dapat melihat aspek dan kriteria
+9. User dapat melihat tabel bobot
+10. User dapat melihat input skor
+11. User dapat melihat input narasi
+12. User dapat melihat dropdown pemilihan rekan sejawat untuk dinilai",Terlihat judul formulir pengisian peer assessment dan seluruh properti pada expected,PASS,
+TC13,Reflective,positif,Halaman pengisian reflective assessment oleh mahasiswa,"- User telah membuka browser
+- Terdapat setidaknya satu data reflective assessment pada database
+- User telah melakukan login sebagai mahasiswa
+- User berada di halaman Reflective pada url berikut http://localhost:8000/mahasiswa/reflective-assessment","1. Tekan tombol ""Answer"" pada salah satu assessment",-,"1. User dapat melihat judul ""Formulir Pengisian Reflective Assessment""
+2. User dapat melihat NIM
+3. User dapat melihat Nama Lengkap
+4. User dapat melihat Kelas
+5. User dapat melihat Kelompok
+6. User dapat melihat proyek
+7. User dapat melihat Tanggal Pengisian
+8. User dapat melihat pertanyaan
+9. User dapat melihat aspek dan kriteria
+10. User dapat melihat tabel bobot
+11. User dapat melihat input narasi",Terlihat judul formulir pengisian reflective assessment dan seluruh properti pada expected,PASS,
+F1-Cakupan Rubrik,,,,,,,,,,
+TC14,Cakupan Rubrik,negatif,Narasi tidak mencakup satupun kriteria atomik,"Rubrik 'Pengumpulan Iklan' terdekomposisi menjadi:""Kemudahan dan Kesulitan Pengumpulan Data"" Scaffolding aktif.","1. Masukkan skor = 3 
+2. Isi narasi: 'Saya sudah mengerjakan tugas ini dengan bagus.' 
+3. Submit","Skor = 3 
+Narasi: 'Saya sudah mengerjakan tugas ini dengan bagus.' ","Indikator Cakupan Rubrik = FAIL. 
+Scaffold dengan Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data","Indikator cakupan rubrik fail dan muncul scaffoldng: ""
+
+Narasi belum berfokus pada , belum mencakup kriteria penilaian mengenai 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, narasi yang kamu berikan lebih mencerminkan skor 
+yang belum dapat ditentukan
+ daripada skor 
+3
+ yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.
+
+",PASS,
+TC15,Cakupan Rubrik,negatif,Narasi hanya mencakup sebagian kriteria atomik,"Rubrik 'Pengumpulan Iklan' terdekomposisi: Keragaman Platform, Jumlah Iklan, Relevansi Iklan. Scaffolding aktif.","1. Masukkan skor = 3
+2. Isi narasi: 'Iklan yang dikumpulkan sudah banyak, pada aspek keragaman dia mengumpulkan dari paltform yang beragam dan relevan semua.' 
+3. Submit","skor = 3
+Narasi: 'Iklan yang dikumpulkan sudah banyak, pada aspek keragaman dia mengumpulkan dari paltform yang beragam dan relevan semua.' ","Indikator Cakupan Rubrik = FAIL. 
+Scaffold muncul dengan missing_coverage = Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+","Indikator cakupan rubrik fail dengan detail teks
+
+Narasi belum mencakup 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+ dan narasi yang ada belum cukup untuk mendukung penilaian.",PASS,
+TC16,Cakupan Rubrik,positif,Narasi mencakup seluruh kriteria atomik,"Rubrik 'Pengumpulan Iklan' terdekomposisi: Keragaman Platform, Jumlah Iklan, Relevansi Iklan. Scaffolding aktif.","1. Masukkan skor = 5 
+2. Isi narasi: 'Pengumpulan iklan lowongan kerja dilakukan dengan sangat baik karena jumlah iklan yang dikumpulkan banyak, platform yang digunakan beragam, dan sebagian besar iklan sesuai dengan kebutuhan tugas. Selama proses pengumpulan data juga tidak terlihat kesulitan yang berarti sehingga pencarian data dapat dilakukan dengan mudah, lancar, dan cukup konsisten.
+' 
+3. Submit","skor = 5 
+Narasi: 'Pengumpulan iklan lowongan kerja dilakukan dengan sangat baik karena jumlah iklan yang dikumpulkan banyak, platform yang digunakan beragam, dan sebagian besar iklan sesuai dengan kebutuhan tugas. Selama proses pengumpulan data juga tidak terlihat kesulitan yang berarti sehingga pencarian data dapat dilakukan dengan mudah, lancar, dan cukup konsisten.
+' 
+","Indikator Cakupan Rubrik = PASS. 
+Tidak ada scaffold terkait cakupan yang muncul.","Indikator cakupan rubrik pass dengan detail teks
+
+Tampaknya narasi saat ini lebih mencerminkan skor 
+3
+, sementara skor yang diberikan adalah 
+5
+.",PASS,
+TC17,Cakupan Rubrik,edge,Kriteria disebutkan secara implisit tanpa kata kunci eksplisit,"Rubrik 'Pengumpulan Iklan' terdekomposisi: Keragaman Platform, Jumlah Iklan, Relevansi Iklan. Scaffolding aktif.","1. Masukkan skor = 5
+2. Isi narasi: 'Terkait pengumpulan iklan lowongan kerja, terlihat bahwa jumlah iklan yang berhasil dikumpulkan sudah sangat banyak dan mampu membantu pemenuhan kebutuhan tugas kelompok. Platform yang digunakan dalam mencari lowongan juga cukup beragam sehingga data yang diperoleh tidak hanya berasal dari satu sumber pencarian saja. Sebagian besar iklan yang dikumpulkan masih sesuai dengan posisi, kriteria, dan kebutuhan yang diminta dalam tugas. Selama proses pengumpulan data lowongan kerja, kendala yang muncul juga tidak terlalu menghambat jalannya pencarian karena sumber yang dibutuhkan masih dapat ditemukan dengan cukup cepat. Hal tersebut menunjukkan bahwa proses pengumpulan data dapat dilakukan dengan cukup lancar dan terarah. Skor 5 diberikan karena hasil pengumpulan iklan lowongan kerja menunjukkan kelengkapan, relevansi, variasi sumber, serta konsistensi proses pencarian data yang sangat baik.' 
+3. Submit","skor = 5
+Narasi: 'Terkait pengumpulan iklan lowongan kerja, terlihat bahwa jumlah iklan yang berhasil dikumpulkan sudah sangat banyak dan mampu membantu pemenuhan kebutuhan tugas kelompok. Platform yang digunakan dalam mencari lowongan juga cukup beragam sehingga data yang diperoleh tidak hanya berasal dari satu sumber pencarian saja. Sebagian besar iklan yang dikumpulkan masih sesuai dengan posisi, kriteria, dan kebutuhan yang diminta dalam tugas. Selama proses pengumpulan data lowongan kerja, kendala yang muncul juga tidak terlalu menghambat jalannya pencarian karena sumber yang dibutuhkan masih dapat ditemukan dengan cukup cepat. Hal tersebut menunjukkan bahwa proses pengumpulan data dapat dilakukan dengan cukup lancar dan terarah. Skor 5 diberikan karena hasil pengumpulan iklan lowongan kerja menunjukkan kelengkapan, relevansi, variasi sumber, serta konsistensi proses pencarian data yang sangat baik.' ","Indikator Cakupan Rubrik = PASS. 
+Tidak ada scaffold terkait cakupan yang muncul.","Indikator cakupan rubrik pass dengan detail teks
+
+Tampaknya narasi saat ini lebih mencerminkan skor 
+3
+, sementara skor yang diberikan adalah 
+5
+.",PASS,
+F2 - Koherensi Skor dan Narasi,,,,,,,,,,
+TC18,Koherensi evaluatif,negatif,Narasi mencerminkan skor lebih rendah dari input_skor,Rubrik 'Pengumpulan Iklan' tersedia. Scaffolding aktif.,"1. Masukkan skor = 5 
+2. Isi narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang dikumpulkan masih sangat sedikit dan jauh dari kebutuhan tugas yang diminta. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan platform yang sangat terbatas sehingga data yang diperoleh kurang bervariasi dan kurang relevan. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah sering mengalami kesulitan dalam mencari serta menemukan data iklan yang sesuai sehingga banyak bagian tugas tidak terselesaikan dengan baik. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah proses pengumpulan data terlihat kurang lancar karena belum memahami cara mencari sumber iklan yang tepat. Skor 1 ini diberikan karena hasil kerja yang ditunjukkan masih sangat jauh dari kriteria yang diharapkan dan menunjukkan kurangnya kesiapan dalam proses pengumpulan data, misalnya masih banyak iklan yang tidak lengkap, tidak relevan, serta beberapa bagian tugas tidak dikumpulkan sesuai ketentuan.”
+' 
+3. Submit","Narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang dikumpulkan masih sangat sedikit dan jauh dari kebutuhan tugas yang diminta. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan platform yang sangat terbatas sehingga data yang diperoleh kurang bervariasi dan kurang relevan. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah sering mengalami kesulitan dalam mencari serta menemukan data iklan yang sesuai sehingga banyak bagian tugas tidak terselesaikan dengan baik. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah proses pengumpulan data terlihat kurang lancar karena belum memahami cara mencari sumber iklan yang tepat. Skor 1 ini diberikan karena hasil kerja yang ditunjukkan masih sangat jauh dari kriteria yang diharapkan dan menunjukkan kurangnya kesiapan dalam proses pengumpulan data, misalnya masih banyak iklan yang tidak lengkap, tidak relevan, serta beberapa bagian tugas tidak dikumpulkan sesuai ketentuan.”
+' input_skor: 5","Indikator Koherensi Evaluatif = FAIL. 
+Scaffold muncul dengan input_skor = 5 dan predicted_skor = [1]. 
+Mahasiswa diminta menyelaraskan narasi atau skor.","Indikator koherensi fail namun predicted score tidak dapat ditentukan, dengan detail teks
+
+Tampaknya narasi saat ini lebih mencerminkan skor 
+yang belum dapat ditentukan
+, sementara skor yang diberikan adalah 
+5
+.",FAIL,
+TC19,Koherensi evaluatif,negatif,Narasi mencerminkan skor lebih tinggi dari input_skor,Rubrik 'Pengumpulan Iklan' tersedia. Scaffolding aktif.,"1. Masukkan skor = 5
+2. Isi narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang dikumpulkan sudah cukup memenuhi kebutuhan tugas, meskipun belum terlalu banyak dan masih ada beberapa kategori yang belum lengkap. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan beberapa platform yang cukup relevan, tetapi variasi sumber yang digunakan masih terbatas. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah masih terdapat kendala dalam menemukan beberapa data iklan sehingga proses pengumpulan terkadang berjalan kurang efisien. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah sebagian data dapat ditemukan dengan cukup mudah karena ia sudah memahami dasar pencarian sumber iklan yang sesuai. Skor 3 ini diberikan karena hasil kerja yang ditunjukkan sudah cukup memenuhi kriteria dasar tugas, tetapi konsistensi, kelengkapan, dan kualitas data yang dikumpulkan masih berada pada tingkat sedang, misalnya terdapat beberapa iklan yang sudah relevan dan lengkap, namun masih ada data yang kurang rinci atau belum tersusun secara rapI""
+' 
+3. Submit","Skor=5
+
+Narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang berhasil dikumpulkan sudah memenuhi target tugas meskipun belum terlalu konsisten pada setiap kategori yang diminta. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan beberapa platform berbeda yang cukup relevan, walaupun masih didominasi oleh sumber yang sama. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah masih adanya beberapa kendala ketika mencari data tertentu sehingga proses pengumpulan terkadang memerlukan waktu lebih lama. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah sebagian besar data tetap dapat ditemukan dengan cukup lancar karena ia memahami cara mencari sumber yang sesuai. Skor 3 ini diberikan karena hasil kerja yang ditunjukkan sudah cukup memenuhi kebutuhan tugas, tetapi kualitasnya masih belum konsisten di seluruh aspek penilaian, misalnya terdapat beberapa iklan yang relevan dan lengkap, namun sebagian lainnya masih kurang detail atau dikumpulkan mendekati batas waktu pengumpulan.”
+.'","Indikator Koherensi Evaluatif = FAIL. 
+Scaffold muncul dengan input_skor = 5 dan predicted_skor = 3","Indikator koherensi berwarna orange dengan detail teks
+
+Tampaknya narasi saat ini lebih mencerminkan skor 
+3
+, sementara skor yang diberikan adalah 
+5
+.",PASS,
+TC20,Koherensi evaluatif,positif,Narasi selaras dengan skor yang diberikan,Rubrik 'Pengumpulan Iklan' tersedia. Scaffolding aktif.,"1. Masukkan skor = 3
+2. Isi narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang dikumpulkan sudah cukup memenuhi kebutuhan tugas, meskipun belum terlalu banyak dan masih ada beberapa kategori yang belum lengkap. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan beberapa platform yang cukup relevan, tetapi variasi sumber yang digunakan masih terbatas. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah masih terdapat kendala dalam menemukan beberapa data iklan sehingga proses pengumpulan terkadang berjalan kurang efisien. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah sebagian data dapat ditemukan dengan cukup mudah karena ia sudah memahami dasar pencarian sumber iklan yang sesuai. Skor 3 ini diberikan karena hasil kerja yang ditunjukkan sudah cukup memenuhi kriteria dasar tugas, tetapi konsistensi, kelengkapan, dan kualitas data yang dikumpulkan masih berada pada tingkat sedang, misalnya terdapat beberapa iklan yang sudah relevan dan lengkap, namun masih ada data yang kurang rinci atau belum tersusun secara rapi.”
+.' 
+3. Submit","Narasi: '“Pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah jumlah iklan yang dikumpulkan sudah cukup memenuhi kebutuhan tugas, meskipun belum terlalu banyak dan masih ada beberapa kategori yang belum lengkap. Sementara pada aspek Keragaman Platform Pengumpulan, yang teramati adalah penggunaan beberapa platform yang cukup relevan, tetapi variasi sumber yang digunakan masih terbatas. Sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah masih terdapat kendala dalam menemukan beberapa data iklan sehingga proses pengumpulan terkadang berjalan kurang efisien. Sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah sebagian data dapat ditemukan dengan cukup mudah karena ia sudah memahami dasar pencarian sumber iklan yang sesuai. Skor 3 ini diberikan karena hasil kerja yang ditunjukkan sudah cukup memenuhi kriteria dasar tugas, tetapi konsistensi, kelengkapan, dan kualitas data yang dikumpulkan masih berada pada tingkat sedang, misalnya terdapat beberapa iklan yang sudah relevan dan lengkap, namun masih ada data yang kurang rinci atau belum tersusun secara rapi.”
+.' input_skor: 3",Indikator Koherensi Evaluatif = PASS. Tidak ada scaffold terkait koherensi yang muncul.,"Indikator koherensi berwarna hijau dengan detail teks
+
+Feedback sudah sesuai dengan rubrik penilaian, lanjutkan menulis jika diperlukan.",PASS,
+TC21,Koherensi evaluatif,edge,Narasi belum dapat ditentukan nilainya,Rubrik 'Pengumpulan Iklan' tersedia. Scaffolding aktif.,"1. Masukkan skor = 1
+2. Isi narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.' 
+3. Submit","Skor = 1
+Narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.' ","Indikator Koherensi Evaluatif = FAIL. 
+Predicted score = ""belum dapat ditentukan""","Indikator koherensi berwarna orange dengan predicted score yang belum dapat ditentukan. Dengan detail teks
+
+Narasi belum mencakup 
+Jumlah Iklan yang Dikumpulkan, Keragaman Platform Pengumpulan, Relevansi Iklan yang Dikumpulkan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, narasi yang kamu berikan lebih mencerminkan skor 
+yang belum dapat ditentukan
+ daripada skor 
+1
+ yang diberikan.",PASS,
+TC22,Koherensi evaluatif,edge,Narasi ambigu sistem memprediksi lebih dari satu skor,Rubrik 'Pengumpulan Iklan' tersedia. Scaffolding aktif.,"1. Masukkan skor = 1
+2. Isi narasi: 'Dia tidak mengumpulkan banyak iklan tapi iklannya sangat relevan semua dan berasal dari platform yang beragam
+' 
+3. Submit","Narasi: 'Banyak iklan dari berbagai platform, sebagian tidak relevan.' input_skor: 3 ","Indikator Koherensi Evaluatif = FAIL. predicted_skor berisi lebih dari satu nilai. 
+Scaffold muncul menampilkan predicted_skor = [3,5 ] dan input_skor = 1","Indikator koherensi berwarna orange yang menandakan fail, dengan detail teks
+
+Narasi belum mencakup 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, narasi yang kamu berikan lebih mencerminkan skor 
+3 dan 5
+ daripada skor 
+1
+ yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",PASS,
+F3 - Kedalaman Elaborasi,,,,,,,,,,
+TC23,Kedalaman Elaborasi,positif,Narasi terlalu tepat pada threshold 25 kata,,"1. Masukkan skor = 3 
+2. Isi narasi: 'Dia orangnya sangat rajin, bisa mengumpulkan iklan lowongan pekerjaan dengan sangat banyak. Tidak lupa seluruh iklannya relevan. Belum lagi platformnya sangat beragam. Kagum dengan dia.' 
+3. Submit","Skor: 3
+Narasi: 'Dia orangnya sangat rajin, bisa mengumpulkan iklan lowongan pekerjaan dengan sangat banyak. Tidak lupa seluruh iklannya relevan. Belum lagi platformnya sangat beragam. Kagum dengan dia.' 
+","Indikator Kedalaman Elaborasi = PASS 
+","Indikator elaborasi berwarna hijau, menandakan pass. Dengan detail teks
+
+Narasi masih kurang menyinggung 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+ yang termasuk dalam rubrik penilaian.",PASS,
+TC24,Kedalaman Elaborasi,negatif,Narasi terlalu pendek dibawah threshold,,"1. Masukkan skor = 3 
+2. Isi narasi: 'Sudah.' 
+3. Submit","Skor: 3
+Narasi: Sudah
+",Indikator Kedalaman Elaborasi = FAIL. Scaffold muncul mendorong penambahan contoh konkret.,"Indikator elaborasi berwarna orange yang mengindikasikan FAIL. dengan detail teks
+
+Narasi belum berfokus pada 
+Pengumpulan Iklan Lowongan Kerja
+, belum mencakup 
+Keragaman Platform Pengumpulan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, dan narasi yang ada belum cukup untuk mendukung penilaian.",PASS,
+TC25,Kedalaman Elaborasi,positif,Narasi tepat diatas threshold 1 kata,,"1. Masukkan skor = 3 
+2. Isi narasi: 'Dia orangnya sangat rajin, bisa mengumpulkan iklan lowongan pekerjaan dengan sangat banyak. Tidak lupa seluruh iklannya relevan. Belum lagi platformnya sangat beragam. Kagum sekali dengan dia.' 
+3. Submit","Skor: 3
+Narasi: 'Dia orangnya sangat rajin, bisa mengumpulkan iklan lowongan pekerjaan dengan sangat banyak. Tidak lupa seluruh iklannya relevan. Belum lagi platformnya sangat beragam. Kagum sekali dengan dia.' 
+","Indikator Kedalaman Elaborasi = PASS 
+","Inidkator kedalaman elaborasi PASS, dengan detail teks
+
+Narasi masih kurang menyinggung 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+ yang termasuk dalam rubrik penilaian.",PASS,
+TC26,Kedalaman Elaborasi,edge,Narasi tepat diatas threshold namun berisikan hal tidak relevan dengan rubrik,,"1. Masukkan skor = 3 
+2. Isi narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.' 
+3. Submit","Skor = 3 
+Narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.' ","Seluruh indikator FAIL, dengan scaffolding ""Lengkapi narasi anda dengan membahas komponen penilaian pada rubrik.""",Keempat indikator fail dan scaffolding sesuai dengan expected,PASS,
+F4 - Relevansi Topik,,,,,,,,,,
+TC27,Relevansi Topik,negatif,Narasi membahas aspek rubrik lain yang tidak ditanyakan,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Rubrik lain tersedia: 'Manajemen Waktu'. 
+Scaffolding aktif.","1. Masukkan skor = 5
+2. Isi narasi: 'Saya selalu hadir tepat waktu dan menyelesaikan semua tugas sebelum deadline.' 
+3. Submit","Narasi: 'Saya selalu hadir tepat waktu dan menyelesaikan tugas sebelum deadline.' 
+Rubrik target: Pengumpulan Iklan 
+",Indikator Relevansi Topik = FAIL. Scaffold muncul dengan target_aspect = 'Pengumpulan Iklan'. Sistem mengarahkan mahasiswa kembali ke aspek yang ditanyakan.,"Relevansi topik berwarna orange yang menandakan FAIL, dengan target aspek pengumpulan iklan. dengan detail teks
+
+Narasi belum berfokus pada 
+Pengumpulan Iklan Lowongan Kerja
+, belum mencakup kriteria penilaian mengenai 
+Jumlah Iklan yang Dikumpulkan, Keragaman Platform Pengumpulan, Relevansi Iklan yang Dikumpulkan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, narasi yang kamu berikan lebih mencerminkan skor 
+yang belum dapat ditentukan
+ daripada skor 
+5
+ yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",PASS,
+TC28,Relevansi Topik,negatif,Narasi membahas hal di luar seluruh aspek rubrik,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding aktif.","1. Masukkan skor = 3 
+2. Isi narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.'","Skor = 3
+Narasi: 'Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.'","Seluruh indikator FAIL, dengan scaffolding ""Lengkapi narasi anda dengan membahas komponen penilaian pada rubrik.""",Keempat indikator fail dan scaffolding sesuai dengan expected,PASS,
+TC29,Relevansi Topik,positif,Narasi berfokus pada aspek rubrik yang ditanyakan,Rubrik aktif: 'Pengumpulan Iklan'. Scaffolding aktif.,"1. Masukkan skor = 5
+2. Isi narasi: 'Saya mengumpulkan iklan iklan lowongan pekerjaan dengan jumlah sangat banyak. Tidak lupa iklannya semua sangat relevan, Sudah pasti dari platform platform yang dipastikan sangat beragam.' 
+3. Submit","Skor = 5
+Narasi: 'Saya mengumpulkan iklan iklan lowongan pekerjaan dengan jumlah sangat banyak. Tidak lupa iklannya semua sangat relevan, Sudah pasti dari platform platform yang dipastikan sangat beragam.' ",Indikator Relevansi Topik = PASS,"Indikator relevansi topik berwarna hijau yang menandakan pass, dengan teks
+
+Narasi masih kurang menyinggung 
+Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+ yang termasuk dalam rubrik penilaian.",PASS,
+TC30,Relevansi Topik,edge,Narasi sebagian relevan dan sebagian membahas aspek lain,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding aktif.","1. Masukkan skor = 3
+2. Isi narasi: 'Walaupun jumlah iklan yang dikumpulkan sudah cukup banyak dan menunjukkan usaha yang besar, manajemen waktunya masih sangat kurang konsisten. Beberapa tugas sering diselesaikan mendekati batas pengumpulan sehingga proses pengecekan dan penyesuaian hasil kerja menjadi kurang maksimal bagi kelompok.
+' 
+3. Submit","Skor = 3
+Narasi: 'Walaupun jumlah iklan yang dikumpulkan sudah cukup banyak dan menunjukkan usaha yang besar, manajemen waktunya masih sangat kurang konsisten. Beberapa tugas sering diselesaikan mendekati batas pengumpulan sehingga proses pengecekan dan penyesuaian hasil kerja menjadi kurang maksimal bagi kelompok.",Indikator Relevansi Topik = FAIL,"Indikator relevansi topik berwarna orange yang menandakan fail, dengan teks
+
+Narasi masih kurang berfokus pada 
+Pengumpulan Iklan Lowongan Kerja
+ dan belum mencakup 
+Keragaman Platform Pengumpulan, Kemudahan dalam Pengumpulan Data
+ yang diminta rubrik.",PASS,
+Kemunculan Teks Scaffolding,,,,,,,,,,
+TC31,Scaffolding Aktif,positif,Skor kuantitatif (skala 1-5) sudah terisi dan Skor kualitatif terisi minimal 1 kata,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding aktif.","1. Masukan skor=1
+2. Isi narasi: Saya sudah mengerjakan tugas ini dengan bagus.
+3. Submit","Skor=1
+Narasi: Saya sudah mengerjakan tugas ini dengan bagus.",Scaffolding muncul,"Scaffolding muncul dengan teks
+
+Narasi belum mencakup 
+Jumlah Iklan yang Dikumpulkan, Keragaman Platform Pengumpulan, Relevansi Iklan yang Dikumpulkan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data
+, narasi yang kamu berikan lebih mencerminkan skor 
+yang belum dapat ditentukan
+ daripada skor 
+2
+ yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.
+
+",PASS,
+TC32,Scaffolding Aktif,negatif,Skor kuantitatif skala 1-5 terisi dan skor narasi kosong,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding aktif.","1. Masukan skor=1
+2. Isi narasi: ''
+3. Submit","Skor=1
+Narasi: ",Scaffolding tidak muncul,Tidak ada scaffolding yang muncul,PASS,
+TC33,Scaffolding Aktif,negatif,Skor kuantitatif skala 1-5 belum disii dan skor narasi terisi minimal 1 kata,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding aktif.","1. Kosongkan skor narasi (tidak memilih di skala 1 sampai 5)
+2. Isi narasi: ''Saya sudah mengerjakan tugas ini dengan bagus.'
+3. Submit","Skor=
+Narasi: Saya sudah mengerjakan tugas ini dengan bagus.",Scaffolding muncul dengan isi predicted_score = yang belum dapat ditentukan,"Scaffolding muncul dengan predicted score yang belum dapat ditentukan dengan detail:
+
+Narasi belum berfokus pada 
+Komunikasi
+, belum mencakup kriteria penilaian mengenai 
+Responsivitas Komunikasi, Sikap dalam Diskusi, Kemampuan Mendengarkan, Dampak terhadap Dinamika Komunikasi
+, narasi yang kamu berikan lebih mencerminkan skor 
+yang belum dapat ditentukan
+ daripada skor 
+0
+ yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",PASS,
+TC34,Scaffolding Tidak Aktif,positif,Skor kuantitatif (skala 1-5) sudah terisi dan Skor kualitatif terisi minimal 1 kata,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding tidak aktif.","1. Masukan skor=1
+2. Isi narasi: Saya sudah mengerjakan tugas ini dengan bagus.
+3. Submit","Skor=1
+Narasi: Saya sudah mengerjakan tugas ini dengan bagus.",Scaffolding tidak muncul,Tidak ada scaffolding yang muncul,PASS,
+TC35,Scaffolding Tidak Aktif,negatif,Skor kuantitatif skala 1-5 terisi dan skor narasi kosong,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding tidak aktif.","1. Masukan skor=1
+2. Isi narasi: ''
+3. Submit","Skor=1
+Narasi: ",Scaffolding tidak muncul,Tidak ada scaffolding yang muncul,PASS,
+TC36,Scaffolding Tidak Aktif,negatif,Skor kuantitatif skala 1-5 belum disii dan skor narasi terisi minimal 1 kata,"Rubrik aktif: 'Pengumpulan Iklan'. 
+Scaffolding tidak aktif.","1. Kosongkan skor narasi (tidak memilih di skala 1 sampai 5)
+2. Isi narasi: ''Saya sudah mengerjakan tugas ini dengan bagus.'
+3. Submit","Skor=
+Narasi: Saya sudah mengerjakan tugas ini dengan bagus.",Scaffolding tidak muncul,Tidak ada scaffolding yang muncul,PASS,
+Dekomposisi Rubrik,,,,,,,,,,
+TC37,Dekomposisi Assessment,positif,Dekomposisi self assessment,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Assessment > Create Assessment","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik self assessment = https://docs.google.com/spreadsheets/d/1K55kBVo3eevY7UPm2HMAD6aLQokkPiag/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada menu Assessment > Self Assessment
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat progress loading dan persentase pada assessment baru
+5. Seiring waktu, progress loading akan meningkat sebelum hilang
+6. Tombol publish dapat diklik setelah progress loading hilang
+7. Tekan tombol ""Detail"" pada assessment baru, kemudian tekan tombol ""Start Assessment"", lalu ketik narasi acak, scaffolding muncul","Ketika file diunggah, muncul popup, ada assessment baru dan loading hingga loadingnya hilang, dan muncul teks scaffolding",PASS,
+TC38,Dekomposisi Assessment,negatif,Dekomposisi self assessment ketika tidak ada internet,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Assessment > Create Assessment
+3. User mematikan koneksi internet","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik self assessment = https://docs.google.com/spreadsheets/d/1K55kBVo3eevY7UPm2HMAD6aLQokkPiag/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada menu Assessment > Self Assessment
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat tombol error, ketika dihover berubah menjadi tombol retry
+5. Ketika internet kembali tersedia, tekan tombol retry, dan progress menaik","Ketika file diunggah, muncul popup, ada assessment baru dan terdapat tombol error yang bisa diklik",PASS,
+TC39,Dekomposisi Assessment,positif,Dekomposisi peer assessment,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Assessment > Create Assessment","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik peer assessment = https://docs.google.com/spreadsheets/d/1SFuBPa9MMpCy_ExvYJqwexcsSii6reeZ/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada menu Assessment > Peer Assessment
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat progress loading dan persentase pada assessment baru
+5. Seiring waktu, progress loading akan meningkat sebelum hilang
+6. Tombol publish dapat diklik setelah progress loading hilang
+7. Tekan tombol ""Detail"" pada assessment baru, kemudian tekan tombol ""Start Assessment"", lalu ketik narasi acak, scaffolding muncul","Ketika file diunggah, muncul popup, ada assessment baru dan loading hingga loadingnya hilang, dan muncul teks scaffolding",PASS,
+TC40,Dekomposisi Assessment,negatif,Dekomposisi peer assessment ketika tidak ada internet,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Assessment > Create Assessment
+3. User mematikan koneksi internet","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik peer assessment = https://docs.google.com/spreadsheets/d/1SFuBPa9MMpCy_ExvYJqwexcsSii6reeZ/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada menu Assessment > Peer Assessment
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat tombol error, ketika dihover berubah menjadi tombol retry
+5. Ketika internet kembali tersedia, tekan tombol retry, dan progress menaik","Ketika file diunggah, muncul popup, ada assessment baru dan terdapat tombol error yang bisa diklik",PASS,
+TC41,Dekomposisi Assessment,positif,Dekomposisi reflective assessment,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Reflective","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik reflective assessment = https://docs.google.com/spreadsheets/d/1SggZ6k8-09DqL33lxbkmU91fSdJH2Z7J/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada tab ""List Assessment""
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat progress loading dan persentase pada assessment baru
+5. Seiring waktu, progress loading akan meningkat sebelum hilang
+6. Tombol publish dapat diklik setelah progress loading hilang","Ketika file diunggah, muncul popup, ada assessment baru dan loading hingga loadingnya hilang, dan muncul teks scaffolding",PASS,
+TC42,Dekomposisi Assessment,negatif,Dekomposisi reflective assessment ketika tidak ada internet,"1. User telah login sebagai dosen
+2. User teleh berada pada menu Reflective","1. Tekan tab ""Import""
+2. Tekan tombol ""Choose File""
+3. Upload file excel yang disediakan pada test data",Rubrik reflective assessment = https://docs.google.com/spreadsheets/d/1SggZ6k8-09DqL33lxbkmU91fSdJH2Z7J/edit?usp=drive_link&ouid=108128132556402420110&rtpof=true&sd=true,"1. Muncul popup ""Success"", ""Data berhasil diunggah dan sedang diproses sistem.""
+2. terdapat assessment baru pada tab ""List Assessment""
+3. Tombol publish pada assessment baru tidak dapat diklik
+4. Terdapat tombol error, ketika dihover berubah menjadi tombol retry
+5. Ketika internet kembali tersedia, tekan tombol retry, dan progress menaik","Ketika file diunggah, muncul popup, ada assessment baru dan terdapat tombol error yang bisa diklik",PASS,
