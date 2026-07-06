@@ -2100,7 +2100,7 @@ Sebagai manifestasi hasil dari pre-processing, sebagaimana didefinisikan pada su
 
 **IV.2.1.1 Hasil Feature Set Cakupan dan Relevansi Topik**
 
-Berdasarkan proses yang didefinisikan pada sub[bab III.6.3.1C,](#page-0-1) dekomposisi akhir yang diperoleh disajikan pada Tabel IV.9. Feature set ini memiliki total 26 unit yang digunakan sebagai komponen utama indikator cakupan rubrik ( ) dan relevansi topik ( ) dalam melakukan vector embedding dan cosine similarity, sebagaimana dijelaskan dalam subbab Error! Reference source not found. dan Error! Reference source not found..
+Berdasarkan proses yang didefinisikan pada sub[bab III.6.3.1C,](#page-0-1) dekomposisi akhir yang diperoleh disajikan pada Tabel IV.9. Feature set ini memiliki total 26 unit yang digunakan sebagai komponen utama indikator cakupan rubrik ( ) dan relevansi topik ( ) dalam melakukan vector embedding dan cosine similarity, sebagaimana dijelaskan secara konseptual pada landasan teori.
 
 Tabel IV.9 Hasil Akhir Dekomposisi Rubrik untuk Cakupan dan Relevansi
 
@@ -2483,7 +2483,7 @@ Indikator pertama berfokus untuk mengevaluasi sejauh mana narasi feedback membah
 $$\check{y}\left(s_{txt}, c_{cov,i}\right) = \begin{cases} 1, & sim_x(s_{txt}, c_{cov,i}) \ge \theta_{sim,1} \\ 0, & sebaliknya \end{cases}$$
 (IV.25)
 
-Di mana !"#, adalah threshold cosine similarity indikator cakupan rubrik yang didapatkan melalui evaluasi pada subbab 0. Di sisi lain,. }2~,# merupakan unit dekomposisi kriteria rubrik yang didefinisikan pada Lampiran 4. Fungsi Ad. , . merujuk pada salah satu dari dua varian fungsi similarity yang dievaluasi, yaitu whole-text cosine similarity (Ad. , . ) atau semantic chunking ([Ad](#page-9-0)"37#8. , . ), sebagaimana didefinisikan pada subbab Error! Reference source not found. dan IV.3.3.2. Pemilihan varian dilakukan berdasarkan hasil eksperimen komparatif pada subbab IV.3.4.2.
+Di mana !"#, adalah threshold cosine similarity indikator cakupan rubrik yang didapatkan melalui evaluasi pada subbab 0. Di sisi lain,. }2~,# merupakan unit dekomposisi kriteria rubrik yang didefinisikan pada Lampiran 4. Fungsi Ad. , . merujuk pada salah satu dari dua varian fungsi similarity yang dievaluasi, yaitu whole-text cosine similarity (Ad. , . ) atau semantic chunking ([Ad](#page-9-0)"37#8. , . ), sebagaimana didefinisikan pada rumusan logika inferensi dan subbab IV.3.3.2. Pemilihan varian dilakukan berdasarkan hasil eksperimen komparatif pada subbab IV.3.4.2.
 
 Selanjutnya, nilai cakupan  $f_1$  dihitung sebagai proporsi kriteria yang terdeteksi. Sebagaimana disajikan pada rumus IV.26.
 
@@ -3086,7 +3086,7 @@ Sentence Starter  |  Salah satu hal yang saya amati adalah bahwa pada aspek Juml
 
 **IV.4 Hasil Implementasi APE**
 
-Subbab ini merupakan manifestasi dari subbab III.6.5 sebagai integrasi aplikasi pendukung eksperimen dengan sistem "SAPA" berdasarkan konfigurasi akhir yang dipetakan pada subbab IV.3.4.4. Implementasi dilakukan dengan memetakan arsitektur aplikasi existing pada subbab Error! Reference source not found. sebelum sistem digital scaffolding diintegrasi pada subbab Error! Reference source not found..
+Subbab ini merupakan manifestasi dari subbab III.6.5 sebagai integrasi aplikasi pendukung eksperimen dengan sistem "SAPA" berdasarkan konfigurasi akhir yang dipetakan pada subbab IV.3.4.4. Implementasi dilakukan dengan memetakan arsitektur aplikasi existing pada analisis sistem berjalan di Lampiran 3 sebelum sistem digital scaffolding diintegrasikan.
 
 **IV.4.1 Hasil Analisis Sistem Berjalan**
 
@@ -3838,7 +3838,7 @@ Subbab ini mengevaluasi kinerja dan kegunaan APE SAPA secara keseluruhan setelah
 
 Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipaparkan pada subbab IV.4.3. Pengujian dilakukan terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.3. Hasil pengujian yang didokumentasikan pada Lampiran 3 menunjukkan 41 dari 42 test case dinyatakan lolos, termasuk pengujian fungsionalitas part-of-speech tagging yang terbukti berhasil menyaring input teks acak atau tidak bermakna sebelum diproses oleh model.
 
-Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi yang dirancang pada subbab Error! Reference source not found., dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
+Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi yang dirancang pada perancangan sistem di Lampiran 3, dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
 
 Commented [AR42]: (Kertas dilipat tanpa keterangan) - Bu Ani
 
