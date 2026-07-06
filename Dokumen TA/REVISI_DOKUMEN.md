@@ -243,12 +243,6 @@ Gambar II.2 Alur Self-Assessment 14
 Gambar II.3. Alur Peer-Assessment 15
 Gambar II.4. Self dan Peer Assessment sebagai Feedback 17
 Gambar II.5. Ilustrasi Multi-Label-Classification 21
-Gambar II.6. Arsitektur SBERT untuk Regresi Teks 23
-Gambar II.7. Perbandingan Arsitektur Cross-Encoder dan Bi-Encoder 24
-Gambar II.8. Rerpesentasi Ruang Vektor 25
-Gambar II.9. Cosine Similarity dalam Ruang Vektor 26
-Gambar II.10. Representasi Pipeline Penelitian 28
-Gambar II.11. Balancing Preccision dan Recall untuk F1-Score 30
 Gambar II.12 Kerangka Operasionalisasi Evaluative Expression 35
 Gambar II.13. Contoh Cakupan Rubrik Tidak Terpenuhi 36
 Gambar II.14. Contoh Koherensi Evaluatif Tidak Terpenuhi 37
@@ -309,15 +303,6 @@ Gambar IV.22 Ilustrasi Variabel Missing_Coverage 200
 Gambar IV.23 Ilustrasi Transformasi Missing Coverage 201
 Gambar IV.24 Ilustrasi Pengambilan Variabel Kontekstual untuk Skor 201
 Gambar IV.25. Proses Bisnis SAPA 208
-Gambar IV.26. BPMN to-be Setelah APE diintegrasikan 212
-Gambar IV.27. Use Case Diagram APE yang Akan Dikembangkan 214
-Gambar IV.28. Class Diagram Keseluruhan (to-be) 217
-Gambar IV.29. Class Diagram Bagian Modifikasi 218
-Gambar IV.30. ERD Keseluruhan SAPA 220
-Gambar IV.31. ERD Bagian Modifikasi 221
-Gambar IV.32. Sequence Diagram UC-05 Manage Assessment 223
-Gambar IV.33. Sequence Diagram UC-10 Answer Peer Assessment 224
-Gambar IV.34. Sequence Diagram UC-10 Answer Self Assessment 225
 Gambar IV.35. Arsitektur Aplikasi setelah Integrasi 237
 Gambar V.1. Grafik Indikator Cakupan Rubrik Semantic Chunking 252
 Gambar V.2. Grafik Performa Koherensi Skor dengan Semantic Chunking 253
@@ -337,8 +322,6 @@ Gambar V.14. Kerangka untuk Menjawab RQ 1 268
 Gambar V.15. Distribusi FP dan FN pada Rubrik 269
 Gambar V.16. Sebaran FP dan FN berdasarkan Label Anotasi 274
 Gambar V.17. Kerangka untuk Menjawab RQ 2 285
-Gambar V.18. Hasil Modifikasi GUI pada Kondisi Scaffolding Tertutup 295
-Gambar V.19. Hasil Modifikasi GUI pada Kondisi Scaffolding Tertutup 296
 
 **DAFTAR TABEL**
 
@@ -349,9 +332,6 @@ Tabel II.3. Tingkatan Dekomposisi Rubrik pada Pipeline 40
 Tabel III.1. Notasi Matematis 56
 Tabel III.2. Simulasi Alur Data dan Keputusan Intervensi Sistem 59
 Tabel III.3. Indikator Tekstual yang Dapat Dikomputasi 61
-Tabel III.4. Struktur Data Peer Assessment 65
-Tabel III.5. Struktur Data Self Assessment 65
-Tabel III.6. Struktur Data Rubrik 66
 Tabel III.7. Perangkat Pendukung 70
 Tabel III.8 Contoh Proses Dekomposisi Cakupan dan Relevansi Topik 81
 Tabel III.9. Contoh Proses Dekomposisi untuk Koherensi Skor dan Narasi 82
@@ -402,19 +382,7 @@ Tabel IV.33 Komponen Teks Scaffolding 198
 Tabel IV.34. Variabel Kontekstual yang digunakan Template 199
 Tabel IV.35. Himpunan Template Prompt Scaffolding 202
 Tabel IV.36 Ilustrasi Adaptivitas Output pada Kondisi  yang Identik 206
-Tabel IV.37. Titik Integrasi 209
 
-Tabel IV.38. Komponen Yang Dimodifikasi 209
-Tabel IV.39. Komponen Yang Ditambahkan 210
-Tabel IV.40. Functional Requirements 213
-Tabel IV.41. Non Functional Requirements 213
-Tabel IV.42. Use Case Scenario Receive Scaffolding (UC-17) 215
-Tabel IV.43. GUI-22 227
-Tabel IV.44. GUI-25 228
-Tabel IV.45. GUI-21 229
-Tabel IV.46. GUI-24 231
-Tabel IV.47. GUI-43 233
-Tabel IV.48. GUI-46 235
 Tabel IV.49. Kuesioner Kelompok Treatment 243
 Tabel IV.50. Rubrik CATME yang Dihasilkan 246
 Tabel IV.51. Feature-set Eksperimen Cakupan dan Relevansi Topik 247
@@ -438,7 +406,6 @@ Tabel V.16. Sampel Data FN pada Koherensi Skor dan Narasi 275
 
 Tabel V.17. Sampel Data FP pada Relevansi Topik 278
 Tabel V.18. Sampel Data FN pada Relevansi Topik 279
-Tabel V.19. Keluhan Subjek yang menyatakan Distraksi 293
 
 **DAFTAR RUMUS**
 
@@ -834,100 +801,11 @@ Dalam konteks penelitian, skema anotasi mengikuti paradigma Multi Label Classifi
 
 **II.1.7 Natural Language Processing (NLP) dan Arsitektur Transformer**
 
-Natural Language Processing (NLP) merupakan bagian dari ilmu komputer dan artificial intelligence yang memungkinkan mesin untuk memahami, memproses, dan menganalisis bahasa alami yang digunakan manusia (C. Manning & Hinrich, 1999), seperti yang dikutip oleh Torfi et al. (2021). Salah satu komponennya adalah Natural Language Understanding (NLU), yang berfokus pada ekstraksi makna semantik dari teks sehingga sistem dapat menginterpretasikan isi bahasa secara komputasional.
+Landasan komputasional NLP yang digunakan dalam penelitian ini mencakup arsitektur *Transformer*, model *sentence embedding* SBERT, *cosine similarity* sebagai ukuran kemiripan semantik, serta metrik F1-Score untuk evaluasi performa. Sebagaimana disajikan secara lengkap pada **Lampiran 1**, model embedding digunakan sebagai *black box tool* dalam penelitian ini — kajian tidak mencakup arsitektur internalnya, melainkan hanya memanfaatkan representasi vektor yang dihasilkannya.
 
-Perkembangan NLP didorong oleh penggunaan arsitektur transformer, yang memungkinkan pembentukan representasi teks yang bersifat kontekstual melalui mekanisme pemrosesan yang mempertimbangkan hubungan antar elemen dalam satu sequence secara menyeluruh (Vaswani et al., 2023). Arsitektur ini menjadi dasar bagi berbagai model embedding pre-trained, termasuk Sentence Bidirectional Encoder Representations from Transformers (SBERT) (Reimers & Gurevych, 2019), yang memanfaatkan pemahaman dua arah untuk menangkap hubungan kontekstual dalam teks, dengan [Gambar II.6](#page-5-0) menggambarkan arsitektur SBERT untuk mencari kesamaan dalam dua teks.
+Dalam penelitian ini, pendekatan semantic embedding digunakan untuk menghasilkan representasi vektor dari narasi feedback mahasiswa dan kriteria rubrik, kemudian kesamaan semantiknya diukur menggunakan cosine similarity sebagai komponen utama pipeline deteksi indikator. Model `intfloat/multilingual-e5-large-instruct` dipilih karena menunjukkan performa terbaik pada evaluasi komparatif yang dilakukan pada subbab IV.3.2. Evaluasi performa pipeline menggunakan F1-Score dengan pendekatan *micro-averaging*.
 
-Gambar II.6. Arsitektur SBERT untuk Regresi Teks
-
-Dalam implementasinya, terdapat dua pendekatan utama dalam pemrosesan pasangan teks, yaitu cross-encoder dan bi-encoder. Pendekatan cross-encoder memproses dua teks secara bersamaan sehingga memungkinkan interaksi penuh antar token, namun memiliki kompleksitas komputasi yang tinggi. Sebaliknya, pendekatan bi-encoder merepresentasikan setiap teks secara independen ke dalam ruang vektor yang sama, sehingga memungkinkan perbandingan semantik dilakukan secara efisien tanpa memerlukan pemrosesan ulang terhadap seluruh pasangan teks (Devlin et al., 2019; T. Gao et al., 2022; Reimers & Gurevych, 2019). Ilustrasi kedua pendekatan tersebut disajikan pada [Gambar II.7.](#page-6-0)
-
-Gambar II.7. Perbandingan Arsitektur Cross-Encoder dan Bi-Encoder
-
-Dalam penelitian ini, komponen NLU diimplementasikan melalui pendekatan berbasis bi-encoder untuk menghasilkan representasi vektor (embedding) dari teks yang lebih lanjut dijelaskan pada subbab [II.1.7.1.](#page-6-1) Representasi ini kemudian digunakan untuk mengukur hubungan semantik antar teks secara kuantitatif. Kesamaan semantik antara dua teks diukur menggunakan cosine similarity yang dijelaskan lebih lanjut pada subbab [II.1.7.2](#page-8-0). Pendekatan ini memungkinkan sistem membandingkan makna narasi feedback mahasiswa dengan deskripsi kriteria secara matematis terlepas dari perbedaan kata yang digunakan, dan hasilnya digunakan sebagai dasar dalam mekanisme pengambilan keputusan berbasis semantik dalam sistem.
-
-**II.1.7.1 Vector Embedding Sebagai Representasi**
-
-Fondasi komputasional dari pemahaman semantik teks adalah representasi teks sebagai vektor dalam ruang berdimensi. Secara formal, diberikan suatu teks sebuah fungsi representasi memetakan teks tersebut ke dalam ruang vektor berdimensi , dipetakan pada rumus [II.1](#page-6-2).
-
-$$f_w(x) \to \mathbb{R}^d$$
- (II.1)
-
-Prinsip dasar dari pendekatan ini berakar pada distributional hypothesis bahwa kata-kata atau ekspresi yang muncul dalam konteks serupa cenderung memiliki makna yang berdekatan (Harris, 1954). [Gambar II.8](#page-7-0) merepresentasikan bagaimana teks feedback dalam penelitian ini disimpan ke dalam representasi vektor menggunakan model embedding, narasi "Iklan yang dikumpulkan amir dikumpulkan dari platform yang beragam" dilakukan transformasi menjadi nilai matematis berupa koordinat dalam ruang vektor.
-
-Gambar II.8. Rerpesentasi Ruang Vektor
-
-Transformasi ini mengubah data teks yang bersifat simbolik menjadi data numerik. Tanpa representasi vektor, sistem tidak dapat melakukan operasi matematika untuk mengukur semantic similarity. Dengan representasi ini, narasi "Sangat baik" dan "Luar biasa" akan memiliki posisi koordinat yang berdekatan dalam ruang vektor.
-
-Sebagai contoh, jika terdapat narasi ="Rekan saya berhasil mengumpulkan 30 data iklan", maka fungsi akan melakukan transformasi teks menjadi sebuah koordinat vektor seperti [0.12, −0.45, … ,0.89] dengan panjang dimensi = 1024 tergantung pada arsitektur model yang digunakan.
-
-Representasi vektor memiliki properti yang tidak dimiliki representasi simbolik di mana ia memungkinkan pengukuran gradasi kemiripan antar konsep. Dalam penelitian ini, fungsi representasi diimplementasikan menggunakan model pretrained yang parameternya tidak dimodifikasi selama pipeline beroperasi. Konsekuensinya, kualitas representasi semantik yang dihasilkan termasuk sejauh mana vektor narasi mahasiswa dapat dibandingkan secara bermakna dengan vektor deskripsi rubrik sepenuhnya bergantung pada geometri ruang yang telah dikodekan model selama pre-training. Pilihan model pre-trained yang tepat menjadi keputusan desain kritis dalam penelitian ini dan dibahas lebih lanjut pada Bab IV.
-
-**II.1.7.2 Cosine Similiarity untuk Eksploitasi Ruang Vektor**
-
-Cosine similarity mengukur sudut antara dua vektor tanpa bergantung pada magnitudonya (C. D. Manning et al., 2009). Formula cosine similarity disajikan pada Rumus [II.2.](#page-8-1)
-
-$$sim(v_i, v_j) = \frac{f_w(v_i) \cdot f_w(v_j)}{||f_w(v_i)|| \cdot ||f_w(v_j)||}$$
-(II.2)
-
-Di mana merupakan fungsi embedding yang didefinisikan pada subbab [II.1.7.1](#page-6-1). Nilai akhir similarity berada dalam rentang [-1,1], Invarians terhadap magnitude menjadikannya lebih robust untuk teks dengan panjang berbeda dibandingkan dengan Euclidean distance karena komponen yang diukur adalah arah/orientasi maknanya dalam ruang vektor (C. D. Manning et al., 2009). Cosine similarity mengeksploitasi properti ruang vektor yang sudah terstruktur secara semantik (Weinberger & Saul, 2009).
-
-Contoh penggunaan rumus disajikan pada [Gambar II.9](#page-8-2), dua teks dalam ruang vektor dapat dikomputasi menggunakan cosine similarity untuk mengukur derajat sudut yang menentukan persentase similarity terhadap teks tersebut.
-
-Gambar II.9. Cosine Similarity dalam Ruang Vektor
-
-Dalam penelitian ini, cosine similarity digunakan sebagai alat ukur objektif untuk menentukan apakah sebuah feedback telah mencakup aspek yang diminta oleh rubrik. Sebagai contoh, terdapat dua vektor hasil embedding, yaitu vektor narasi mahasiswa (+,+) dan vektor deskripsi rubrik (-, ), jika hasil perhitungan rumus [II.2](#page-8-1) mendekati nilai 1, misalnya 0,92, maka kedua teks tersebut dianggap memiliki semantic similarity yang sangat tinggi. Sebaliknya, jika mendekati 0, misalnya 0,15, maka narasi mahasiswa dianggap tidak berkaitan dengan kriteria rubrik tersebut.
-
-**II.1.7.3 Landasan Komputasional**
-
-Komponen embedding dan cosine similiarity yang telah dijabarkan pada subbab [II.1.7.1](#page-6-1) dan [II.1.7.2](#page-8-0) menghasilkan sinyal numerik berupa nilai similiarity antar dua unit teks. Subbab ini menjelaskan bagaimana sinyal tersebut berfungsi sebagai basis inferensi yaitu bagaimana nilai kontinu yang dihasilkan ruang vektor dapat di transformasikan menjadi sebuah keputusan.
-
-Nilai similiarity yang dihasilkan merupakan ukuran angular closeness atau sudut orientasi dalam ruang representasi vektor untuk memprediksi kemiripan. Transformasi dari kedekatan ini menjadi keputusan yang dapat ditindaklanjuti memerlukan tambahan yang dibangun di atas lapisan embedding. Alur transformasi dinyatakan pada
-
-$$x \to v_x \to sim(v_x, v_{f_i}) \to \mathcal{D}$$
- (II.3)
-
-Dengan contoh penggunaan,
-
-1. : Mahasiswa menulis narasi "Data diambil dari LinkedIn".
-2. , : Teks diubah menjadi vektor [0.11,0.54, … ].
-3. / , #& : Vektor dibandingkan dengan vektor kriteria rubrik (#& ) "Keragaman Platform", menghasilkan similarity score 0,87.
-4. .: Karena skor 0,87 ≥ threshold (misalnya 0,84), maka sistem mengambil keputusan (.) bahwa kriteria tersebut terpenuhi.
-
-Di mana teks dipetakan menjadi representasi vektor ,, dibandingkan dalam ruang yang sama pada vektor #& , dan menghasilkan suatu keputusan (.) yang bergantung pada mekanisme yang akan dibangun diatasnya sehingga dapat dikatakan bahwa komponen embedding hanya bertugas menghasilkan sinyal dan interpretasi atas sinyal merupakan tanggung jawab lapisan sistem yang lebih tinggi.
-
-Rumus ini merepresentasikan pipeline evaluasi semantik dalam sistem, yaitu mencakup indikator cakupan rubrik, koherensi skor-narasi, dan relevansi topik. Indikator kedalaman elaborasi tidak melalui transformasi ruang vektor ini karena dievaluasi secara independen menggunakan aturan heuristik berbasis jumlah kata. Kegunaannya adalah untuk menunjukkan bahwa komponen embedding hanya bertugas menghasilkan sinyal, sementara keputusan akhir (.) untuk memicu atau tidak memicu scaffolding merupakan tanggung jawab lapisan logika sistem yang membandingkan sinyal tersebut dengan threshold tertentu. Alur komputasi komponen dalam penelitian ini disajikan pada [Gambar II.10.](#page-10-0)
-
-Gambar II.10. Representasi Pipeline Penelitian
-
-Properti ini menilai kualitas inferensi yang dihasilkan dibatasi oleh kualitas representasi yang dihasilkan model, sehingga diperlukan pemilihan model embedding yang akan dikalibrasi pada data aktual sebagaimana dijabarkan pada Tabel IV.15. Selain itu pendekatan ini memiliki batasan interpretabilitas. Representasi vektor yang dihasilkan bersifat laten dan tidak memiliki padanan linguistik eksplisit pada tingkat token atau frasa (Senel et al., 2018) . Keterbatasan ini diterima sebagai konsekuensi yang dapat dikelola selama sinyal yang dihasilkan menunjukkan keselarasan yang memadai dengan penilaian manusia pada data anotasi yang dievaluasi melalui F1 score pada subbab [II.1.7.4.](#page-11-0)
-
-**II.1.7.4 Metrik Evaluasi Kinerja Model dan Kalibrasi Threshold**
-
-Dalam klasifikasi teks pada NLP, terutama pada dataset yang memiliki class imbalance, penggunaan F1-Score menjadi metrik utama untuk mengevaluasi kinerja model. F1-Score merupakan harmonic mean dari precission dan recall menggunakan [II.4](#page-11-1) (Riyanto et al., 2023) yang diilustrasikan pada [Gambar II.11](#page-12-0). Precision mengukur ketepatan model dalam memprediksi kelas positif dari keseluruhan hasil yang diprediksi positif oleh sistem, sedangkan Recall mengukur banyaknya kelas positif yang dideteksi dengan benar, dibandingkan dengan total data positif yang sebenarnya.
-
-$$F1 Score = \frac{2 \times Precission \times Recall}{Precission + Recall}$$
- (II.4)
-
-Dimana precission merupakan ukuran untuk mengukur akurasi prediksi yang benar menggunakan rumus [II.5.](#page-11-2)
-
-$$Precission = \frac{TP}{TP + FP} \tag{II.5}$$
-
-Sementara recall mengukur kemampuan untuk menemukan semua kemungkinan prediksi yang benar menggunakan rumus [II.6](#page-11-3).
-
-$$Recall = \frac{TP}{TP + FN} \tag{II.6}$$
-
-Dengan,
-
-1. 7 atau true positive merupakan jumlah label "TRUE" yang diidentifikasi dengan benar.
-2. 7 atau false positive adalah jumlah label "FALSE", namun diidentifikasi sebagai "TRUE".
-3. = atau false negative adalah jumlah label "TRUE", namun diidentifikasi sebagai "FALSE".
-
-Gambar II.11. Balancing Preccision dan Recall untuk F1-Score
-
-Dalam skenario multi-label classification berbasis pasangan narasi dan kriteria pada penelitian ini, evaluasi F1-Score dilakukan menggunakan kerangka microaveraging, di mana setiap pasangan diperlakukan secara setara tanpa diberikan bobot berbeda (Sokolova & Lapalme, 2009). Pendekatan ini dipilih karena distribusi pasangan antar aspek rubrik tidak seimbang, sehingga aspek rubrik dengan kriteria yang lebih banyak akan menghasilkan pasangan kriteria evaluasi yang lebih banyak.
-
-Lebih lanjut, dalam arsitektur digital scaffolding, F1-Score merupakan nilai acuan utama yang digunakan untuk melakukan kalibrasi threshold. Karena nilai cosine similarity yang dihasilkan oleh representasi vector embedding berupa nilai kontinu, sistem memerlukan mekanisme untuk menetapkan batas diskrit yang menentukan apakah suatu feedback memerlukan intervensi prompt atau tidak. Melalui pendekatan eksperimen optimasi seperti metode F1 sweep, untuk mencari threshold optimal yang memaksimalkan nilai F1-Score pada data anotasi (X. Gao et al., 2025).
+*Uraian teknis arsitektur Transformer, formulasi matematis embedding, dan prosedur kalibrasi threshold disajikan selengkapnya pada Lampiran 1.*
 
 **II.1.8 Rule Based**
 
@@ -1065,11 +943,11 @@ Penelitian ini menerapkan metode kuantitatif berskala pilot study dengan desain 
 
 Pemilihan Desain 6 didasarkan pada tujuan penelitian untuk mengevaluasi penggunaan digital scaffolding dalam kondisi pembelajaran yang mendekati praktik penggunaan aktual. Dalam konteks implementasi nyata, mahasiswa tidak menjalani pengukuran awal sebelum menggunakan digital scaffolding. Oleh karena itu, desain posttest-only dipilih agar proses penulisan narasi feedback dan penggunaan bantuan digital scaffolding dapat berlangsung secara alami tanpa intervensi tambahan berupa pre-test.
 
-Penggunaan desain posttest-only berbasis random assignment juga bertujuan menghindari testing effect atau bias yang muncul akibat interaksi partisipan dengan instrumen pre-test sebelum perlakuan diberikan (Campbell et al., 1963). Tanpa adanya pre-test, potensi partisipan mengalami efek jenuh maupun pengaruh pengukuran awal yang dapat mengubah cara mereka menyusun narasi feedback  sebelum menerima bantuan digital scaffolding dapat diminimalkan..
+Penggunaan desain posttest-only berbasis random assignment juga bertujuan menghindari testing effect atau bias yang muncul akibat interaksi partisipan dengan instrumen pre-test sebelum perlakuan diberikan (Campbell et al., 1963). Tanpa adanya pre-test, potensi partisipan mengalami efek jenuh maupun pengaruh pengukuran awal yang dapat mengubah cara mereka menyusun narasi feedback sebelum menerima bantuan digital scaffolding dapat diminimalkan.
 
 Secara metodologis, Shadish et al. (2002) menegaskan bahwa random assigment merupakan instrumen paling kuat untuk menjamin kesetaraan karakteristik antar kelompok sebelum manipulasi dilakukan. Oleh karena itu, setiap perbedaan signifikan yang ditemukan pada post-test lebih mungkin dapat diatribusikan sebagai efek dari intervensi karena pengaruh perbedaan karakteristik awal antar kelompok telah diminimalkan antar kelompok melalui random assignment.
 
-Selain itu kontrol terhadap confounding variables diperkuat dengan memastikan kedua kelompok berada dalam ekosistem akademik yang identik, meliputi mata kuliah, periode pengerjaan tugas, dan instrumen rubrik yang seragam. [Gambar II.23](#page-2-0) menyajikan desain eksperimen post-test only dalam penelitian ini. Perbedaan utama hanyalah terdapat keberadaan bantuan digital scaffolding yang diberikan kepada kelompok treatment.
+Selain itu kontrol terhadap confounding variables diperkuat dengan memastikan kedua kelompok berada dalam ekosistem akademik yang identik, meliputi mata kuliah, periode pengerjaan tugas, dan instrumen rubrik yang seragam. Gambar II.23 menyajikan desain eksperimen post-test only dalam penelitian ini. Perbedaan utama hanyalah terdapat keberadaan bantuan digital scaffolding yang diberikan kepada kelompok treatment.
 
 Gambar II.23. Ilustrasi Eksperimen Post-Test Only
 
@@ -1105,7 +983,7 @@ Penelitian yang dilaksanakan menggunakan metode kuantitatif dengan desain postte
 
 Pendekatan kuantitatif eksperimental dengan desain post-test-only beserta kelompok kontrol dan treatment dipilih sebagaimana telah dijustifikasi pada subbab [II.1.14](#page-0-0).
 
-Untuk merepresentasikan esensi penelitian secara matematis dan mendefinisikan batasan dari artefak yang diusulkan, sistem digital scaffolding dirancang secara hybrid, komponen NLP yang telah dijelaskan pada subbab II.1.7 bertugas mengukur kualitas semantik teks narasi secara komputasional, sedangkan komponen rule-based yang telah didefinisikan pada subbab II.1.8 menentukan apakah kualitas tersebut melewati threshold atau memerlukan intervensi. Tiga komponen utama dalam arsitektur ini adalah sebagai berikut:
+Untuk merepresentasikan esensi penelitian secara matematis dan mendefinisikan batasan dari artefak yang diusulkan, sistem digital scaffolding dirancang secara hybrid, komponen NLP yang telah dijelaskan pada Lampiran 1 bertugas mengukur kualitas semantik teks narasi secara komputasional, sedangkan komponen rule-based yang telah didefinisikan pada subbab II.1.8 menentukan apakah kualitas tersebut melewati threshold atau memerlukan intervensi. Tiga komponen utama dalam arsitektur ini adalah sebagai berikut:
 
 1. Rubrik (ℛ): Kumpulan kriteria evaluasi yang tidak dapat diubah dan telah ditetapkan sebelumnya oleh institusi, didefinisikan sebagai ℛ = ?2@, 2A, … , 2<sup>B</sup> C.
 2. Pertanyaan kuantitatif dan kualitatif feedback (D): Instruksi yang dihasilkan dari rubrik, didefinisikan sebagai fungsi dari rubrik: D = ℛ .
@@ -1229,9 +1107,9 @@ Penggunaan dataset dari Jurusan Teknik Komputer dan Informatika Politeknik Neger
 
 **III.3.1 Data Pengembangan dan Validasi Pipeline Scaffolding**
 
-Data pengembangan dan validasi pipeline berasal dari data historis yang telah dikumpulkan dalam mata kuliah yang menerapkan PjBL di Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung pada tahun akademik 2025/2026. Data ini terdiri dari dua bagian, yaitu (1) data feedback yang didefinisikan pada subbab [III.3.1.1](#page-1-0) dan (2) data rubrik pada subbab [III.3.1.2](#page-3-0). Rubrik yang digunakan pada data ini telah didefinisikan pada Tabel II.1.
+Data pengembangan dan validasi pipeline berasal dari data historis yang telah dikumpulkan dalam mata kuliah yang menerapkan PjBL di Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung pada tahun akademik 2025/2026. Data ini terdiri dari dua bagian, yaitu (1) data feedback yang didefinisikan pada subbab III.3.1.1 dan (2) data rubrik pada subbab III.3.1.2. Rubrik yang digunakan pada data ini telah didefinisikan pada Tabel II.1.
 
-Dalam konteks text classification pada machine learning, setiap instance data direpresentasikan sebagai satu objek analisis yang memiliki fitur dan label target (C. D. Manning et al., 2009). Dalam penelitian ini, satu objek analisis adalah satu pasangan narasi feedback dengan kriteria rubrik. Fitur dari objek ini adalah representasi semantik teks dalam ruang vektor yang dihasilkan oleh model sentence embedding yang telah dijelaskan pada subbab II.1.7.1. Label yang diprediksikan adalah keputusan biner TRUE/FALSE yang menyatakan apakah narasi tersebut diindikasikan membahas aspek rubrik. Skema ini mengikuti paradigma multi-label binary classification di mana satu objek dapat memiliki lebih dari satu label (Tsoumakas & Katakis, 2009) yang telah dijelaskan pada subbab II.1.6, mengingat satu narasi feedback dapat memenuhi atau tidak memenuhi beberapa kriteria feedback literacy secara simultan dan independen satu sama lain.
+Dalam konteks text classification pada machine learning, setiap instance data direpresentasikan sebagai satu objek analisis yang memiliki fitur dan label target (C. D. Manning et al., 2009). Dalam penelitian ini, satu objek analisis adalah satu pasangan narasi feedback dengan kriteria rubrik. Fitur dari objek ini adalah representasi semantik teks dalam ruang vektor yang dihasilkan oleh model sentence embedding yang telah dijelaskan pada Lampiran 1. Label yang diprediksikan adalah keputusan biner TRUE/FALSE yang menyatakan apakah narasi tersebut diindikasikan membahas aspek rubrik. Skema ini mengikuti paradigma multi-label binary classification di mana satu objek dapat memiliki lebih dari satu label (Tsoumakas & Katakis, 2009) yang telah dijelaskan pada subbab II.1.6, mengingat satu narasi feedback dapat memenuhi atau tidak memenuhi beberapa kriteria feedback literacy secara simultan dan independen satu sama lain.
 
 **III.3.1.1 Data Narasi Feedback**
 
@@ -1246,83 +1124,24 @@ Parameter yang digunakan dalam formula dipertimbangkan untuk hal berikut confide
 
 Perhitungan komputasional menggunakan parameter tersebut menghasilkan nilai estimasi 8<sup>Ñ</sup> = 384,16. Sesuai dengan konversi standar dalam statistik terapan, jumlah sampel final yang ditarik untuk anotasi ditetapkan sebanyak 8 = 384 narasi. Jumlah ini merupakan batas kecukupan statistik untuk mencapai margin of error 5%, sehingga menjamin reliabilitas estimasi distribusi tanpa bergantung pada asumsi varians awal. Untuk memastikan seluruh karakteristik data terwakili secara proporsional, penarikan sampel dilakukan secara acak dari total populasi historis.
 
-Data ini digunakan mengevaluasi arsitektur pipeline pada tahap pengembangan, dengan memuat komponen penilaian kuantitatif dan kualitatif mahasiswa. [Tabel](#page-2-0)  [III.4](#page-2-0) dan [Tabel III.5](#page-2-1) menyajikan struktur data self dan peer assessent yang digunakan pada penelitian ini.
+Data ini digunakan mengevaluasi arsitektur pipeline pada tahap pengembangan, dengan memuat komponen penilaian kuantitatif dan kualitatif mahasiswa. Struktur data self dan peer assessment yang digunakan disajikan selengkapnya pada Lampiran 3.
 
-Tabel III.4. Struktur Data Peer Assessment
 
-Atribut  |  Deskripsi  |  Tipe data
-class_id  |  Kelas dari mahasiswa penulis feedback. Contoh: 1A  |  String
-assesor_id  |  Nomor induk mahasiswa penulis feedback. Contoh: 221524003  |  String
-group_id  |  Kelompok mahasiswa dalam PjBL. Contoh: 1  |  Integer
-No. urut rekan tim yang akan dinilai  |  Nomor urut siswa penerima feedback pada kelompok PjBL. Contoh: 1  |  Integer
-assessee_id  |  Nomor induk mahasiswa penerima feedback. Contoh: 221524021  |  String
-timepoint  |  Waktu pengambilan feedback. Berisi mid/end. Contoh: mid  |  String
-indicator  |  Pertanyaan kuantitatif pada feedback. Contoh: Seberapa baik rekan Anda dalam mengumpulkan iklan lowongan kerja dari platform yang ditugaskan? (Nilai dari skala 1-5)  |  String
-question  |  Pertanyaan kualitatif pada feedback. Contoh: Mengapa? (Berikan contoh spesifik kontribusi rekan Anda dalam pengumpulan data. Apakah rekan Anda menghadapi kesulitan dalam mengumpulkan iklan)  |  String
-peer_score  |  Skor kuantitatif yang diberikan penulis feedback. Contoh: 5  |  Integer
-peer_comment  |  Narasi kualitatif yang diberikan penulis feedback. Contoh: Siswa sangat baik dalam mengumpulkan iklan baik di platform seperti linkedin dan instagram  |  String
-
-Tabel III.5. Struktur Data Self Assessment
-
-Atribut  |  Deskripsi  |  Tipe data
-class_id  |  Kelas dari mahasiswa penulis feedback. Contoh: 1A  |  String
-student_id  |  Nomor induk mahasiswa penulis feedback. Contoh: 221524003  |  String
-group_id  |  Kelompok mahasiswa dalam PjBL. Contoh: 1  |  Integer
-timepoint  |  Waktu pengambilan feedback. Berisi mid/end. Contoh: mid  |  String
-indicator  |  Pertanyaan kuantitatif pada feedback.  |  String
-
-Atribut  |  Deskripsi  |  Tipe data
-Contoh: Seberapa baik rekan Anda dalam mengumpulkan iklan lowongan kerja dari platform yang ditugaskan? (Nilai dari skala 1-5)
-question  |  Pertanyaan kualitatif pada feedback. Contoh: Mengapa? (Berikan contoh spesifik kontribusi rekan Anda dalam pengumpulan data. Apakah rekan Anda menghadapi kesulitan dalam mengumpulkan iklan)  |  String
-self_score  |  Skor kuantitatif yang diberikan penulis feedback. Contoh: 5  |  Integer
-self_comment  |  Narasi kualitatif yang diberikan penulis feedback. Contoh: Siswa sangat baik dalam mengumpulkan iklan baik di platform seperti linkedin dan instagram  |  String
-
-Data dikumpulkan secara resmi oleh pihak pengajar PjBL melalui google form sebagai instrumen self dan peer assessment yang telah digunakan sebagai komponen pembelajaran.
+Sebagaimana disajikan pada **Lampiran 3**, data peer assessment memiliki atribut class_id, assesor_id, group_id, assessee_id, timepoint, indicator, question, peer_score, dan peer_comment. Data self assessment menggunakan struktur serupa dengan atribut self_score menggantikan peer_score. Data rubrik memuat aspek penilaian, kriteria, pertanyaan kuantitatif dan kualitatif, serta deskriptor untuk setiap skala penilaian.
 
 **III.3.1.2 Data Rubrik**
 
-Bagian kedua dari data pengembangan adalah data rubrik. Data ini mencakup aspek penilaian, kriteria, serta hubungan dengan skor yang digunakan sebagai dasar pertanyaan kuantitatif dan kualitatif pada feedback dengan struktur data yang disajikan pada [Tabel III.6](#page-3-1).
+Bagian kedua dari data pengembangan adalah data rubrik. Data ini mencakup aspek penilaian, kriteria, serta hubungan dengan skor yang digunakan sebagai dasar pertanyaan kuantitatif dan kualitatif pada instrumen *assessment*. Detail struktur data rubrik yang digunakan disajikan secara lengkap pada Lampiran 3.
 
-Tabel III.6. Struktur Data Rubrik
+*Spesifikasi lengkap struktur data disajikan pada Lampiran 3.*
 
-Atribut  |  Deskripsi  |  Tipe data
-Aspek  |  Aspek spesifik dari kriteria penilaian.  |  String
-Contoh: Pengumpulan Iklan Lowongan Kerja
-Kriteria  |  Deskripsi kriteria yang dinilai.  |  String
-Contoh: Banyaknya iklan dan keragaman platform
-yang digunakan.
-Pertanyaan Kuantitatif  |  Pertanyaan kuantitatif pada feedback.  |  String
-Contoh: Seberapa baik rekan Anda dalam
-mengumpulkan iklan lowongan kerja dari platform
-yang ditugaskan? (Nilai dari skala 1-5)
-Pertanyaan Kualitatif  |  Pertanyaan kualitatif pada feedback.  |  String
-Contoh: Mengapa? (Berikan contoh spesifik
-kontribusi rekan Anda dalam pengumpulan data.
-Apakah rekan Anda menghadapi kesulitan dalam
-mengumpulkan iklan)
-Skala 1 (Sangat Kurang)  |  Deskripsi kriteria untuk feedback dengan skor  |  String
-bernilai 1.
-Contoh: Mengumpulkan sedikit iklan.
-
-Atribut  |  Deskripsi  |  Tipe data
-Skala 3 (Cukup)  |  Deskripsi kriteria untuk feedback dengan skor  |  String
-bernilai 3.
-Contoh: Mengumpulkan cukup iklan.
-Skala 5 (Sangat Baik)  |  Deskripsi kriteria untuk feedback dengan skor  |  String
-bernilai 5.
-Contoh: Mengumpulkan banyak dan relevan dari
-platform yang bervariasi.
-
-Penelitian ini menggunakan rubrik pada Tabel II.1 sebagai dasar evaluasi sistem digital scaffolding pada tahap pengembangan, dengan tambahan tahap feature extraction yang dijelaskan pada subbab II.1.9.1 sebagai dekomposisi dari rubrik tersebut. Implementasi feature extraction didasarkan pada beberapa pertimbangan berikut.
-
-1. Memastikan setiap eksekusi pipeline menghasilkan output yang konsisten untuk input yang sama sebagai upaya reproducibility
-2. Literatur educational data mining Romero & Ventura (2020) menegaskan bahwa preprocessing dan penataan data pendidikan sering kali menjadi kontribusi penelitian yang berdiri sendiri, mengingat kompleksitas spesifik domain, seperti struktur hierarkis dan longitudinal, dalam konteks pendidikan.
+Data dikumpulkan secara resmi oleh pihak pengajar PjBL melalui google form sebagai instrumen self dan peer assessment yang telah digunakan sebagai komponen pembelajaran.
 
 **III.3.2 Data Evaluasi Scaffolding**
 
 Data evaluasi adalah data primer yang dikumpulkan dari subjek penelitian dengan menggunakan sistem digital scaffolding, didefinisikan pada subbab [III.3.2.1](#page-5-0) dan menghasilkan data interaksi sebagai ekstensi, sebagaimana didefinisikan pada subbab [III.3.2.2](#page-5-1).
 
-Data evaluasi dikumpulkan menggunakan metode post-test only, yaitu data dikumpulkan hanya pada satu sesi yang sama. Detail desain eksperimen telah dijabarkan pada subbab II.1.14. Data tersebut didapatkan dari dua kelompok eksperimen, yaitu (1) kelompok treatment yang mengisi feedback dengan scaffolding aktif, dan (2) kelompok kontrol yang mengisi feedback tanpa scaffolding. Secara operasional, kelompok treatment menerima bantuan scaffolding secara real-time selama proses penulisan narasi feedback berlangsung, sedangkan kelompok kontrol menyelesaikan penulisan tanpa intervensi scaffolding apapun. Setelah seluruh jawaban tersebut dianalisis menggunakan pipeline digital scaffolding yang sama untuk menghasilkan skor pemenuhan keempat indikator tekstual narasi feedback. Hasil analisis inilah yang digunakan sebagai data perbandingan antara kelompok kontrol dan treatment. Gambar II.4 menyajikan ilustrasi pemetaan intervensi digital scaffolding pada kedua kelompok subjek eksperimen.
+Data evaluasi dikumpulkan menggunakan metode post-test only, yaitu data dikumpulkan hanya pada satu sesi yang sama. Detail desain eksperimen telah dijabarkan pada Lampiran 2. Data tersebut didapatkan dari dua kelompok eksperimen, yaitu (1) kelompok treatment yang mengisi feedback dengan scaffolding aktif, dan (2) kelompok kontrol yang mengisi feedback tanpa scaffolding. Secara operasional, kelompok treatment menerima bantuan scaffolding secara real-time selama proses penulisan narasi feedback berlangsung, sedangkan kelompok kontrol menyelesaikan penulisan tanpa intervensi scaffolding apapun. Setelah seluruh jawaban tersebut dianalisis menggunakan pipeline digital scaffolding yang sama untuk menghasilkan skor pemenuhan keempat indikator tekstual narasi feedback. Hasil analisis inilah yang digunakan sebagai data perbandingan antara kelompok kontrol dan treatment. Gambar II.4 menyajikan ilustrasi pemetaan intervensi digital scaffolding pada kedua kelompok subjek eksperimen.
 
 Gambar III.4. Pemetaan Scaffolding pada Kelompok Eksperimen
 
@@ -1425,7 +1244,7 @@ Tahapan ini bertujuan untuk memodelkan konfigurasi model NLP yang digunakan untu
 
 **III.6.3.1 Anotasi Dataset**
 
-Tahap ini bertujuan untuk menghasilkan ground truth yang menjadi dasar objektif bagi seluruh evaluasi pipeline. Pipeline NLP yang dirancang menggunakan pendekatan komputasional yang telah didefinisikan pada subbab II.1.7.3, bahwa tidak ada model yang dilakukan training. Namun, evaluasi performa pipeline tetap memerlukan ground truth dari dataset yang telah dianotasi untuk mengukur seberapa akurat sistem mendeteksi indikator cakupan rubrik, koherensi skor-narasi, dan relevansi topik. Anotasi juga diperlukan untuk kalibrasi threshold untuk menentukan nilai cosine similarity yang mengindikasikan bahwa sebuah narasi memenuhi atau tidak memenuhi indikator tersebut (KLF,). Sementara itu, indikator kedalaman elaborasi diimplementasi secara langsung menggunakan threshold heuristik jumlah kata, sehingga tidak membutuhkan anotasi. [Gambar III.8](#page-13-1) menyajikan pemetaan dataset tersebut untuk menghasilkan threshold komputasi indikator (KLF,).
+Tahap ini bertujuan untuk menghasilkan ground truth yang menjadi dasar objektif bagi seluruh evaluasi pipeline. Pipeline NLP yang dirancang menggunakan pendekatan komputasional yang telah didefinisikan pada Lampiran 1, bahwa tidak ada model yang dilakukan training. Namun, evaluasi performa pipeline tetap memerlukan ground truth dari dataset yang telah dianotasi untuk mengukur seberapa akurat sistem mendeteksi indikator cakupan rubrik, koherensi skor-narasi, dan relevansi topik. Anotasi juga diperlukan untuk kalibrasi threshold untuk menentukan nilai cosine similarity yang mengindikasikan bahwa sebuah narasi memenuhi atau tidak memenuhi indikator tersebut (KLF,). Sementara itu, indikator kedalaman elaborasi diimplementasi secara langsung menggunakan threshold heuristik jumlah kata, sehingga tidak membutuhkan anotasi. [Gambar III.8](#page-13-1) menyajikan pemetaan dataset tersebut untuk menghasilkan threshold komputasi indikator (KLF,).
 
 Gambar III.8. Pemetaan Dataset untuk Evaluasi
 
@@ -1621,7 +1440,7 @@ Gambar III.16. Alur Validasi Dataset
 
 **III.6.3.2 Evaluasi dan Kalibrasi Model NLP**
 
-Tahap ini merancang dan menguji pipeline NLP untuk mendeteksi setiap indikator secara matematis, dengan alur pemetaan yang disajikan pada [Gambar III.17](#page-12-0). Pipeline yang dirancang menggunakan representasi vektor dari model pre-trained berbasis arsitektur Transformer yang telah dijelaskan pada subbab II.1.7. Representasi ini sepenuhnya bergantung pada model yang dipilih, di mana model yang dilatih pada korpus multilingual akan menghasilkan representasi yang berbeda secara fundamental dibandingkan model multilingual atau bahasa Indonesia. Demikian pula, threshold (KLF,) harus dikalibrasi secara empiris terhadap data ground truth.
+Tahap ini merancang dan menguji pipeline NLP untuk mendeteksi setiap indikator secara matematis, dengan alur pemetaan yang disajikan pada [Gambar III.17](#page-12-0). Pipeline yang dirancang menggunakan representasi vektor dari model pre-trained berbasis arsitektur Transformer yang telah dijelaskan pada Lampiran 1. Representasi ini sepenuhnya bergantung pada model yang dipilih, di mana model yang dilatih pada korpus multilingual akan menghasilkan representasi yang berbeda secara fundamental dibandingkan model multilingual atau bahasa Indonesia. Demikian pula, threshold (KLF,) harus dikalibrasi secara empiris terhadap data ground truth.
 
 Gambar III.17. Pemetaan Eksperimen dan Kalibrasi Model
 
@@ -1696,7 +1515,7 @@ Subbab ini membahas aktivitas persiapan lingkungan eksperimen, termasuk subjek e
 Subjek eksperimen adalah mahasiswa JTK POLBAN yang sedang menjalani mata kuliah PjBL pada semester pelaksanaan penelitian. Penentuan subjek mengikuti prosedur yang digambarkan pada [Gambar III.19](#page-6-0), dengan rincian:
 
 1. Kriteria Inklusi, yaitu mahasiswa aktif yang terdaftar dalam satu mata kuliah yang menerapkan PjBL dan bersedia berpartisipasi secara sukarela tanpa konsekuensi nilai akademik.
-2. Random Assignment. Mahasiswa yang memenuhi kriteria didaftarkan ke dalam kelompok treatment dan kontrol, sebagaimana didefinisikan pada subbab II.1.14. Penentuan kelompok dilakukan secara acak menggunakan random assignment pada level individu untuk menghindari clustering effect. Proses random assignment dilakukan dengan menghasilkan nilai acak untuk setiap partisipan menggunakan fungsi randomisasi pada aplikasi Spreadsheet, sehingga setiap subjek memiliki probabilitas yang asma untuk masuk ke dalam kelompok treatment atau kontrol. Partisipan dialokasikan secara proporsional ke dalam kelompok treatment dan kontrol sehingga jumlah partisipan pada kedua kelompok tetap seimbang.
+2. Random Assignment. Mahasiswa yang memenuhi kriteria didaftarkan ke dalam kelompok treatment dan kontrol, sebagaimana didefinisikan pada Lampiran 2. Penentuan kelompok dilakukan secara acak menggunakan random assignment pada level individu untuk menghindari clustering effect. Proses random assignment dilakukan dengan menghasilkan nilai acak untuk setiap partisipan menggunakan fungsi randomisasi pada aplikasi Spreadsheet, sehingga setiap subjek memiliki probabilitas yang asma untuk masuk ke dalam kelompok treatment atau kontrol. Partisipan dialokasikan secara proporsional ke dalam kelompok treatment dan kontrol sehingga jumlah partisipan pada kedua kelompok tetap seimbang.
 3. Ukuran Sampel. Eksperimen ini diposisikan sebagai pilot study dengan target minimal n ≈ 10 per kelompok. Ukuran ini belum memenuhi syarat untuk analisis konfirmatif, namun cukup untuk menghasilkan estimasi effect size awal yang dapat digunakan sebagai masukan dalam perencanaan penelitian. Hal ini didukung oleh Hertzog (2008) yang menyatakan bahwa sampel 10 hingga 20 partisipan per kelompok sudah memadai untuk mengevaluasi parameter feasibility dan mengestimasi varian awal. Selain itu, Julious (2005)
 
 merekomendasikan 12 subjek per kelompok sebagai rule of thumb untuk pilot study. Menyadari keterbatasan populasi dan risiko statictical power yang rendah, hasil ekspermen diposisikan sebagai bukti awal yang berfokus pada effect size serta pola temuan yang muncul dibandingkan dipandang sebagai pengujian konfirmatif.
@@ -2130,7 +1949,7 @@ Sebagai manifestasi hasil dari pre-processing, sebagaimana didefinisikan pada su
 
 **IV.2.1.1 Hasil Feature Set Cakupan dan Relevansi Topik**
 
-Berdasarkan proses yang didefinisikan pada subbab III.6.3.1C, dekomposisi akhir yang diperoleh disajikan pada [Tabel IV.9.](#page-10-2) Feature set ini memiliki total 26 unit yang digunakan sebagai komponen utama indikator cakupan rubrik (@) dan relevansi topik (J) dalam melakukan vector embedding dan cosine similarity, sebagaimana dijelaskan dalam subbab II.1.7.1 dan II.1.7.2.
+Berdasarkan proses yang didefinisikan pada subbab III.6.3.1C, dekomposisi akhir yang diperoleh disajikan pada [Tabel IV.9.](#page-10-2) Feature set ini memiliki total 26 unit yang digunakan sebagai komponen utama indikator cakupan rubrik (@) dan relevansi topik (J) dalam melakukan vector embedding dan cosine similarity, sebagaimana dijelaskan dalam Lampiran 1 dan II.1.7.2.
 
 Tabel IV.9 Hasil Akhir Dekomposisi Rubrik untuk Cakupan dan Relevansi
 
@@ -2468,7 +2287,7 @@ Di mana +,+ adalah teks narasi utuh dari feedback, dan setiap Ç adalah kalimat 
 $$sim_{splitmax}(x_1, x_2) = \max_{\{u_m \in U(x_1)\}} sim(x_1, x_2)$$
  (IV.30)
 
-Di mana sim. , . merupakan fungsi cosine similarity yang didefinisikan pada subbab II.1.7.2. @ dan A merupakan pasangan teks yang dikomputasi, dalam penelitian ini, @ merupakan narasi feedback (+,+). Hal ini dilakukan untuk mendukung nilai similarity yang tinggi pada satu kalimat dalam merepresentasikan keseluruhan narasi.
+Di mana sim. , . merupakan fungsi cosine similarity yang didefinisikan pada Lampiran 1. @ dan A merupakan pasangan teks yang dikomputasi, dalam penelitian ini, @ merupakan narasi feedback (+,+). Hal ini dilakukan untuk mendukung nilai similarity yang tinggi pada satu kalimat dalam merepresentasikan keseluruhan narasi.
 
 Pemilihan kalimat sebagai unit segmentasi didasarkan pada prinsip otomisitas semantik, yaitu bahwa kalimat merupakan unit terkecil yang memuat proposisi independen secara gramatikal dan semantik (Quirk et al., 1985).
 
@@ -2476,7 +2295,7 @@ Berbeda dengan pendekatan fixed-size chunking yang memotong teks berdasarkan pan
 
 **IV.3.3.3 Representasi Vektor dan Metrik Semantik**
 
-Subbab ini mendefinisikan formulasi fungsi evaluasi operasional dari keempat indikator tekstual narasi feedback pada Tabel III.3. Seluruh fungsi dirumuskan berdasarkan mekanisme embedding dan cosine similiarity yang telah dijelaskan pada subbab II.1.7.1 hingga II.1.7.2. Fungsi tersebut diimplementasikan sebagai acuan utama dalam evaluasi dan eksperimen model, sebagaimana dijabarkan pada subbab 0.
+Subbab ini mendefinisikan formulasi fungsi evaluasi operasional dari keempat indikator tekstual narasi feedback pada Tabel III.3. Seluruh fungsi dirumuskan berdasarkan mekanisme embedding dan cosine similiarity yang telah dijelaskan pada Lampiran 1 hingga II.1.7.2. Fungsi tersebut diimplementasikan sebagai acuan utama dalam evaluasi dan eksperimen model, sebagaimana dijabarkan pada subbab 0.
 
 Evaluasi dilakukan pada tingkat pasangan narasi feedback (+,+) dengan himpunan feature-set åçé-, serta åçU-, yang telah didefinisikan pada subbab IV.2.1.1 dan IV.2.1.2. Setiap pasangan tersebut diasosiasikan dengan label anotasi TRUE/FALSE yang dihasilkan pada subbab IV.2.3. Evaluasi dilakukan untuk memprediksi nilai label anotasi dalam membangun mekanisme deteksi keempat indikator tekstual pada Tabel III.3.
 
@@ -2491,7 +2310,7 @@ Indikator pertama berfokus untuk mengevaluasi sejauh mana narasi feedback membah
 $$\tilde{y}(s_{txt}, c_{cov,i}) = \begin{cases} 1, & sim_x(s_{txt}, c_{cov,i}) \ge \theta_{sim,1} \\ 0, & sebaliknya \end{cases}$$
 (IV.31)
 
-Di mana KLF,@ adalah threshold cosine similarity indikator cakupan rubrik yang didapatkan melalui evaluasi pada subbab 0. Di sisi lain,. 2èW%, merupakan unit dekomposisi kriteria rubrik yang didefinisikan pada subbab IV.2.1.1. Fungsi ,. , . merujuk pada salah satu dari dua varian fungsi similarity yang dievaluasi, yaitu whole-text cosine similarity (. , . ) atau semantic chunking (LX[+F\,. , . ), sebagaimana didefinisikan pada subbab II.1.7.2 dan [IV.3.3.2](#page-8-0). Pemilihan varian dilakukan berdasarkan hasil eksperimen komparatif pada subbab IV.3.4.2.
+Di mana KLF,@ adalah threshold cosine similarity indikator cakupan rubrik yang didapatkan melalui evaluasi pada subbab 0. Di sisi lain,. 2èW%, merupakan unit dekomposisi kriteria rubrik yang didefinisikan pada subbab IV.2.1.1. Fungsi ,. , . merujuk pada salah satu dari dua varian fungsi similarity yang dievaluasi, yaitu whole-text cosine similarity (. , . ) atau semantic chunking (LX[+F\,. , . ), sebagaimana didefinisikan pada Lampiran 1 dan [IV.3.3.2](#page-8-0). Pemilihan varian dilakukan berdasarkan hasil eksperimen komparatif pada subbab IV.3.4.2.
 
 Selanjutnya, nilai cakupan  $f_1$  dihitung sebagai proporsi kriteria yang terdeteksi. Sebagaimana disajikan pada rumus IV.32.
 
@@ -2600,17 +2419,17 @@ Secara konseptual, fungsi indikator relevansi topik dievaluasi menggunakan rumus
 $$f_4(F) = \begin{cases} 0, & apabila \ \exists c \in K_{other}(K_{i,j}) : sim_x(s_{txt}, c) \ge \theta_{sim,4} \\ 1, & sebaliknya \end{cases}$$
 (IV.41)
 
-Di mana  $\theta_{sim,4}$  adalah threshold semantic similarity untuk indikator koherensi skor dan narasi. Nilai 0 mengindikasikan bahwa narasi membahas kriteria lain di luar kriteria penilaian. Di sisi lain, nilai 1 mengindikasikan bahwa narasi telah berfokus pada kriteria yang dinilai. Dengan  $sim_x(.,.)$  merepresentasikan salah satu fungsi cosine similarity, yaitu whole-text embedding yang didefinisikan pada subbab II.1.7.2, dan semantic chunking yang disajikan pada subbab IV.3.3.2. Contoh alur komputasi indikator ini disajikan pada Gambar IV.18.
+Di mana  $\theta_{sim,4}$  adalah threshold semantic similarity untuk indikator koherensi skor dan narasi. Nilai 0 mengindikasikan bahwa narasi membahas kriteria lain di luar kriteria penilaian. Di sisi lain, nilai 1 mengindikasikan bahwa narasi telah berfokus pada kriteria yang dinilai. Dengan  $sim_x(.,.)$  merepresentasikan salah satu fungsi cosine similarity, yaitu whole-text embedding yang didefinisikan pada Lampiran 1, dan semantic chunking yang disajikan pada subbab IV.3.3.2. Contoh alur komputasi indikator ini disajikan pada Gambar IV.18.
 
 Gambar IV.18. Contoh Komputasi Indikator Relevansi Topik
 
 **IV.3.4 Hasil Evaluasi dan Kalibrasi Model**
 
-Subbab ini merupakan manifestasi dari tahap pengembangan sistem yang didefinisikan pada subbab III.6.3.2, dilakukan dengan mengevaluasi performa setiap kandidat model yang telah diseleksi pada subbab IV.3.2.1 serta instruksi pada Tabel IV.16 menggunakan kode yang dieksekusi melalui google colab. Evaluasi dilakukan dengan membandingkan hasil prediksi model berdasarkan mekanisme grid-search yang telah didefinisikan pada subbab II.1.7.4 feature-set dan hasil anotasi dataset sebagai ground truth pada subbab IV.2.1 dan IV.2.3.
+Subbab ini merupakan manifestasi dari tahap pengembangan sistem yang didefinisikan pada subbab III.6.3.2, dilakukan dengan mengevaluasi performa setiap kandidat model yang telah diseleksi pada subbab IV.3.2.1 serta instruksi pada Tabel IV.16 menggunakan kode yang dieksekusi melalui google colab. Evaluasi dilakukan dengan membandingkan hasil prediksi model berdasarkan mekanisme grid-search yang telah didefinisikan pada Lampiran 1 feature-set dan hasil anotasi dataset sebagai ground truth pada subbab IV.2.1 dan IV.2.3.
 
 [Gambar IV.19](#page-5-0) menyajikan mekanisme kalibrasi dalam evaluasi performa model. Indikator yang dievaluasi adalah cakupan rubrik (@), koherensi skor dan narasi (A), serta relevansi topik (J). Dalam mengevaluasi indikator koherensi skor dan narasi (A), digunakan feature-set koherensi skor (åçé-, ) pada subbab IV.2.1.2 sebagai pasangan narasi feedback. Di sisi lain, evaluasi indikator cakupan rubrik (@) dan relevansi topik (J) dilakukan dengan menggunakan feature-set åçU-, yang didefinisikan pada subbab IV.2.1.1.
 
-Eksperimen dilakukan dengan tiga metode implementasi yang berbeda. Metode pertama adalah komputasi cosine similarity dengan whole-text embedding, sebagaimana didefinisikan pada subbab II.1.7.1 dan II.1.7.2, disajikan pada subbab [IV.3.4.1](#page-6-0). Metode kedua adalah realisasi dari semantic chunking pada subbab IV.3.3.2, disajikan pada subbab [IV.3.4.2.](#page-8-0) Metode ketiga adalah implementasi dari aturan mutual exclusive dari feature-set koherensi skor dan narasi yang didefinisikan pada subbab III.6.3.1D, disajikan pada subbab [IV.3.4.3.](#page-10-0)
+Eksperimen dilakukan dengan tiga metode implementasi yang berbeda. Metode pertama adalah komputasi cosine similarity dengan whole-text embedding, sebagaimana didefinisikan pada Lampiran 1 dan II.1.7.2, disajikan pada subbab [IV.3.4.1](#page-6-0). Metode kedua adalah realisasi dari semantic chunking pada subbab IV.3.3.2, disajikan pada subbab [IV.3.4.2.](#page-8-0) Metode ketiga adalah implementasi dari aturan mutual exclusive dari feature-set koherensi skor dan narasi yang didefinisikan pada subbab III.6.3.1D, disajikan pada subbab [IV.3.4.3.](#page-10-0)
 
 Output akhir dari tahap evaluasi dan kalibrasi model adalah konfigurasi model, threshold, dan metode implementasi terbaik untuk indikator cakupan rubrik (@), koherensi skor dan narasi (A), serta relevansi topik (J), disajikan pada subbab [IV.3.4.4.](#page-11-0) Lebih jauh, implikasi performa hasil kalibrasi disajikan pada subbab IV.3.4.6 sebagai analisis kemampuan analisis indikator komputasional.
 
@@ -2620,7 +2439,7 @@ Gambar IV.19. Mekanisme Kalibrasi Model
 
 Whole-text embedding digunakan sebagai konfigurasi dasar (baseline) dalam rangkaian eksperimen kalibrasi model. Pada tahap ini, seluruh kandidat model embedding dievaluasi menggunakan representasi narasi secara utuh tanpa penerapan teknik pemrosesan tambahan, seperti semantic chunking maupun aturan mutual exclusivity. Evaluasi baseline ini bertujuan menyediakan acuan performa awal sehingga pengaruh setiap teknik tambahan terhadap masing-masing kandidat model dapat dibandingkan secara konsisten pada tahap eksperimen berikutnya.
 
-Metode ini bekerja dengan merepresentasikan keseluruhan narasi feedback sebagai satu embedding yang kemudian dibandingkan dengan feature-set hasil dekomposisi pada Whole-text embedding merupakan metode pertama yang dievaluasi, sebagaimana didefinisikan pada subbab II.1.7.1 dan II.1.7.2. Metode ini bekerja dengan cara memproses embedding dari narasi feedback utuh dengan feature-set hasil dekomposisi pada subbab IV.2.1.
+Metode ini bekerja dengan merepresentasikan keseluruhan narasi feedback sebagai satu embedding yang kemudian dibandingkan dengan feature-set hasil dekomposisi pada Whole-text embedding merupakan metode pertama yang dievaluasi, sebagaimana didefinisikan pada Lampiran 1 dan II.1.7.2. Metode ini bekerja dengan cara memproses embedding dari narasi feedback utuh dengan feature-set hasil dekomposisi pada subbab IV.2.1.
 
 [Tabel IV.20](#page-6-1) menyajikan performa seluruh kandidat model pada indikator cakupan rubrik (@) menggunakan whole-text embedding. Performa yang diukur tidak mencakup fungsi semantic chunking yang dijabarkan pada subbab IV.3.3.2.
 
@@ -3101,368 +2920,17 @@ Subbab ini merupakan manifestasi dari subbab III.6.5 sebagai integrasi aplikasi 
 
 **IV.4.1 Hasil Analisis Sistem Berjalan**
 
-Analisis Sistem Existing bertujuan untuk mengidentifikasi lingkungan tempat sistem scaffolding diintegrasikan untuk isolasi modifikasi kode. Tahapan ini dilakukan dengan meninjau dokumen SRS (Software Requirement Specification), SDD (Software Design Documentation), manual book, source code, dan dokumen laporan pada Lampiran 2.
+Analisis sistem berjalan mencakup deskripsi sistem *existing*, identifikasi titik integrasi, komponen yang dimodifikasi, serta komponen yang ditambahkan ke dalam APE SAPA. Sebagaimana disajikan pada **Lampiran 4**, analisis ini menjadi dasar penentuan cakupan dan strategi integrasi pipeline digital scaffolding ke dalam sistem yang telah ada.
 
-**IV.4.1.1 Deskripsi Sistem Existing**
+*Diagram BPMN proses *as-is*, deskripsi sistem *existing*, dan pemetaan titik integrasi disajikan selengkapnya pada Lampiran 4.*
 
-Aplikasi SAPA merupakan platform berbasis web yang dirancang untuk mendukung pengisian self dan peer assessment mahasiswa JTK Polban. Aplikasi ini memungkinkan dosen untuk mengelola proyek (mata kuliah), membuat dan membagikan formulir assessment, serta memantau dan mengevaluasi hasil assessment. Keseluruhan proses bisnis SAPA disajikan pada [Gambar IV.25](#page-10-0).
+---
 
-Berdasarkan abstraksi Business Process Model and Notation (BPMN) pada Lampiran 2, siklus operasional SAPA telah dirancang dengan alur yang sistematis untuk memfasilitasi evaluasi sumatif. Alur bisnis direpresentasikan mulai dari tahap inisiasi di mana dosen menyusun proyek dan instrumen rubrik penilaian, dilanjutkan oleh fase pengerjaan evaluasi oleh mahasiswa, dan diakhiri dengan pemrosesan rekomendasi skor menggunakan SLA Algorithm oleh sistem sebagai material analis bagi dosen.
+**IV.4.2 Hasil Perancangan dan Integrasi Komponen**
 
-Gambar IV.25. Proses Bisnis SAPA
+Perancangan teknis APE SAPA mencakup arsitektur aplikasi, Use Case Diagram, Class Diagram, Entity-Relationship Diagram (ERD), Sequence Diagram, dan perancangan antarmuka. Sebagaimana disajikan pada **Lampiran 5**, Gambar IV.35 menunjukkan arsitektur APE SAPA setelah integrasi pipeline, sedangkan Lampiran 5 memetakan seluruh titik integrasi yang menjadi landasan implementasi.
 
-**IV.4.1.2 Identifikasi Titik Integrasi**
-
-Berdasarkan tinjauan yang dilakukan terhadap dokumen SRS, SDD, serta source code ditemukan titik integrasi untuk kebutuhan digital scaffolding terhadap enam halaman, sebagaimana disajikan pada [Tabel IV.37.](#page-11-0)
-
-Aspek Komponen yang terlibat  Interface GUI-43 (Form Self Assessment) dan GUI-46 (Form Peer Assessment) GUI-22 (Detail Question Self Assessment) dan GUI-25 (Detail Question Peer Assessment) GUI-21 (List Self Assessment) dan GUI-24 (List Peer Assessment) Logika Bisnis AssessmentController (menangani UC-10 Answer Assessment) pada SD-10 (Self Assessment) dan SD-11(Peer Assessment)) Basis Data (Data) Entitas Tabel 'Criteria' , 'Assessment' dan 'Reflective Assessment'
-
-Tabel IV.37. Titik Integrasi
-
-Titik integrasi digital scaffolding berada pada fase pengisian narasi feedback sebelum mahasiswa melakukan operasi simpan jawaban. Hal ini diimplementasikan dengan menambahkan event yang menangkap perubahan narasi pada UC-10 (Answer Assessment) pada SD-10 dan SD 11.
-
-**IV.4.1.3 Komponen yang Dimodifikasi**
-
-Untuk melakukan integrasi sistem digital scaffolding terhadap aplikasi SAPA, beberapa komponen yang tersedia perlu dimodifikasi sebagaimana disajikan pada [Tabel IV.38](#page-11-1).
-
-Tabel IV.38. Komponen Yang Dimodifikasi
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-Aspek  |  Komponen  |  Modifikasi
-kondisi teks narasi mahasiswa sebagai input sistem digital scaffolding.
-Proses  |  UC-10 pada SD-10 dan SD-11  |  Modifikasi yang diterapkan berupa penambahan relasi < <extends>&gt; pada UC-17. Di sisi lain, UC-10 melakukan proses pemanggilan terhadap API pipeline digital scaffolding.</extends>
-
-**IV.4.1.4 Komponen yang Ditambahkan**
-
-Sebagai ekstensi dari subbab [IV.4.1.3,](#page-11-2) [Tabel IV.39](#page-12-1) menyajikan komponen yang ditambahkan terhadap arsitektur SAPA berdasarkan identifikasi titik integrasi pada [Tabel IV.37](#page-11-0).
-
-Tabel IV.39. Komponen Yang Ditambahkan
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-**IV.4.2 Hasil Perancangan dan Integrasi Konponen**
-
-Subbab ini menjelaskan perancangan sistem yang diusulkan sebagai pengembangan dari aplikasi SAPA dengan penambahan fitur conditional scaffolding, sebagai manifestasi dari subbab III.6.5.2. Perancangan dilakukan berdasarkan kebutuhan sistem yang telah diidentifikasi sebelumnya.
-
-**IV.4.2.1 Arsitektur Aplikasi Pendukung Eksperimen**
-
-Pada kondisi saat ini (as-is), aplikasi SAPA mendukung proses self dan peer assessment di mana mahasiswa mengisi jawaban kuantitatif dan narasi feedback secara langsung tanpa adanya intervensi atau bantuan selama proses penulisan, sebagaimana direpresentasikan oleh [Gambar IV.25.](#page-10-0) Evaluasi terhadap kualitas narasi hanya terjadi secara implisit dan umumnya baru terlihat pada hasil akhir penilaian atau umpan balik dari dosen.
-
-Kondisi yang diusulkan (to-be) pada [Gambar IV.26,](#page-14-0) dengan simbol berwarna merepresentasikan komponen yang ditambahkan untuk mendukung mekanisme digital scaffolding yang terintegrasi dalam proses pengisian narasi. Sistem secara aktif mengevaluasi input narasi mahasiswa secara real-time menggunakan rubrik yang telah didekomposisi, kemudian memberikan conditional prompt apabila ditemukan bahwa feedback belum memenuhi indikator yang diharapkan. Integrasi dilakukan pada level fitur aplikasi SAPA sebagaimana didefinisikan pada subbab [IV.4.1.3](#page-11-2) dan [IV.4.1.4.](#page-12-2)
-
-Lebih jauh, untuk mempertahankan standar dan konsistensi proses integrasi, analisis pada functional requirements, non-functional requirements, use case diagram, class diagram, database, sequence diagram, hingga perancangan antarmuka didefinisikan pada subbab IV.4.2.1A hingga IV.4.2.1G.
-
-Melalui perubahan ini seluruh komponen dan fitur lainnya yang telah tersedia pada aplikasi SAPA, seperti pengumpulan assessment, perhitungan nilai, dan pemberian feedback oleh dosen tetap berjalan sebagaimana mestinya tanpa adanya modifikasi.
-
-Gambar IV.26. BPMN to-be Setelah APE diintegrasikan
-
-**A. Functional Requirements**
-
-[Tabel IV.40](#page-0-0) menyajikan functional requirement untuk memfasilitasi sistem digital scaffolding, hal ini dilakukan untuk memastikan proses eksperimen dapat dilaksanakan, sebagaimana didefinisikan pada subbab III.6.6.2.
-
-Tabel IV.40. Functional Requirements
-
-Kode FR: Deskripsi
-FR-01: Sistem harus dapat menampilkan teks scaffolding (conditional prompt) dengan kode template 0001 hingga 1111 sesuai hasil analisis indikator saat mahasiswa mengisi narasi kualitatif assessment, sebagaimana didefinisikan pada Tabel IV.35.
-FR-02: Sistem harus menyediakan mekanisme bagi dosen untuk mengaktifkan atau menonaktifkan fitur scaffolding untuk setiap assessment.
-FR-03: Sistem harus dapat melakukan komputasi empat indikator tekstual narasi, sebagaimana didefinisikan pada Tabel III.3 menggunakan konfigurasi pipeline digital scaffolding pada subbab IV.3.4.4. Komputasi dilakukan dengan mekanisme debounce 1,5 detik dan interval maksimum 1,5 detik.
-FR-04: Sistem harus dapat menggunakan template dengan kode 0000 ketika seluruh indikator tekstual narasi terpenuhi, sebagaimana didefinisikan pada Tabel IV.35.
-FR-05: Sistem dapat melakukan proses dekomposisi rubrik secara otomatis menggunakan API Gemini berdasarkan prosedur yang didefinisikan pada subbab III.6.3.1B.
-FR-06: Sistem harus merekam data log interaksi (behavioral log) secara sekuensial selama sesi penulisan aktif, yang mencakup riwayat perubahan teks narasi, modifikasi skor kuantitatif, riwayat pemicu prompt scaffolding per indikator, serta timestamp interaksi.
-
-**B. Non Functional Requirements**
-
-Non-functional requirement yang disajikan pada [Tabel IV.41](#page-0-1) berfungsi untuk membantu sistem digital scaffolding pada penelitian ini.
-
-Tabel IV.41. Non Functional Requirements
-
-Kode NFR: Deskripsi
-NFR-01: Sistem harus memproses dan mengembalikan hasil evaluasi scaffolding dalam
-waktu maksimum 5 detik sejak permintaan diterima oleh pipeline digital
-scaffolding.
-NFR-02: Model embedding yang digunakan pada pipeline digital scaffolding, sebagaimana didefinisikan konfigurasi akhir pipeline dalam subbab IV.3.4.4, harus dipastikan tersedia selama siklus hidup layanan tanpa perlu pemuatan ulang pada setiap request analisa feedback.
-NFR-03: Sistem hanya memproses feedback yang unik dalam satu sesi mahasiswa pada
-setiap pertanyaan assessment.
-NFR-04: Aplikasi menerapkan mekanisme caching menggunakan kombinasi skor dan
-teks narasi sebagai key untuk mencegah pemanggilan API yang redundan dan
-mengurangi beban komputasi server.
-
-**C. Use Case Diagram**
-
-Sebagai ekstensi fitur aplikasi SAPA, pipeline digital scafolding digambarkan sebagai UC-17 (Receive Scaffolding) yang berelasi extend terhadap UC-10 (Answer Assessment) dalam use case diagram SAPA yang disajikan pada [Gambar IV.27.](#page-1-0)
-
-Gambar IV.27. Use Case Diagram APE yang Akan Dikembangkan
-
-Untuk mendukung use case diagaram pada [Gambar IV.27](#page-1-0), [Tabel IV.42](#page-2-0) menyajikan use case scenario untuk UC-17 (Receive Digital Scaffolding Prompt).
-
-Tabel IV.42. Use Case Scenario Receive Scaffolding (UC-17)
-
-Use Case section Comment Use case Name
-UC-17 Receive Digital Scaffolding
-Scope: Aplikasi Existing (SAPA)
-Level: Sub Function
-Primary Actor: Mahasiswa
-Stakeholder and Interest: 1. Mahasiswa ingin mendapatkan bantuan selama menulis narasi feedback.
-Precondition 1.: Mahasiswa berada di tahapan mengisi assessment (UC-10) 2. Target assessment (self/peer) sudah dipilih
-Success Guarantee: Teks scaffolding berhasil ditampilkan saat skor kualitatif/narasi tidak memenuhi minimal satu dari empat indikator tekstual narasi feedback
-pada: Teks scaffolding dengan kode 0000, sebagaimana didefinisikan Tabel IV.35 ditampilkan saat skor kuantitaif/narasi memenuhi seluruh empat indikator tekstual narasi feedback
-Action  |  Actor  |  System
-1.: Mahasiswa mengetik skor kualitatif/narasi
-2. Sistem memantau input teks selama periode debouncing 1,5 detik 3. Sistem memproses teks
-narasi setelah melebihi waktu debounce 4. Sistem mengirimkan teks
-scaffolding (prompt) berdasarkan teks narasi yang terkomputasi
-5.: Mahasiswa menerima teks scaffolding
-Extension 1.: Jika dalam waktu 1,5 detik sistem tidak mendeteksi teks yang valid untuk dikirim, sistem tetap dalam kondisi menunggu atau menampilkan pesan pengingat kepada mahasiswa 2.a. Sistem tidak menerima perubahan input teks selama periode tertentu
-Special Requirements 1.: Sistem harus dapat memberikan teks scaffolding dalam batas waktu 1,5 detik setelah waktu debounce.
-1. Technology and Data Variations List 2.: Sistem menggunakan pipeline digital scaffolding yang berisikan model NLP berbasis Transformer untuk memproses teks narasi. Sistem menggunakan rule-based untuk menentukan keputusan jenis teks scaffolding yang ditampilkan
-Frequencey of Occurence  |  dalam jangka waktu 1,5 detik.  |  Setiap kali siswa melakukan perubahan skor kualitatif/narasi
-Miscellanous -
-
-**D. Class Diagram**
-
-Class diagram memetakan struktur teknis sistem dengan mendetailkan atribut dan metode pada setiap kelas serta cara kelas-kelas tersebut berinteraksi. [Gambar IV.28](#page-4-0) menyajikan keseluruhan arsitektur class diagram SAPA, dengan komponen berwarna hitam merepresentasikan bagian existing yang telah tersedia, sementara komponen berwarna merah merepresentasikan penambahan atau modifikasi untuk memfasilitasi pipeline digital scaffolding. Untuk meningkatkan visibilitas, [Gambar](#page-5-0)  [IV.29](#page-5-0) menyajikan class diagram yang terisolasi terhadap komponen terdampak.
-
-Berdasarkan gambar tersebut, salah satu komponen yang terdampak adalah type criteria yang menyimpan komponen penilaian rubrik, modifikasi dilakukan dengan menambahkan atribut status dekomposisi. Komponen lain yang terdampak yaitu assessment dan reflective, modifikasi dilakukan dengan menambahkan toggle aktivasi scaffolding dan status dekomposisi pada level pertanyaan. Class assessment berfungsi untuk menyimpan informasi mengenai self dan peer assessment, di sisi lain, class reflective adalah ekstensi dari self assessment dengan komponen yang serupa.
-
-Untuk menyimpan hasil dekomposisi rubrik, sebagaimana prosedur yang didefinisikan pada subbab III.6.3.1B, class question decomposition dan rubric decomposition diperlukan untuk menyimpan feature-set cakupan rubrik dan relevansi topik (åçU-, ) serta feature-set koherensi skor dan narasi (åçé-, ). Kedua class tersebut menjadi salah satu input komputasi pipeline digital scaffolding, sebagaimana didefinisikan pada subbab IV.3.
-
-Gambar IV.28. Class Diagram Keseluruhan (to-be)
-
-Gambar IV.29. Class Diagram Bagian Modifikasi
-
-**E. Entity Relationship Diagram**
-
-Basis data keseluruhan aplikasi sapa dengan modifikasi yang telah disesuaikan disajikan pada [Gambar IV.30](#page-7-0), dengan komponen yang memiliki warna merah merepresentasikan modifikasi/penambahan yang dilakukan berdasarkan analisis pada subbab IV.4.1. Untuk meningkatkan visibilitas diagram, [Gambar IV.31](#page-8-0) menyajikan diagram yang terisolasi pada entitas terdampak.
-
-Sistem menggunakan dua tabel dekomposisi yang memiliki peran yang berbeda. Rubric\_decomposition merupakan tabel yang menyimpan feature-set untuk indikator cakupan rubrik, relevansi, dan koherensi skor dari aspek rubrik spesifik. Di sisi lain, question\_decomposition menyimpan feature-set untuk indikator cakupan rubrik yang dimiliki oleh pertanyaan feedback, terlepas dari rubrik maupun bobot aspek pada rubrik. Pemisahan kedua tabel dekomposisi tersebut bertujuan untuk mencegah adanya duplikasi ataupun konflik pada pertanyaan yang berbeda namun menggunakan aspek rubrik yang sama.
-
-Gambar IV.30. ERD Keseluruhan SAPA
-
-Gambar IV.31. ERD Bagian Modifikasi
-
-**F. Sequence Diagram**
-
-Sequence Diagaram menunjukkan cara objek berkomunikasi satu sama lain dalam sistem. Pada penelitian ini, diagram dibuat berdasarkan modifikasi dari sistem existing pada Lampiran 2, meliputi proses pengisian self dan peer assessment pada [Gambar IV.33](#page-11-0) serta [Gambar IV.34,](#page-12-0) dan juga proses manage assessment pada [Gambar IV.32.](#page-10-0)
-
-Dalam aplikasi SAPA yang sudah ada, saat proses manage assessment oleh dosen berlangsung, assessment ditambahkan dengan cara mengunggah file Excel yang berisi detail rubrik assessment. Rubrik tersebut mencakup berbagai aspek seperti pertanyaan, jenis assessment, jenis skill, hingga aspek yang dinilai serta kriteria yang digunakan untuk setiap pertanyaan. Dalam penelitian ini, proses import melibatkan tahapan untuk melakukan dekomposisi rubrik sesuai dengan subbab II.1.9.1. Proses ini berjalan secara asynchronous di latar belakang, sehingga pengguna tidak perlu menunggu pada halaman SAPA hingga proses selesai, seperti yang ditunjukkan pada [Gambar IV.32.](#page-10-0)
-
-Selanjutnya, ketika mahasiswa mengisi self ataupun self assessment, aplikasi yang sudah ada memiliki perilaku seperti formulir pada umumnya, yaitu pengguna dapat mengisi atau mengubah isi formulir hingga proses submit assessment. Dalam penelitian ini, mahasiswa diberikan prompt scaffolding yang bertujuan untuk meningkatkan feedback literacy ketika siswa melakukan menulis narasi, yang ditampilkan pada [Gambar IV.33](#page-11-0) dan [Gambar IV.34](#page-12-0).
-
-Gambar IV.32. Sequence Diagram UC-05 Manage Assessment
-
-Gambar IV.33. Sequence Diagram UC-10 Answer Peer Assessment
-
-Gambar IV.34. Sequence Diagram UC-10 Answer Self Assessment
-
-**G. Perancangan Antarmuka**
-
-Perancangan antarmuka didasari oleh aplikasi SAPA existing pada Lampiran 2 berdasarkan pada subbab IV.4.1.3 dan IV.4.1.4. Setelah dosen mengunggah file excel yang berisikan rubrik dan pertanyaan assessment, aplikasi akan memulai proses dekomposisi rubrik menggunakan API Gemini, sebagaimana dijabarkan pada subbab II.1.9.1. Kemudian, dosen dapat menuju antarmuka pada [GUI-22](#page-14-0) ataupun GUI-24 untuk melihat daftar assessment, mencoba mengisi assessment, hingga melakukan publikasi assessment. Publikasi tidak dapat dilakukan sebelum sistem selesai melakukan dekomposisi rubrik, ditandai dengan indikator loading pada bagian kanan dari toggle publikasi.
-
-Secara default, setiap assessment memiliki scaffolding ketika mahasiswa mengisi narasi. Namun, dosen dapat menonaktifkan fitur scaffolding pada antarmuka di [Tabel IV.43](#page-14-1) dan
-
-Tabel IV.44. Akibatnya, siswa tidak mendapatkan prompt scaffolding selama mengisi self/peer assessment. Implementasi hal tersebut digunakan untuk membantu proses eksperimen terhadap kelompok mahasiswa dalam penelitian ini.
-
-Pada sudut pandang mahasiswa ketika mengisi assessment, dengan antarmuka pada Tabel IV.47. GUI- dan Tabel IV.48. Jika scaffolding aktif, maka mahasiswa akan mendapatkan teks prompt tepat di atas kolom narasi untuk membantu meningkatkan pemenuhan keempat indikator tekstual narasi feedback.
-
-Tabel IV.43. GUI-22
-
-Tabel IV.44. GUI-25
-
-Tabel IV.45. GUI-21
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-Tabel IV.46. GUI-24
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
-
-Tabel IV.47. GUI-43
-
-Component List  |  Functional Type  |  Purpose (Kegunaan)  |  Keterangan Persyaratan
-Tittle Section  |  Information  |  Menampilkan judul halaman.  |  Harus sesuai dengan konteks halaman.
-Informasi Mahasiswa  |  Information  |  Menampilkan data mahasiswa seperti NIM, Nama Lengkap, Kelas  |  Diperoleh dari data <i>user</i> .
-Informasi Kelompok & Proyek  |  Information  |  Menampilkan data kelompok, nama proyek, dan tanggal pengisian.  |  Didapatkan dari data proyek yang sedang berlangsung.
-Indikator Nomor Pertanyaan  |  Information  |  Menampilkan nomor pertanyaan dan total pertanyaan.  |  Contoh: "Question 1 From 9"
-Label Type Assessment  |  Information  |  Menandai jenis aspek penilaian.  |  Dapat berupa "Hard Skill" atau "Soft Skill".
-Slider Penilaian (1-5)  |  Input Form  |  Memberi nilai dalam bentuk slider.  |  Skala 1-5, wajib dipilih.
-Informasi Prompt Scaffolding  |  Information  |  Memberikan <i>scaffolding</i> berdasarkan empat indikator tektstual narasi <i>feedback</i> .  |  -
-Textarea Alasan Jawaban  |  Input Form  |  Menuliskan alasan atas penilaian yang diberikan.  |  Placeholder berisi instruksi penulisan alasan.
-Tombol "Previoous"  |  Navigasi Form  |  Kembali ke pertanyaan sebelumnya.  |  Hanya aktif jika bukan pertanyaan pertama.
-Tombol "Next"  |  Navigasi Form  |  Lanjut ke pertanyaan berikutnya.  |  Hanya aktif jika bukan pertanyaan terakhir.
-Tombol "Save Answer"  |  Aksi Form  |  Menyimpan jawaban saat ini ke dalam sistem.  |  Menyimpan data skor dan alasan feedback.
-
-Tabel IV.48. GUI-46
-
-Component List  |  Functional Type  |  Purpose (Kegunaan)  |  Keterangan Persyaratan
-Tittle Section  |  Information  |  Menampilkan judul halaman.  |  Harus sesuai dengan konteks halaman.
-Informasi Mahasiswa  |  Information  |  Menampilkan data mahasiswa seperti NIM, Nama Lengkap, Kelas  |  Diperoleh dari data <i>user</i> .
-Informasi Kelompok & Proyek  |  Information  |  Menampilkan data kelompok, nama proyek, dan tanggal pengisian.  |  Didapatkan dari data proyek yang sedang berlangsung.
-Indikator Nomor Pertanyaan  |  Information  |  Menampilkan nomor pertanyaan dan total pertanyaan.  |  Contoh: "Question 1 From 9"
-Label Type Assessment  |  Information  |  Menandai jenis aspek penilaian.  |  Dapat berupa "Hard Skill" atau "Soft Skill".
-Slider Penilaian (1-5)  |  Input Form  |  Memberi nilai dalam bentuk slider.  |  Skala 1-5, wajib dipilih.
-Informasi Prompt Scaffolding  |  Information  |  Memberikan <i>scaffolding</i> berdasarkan <i>empat indikator tekstual narasi feedback</i> .  |  -
-Textarea Alasan Jawaban  |  Input Form  |  Menuliskan alasan atas penilaian yang diberikan.  |  Placeholder berisi instruksi penulisan alasan.
-Tombol "Previoous"  |  Navigasi Form  |  Kembali ke pertanyaan sebelumnya.  |  Hanya aktif jika bukan pertanyaan pertama.
-Tombol "Next"  |  Navigasi Form  |  Lanjut ke pertanyaan berikutnya.  |  Hanya aktif jika bukan pertanyaan terakhir.
-Tombol "Save Answer"  |  Aksi Form  |  Menyimpan jawaban saat ini ke dalam sistem.  |  Menyimpan data skor dan alasan feedback.
-
-**IV.4.2.2 Hasil Integrasi**
-
-Berdasarkan analisis arsitektur yang didefinisikan pada subbab IV.4.2.1, hasil integrasi aplikasi SAPA dengan sistem digital scaffolding memiliki arsitektur yang direpresentasikan pada [Gambar IV.35](#page-9-0).
-
-Gambar IV.35. Arsitektur Aplikasi setelah Integrasi
-
-Berbeda dengan modul-modul lain pada SAPA yang diimplementasikan secara terintegrasi di dalam aplikasi Laravel, mekanisme digital scaffolding pada penelitian ini diimplementasikan sebagai sebuah service yang berdiri sendiri. Service ini dibangun menggunakan Python dengan framework FastAPI. Pemisahan ini dilakukan untuk memberikan isolasi terhadap komputasi NLP, sehingga memungkinkan untuk dilakukan scaling pada masa mendatang dengan resource dan konfigurasi yang terpisah dengan aplikasi SAPA.
-
-**A. Arsitektur Service dan Pola Komunikasi Antarservice**
-
-Sebagaimana ditunjukkan pada [Gambar IV.35,](#page-9-0) terdapat tiga serice yang berjalan pada jaringan docker yang sama, yaitu SAPA pada port 8000, scaffolding service pada port 8080, serta flask pada port 5000 yang merupakan modul SLA dalam menganalisis jawaban assessment setelah siswa mengirimkan feedback. SAPA dan scaffolding service berkomunikasi secara dua arah melalui REST API untuk dekomposisi dan analisa feedback. Di sisi lain, service digital scaffolding mengirimkan progres dekomposisi rubrik secara real-time melalui websocket kepada pengguna.
-
-Pada sisi penyimpanan, scaffolding service terhubung dengan ChromaDB untuk menyimpan embedding dari feature-set dekomposisi, sehingga proses analisa feedback tidak membutuhkan embedding yang berulang pada kriteria penilaian yang sama. Di sisi lain, SAPA tetap menggunakan MySQL sebagai database relasional utama dan Redis sebagai cache sesi.
-
-**B. Rancangan Dekomposisi Rubrik menggunakan Google Gemini**
-
-Sebagaimana batasan penelitian pada subbab I.7 yang mendefinisikan bahwa dekomposisi rubrik secara otomatis bukan merupakan cakupan dari penelitian, namun merupakan fitur yang diperlukan pada APE, sebagaimana dimodelkan requirement dalam subbab IV.4.2.1.
-
-Dalam merealisasikan hal tersebut, metode few-shot prompting digunakan pada model Gemini-flash latest. Prompt didapatkan dengan melakukan trial and error hingga menghasilkan dekomposisi yang diharapkan sesuai dengan tahapan yang didefinisikan pada subbab III.6.3.1B. Hasil akhir prompt yang digunakan adalah kumpulan instruksi yang dilengkapi dengan contoh sebagai berikut.
-
-Anda adalah sistem ahli analisis linguistik dan evaluasi rubrik akademik.
-
-Tugas Anda adalah melakukan dekomposisi terhadap rubrik penilaian dan pertanyaan ke dalam matriks indikator spesifik.
-
-ATURAN DEKOMPOSISI RUBRIK:
-
-1. Tipe "cakupan": Ekstrak elemen fundamental yang WAJIB dibahas berdasarkan variabel yang ditemukan pada kriteria. 'bobot' dan 'group' bernilai null.
-2. Tipe "koherensi" & ATURAN EKSTRAPOLASI SIMETRIS (SANGAT PENTING):
-
-- Anda HARUS menciptakan matriks yang simetris sempurna untuk setiap variabel.
-- Analisis seluruh deskripsi skala (misal 1, 3, 5). Identifikasi semua variabel independen yang muncul (contoh: Kuantitas, Relevansi, Keragaman Platform).
-- JIKA sebuah variabel (misal: 'Keragaman Platform') hanya disebutkan di skala 5, Anda WAJIB mengekstrapolasi/menciptakan kondisi logis untuk variabel tersebut di skala 1 dan 3 (misal: Skala 1 = 'Platform tidak bervariasi', Skala 3 = 'Platform cukup bervariasi').
-- 'bobot' = angka skala.
-- 'group' = identitas angka (1, 2, 3) yang mengelompokkan variabel yang sama melintasi skala yang berbeda.
-
-ATURAN DEKOMPOSISI PERTANYAAN:
-
-1. Pecah teks pertanyaan menjadi frasa inti atau topik yang ditanyakan.
-2. Ekstrak secara spesifik aspek unik atau instruksi khusus yang diminta oleh pertanyaan namun tidak ada di kriteria rubrik sebagai item dengan "type": "cakupan".
-3. Jika pertanyaan sudah sangat jelas dan tidak memiliki aspek tersembunyi, kembalikan array kosong []. JANGAN PERNAH menyalin pertanyaan asli.
-
-ATURAN ATOMISASI KOHERENSI:
-
-- Setiap item harus berupa frasa MINIMAL yang berdiri sendiri, bukan kalimat panjang.
-- Hilangkan kata penghubung konteks seperti "yang diberikan", "dalam tim", "secara keseluruhan" kecuali memang membedakan maknanya.
-- BENAR: "Tidak menyelesaikan tugas"
-- SALAH: "Tidak menyelesaikan tugas yang diberikan oleh tim"
-
-ATURAN GROUP:
-
-- 'group' merepresentasikan VARIABEL/DIMENSI yang sama lintas skala.
-- Dalam satu skala, satu group boleh memiliki LEBIH DARI SATU item jika variabel tersebut memiliki beberapa manifestasi konkret yang berbeda.
-- Contoh: group=1 bobot=3 bisa berisi "Berkomunikasi secara wajar" DAN "Merespons pesan" karena keduanya adalah manifestasi dari dimensi Responsivitas.
-
-ATURAN CAKUPAN:
-
-- Tulis sebagai LABEL DIMENSI, bukan kalimat deskriptif.
-- BENAR: "Ketepatan Waktu", "Inisiatif", "Kualitas Pekerjaan"
-- SALAH: "Kemampuan menyelesaikan pekerjaan tepat pada waktunya"
-- Idealnya 2-4 kata, bersifat nominal.
-
-```
---- CONTOH INPUT ---
-{{
-"rubrics": [
-{{
-"id_type_criteria": 1,
-"aspect": "Pengumpulan Iklan",
-"criteria": "Banyaknya iklan dan keragaman platform.",
-```
-
-```
-"scales": {{
-"1": "Mengumpulkan sedikit iklan.",
-"5": "Mengumpulkan banyak iklan, relevan, dan platform
-bervariasi."
-}}
-}}
-],
-"questions": [
-{{
-"id_assessment": 101,
-"question": "Seberapa baik rekan Anda dalam mengumpulkan iklan
-lowongan kerja dari platform yang ditugaskan? Mengapa? (Berikan
-contoh spesifik kontribusi rekan Anda dalam pengumpulan data.
-Apakah rekan Anda menghadapi kesulitan dalam mengumpulkan iklan)",
-"id_type_criteria": 1
-}},
-{{
-"id_assessment": 102,
-"question": "Seberapa efektif rekan Anda berkomunikasi?",
-"id_type_criteria": 2
-}}
-]
-}}
---- CONTOH OUTPUT JSON ---
-{{
-"data": {{
-"rubric_decompositions": [
-{{
-"id_type_criteria": 1,
-"decompositions": [
-{{"type": "cakupan", "content": "Jumlah iklan", "bobot": null,
-"group": null}},
-{{"type": "cakupan", "content": "Keragaman platform", "bobot":
-null, "group": null}},
-{{"type": "cakupan", "content": "Relevansi iklan", "bobot": null,
-"group": null}},
-{{"type": "koherensi", "content": "Mengumpulkan sedikit iklan",
-"bobot": 1, "group": 1}},
-{{"type": "koherensi", "content": "Platform tidak bervariasi",
-"bobot": 1, "group": 2}},
-{{"type": "koherensi", "content": "Iklan tidak relevan", "bobot":
-1, "group": 3}},
-{{"type": "koherensi", "content": "Mengumpulkan banyak iklan",
-"bobot": 5, "group": 1}},
-{{"type": "koherensi", "content": "Platform sangat bervariasi",
-"bobot": 5, "group": 2}},
-{{"type": "koherensi", "content": "Iklan sangat relevan",
-"bobot": 5, "group": 3}}
-]
-}}
-],
-"question_decompositions": [
-{{
-"id_assessment": 101,
-"decompositions": [
-```
-
-```
-{{"type": "cakupan", "content": "Kemudahan dalam pengumpulan
-iklan"}},
-{{"type": "cakupan", "content": "Kesulitan atau kendala yang
-dihadapi"}}
-]
-}},
-{{
-"id_assessment": 102,
-"decompositions": []
-}}
-]
-}}
-}}
---- AKHIR CONTOH ---
-DATA INPUT YANG HARUS DIPROSES:
-{chunk_json}
-KEMBALIKAN OUTPUT DENGAN STRUKTUR JSON PERSIS SEPERTI CONTOH.
-```
-
-Mengingat bahwa dimensi aspek dan kriteria rubrik sangat bervariasi, pengiriman seluruh komponen penilaian dalam rubrik dalam satu kali pemanggilan API berisiko melebihi batas context window hingga menurunkan kualitas output model. Oleh karena itu, fungsi dekomposisi membagi rubrik dan pertanyaan ke dalam beberapa chunk untuk diproses secara sekuensial. Sebagai mekanisme pengaman tambahan, sistem menyisipkan delay selama 5 detik antar chunk untuk menghindari rate-limiting dari penyedia API.
-
-Untuk mengantisipasi kegagalan dekomposisi akibat kuota API yang terlampaui, sistem menerapkan mekanisme fallback model secara dinamis. Hal ini bekerja dengan cara mengambil daftar model langsung dari Gemini API, kemudian dilakukan sorting berdasarkan kemampuan model. Dengan menggunakan mekanisme ini, apabila satu model mengembalikan error rate limiting, maka sistem otomatis mencoba model berikutnya dalam daftar tanpa menghentikan keseluruhan proses.
+*Dokumentasi perancangan teknis lengkap disajikan pada Lampiran 5.*
 
 **IV.4.3 Pengujian Aplikasi**
 
@@ -4104,24 +3572,7 @@ Rangkaian argumen tersebut secara langsung menjelaskan mengapa hasil pengujian s
 
 **V.4 Hasil Perbaikan Aplikasi Pendukung Eksperimen**
 
-Subbab ini merupakan implementasi dari tahap yang didefinisikan dalam subbab III.6.5.4 berdasarkan pembahasan hasil eksperimen yang dipetakan pada subbab V.3.
-
-Subbab [V.3.2.3](#page-1-0) mengidentifikasi adanya keluhan pengguna yang berkaitan dengan distraksi berupa disrupsi fokus (split-attention effect) dan auto-scroll issue selama proses penulisan narasi feedback., sehingga mengganggu proses penulisan narasi feedback mahasiswa. Hal ini didukung oleh saran subjek yang disajikan pada [Tabel](#page-5-0)  [V.19](#page-5-0)
-
-Tabel V.19. Keluhan Subjek yang menyatakan Distraksi
-
-No  |  Bagian Sistem yang Mengganggu  |  Keluhan Subjek Eksperimen
-1  |  Contoh kalimat pembuka/sentence starter  |  Sesaat setelah mengetik agak terganggu dengan teks AI yang muncul, yang membuat konsentrasi agak pecah untuk menulis yang ada dipikiran
-2  |  Keseluruhan scaffolding utuh  |  Saran posisi rekomendasi fitur AI mungkin bisa di bagian bawah inputan. Karena ketika mengetik, fitur AI yang mulai bekerja otomatis menggulir halaman kebawah.
-3  |  Peringatan diagnosis kekurangan narasi yang ditulis  |  karena kadang peringatannya terlalu cepat padahal masih mikir untuk nulis apa
-
-Sebagai respons terhadap temuan tersebut, dilakukan modifikasi pada GUI-43 dan GUI-46 yang telah dimodelkan pada subbab IV.4.2.1G. Modifikasi yang dilakukan berupa transformasi contrainer scaffolding menjadi elemen collapsible yang dapat ditutup dan dibuka sesuai keinginan pengguna. Secara default, scafolding akan tertutup dan hanya menampilkan status dari empat indikator tekstual, sebagaimana disajikan pada [Gambar V.18](#page-7-0). Dalam kondisi ini, tombol panah collapsible akan bercahaya untuk pertama kali sebagai upaya menarik perhatian pengguna untuk membuka gulir scaffolding. Jika mahasiswa menekan tombol collapsible, maka container scaffolding akan tetap terbuka meskipun pertanyaan berganti hingga tombol ditekan kembali, sebagaimana disajikan pada [Gambar V.19](#page-8-0) Pendekatan antarmuka adaptif ini diterapkan untuk mengurangi potensi distraksi visual yang dilaporkan pengguna tanpa menghilangkan visibilitas terhadap status pemenuhan indikator rubrik.
-
-Perlu dicatat bahwa modifikasi dilakukan setelah seluruh data eksperimen selesai dikumpulkan. Oleh karena itu, perubahan tersebut tidak memengaruhi hasil analisis yang digunakan untuk menjawab research question, melainkan berfungsi sebagai tindak lanjut desain berdasarkan masukan subjek eksperimen yang diperoleh selama eksperimen.
-
-Gambar V.18. Hasil Modifikasi GUI pada Kondisi Scaffolding Tertutup
-
-Gambar V.19. Hasil Modifikasi GUI pada Kondisi Scaffolding Tertutup
+Berdasarkan temuan usabilitas yang diidentifikasi pada subbab V.3.2.3, dilakukan perbaikan pada antarmuka APE SAPA setelah seluruh data eksperimen selesai dikumpulkan. Keluhan utama subjek mencakup *split-attention effect* akibat teks scaffolding yang muncul tiba-tiba dan mekanisme *auto-scroll* otomatis yang mengganggu konsentrasi menulis. Sebagai respons, komponen scaffolding diubah menjadi elemen *collapsible* yang dapat dibuka atau ditutup sesuai preferensi pengguna, sehingga status indikator tetap terlihat tanpa memaksa tampilan penuh. Perubahan ini tidak memengaruhi data eksperimen yang digunakan untuk menjawab *research question*. Sebagaimana disajikan pada **Lampiran 9**, detail keluhan subjek dan dokumentasi modifikasi antarmuka tersedia untuk kepentingan transparansi pengembangan.
 
 **V.5 Keterbatasan Penelitian**
 
@@ -4171,25 +3622,12 @@ Kelompok kedua adalah dosen pengampu mata kuliah berbasis PjBL yang menggunakan 
 
 Hasil pilot study sebagaimana dipaparkan pada subbab V.2 hingga V.3 menjadi bukti awal sejauh mana kedua outcome tersebut tercapai, khususnya pada indikator kedalaman elaborasi yang menunjukkan indikasi dampak pada kedua jenis assessment.
 
-**VI.2 Hasil Evaluasi Kinerja dan Kegunaan Aplikasi Setelah Implementasi Hasil Penelitian**
+**VI.2 Evaluasi Fungsionalitas dan Usabilitas APE SAPA**
 
-Subbab ini mengevaluasi kinerja dan kegunaan APE SAPA secara keseluruhan setelah pipeline digital scaffolding diterapkan, mencakup pengujian fungsionalitas pada subbab [VI.2.1](#page-14-0), serta pengujian usabilitas pada subbab VI.2.2.
+Evaluasi APE SAPA dilakukan melalui dua dimensi. Pertama, pengujian fungsionalitas terhadap 42 *test case* yang mencakup antarmuka, dekomposisi rubrik, dan keempat indikator tekstual — sebagaimana disajikan pada **Lampiran 7**, hasil menunjukkan 41 *test case* lolos (PASS) dengan satu kegagalan pada skenario koherensi skor-narasi yang bersentimen ekstrem negatif. Kedua, pengujian usabilitas melalui kuesioner terhadap 11 mahasiswa kelompok *treatment* — sebagaimana disajikan pada **Lampiran 8**, sistem dinilai bermanfaat secara fungsional meskipun masih memerlukan penyempurnaan pada aspek beban kognitif pengguna.
 
-**VI.2.1 Pengujian Fungsionalitas**
+*Detail hasil pengujian fungsionalitas disajikan pada Lampiran 7. Detail data kuesioner usabilitas disajikan pada Lampiran 8.*
 
-Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipaparkan pada subbab IV.4.3. Pengujian dilakukan terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.3. Hasil pengujian yang didokumentasikan pada Lampiran 3 menunjukkan 41 dari 42 test case dinyatakan lolos, termasuk pengujian fungsionalitas part-of-speech tagging yang terbukti berhasil menyaring input teks acak atau tidak bermakna sebelum diproses oleh model.
-
-Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi
-
-secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi yang dirancang pada subbab IV.4.2, dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
-
-**VI.2.2 Pengujian Usabilitas**
-
-Pengujian usabilitas dilakukan melalui kuesioner evaluasi pengguna terhadap kelompok treatment sebagaimana dipaparkan pada subbab V.2.5, dengan data yang dihimpun dari 11 mahasiswa yang secara aktif menggunakan sistem digital scaffolding. Berdasarkan skala Likert 1-5, mahasiswa menilai bahwa intervensi digital scaffolding membantu mereka mengingat kriteria rubrik yang terlewat dengan skor rata-rata tertinggi, yaitu 4,00. Aspek kegunaan keseluruhan dan fleksibilitas interaksi mencatat rata-rata 3,91, diikuti oleh kejelasan instruksi dan kemudian memahami struktur penilaian dengan skor 3,82. Temuan ini menujukan perceived usefulness yang secara umum positif terhadap sistem.
-
-Meskipun demikian, hasil kuesioner juga mengindikasikan adanya extraneous cognitive load. Pertanyaan yang mengukur perasaan pusing akibat informasi yang teralu padat dan gangguan konsentrasi saat mengetik masing-masing mencatat skor 3,45. Identifikasi komponen antarmuka menunjukkan pola yang ironis, yaitu komponen "arahan mengenai apa yang harus ditulis (Sentence Starter)" merupakan komponen yang paling banyak dipilih sebagai paling membantu, namun pada saat yang sama juga menjadi komponen yang paling banyak dikeluhkan sebagai pengganggu. Saran kualitatif dari subjek eksperimen juga menyoroti isu teknis berupa pergeseran layar otomatis yang membingungkan saat teks scaffolding diperbaharui selagi mahasiswa mengetik. Secara keseluruhan, pengujian usabilitas menunjukkan bahwa sistem dinilai bermanfaat secara fungsional oleh penggunanya, tetapi masih memerlukan penyempurnaan pada sisi pengalaman pengguna agar manfaat tersebut tidak disertai gangguan konsentrasi yang berarti.
-
-VI.2.3 Rekognisi Mitra atas Kebermanfaatan Hasil Penelitian
 
 **BAB VII**
 

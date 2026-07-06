@@ -38,10 +38,11 @@ Yang saya butuhkan: **Format sitasi mana yang secara resmi digunakan di jurusan/
 
 Jawaban ini penting untuk menentukan apakah sitasi di draft perlu dievaluasi berdasarkan APA 7th atau Harvard Polban.
 
-**Jawaban User** (2026-07-06):
-Sitasi sudah menggunakan format Harvard dan sudah benar di dokumen aslinya (Word). Jika ada perbedaan, kemungkinan karena hasil konversi ke Markdown.
+**Jawaban User**: (2026-07-06)
+Sitasi menggunakan format **Harvard** dan di dalam draft aslinya sudah benar. Perubahan/inkonsistensi kemungkinan terjadi saat proses konversi ke Markdown.
 
-**Tindakan yang diambil**: Tidak perlu ada instruksi perbaikan format sitasi di *roadmap* maupun *revision instructions*. Abaikan isu format sitasi pada versi Markdown.
+**Tindakan**: Tidak perlu melakukan perombakan massal pada format sitasi di dalam Markdown, karena dokumen *Word* aslinya sudah benar.
+
 
 ---
 
