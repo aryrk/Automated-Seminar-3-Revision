@@ -20,17 +20,14 @@ Proyek ini untuk **memetakan dan mengeksekusi revisi** laporan TA berdasarkan:
 
 | Path | Keterangan |
 |---|---|
-| `Dokumen TA/20260407_High FIdelity_[REVISI] Laporan Tugas Akhir.md` | Draft laporan TA versi rapi (tanpa komentar inline, OCR lengkap) — **REFERENSI UTAMA** |
-| `Dokumen TA/20260407_[REVISI] Laporan Tugas Akhir.md` | Draft original dengan komentar dosen inline — arsip, gunakan untuk melihat komentar asli |
-| `Test Cases/Test Cases - TC.csv` | 42 test case pengujian APE per-indikator (F1-F4 + antarmuka + dekomposisi) — **SUDAH DIANALISIS** |
-| `FTA/Lampiran-Form Pengecekan Tata Tulis...md` | Checklist formal aturan tata tulis wajib |
-| `Materi Tata Tulis/` (8 file) | Materi kuliah tata tulis — landasan menulis ilmiah |
-| `Panduan/PANDUAN_TA_POLBAN...md` | Panduan umum TA Polban, fokus jalur riset |
-| `Template/2026 Template Laporan TA JTK...md` | Template laporan (fleksibel, tidak wajib persis) |
-| `PPT/20260629_Seminar 3.md` | PPT sidang Seminar 3 — sudah diringkas di S05 |
-| `Transcribe/Sesi Presentasi + Tanya Jawab.txt` | Transcribe sesi Q&A (SUMBER #2, rawan noise) |
-| `Transcribe/Sesi Saran.txt` | Transcribe sesi saran (SUMBER #2, rawan noise) |
-| `Paper/the effect of scaffolding based digital instructional media on higher order thinking skills.md` | Paper yang disebut penguji di sidang — sudah dianalisis |
+| `Dokumen TA/Hasil Perbaikan 2026006 15.16/20260706_[REVISI] Laporan Tugas Akhir.md` | **FILE UTAMA REVISI** — Naskah laporan terkini yang sedang disunting. |
+| `Test Cases/Test Cases - TC.csv` | 42 test case pengujian APE awal. |
+| `Dokumen TA/Hasil Perbaikan 2026006 15.16/NLP_Validation_Cases.csv` | **Baru:** 107 Test Case komprehensif (pengganti TC awal). |
+| `FTA/Lampiran-Form Pengecekan Tata Tulis...md` | Checklist formal aturan tata tulis wajib. |
+| `Materi Tata Tulis/` (8 file) | Materi kuliah tata tulis — landasan menulis ilmiah. |
+| `Panduan/PANDUAN_TA_POLBAN...md` | Panduan umum TA Polban, fokus jalur riset. |
+| `Template/2026 Template Laporan TA JTK...md` | Template laporan (fleksibel, tidak wajib persis). |
+| `Transcribe/` | Transcribe sesi Q&A dan Saran sidang (SUMBER #2). |
 
 ---
 
@@ -38,8 +35,9 @@ Proyek ini untuk **memetakan dan mengeksekusi revisi** laporan TA berdasarkan:
 
 | Path | Keterangan |
 |---|---|
-| `Dokumen TA/REVISI_DOKUMEN.md` | **FILE UTAMA REVISI** — copy dari HF, hanya file ini yang diedit |
-| `Dokumen TA/REVISI_DOKUMEN_LAMPIRAN.md` | Tempat menampung konten yang dipindah dari bab utama ke Lampiran |
+| `Dokumen TA/Hasil Perbaikan 2026006 15.16/20260706_[REVISI] Laporan Tugas Akhir.md` | **FILE UTAMA REVISI** — hanya file ini yang diedit. |
+| `Dokumen TA/Hasil Perbaikan 2026006 15.16/Lampiran/` | Folder untuk menampung konten yang dipindah dari bab utama ke Lampiran. |
+| `Dokumen TA/Hasil Perbaikan 2026006 15.16/run_nlp_tests_FINAL.py` | Script validasi NLP 107 test cases. |
 
 ---
 
