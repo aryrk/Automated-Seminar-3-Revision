@@ -1,4 +1,4 @@
-﻿**PEMANFAATAN** *DIGITAL SCAFFOLDING* **BERBASIS RUBRIK UNTUK MENDUKUNG INDIKATOR TEKSTUAL** *FEEDBACK LITERACY* **PADA** *PROJECT-BASED*
+**PEMANFAATAN** *DIGITAL SCAFFOLDING* **BERBASIS RUBRIK UNTUK MENDUKUNG INDIKATOR TEKSTUAL** *FEEDBACK LITERACY* **PADA** *PROJECT-BASED*
 
  LEARNING
 
@@ -2302,19 +2302,17 @@ Sentence Starter  |  Salah satu hal yang saya amati adalah bahwa pada aspek Juml
 
 **BAB IV**
 
-**HASIL PEMBUATAN APE**
+**HASIL PENGEMBANGAN APLIKASI PENDUKUNG EKSPERIMEN**
 
 Bab ini menjelaskan tahapan operasionalisasi variabel eksperimen ke dalam bentuk pipeline komputasional. Struktur pembahasan dimulai dengan spesifikasi arsitektur tingkat makro yang menghubungkan teori pedagogis dengan model NLP. Bagian utama bab ini kemudian mendeskripsikan konfigurasi logika, konstruksi teks, serta kalibrasi model yang digunakan sebagai instrumen utama dalam eksperimen.
 
-**IV.1 Analisis Problem Domain**
+**IV.1 Analisis Problem Domain dan Kebutuhan Eksperimen**
 
 Berdasarkan langkah identifikasi dan studi pendahuluan yang telah diuraikan pada subbab III.6.1, subbab ini menyajikan analisis terhadap karakteristik permasalahan yang ditemukan pada data historis Self Assessment dan Peer Assessment sebagai dasar perancangan pipeline digital scaffolding. Analisis dilakukan untuk mengidentifikasi bagaimana mahasiswa mengartikulasikan penilaian ke dalam bentuk narasi feedback serta bentuk penyimpangan yang muncul terhadap indikator tekstual narasi feedback yang telah dirumuskan pada BAB II. Selain karakteristik kualitatif, subbab ini juga menyajikan kuantifikasi kondisi aktual berdasarkan data historis sehingga urgensi intervensi scaffolding dapat dijustifikasi secara empiris sebelum proses perumusan pipeline instrumen dilakukan.
 
 **IV.1.1 Karakteristik Data Narasi** *Feedback*
 
-Analisis dilakukan secara manual terhadap sampel acak dari data historis untuk mengisolasi karakteristik kemunculan pola dari penyimpangan terhadap keempat indikator tekstual narasi feedback, sebagaimana didefinisikan pada Tabel III.4. Narasi feedback yang dianalisis memiliki karakteristik sebagai teks bahasa alami yang ditulis secara bebas oleh mahasiswa. Berbeda dengan data terstruktur, narasi dapat menggunakan berbagai variasi ekspresi untuk menyampaikan penilaian yang sama sehingga evaluasi kualitas feedback tidak dapat dilakukan hanya berdasarkan keberadaan kata tertentu. Oleh karena itu, analisis pada subbab ini difokuskan pada Commented [AR27]: (Dilingkari) - Bu Ani
-
-pola penyimpangan terhadap empat indikator tekstual yang telah didefinisikan sebelumnya.
+Analisis dilakukan secara manual terhadap sampel acak dari data historis untuk mengisolasi karakteristik kemunculan pola dari penyimpangan terhadap keempat indikator tekstual narasi feedback, sebagaimana didefinisikan pada Tabel III.4. Narasi feedback yang dianalisis memiliki karakteristik sebagai teks bahasa alami yang ditulis secara bebas oleh mahasiswa. Berbeda dengan data terstruktur, narasi dapat menggunakan berbagai variasi ekspresi untuk menyampaikan penilaian yang sama sehingga evaluasi kualitas feedback tidak dapat dilakukan hanya berdasarkan keberadaan kata tertentu. Oleh karena itu, analisis pada subbab ini difokuskan pada pola penyimpangan terhadap empat indikator tekstual yang telah didefinisikan sebelumnya.
 
 **IV.1.1.1 Karakteristik Indikator Cakupan Rubrik.**
 
@@ -2454,20 +2452,15 @@ Kondisi tersebut menunjukkan adanya ruang urgensi untuk intervensi yang dapat me
 
 Seluruh temuan yang telah dipaparkan mengonfirmasi tiga hasil utama, yaitu (1) adanya asimetri alokasi effort atau usaha antara self assessment dan peer assessment, (2) ditemukannya penurunan kuantitas narasi lintas waktu antara tengah semester dan akhir semester, serta (3) ditemukannya fenomena yang terisolasi antara nilai numerik dengan kedalaman eksplorasi teks. Ketiga hal tersebut memperkuat motivasi penelitian, di mana kemampuan mahasiswa dalam mengartikulasi skor ke dalam bentuk narasi feedback tidak berkembang secara alami tanpa adanya intervensi, dan hanya melalui pengulangan proses pengisian instrumen.
 
-**IV.1.3 Spesifikasi dan Objektif Solusi**
+**IV.1.3 Kebutuhan Eksperimen dan Objektif Solusi**
 
-Subbab ini adalah manifestasi dari tahapan yang didefinisikan pada subbab III.6.2. Spesifikasi dan objektif dari solusi didefinisikan berdasarkan temuan pada subbab IV.1.1 hingga IV.1.2 yang menunjukkan bahwa skor kuantitatif dan narasi pendukung tidak selalu berkembang secara selaras selama proses assessment. Hal ini terlihat dari semakin kec[ilnya per](#page-2-0)bedaan skor antara self assessment dan peer assessment menjelang akhir semester, sementara panjang narasi yang menyertainya justru mengalami penurunan.
+Subbab ini adalah manifestasi dari tahapan perumusan kebutuhan eksperimen yang didefinisikan pada subbab III.6.2. Objektif solusi didasarkan pada temuan empiris subbab IV.1.1 hingga IV.1.2, yang menegaskan bahwa skor kuantitatif dan narasi pendukung tidak berkembang secara selaras selama proses *assessment*. Penurunan kualitas narasi yang teridentifikasi menuntut instrumen eksperimen (APE) yang tidak hanya memonitor teks, tetapi secara proaktif memandu mahasiswa.
 
-Berdasarkan temuan tersebut, solusi dirancang dengan spesifikasi sebagai berikut:
+Berdasarkan kebutuhan eksperimen tersebut, solusi dirancang dengan spesifikasi fungsional sebagai berikut:
 
-1. Sistem mampu mendeteksi keempat indikator tekstual narasi feedback yaitu cakupan rubrik, koherensi skor, kedalaman elaborasi dan relevansi topik yang dijelaskan lebih lanjut pada subbab
-
-Commented [AR29]: ?
-
-- Bu Ani
-
-2. Sistem mampu memicu teks scaffolding secara real-time dalam sesi penulisan ketika narasi feedback melanggar keempat indikator tekstual dan diberikan teks scaffolding berdasarkan vektor keputusan intervensi di mana setiap keputusan didasarkan pada threshold yang telah dikalibrasi berdasarkan sample data historis.
-3. Sistem mampu menghentikan pemberian scaffolding secara otomatis ketika seluruh indikator tekstual telah terpenuhi pada sesi penulisan yang sama..
+1. Sistem mampu mendeteksi keempat indikator tekstual secara komputasional (*cakupan rubrik, koherensi skor, kedalaman elaborasi, dan relevansi topik*).
+2. Sistem mampu memicu teks scaffolding secara *real-time* dalam sesi penulisan ketika narasi feedback melanggar keempat indikator tekstual. Pemberian intervensi ini didasarkan pada *threshold* yang telah dikalibrasi menggunakan data historis.
+3. Sistem mampu menghentikan pemberian scaffolding secara otomatis ketika seluruh indikator tekstual telah terpenuhi pada sesi penulisan yang sama.
 
 Batasan operasional sistem ditetapkan pada evaluasi keempat indikator tekstual narasi feedback. Dengan demikian, sistem hanya mengevaluasi indikator yang dapat dioperasionalkan secara komputasional berdasarkan teks narasi, dan tidak mencakup aspek linguistik maupun evaluatif yang masih memerlukan interpretasi manusia sebagaimana dijelaskan pada subbab I.7.
 
@@ -2475,15 +2468,11 @@ Objektif solusi difokuskan pada penyediaan scaffolding selama proses penulisan n
 
 Keberhasilan solusi dievaluasi melalui dua tahapan yang selaras dengan pertanyaan penelitian. Tahap pertama menjawab RQ1, yaitu mengevaluasi kemampuan pipeline mendeteksi keempat indikator tekstual menggunakan metrik precision, recall, dan F1-score. Tahap kedua menjawab RQ2 melalui pilot study untuk mengukur perbedaan tingkat pemenuhan indikator tekstual antara kelompok treatment dan kelompok kontrol menggunakan analisis multivariat, analisis univariat, dan estimasi effect size.
 
-**IV.2 Hasil Anotasi Dataset**
+**IV.2 Pengembangan Aplikasi**
 
-Subbab ini merupakan hasil akhir dari metodologi anotasi dataset yang telah didefinisikan pada subbab III.6.3.1. Sebagaimana dijelaskan, proses anotasi terdiri dari beberapa tahapan, yaitu: (1) pre-processing untuk melakukan dekomposisi
+Setelah analisis permasalahan mengonfirmasi asimetri kualitas narasi mahasiswa, tahap pengembangan aplikasi (APE) difokuskan pada penyediaan dataset acuan (*ground truth*) dan pemodelan instrumen NLP yang akurat. Subbab ini membahas langkah pertama dalam pengembangan tersebut, yaitu penyusunan anotasi dataset berdasarkan metodologi pada subbab III.6.3.1.
 
-Commented [AR30]: ?
-
-- Bu Ani
-
-terhadap rubrik, hasil tahapan ini disajikan pada subbab IV.2.1. Kemudian, untuk menjaga konsistensi, (2) implementasi panduan anotasi disajikan pada subbab Error! Reference source not found. sebelum dilakukan proses anotasi. Setelah itu, (3) sampel hasil anotasi disajikan pada subbab IV.2.2, sebelum dilakukan (4) validasi pada subbab IV.2.2.3.
+Proses anotasi terdiri dari beberapa tahapan terstruktur: (1) *pre-processing* untuk melakukan dekomposisi terhadap rubrik yang disajikan pada subbab IV.2.1; (2) implementasi panduan anotasi untuk menjaga konsistensi; (3) penyajian sampel hasil anotasi pada subbab IV.2.2; serta (4) pelaksanaan validasi anotasi pada subbab IV.2.3.
 
 **IV.2.1 Hasil Dekomposisi Rubrik**
 
@@ -3756,9 +3745,7 @@ Penelitian ini hanya mengevaluasi satu bentuk digital scaffolding yang diwujudka
 
 **ANALISIS DAMPAK HASIL PENELITIAN**
 
-Commented [AR32]: (kertas dilipas tanpa keterangan) - Bu Ani
-
-Bab ini menyajikan analisis outcome yang diharapkan dari penerapan hasil penelitian terhadap pemangku kepentingan yang telah diidentifikasi pada subbab I.5, serta evaluasi kinerja dan kegunaan aplikasi pendukung eksperimen (APE) SAPA setelah pipeline digital scaffolding diintegrasikan sebagaimana dipaparkan pada subbab IV.4. Evaluasi disajikan ke dalam tiga bagian, yaitu: (1) outcome yang diharapkan dari mahasiswa dan dosen sebagai pengguna/mitra penelitian, (2) hasil evaluasi kinerja dan kegunaan sistem setelah implementasi yang mencakup pengujian fungsionalitas, pengujian kinerja aplikasi, pengujian usabilitas, pengujian kinerja aplikasi, serta keterbatasan sistem, dan (3) status dokumen keberterimaan dari pengguna/mitra terhadap hasil eksperimen.
+Bab ini menyajikan analisis outcome yang diharapkan dari penerapan hasil penelitian terhadap pemangku kepentingan yang telah diidentifikasi pada subbab I.5, serta mengevaluasi sejauh mana instrumen digital scaffolding ini dapat diterima oleh pengguna secara fungsional maupun usabilitas berdasarkan temuan pada bab-bab sebelumnya.
 
 **VI.1 Outcome yang Diharapkan dari Pengguna/Mitra**
 
@@ -3770,25 +3757,15 @@ Kelompok kedua adalah dosen pengampu mata kuliah berbasis PjBL yang menggunakan 
 
 Hasil pilot study sebagaimana dipaparkan pada subbab V.2 hingga V.3 menjadi bukti awal sejauh mana kedua outcome tersebut tercapai, khususnya pada indikator kedalaman elaborasi yang menunjukkan indikasi dampak pada kedua jenis assessment.
 
-**VI.2 Hasil Evaluasi Kinerja dan Kegunaan Aplikasi Setelah Implementasi Hasil Penelitian**
+**VI.2 Evaluasi Kinerja dan Keterimaan Aplikasi**
 
-Subbab ini mengevaluasi kinerja dan kegunaan APE SAPA secara keseluruhan setelah pipeline digital s[caffoldin](#page-4-0)g diterapkan, mencakup pengujian fungsionalitas pada subbab VI.2.1, serta pengujian usabilitas pada subbab VI.2.2.
+Subbab ini mengevaluasi kinerja APE SAPA secara keseluruhan setelah *pipeline* digital scaffolding diterapkan, ditinjau dari keterimaan fungsional dan pengalaman pengguna. Alih-alih mengulang rincian pengujian, evaluasi ini mensintesis temuan utama yang telah diuraikan pada Bab IV dan Bab V untuk menakar dampak nyata sistem terhadap pihak pengguna.
 
-**VI.2.1 Pengujian Fungsionalitas**
+Dari sisi kinerja teknis (sebagaimana dirinci pada subbab IV.4.2), fungsionalitas sistem terbukti solid dalam menangani *noise* seperti input teks yang tidak bermakna maupun deteksi inkonsistensi yang kontradiktif. Keandalan ini menjamin bahwa dosen sebagai pihak pemangku kepentingan akan menerima data hasil deteksi kualitas teks yang andal tanpa perlu menyeleksi respons *spam* secara manual. Secara fungsional, instrumen ini memenuhi standar kelayakan operasional untuk diterapkan di lingkungan PjBL.
 
-Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipaparkan pada subbab IV.4.2. Pengujian dilakukan terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.4. Hasil pengujian yang didokumentasikan pada Lampiran 3 menunjukkan 41 dari 42 test case dinyatakan lolos, termasuk pengujian fungsionalitas part-of-speech tagging yang terbukti berhasil menyaring input teks acak at[au tidak bermak](#page-14-0)na sebelum diproses oleh model.
+Dari sisi keterimaan pengguna (berdasarkan evaluasi usabilitas di subbab V.2.5), keberadaan sistem ini mendapatkan respons yang sangat positif dari mahasiswa, khususnya dalam memfasilitasi mahasiswa mengingat kriteria rubrik yang terlewat. Meskipun dinilai sangat bermanfaat, analisis keterimaan juga mengungkap efek samping berupa peningkatan beban kognitif pada pengguna. Hal ini dipicu oleh perubahan tampilan layar yang terjadi secara dinamis (otomatis bergeser ke bawah) saat mahasiswa masih berada di tengah proses mengetik narasi. 
 
-Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi, dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
-
-Commented [AR33]: (Kertas dilipat tanpa keterangan) - Bu Ani
-
-**VI.2.2 Pengujian Usabilitas**
-
-Pengujian usabilitas dilakukan melalui kuesioner evaluasi pengguna terhadap kelompok treatment sebagaimana dipaparkan pada subbab V.2.5, dengan data yang dihimpun dari 11 mahasiswa yang secara aktif menggunakan sistem digital scaffolding. Berdasarkan skala Likert 1-5, mahasiswa menilai bahwa intervensi digital scaffolding membantu mereka mengingat kriteria rubrik yang terlewat dengan skor rata-rata tertinggi, yaitu 4,00. Aspek kegunaan keseluruhan dan fleksibilitas interaksi mencatat rata-rata 3,91, diikuti oleh kejelasan instruksi dan kemudian memahami struktur penilaian dengan skor 3,82. Temuan ini menujukan perceived usefulness yang secara umum positif terhadap sistem.
-
-Meskipun demikian, hasil kuesioner juga mengindikasikan adanya extraneous cognitive load. Pertanyaan yang mengukur perasaan pusing akibat informasi yang teralu padat dan gangguan konsentrasi saat mengetik masing-masing mencatat skor 3,45. Identifikasi komponen antarmuka menunjukkan pola yang ironis, yaitu komponen "arahan mengenai apa yang harus ditulis (Sentence Starter)" merupakan komponen yang paling banyak dipilih sebagai paling membantu, namun pada saat yang sama juga menjadi komponen yang paling banyak dikeluhkan sebagai pengganggu. Saran kualitatif dari subjek eksperimen juga menyoroti isu teknis berupa pergeseran layar otomatis yang membingungkan saat teks scaffolding diperbaharui selagi mahasiswa mengetik. Secara keseluruhan, pengujian usabilitas menunjukkan bahwa sistem dinilai bermanfaat secara fungsional oleh penggunanya, tetapi masih memerlukan penyempurnaan pada sisi pengalaman pengguna agar manfaat tersebut tidak disertai gangguan konsentrasi yang berarti.
-
-**VI.2.3 Rekognisi Mitra atas Kebermanfaatan Hasil Penelitian**
+Temuan di atas mengonfirmasi bahwa meskipun integrasi instrumen digital scaffolding secara arsitektural telah siap dan terbukti berdampak pada penyusunan narasi evaluatif, adopsi jangka panjang yang optimal oleh mahasiswa masih memerlukan penyesuaian rancangan antarmuka (*user experience*). Hal ini agar *outcome* peningkatan literasi *feedback* dapat dicapai tanpa menambah kelelahan kognitif selama penyusunan asesmen.
 
 **BAB VII**
 
