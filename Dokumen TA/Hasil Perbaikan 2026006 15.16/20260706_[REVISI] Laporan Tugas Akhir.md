@@ -193,17 +193,16 @@ IV.2.1 Hasil Dekomposisi Rubrik 122
 IV.2.2 Implementasi Panduan Anotasi 124
 IV.2.3 Sampel Hasil Anotasi 125
 IV.2.4 Validasi Hasil Anotasi 138
-IV.3 Hasil Pemodelan dan Pengembangan Sistem Scaffolding 139
+IV.3 Hasil Pemodelan dan Formulasi Instrumen Scaffolding 139
 IV.3.2 Desain Pipeline Digital Scaffolding 143
 IV.3.3 Landasan Formal dan Pemodelan Pipeline 147
 IV.3.4 Hasil Evaluasi dan Kalibrasi Model 161
 IV.3.5 Implementasi Rule Based System untuk Scaffolding Error! Bookmark not defined.
 IV.3.6 Realisasi Teks dan Template ScaffoldingError! Bookmark not defined.
-IV.4 Hasil Implementasi APE 197
+IV.4 Hasil Implementasi dan Validasi Instrumen APE 197
 
-IV.4.1 Hasil Analisis Sistem Berjalan 197
-IV.4.2 Hasil Perancangan dan Integrasi Komponen 197
-IV.4.3 Pengujian Aplikasi 198
+IV.4.1 Arsitektur Integrasi Sistem 197
+IV.4.2 Validasi Skenario Logika Komputasional (Pre-Eksperimen) 198
 IV.5 Hasil Perancangan Skenario Eksperimen 198
 IV.5.1 Pemetaan Subjek Eksperimen 198
 IV.5.2 Kuesioner yang Digunakan 199
@@ -1625,9 +1624,9 @@ Teks disusun untuk memberikan panduan yang seragam, tetap relevan dengan kondisi
 
 Tahap ini menguraikan bagaimana sistem digital scaffolding dikembangkan dan diintegrasikan ke dalam lingkungan aplikasi existing, yaitu SAPA (Self & Peer Assessment). Proses ini memodifikasi sistem yang berjalan agar dapat berfungsi sebagai instrumen eksperimen.
 
-**III.6.5.1 Analisis Sistem Berjalan**
+**III.6.5.1 Analisis Lingkungan Eksperimen**
 
-Langkah awal dilakukan dengan menganalisis arsitektur, database, dan antarmuka dari aplikasi SAPA yang telah berjalan. Analisis ini difokuskan pada identifikasi titik integrasi di mana modul NLP dan rule-based engine dapat disisipkan tanpa mengganggu fungsi utama aplikasi. Metode yang digunakan difokuskan pada penentuan titik injeksi logika rule-based dan inferensi model NLP ke dalam alur proses sistem berjalan.
+Langkah awal dilakukan dengan menganalisis arsitektur, basis data, dan antarmuka dari platform SAPA yang digunakan sebagai lingkungan eksperimen. Analisis ini difokuskan pada identifikasi titik integrasi di mana modul NLP dan *rule-based engine* dapat disisipkan tanpa mengubah atau menimbulkan perancu pada fungsi utama platform asesmen. Metode yang digunakan difokuskan pada penentuan titik injeksi logika *rule-based* dan inferensi model NLP ke dalam alur proses asesmen mahasiswa.
 
 Commented [AR32]: ?
 
@@ -1641,11 +1640,11 @@ Bagaimana?
 
 Commented [AR33R2]: fixed
 
-**III.6.5.2 Perancangan dan Integrasi Komponen**
+**III.6.5.2 Integrasi Pipeline ke dalam Lingkungan Eksperimen**
 
-Setelah titik integrasi terpetakan, proses dilanjutkan dengan merancang mekanisme injeksi pipeline NLP ke dalam alur komputasional sistem yang telah berjalan, yaitu aplikasi SAPA.
+Setelah titik integrasi terpetakan, proses dilanjutkan dengan merancang mekanisme injeksi *pipeline* NLP ke dalam alur komputasional platform SAPA.
 
-**III.6.5.3 Pengujian Sistem**
+**III.6.5.3 Validasi Fungsionalitas Instrumen**
 
 Sebelum digunakan dalam eksperimen, instrumen dievaluasi secara komputasional untuk memastikan fungsionalitas logika ekstraksi NLP berjalan sesuai parameter yang didefinisikan. Evaluasi difokuskan pada pengujian rule-based untuk memastikan intervensi scaffolding terpicu akurat ketika kualitas teks berada di bawah threshold yang telah ditetapkan. Validasi ini dilakukan untuk memastikan instrumen berfungsi reliabel sebagai alat ukur sepanjang periode eksperimen tanpa bias fungsionalitas.
 
@@ -1688,7 +1687,7 @@ Kuesioner difokuskan pada evaluasi pengalaman interaksi mahasiswa terhadap fitur
 
 Pemilihan ketiga kerangka evaluasi tersebut didasarkan pada karakteristik pilot study yang berfokus pada persepsi specific task utilization, serta memiliki relevansi langsung dengan kerangka pedagogis ZPD yang dijelaskan pada subbab II.1.10. Kuesioner ini juga memuat open-ended questions untuk menggali opini mahasiswa mengenai akurasi deteksi sistem.
 
-**C. Pembuatan Rubrik**
+**C. Penyiapan Rubrik Evaluasi**
 
 Instrumen rubrik yang diterapkan dalam tahap eksperimen tidak menggunakan rubrik spesifik proyek pada Tabel II.1. Hal ini dilakukan untuk mengeliminasi bias kompleksitas tugas teknik antar kelompok mahasiswa.
 
@@ -1915,7 +1914,7 @@ Bab ini menjelaskan tahapan operasionalisasi variabel eksperimen ke dalam bentuk
 
 **IV.1 Analisis Problem Domain**
 
-Berdasarkan langkah identifikasi dan studi pendahuluan yang telah diuraikan pada subbab III.6.1, subbab ini menyajikan analisis terhadap karakteristik permasalahan yang ditemukan pada data historis Self Assessment dan Peer Assessment sebagai dasar perancangan pipeline digital scaffolding. Analisis dilakukan untuk mengidentifikasi bagaimana mahasiswa mengartikulasikan penilaian ke dalam bentuk narasi feedback serta bentuk penyimpangan yang muncul terhadap indikator tekstual narasi feedback yang telah dirumuskan pada BAB II. Selain karakteristik kualitatif, subbab ini juga menyajikan kuantifikasi kondisi aktual berdasarkan data historis sehingga kebutuhan pengembangan sistem dapat dijustifikasi secara empiris sebelum proses perancangan pipeline dilakukan.
+Berdasarkan langkah identifikasi dan studi pendahuluan yang telah diuraikan pada subbab III.6.1, subbab ini menyajikan analisis terhadap karakteristik permasalahan yang ditemukan pada data historis Self Assessment dan Peer Assessment sebagai dasar perancangan pipeline digital scaffolding. Analisis dilakukan untuk mengidentifikasi bagaimana mahasiswa mengartikulasikan penilaian ke dalam bentuk narasi feedback serta bentuk penyimpangan yang muncul terhadap indikator tekstual narasi feedback yang telah dirumuskan pada BAB II. Selain karakteristik kualitatif, subbab ini juga menyajikan kuantifikasi kondisi aktual berdasarkan data historis sehingga urgensi intervensi *scaffolding* dapat dijustifikasi secara empiris sebelum proses perumusan *pipeline* instrumen dilakukan.
 
 **IV.1.1 Karakteristik Data Narasi** *Feedback*
 
@@ -3085,25 +3084,29 @@ Output $P_k^*$  |  Diagnostik  |  Narasi masih kurang menyinggung Jumlah Iklan y
 Directive  |  Lengkapi narasi dengan uraian tentang Jumlah Iklan yang Dikumpulkan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data, ceritakan perilaku spesifik yang teramati.  |  Lengkapi narasi dengan uraian tentang Keragaman Platform Pengumpulan, Kesulitan dalam Pengumpulan Data, Kemudahan dalam Pengumpulan Data, ceritakan perilaku spesifik yang teramati.
 Sentence Starter  |  Salah satu hal yang saya amati adalah bahwa pada aspek Jumlah Iklan yang Dikumpulkan, yang teramati adalah [perilaku spesifik terkait Jumlah Iklan yang Dikumpulkan], sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah [perilaku spesifik terkait Kesulitan dalam Pengumpulan Data], sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah [perilaku spesifik terkait Kemudahan dalam Pengumpulan Data]  |  Salah satu hal yang saya amati adalah bahwa pada aspek Keragaman Platform Pengumpulan, yang teramati adalah [perilaku spesifik terkait Keragaman Platform Pengumpulan], sementara pada aspek Kesulitan dalam Pengumpulan Data, yang teramati adalah [perilaku spesifik terkait Kesulitan dalam Pengumpulan Data], sementara pada aspek Kemudahan dalam Pengumpulan Data, yang teramati adalah [perilaku spesifik terkait Kemudahan dalam Pengumpulan Data]
 
-**IV.4 Hasil Implementasi APE**
+**IV.4 Hasil Implementasi dan Validasi Instrumen APE**
 
-Subbab ini merupakan manifestasi dari subbab III.6.5 sebagai integrasi aplikasi pendukung eksperimen dengan sistem "SAPA" berdasarkan konfigurasi akhir yang dipetakan pada subbab IV.3.4.4. Implementasi dilakukan dengan memetakan arsitektur aplikasi existing sebelum sistem digital scaffolding diintegrasi.
+Subbab ini menyajikan hasil akhir integrasi pipeline digital scaffolding ke dalam Aplikasi Pendukung Eksperimen (APE) SAPA, serta hasil pengujian komputasional (menggunakan skenario data *dummy*) yang berfungsi sebagai validasi instrumen sebelum digunakan dalam eksperimen utama. Berbeda dengan pengembangan perangkat lunak konvensional, pembahasan pada bab ini difokuskan pada arsitektur integrasi secara global dan pembuktian operasional logika NLP. Adapun detail rancang bangun teknis didokumentasikan pada Lampiran 6.
 
-**IV.4.1 Hasil Analisis Sistem Berjalan**
+**IV.4.1 Arsitektur Integrasi Sistem**
 
-Analisis sistem berjalan mencakup deskripsi sistem existing, identifikasi titik integrasi, komponen yang dimodifikasi, serta komponen yang ditambahkan ke dalam APE SAPA. Sebagaimana disajikan pada Lampiran 6, analisis ini menjadi dasar penentuan cakupan dan strategi integrasi pipeline digital scaffolding ke dalam sistem yang telah ada.
-
-**IV.4.2 Hasil Perancangan dan Integrasi Komponen**
-
-Perancangan teknis APE SAPA mencakup arsitektur aplikasi, Use Case Diagram, Class Diagram, Entity-Relationship Diagram (ERD), Sequence Diagram, dan perancangan antarmuka. Sebagaimana disajikan pada Lampiran 6, Gambar IV.25 menunjukkan arsitektur APE SAPA setelah integrasi pipeline.
+Perancangan teknis APE SAPA mencakup penggabungan antara antarmuka *front-end* aplikasi *existing* dengan *engine* komputasi NLP di sisi *back-end*. Gambar IV.25 menunjukkan arsitektur APE SAPA setelah integrasi pipeline dilakukan, yang menjadi gambaran besar lingkungan eksperimen ini.
 
 Gambar IV.25. Arsitektur Aplikasi setelah Integrasi
 
-**IV.4.3 Pengujian Aplikasi**
+**IV.4.2 Validasi Skenario Logika Komputasional (Pre-Eksperimen)**
 
-Sebagai manifestasi tahap akhir perancangan aplikasi pendukung eksperimen, sebagaimana didefinisikan pada subbab III.6.5.3, dilakukan testing terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.4.
+Untuk menjamin reliabilitas dan keabsahan instrumen *digital scaffolding* sebelum diujikan pada subjek manusia, dilakukan pengujian logika NLP secara komputasional (*computational validation*). Pengujian ini menggunakan *test suite* yang terdiri dari 107 skenario data *dummy*, dirancang secara sistematis untuk memicu batas fungsional (*edge cases*) pada empat indikator pengukuran teks. 
 
-Hasil pengujian pada Lampiran 3 menunjukkan 41 dari 42 test case yang dinyatakan lolos. Pengujian fungsionalitas part-of-speech tagging yang didefinisikan pada subbab IV.3.3.1 terbukti berhasil menyaring input teks acak atau tidak bermakna sebelum diproses oleh model. Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi evaluatif dengan skenario narasi yang kontradiktif pada TC18. Dalam pengujian tersebut, pengguna memasukkan skor 5, namun menuliskan narasi feedback yang merepresentasikan kualitas pekerjaan rendah. Meskipun sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, arsitektur model gagal mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi, sehingga sistem mengembalikan nilai prediksi skor "yang belum dapat ditentukan". Hal ini menunjukkan adanya limitation pada model komputasi dalam memetakan dan menyelaraskan rentang semantik narasi yang bersentimen sangat negatif ke dalam skala skor rubrik secara spesifik.
+Hasil pengujian komputasional mengungkap karakteristik dan batasan arsitektur *zero-shot classification* yang digunakan, dengan rincian temuan operasional sebagai berikut:
+
+1. **Konsistensi Heuristik Elaborasi (f₃):** Pengujian empiris pada ambang batas membuktikan bahwa heuristik beroperasi secara presisi pada titik 25 kata (*whitespace-delimited words*). Skenario input sepanjang 24 kata secara deterministik memicu intervensi, sedangkan skenario 25 kata berhasil diloloskan oleh sistem tanpa terpengaruh oleh noise seperti spasi ganda.
+2. **Ketahanan terhadap Variasi Semantik (f₁):** Model *embedding* (`intfloat/multilingual-e5-large-instruct`) menunjukkan ketahanan (*robustness*) yang tinggi terhadap fenomena parafrase. Sistem berhasil mengukur cakupan rubrik baik pada penggunaan istilah formal akademis ("etos kerja") maupun ragam bahasa informal, membuktikan kemampuan semantik yang melampaui sekadar pencocokan kata kunci dasar.
+3. **Bias Polaritas pada Deteksi Koherensi (f₂):** Matriks pengujian komprehensif (kombinasi 5 skor numerik dengan 3 variasi sentimen teks) mendeteksi keberadaan bias polaritas. Model sangat akurat mendeteksi inkoherensi pada skor ekstrem (misal: skor 5 bersentimen negatif dinilai gagal koheren). Akan tetapi, pada skor moderat (2, 3, dan 4), model menunjukkan sensitivitas yang rentan terhadap *false-positive*, merefleksikan batasan presisi LLM pada zona abu-abu penilaian manusia.
+4. **Keterbatasan Filter Relevansi Topik (f₄):** Uji coba pada narasi *off-domain* (seperti artikel berita umum) menunjukkan bahwa algoritma pada dasarnya menghitung kedekatan kosinus vektor, bukan melakukan klasifikasi topik biner. Jika teks *off-domain* memuat serangkaian kata yang secara vektor berdekatan dengan jangkar rubrik, teks tersebut berpeluang diinterpretasikan sebagai relevan oleh sistem.
+5. **Validasi Filter Input Kebahasaan:** Filter prapemrosesan awal sukses menolak *noise* dasar (seperti deret angka murni, teks acak/*gibberish*, dan bahasa asing). Modul ini mensyaratkan keberadaan struktur frasa atau kalimat yang koheren dalam bahasa Indonesia agar komputasi inferensi NLP selanjutnya dapat dieksekusi, menjaga efisiensi sumber daya dari beban iterasi yang tidak valid.
+
+Secara keseluruhan, rangkaian eksekusi 107 skenario komputasional ini mengonfirmasi bahwa *pipeline NLP* pengukuran beroperasi dengan tingkat validitas fungsional yang solid. Dengan terpetakannya seluruh toleransi dan batasan presisi model, instrumen *scaffolding* ini dinyatakan reliabel dan dapat dipertanggungjawabkan untuk tahap pengumpulan data eksperimen lapangan.
 
 **IV.5 Hasil Perancangan Skenario Eksperimen**
 
@@ -3919,7 +3922,7 @@ Subbab ini mengevaluasi kinerja dan kegunaan APE SAPA secara keseluruhan setelah
 
 **VI.2.1 Pengujian Fungsionalitas**
 
-Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipaparkan pada subbab IV.4.3. Pengujian dilakukan terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.4. Hasil pengujian yang didokumentasikan pada Lampiran 3 menunjukkan 41 dari 42 test case dinyatakan lolos, termasuk pengujian fungsionalitas part-of-speech tagging yang terbukti berhasil menyaring input teks acak atau tidak bermakna sebelum diproses oleh model.
+Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipaparkan pada subbab IV.4.2. Pengujian dilakukan terhadap 42 test case yang mencakup pemeriksaan antarmuka, dekomposisi rubrik, dan seluruh indikator tekstual narasi yang didefinisikan pada Tabel III.4. Hasil pengujian yang didokumentasikan pada Lampiran 3 menunjukkan 41 dari 42 test case dinyatakan lolos, termasuk pengujian fungsionalitas part-of-speech tagging yang terbukti berhasil menyaring input teks acak atau tidak bermakna sebelum diproses oleh model.
 
 Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi, dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
 
@@ -4037,7 +4040,7 @@ Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 Lampiran 6. Analisis Sistem Perancangan Teknis
 
-**ANALISIS SISTEM BERJALAN DAN PERANCANGAN TEKNIS APE**
+**DOKUMENTASI LINGKUNGAN EKSPERIMEN DAN PERANCANGAN TEKNIS APE**
 
 **LAMPIRAN TUGAS AKHIR**
 
