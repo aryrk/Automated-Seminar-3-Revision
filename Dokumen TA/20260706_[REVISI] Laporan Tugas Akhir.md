@@ -14,7 +14,7 @@ Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 PROGRAM SARJANA TERAPAN PROGRAM STUDI TEKNIK INFORMATIKA JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA POLITEKNIK NEGERI BANDUNG 2026
 
-Commented [AR1]: Catatan ditemukan di akhir kertas
+
 
 Isi -> Tidak Sumatif
 
@@ -30,7 +30,7 @@ Sistem Berjalan -> 4 indikator
 
 - Rubrik Eksperimen
 
-- Bu Ani
+
 
 **PEMANFAATAN** *DIGITAL SCAFFOLDING* **BERBASIS RUBRIK UNTUK MENDUKUNG INDIKATOR TEKSTUAL** *FEEDBACK LITERACY* **PADA** *PROJECT-BASED LEARNING*
 
@@ -114,15 +114,35 @@ Tempat, Tanggal Lahir : Ciamis, 19 November 2003 SD & Tahun Lulus : SD NEGERI 7 
 
 Prestasi yang pernah dicapai :
 
-ABSTRAK
+**ABSTRAK**
 
-Kata Kunci: [Keywords]
+*Feedback literacy* atau literasi umpan balik merupakan komponen esensial dalam lingkungan *Project-Based Learning* (PjBL), di mana mahasiswa dituntut untuk mampu mengartikulasikan evaluasi numerik menjadi narasi kualitatif yang representatif. Namun, mahasiswa sering kali menghadapi kesulitan dalam menyusun narasi yang selaras dengan skor dan memenuhi kriteria rubrik. Penelitian ini merumuskan dan memvalidasi instrumen *digital scaffolding* berbasis *Natural Language Processing* (NLP) yang mengintegrasikan model *zero-shot classification* dan heuristik *rule-based* untuk mendeteksi empat indikator tekstual narasi *feedback*: cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik secara *real-time*. Eksperimen lapangan menggunakan desain *posttest-only* dengan partisipan mahasiswa (*n*=56) yang secara acak dibagi menjadi kelompok *treatment* dan kontrol. Hasil eksperimen komprehensif (MANOVA) menunjukkan bahwa intervensi *scaffolding* memberikan dampak yang signifikan secara moderat hingga kuat pada peningkatan indikator kedalaman elaborasi (F(1,54)=4,76, p<0,05, *rank-biserial correlation*=0,49). Meskipun indikator lainnya belum menunjukkan perbedaan statistik yang signifikan, observasi kualitatif mengungkap bahwa *scaffolding* efektif mendisrupsi bias leniensi penilaian dan mendorong mahasiswa untuk memperbaiki kualitas narasinya sebelum disubmit. Penelitian ini berkontribusi pada pengembangan instrumen pendidikan yang memadukan validasi komputasional dengan intervensi pedagogis untuk memfasilitasi pengembangan *feedback literacy* secara formatif.
+
+Kata Kunci: *Digital Scaffolding*, *Feedback Literacy*, *Natural Language Processing*, *Project-Based Learning*, Validasi Instrumen.
 
 **ABSTRACT**
 
-Keywords: [Keywords]
+Feedback literacy is an essential component in a Project-Based Learning (PjBL) environment, where students must be able to articulate numerical evaluations into in-depth qualitative narratives. However, students often struggle to compose narratives that align with scores and meet rubric criteria. This study formulates and validates an NLP-based digital scaffolding instrument that integrates a zero-shot classification model and rule-based heuristics to detect four textual indicators of feedback narratives: rubric coverage, score-narrative coherence, elaboration depth, and topic relevance in real-time. A field experiment using a posttest-only design with student participants (n=56) divided into treatment and control groups was conducted. The experimental results (MANOVA) showed that the scaffolding intervention had a moderate to strong significant effect on the elaboration depth indicator (F(1,54)=4.76, p<0.05, rank-biserial correlation=0.49). Although other indicators have not shown statistically significant differences, qualitative observations revealed that scaffolding effectively disrupts grading leniency bias and prompts students to reconsider incomplete narratives prior to submission. This research contributes to the development of educational instruments that bridge computational validation with pedagogical intervention to support the formative development of feedback literacy.
+
+Keywords: Digital Scaffolding, Feedback Literacy, Instrument Validation, Natural Language Processing, Project-Based Learning.
 
 **KATA PENGANTAR**
+
+Puji dan syukur penulis panjatkan ke hadirat Allah SWT, karena atas rahmat dan karunia-Nya, penulis dapat menyelesaikan penyusunan Laporan Tugas Akhir yang berjudul "Formulasi Digital Scaffolding Berbasis Natural Language Processing untuk Pengembangan Feedback Literacy Mahasiswa". Laporan ini disusun sebagai salah satu syarat kelulusan program Diploma IV (Sarjana Terapan) pada Program Studi Teknik Informatika, Jurusan Teknik Komputer dan Informatika, Politeknik Negeri Bandung.
+
+Penulis menyadari bahwa penyusunan Tugas Akhir ini tidak akan berjalan lancar tanpa bimbingan, arahan, dan dukungan dari berbagai pihak. Oleh karena itu, penulis ingin menyampaikan ucapan terima kasih yang sebesar-besarnya kepada:
+1. Ibu Yudi dan Ibu Ani selaku Dosen Pembimbing yang telah memberikan arahan tajam, kritik yang membangun, serta meluangkan waktu untuk membimbing penulis dari fase perancangan hingga penyelesaian laporan ini.
+2. Seluruh jajaran Dosen Penguji pada sidang Tugas Akhir yang telah memberikan masukan krusial terkait arah penelitian dan perbaikan metodologi.
+3. Dosen pengampu mata kuliah PjBL yang telah memberikan izin dan memfasilitasi penggunaan data historis serta pelaksanaan eksperimen lapangan.
+4. Mahasiswa JTK Politeknik Negeri Bandung yang telah berpartisipasi secara aktif sebagai subjek dalam eksperimen penelitian ini.
+5. Keluarga, terutama orang tua, yang senantiasa mendoakan dan memberikan dukungan moral maupun material tanpa henti.
+6. Rekan-rekan mahasiswa yang selalu memberikan dukungan, diskusi, serta semangat selama masa perkuliahan dan pengerjaan Tugas Akhir ini.
+
+Penulis menyadari bahwa laporan ini masih memiliki ruang untuk penyempurnaan. Oleh karena itu, penulis sangat terbuka terhadap kritik dan saran yang konstruktif. Semoga penelitian ini dapat memberikan kontribusi yang bermanfaat bagi pengembangan keilmuan, khususnya di bidang pendidikan dan teknologi informasi.
+
+Bandung, Juli 2026
+
+Penulis
 
 DAFTAR ISI
 
@@ -627,35 +647,17 @@ Pembelajaran Berbasis Proyek (PjBL) dirancang dengan tujuan yang lebih dalam dar
 
 Salah satu mekanisme yang umum digunakan untuk memperoleh informasi tersebut adalah melalui self assessment dan peer assessment. Dalam konteks PjBL kedua instrumen tersebut berfungsi sebagai penilaian berbasis rubrik yang umumnya terdiri atas dua komponen yaitu komponen skor numerik dan komentar atau narasi kualitatif (Bell, 2010; Winstone & Carless, 2019). Selain menghasilkan nilai, kedua komponen juga memberikan kesempatan bagi pengajar untuk memperoleh gambaran mengenai dinamika kerja kelompok yang tidak selalu tercermin pada produk akhir, seperti bagaimana mahasiswa merefleksikan kinerja diri sendiri, menilai kontribusi rekan, serta menerapkan standar penilaian yang terdapat pada rubrik (Nicol et al., 2014).
 
-Commented [AR2]: (Dilingkari) - Bu ani
-
 Di antara kedua komponen tersebut, komentar atau narasi kualitatif memiliki peran yang sangat krusial, karena narasi inilah yang secara esensial mentransformasikan sebuah skor angka menjadi feedback yang sesungguhnya (Winstone & Carless, 2019). Tanpa adanya narasi yang mendeskripsikan justifikasi penilaian, sebuah skor numerik hanyalah sebuah vonis yang justru menghentikan tindakan belajar mahasiswa karena tidak memberikan informasi apa pun mengenai langkah perbaikan selanjutnya (Hyland & Hyland, 2001; Mu & Schunn, 2025; Zhang et al., 2024). Oleh karena itu, narasi yang telah berfungsi sebagai feedback ini berperan sebagai sarana refleksi, akuntabilitas, dan dialog pembelajaran antar mahasiswa selama pelaksanaan proyek (Gaynor, 2020; Guo et al., 2020; van Popta et al., 2017).
 
 Fungsi tersebut menjadi berkurang ketika narasi feedback yang ditulis mahasiswa bersifat terlalu umum, terlalu singkat, atau tidak menjelaskan alasan di balik skor yang diberikan (Carless & Boud, 2018). Narasi feedback seperti "pekerjaan dilakukan dengan sangat baik" tidak memberikan informasi yang cukup bagi penerima feedback maupun dosen untuk memahami aspek apa yang sebenarnya dinilai (Aimah & Suhartoyo, 2024; Hattie & Timperley, 2007; Setiawan, 2026a). Akibatnya, kualitas narasi feedback tidak lagi ditentukan hanya oleh skor yang diberikan, tetapi juga oleh bagaimana penilaian tersebut diartikulasikan ke dalam bentuk narasi yang informatif, relevan, dan selaras dengan kriteria penilaian (Brookhart, 2013; Nicol et al., 2014; Winstone & Carless, 2019).
 
 Fenomena tersebut bukan merupakan kasus yang bersifat individual. Penelitian Setiawan (2026a) terhadap 93 mahasiswa Program Studi Teknik Informatika Politeknik Negeri Bandung menunjukkan bahwa hanya 18,4% narasi feedback yang selaras dengan evaluasi numerik yang diberikan. Tingkat keselarasan pada peer assessment bahkan hanya mencapai 13,2%, lebih rendah dibandingkan self assessment sebesar 23,7%.
 
-Temuan tersebut konsisten dengan berbagai literatur yang menunjukkan empat karakteristik tekstual yang sering muncul pada narasi feedback. Pertama, narasi cenderung terlalu singkat sehingga sulit memuat alasan maupun saran perbaikan yang spesifik (Daou et al., 2020). Kedua, narasi sering membahas aspek yang tidak menjadi fokus rubrik penilaian (Sun et al., 2023). Ketiga, skor numerik dan justifikasi naratif sering muncul sebagai dua komponen yang tidak selaras (Zhang & Schunn, 2023). Keempat, narasi sering kali belum mencakup seluruh aspek yang dipersyaratkan dalam rubrik (Camarata & Slieman, 2020), Karakteristikkarakteristik tersebut menunjukkan bahwa mahasiswa tidak selalu mampu mengartikulasikan keputusan evaluatifnya ke dalam bentuk narasi yang selaras dengan rubrik.
+Temuan tersebut konsisten dengan berbagai literatur yang menyoroti empat permasalahan tekstual utama pada narasi *feedback*, yang dalam penelitian ini diformulasikan sebagai empat indikator pengukuran. Pertama, narasi cenderung terlalu singkat sehingga gagal memuat alasan maupun saran perbaikan spesifik (Daou et al., 2020), yang melatarbelakangi indikator **kedalaman elaborasi**. Kedua, narasi sering berbelok membahas hal di luar kriteria (Sun et al., 2023), melatarbelakangi indikator **relevansi topik**. Ketiga, skor numerik dan justifikasi naratif sering bertolak belakang (Zhang & Schunn, 2023), melatarbelakangi indikator **koherensi skor-narasi**. Keempat, narasi sering kali belum utuh membahas seluruh komponen kriteria (Camarata & Slieman, 2020), melatarbelakangi indikator **cakupan rubrik**. Keempat celah ini menunjukkan bahwa mahasiswa tidak selalu mampu mengartikulasikan keputusan evaluatifnya ke dalam bentuk narasi yang secara struktural dan semantik memadai.
 
 Kesenjangan antara kemampuan melakukan evaluasi dan kemampuan mengartikulasikannya menempatkan penulisan narasi di dalam Zone of Proximal Development (ZPD) yang mendefinisikan rentang tugas yang belum dapat diselesaikan secara mandiri, tetapi dapat dicapai dengan bantuan (Vygotsky et al., 1978). Hal ini didukung oleh Zhang & Schunn (2023) yang mengakui bahwa konstruksi narasi feedback berada di area ini dan perlu diberikan bantuan. Dalam konteks tersebut, bantuan yang paling efektif bersifat contingent, yaitu hanya diberikan ketika dibutuhkan dan dihentikan ketika mahasiswa telah mampu melanjutkan tugasnya secara mandiri (Pea, 2004), prinsip inilah yang menjadi dasar penerapan digital scaffolding dalam penelitian ini.
 
-Setiawan (2026a) mengidentifikasi potensi pemanfaatan sistem berbasis Natural Language Processing (NLP) untuk menghasilkan prompt berbasis rubrik sebagai bentuk digital scaffolding. Temuan tersebut membuka peluang pengembangan sistem yang mampu memberikan bantuan secara otomatis berdasarkan hasil analisis terhadap kualitas narasi feedback mahasiswa. Namun, implementasi digital scaffolding yang memanfaatkan potensi tersebut masih menghadapi sejumlah tantangan. Sebagai contoh, (Ding et al., 2025) menyoroti kemampuan scaffolding  dalam konteks pendidikan. Namun, sistem yang dibangun hanya menganalisis Commented [AR3]: (Dilingkari) -Bu Ani
-
-Commented [M3R2]: Dijadikan literatur
-
-Commented [AR4]: (Digarisbawahi)
-
--Bu Ani
-
-Commented [M4R2]: Kayaknya ini gara gara alur argumennya aneh, tbtb scaffolding, kayak udah bahas solusi sih padahal masih bangun argumen
-
-Commented [AR5]: (diberi tanda kotak)
-
--Bu ani
-
-Commented [M5R2]: Kayaknya miss konteks, tiba tiba masuk sitasi
-
-makna teks setelah feedback dituliskan. Selain itu scaffolding berbasis teknologi Generative AI mampu menghasilkan teks bervariasi meski bersifat probabilistik yang tidak memberikan jaminan konsistensi atau transparansi yang diperlukan dalam konteks intervensi pedagogis yang terstruktur (Luan NG et al., 2026). Sementara Mohammad et al. (2025) menerapkan scaffolding dalam bentuk humanin-the-loop berbasis LLM GPT-4 dengan prompt checklist terstruktur dalam konteks penulisan laporan akademik bagi mahasiswa EFL, namun masih menghadapi kelemahan dimana LLM yang berbasis prediksi statistik tersebut berisiko menghasilkan analisis yang bersifat tidak deterministik.
+Setiawan (2026a) mengidentifikasi potensi pemanfaatan sistem berbasis Natural Language Processing (NLP) untuk menghasilkan *prompt* berbasis rubrik sebagai bentuk *digital scaffolding*. Temuan tersebut membuka peluang pengembangan sistem yang mampu memberikan bantuan secara otomatis berdasarkan hasil analisis terhadap kualitas narasi *feedback* mahasiswa. Namun, implementasi *digital scaffolding* yang memanfaatkan potensi NLP ini masih menghadapi sejumlah tantangan ketika diterapkan pada lingkungan pembelajaran riil. Sebagai contoh, Ding et al. (2025) mengeksplorasi kemampuan NLP dalam menganalisis teks, namun sistem yang dibangun hanya melakukan komputasi setelah *feedback* selesai dituliskan, sehingga tidak memberikan panduan formatif saat proses kognitif penyusunan teks sedang berlangsung. Di sisi lain, pendekatan *scaffolding* berbasis teknologi Generative AI (Luan NG et al., 2026) dan *Large Language Models* seperti GPT-4 (Mohammad et al., 2025) mampu menghasilkan panduan penulisan yang dinamis, namun berisiko memberikan hasil probabilistik yang tidak deterministik, sehingga mengurangi konsistensi dan transparansi metrik yang diwajibkan dalam intervensi pedagogis berbasis rubrik yang ketat.
 
 Kondisi tersebut menunjukkan bahwa masih diperlukan pendekatan digital scaffolding yang mampu memanfaatkan hasil analisis terhadap narasi feedback untuk memberikan intervensi berbasis rubrik secara adaptif, konsisten, dan sesuai dengan kebutuhan mahasiswa selama proses penulisan berlangsung.
 
@@ -671,32 +673,20 @@ Kedua, pada gap komputasional, pendekatan sistem berbasis NLP pada penelitian se
 
 Ketiga, pada gap intervensi, sistem evaluasi yang ada saat ini umumnya berhenti pada tahap analisis atau klasifikasi tekstual narasi feedback, namun belum selalu diikuti dengan mekanisme scaffolding berbasis rubrik. Akibatnya, mahasiswa tidak memperoleh prompt atau panduan terstruktur untuk memperbaiki narasi mereka pada saat proses penulisan sedang berlangsung.
 
-Berdasarkan ketiga kesenjangan tersebut, masih terdapat ruang penelitian untuk mengembangkan dan mengevaluasi digital scaffolding yang mampu mendeteksi gejala tekstual feedback secara real-time serta memberikan intervensi selama proses penulisan berlangsung.
+Berdasarkan ketiga kesenjangan tersebut, masih terdapat ruang penelitian untuk memformulasikan dan mengevaluasi *digital scaffolding* yang mampu mendeteksi gejala tekstual *feedback* secara *real-time* serta memberikan intervensi pedagogis selama proses penulisan berlangsung.
 
 **I.3 Research Question**
 
 - RQ 1: Sejauh mana pipeline digital scaffolding mampu mendeteksi keempat indikator tekstual narasi feedback yaitu cakupan rubrik, koherensi skornarasi, kedalaman elaborasi, dan relevansi topik, melalui kombinasi model semantik dan aturan heuristik berbasis rubrik?
 - RQ 2: Sejauh mana intervensi digital scaffolding berbasis rubrik memengaruhi pemenuhan keempat indikator tekstual narasi feedback pada mahasiswa dalam lingkungan eksperimen nyata, ditinjau dari perbedaan tingkat pemenuhan empat indikator tekstual antara kelompok treatment dan kontrol serta pola interaksi mahasiswa dengan scaffolding selama proses penyusunan narasi feedback?
 
-Commented [AR6]: ? Problem - Bu Ani
-
-Commented [AR7]: Develop?
-
--Bu Ani
-
-Commented [M7R2]: Framming dibuat 'ruang penelitian' + evaluasi gap tsb
-
-Commented [AR8]: Jawaban apa yang diharapkan - Bu Ani
-
-Commented [AR9]: Ada latar belakang apa keempat indikator ini? - Bu Ani
-
-Commented [AR10]: Jawaban apa yang diharapkan? - Bu Ani
+Kedua pertanyaan penelitian di atas diarahkan untuk memperoleh luaran riset yang terukur. RQ 1 diharapkan dapat dijawab melalui nilai metrik evaluasi model (F1-score) per indikator sebagai bukti validitas komputasional, sedangkan RQ 2 diharapkan dapat dijawab melalui uji signifikansi statistik dan *effect size* sebagai bukti efektivitas pedagogis.
 
 **I.4 Tujuan Penelitian**
 
 Sejalan dengan rumusan masalah dan pertanyaan penelitian yang telah ditetapkan, tujuan utama dari penelitian ini dibagi menjadi dua sasaran komputasional dan eksperimental, yaitu:
 
-1. Membangun dan memblidasi pipeline digital scaffolding yang mengintegrasikan Natural Language Processing (NLP) sebagai instrumen riset. Arsitektur ini ditujukan untuk mendeteksi keempat indikator tekstual yaitu cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik secara real-time selama penulisan aktif narasi self dan peer assessment.
+1. Memformulasikan dan memvalidasi pipeline digital scaffolding yang mengintegrasikan Natural Language Processing (NLP) sebagai instrumen riset. Arsitektur ini ditujukan untuk mendeteksi keempat indikator tekstual yaitu cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik secara real-time selama penulisan aktif narasi self dan peer assessment.
 2. Mengukur perbedaan tingkat pemenuhan keempat indikator tekstual melalui pilot study dengan perbandingan kelompok treatment yang menerima scaffolding dan kelompok kontrol tanpa scaffolding untuk menghasilkan estimasi effect size awal.
 
 Kontribusi penelitian ini adalah:
@@ -709,26 +699,17 @@ Kontribusi penelitian ini adalah:
 
 Penelitian ini melibatkan berbagai pihak penting di bidang teknik komputer dan informatika di Politeknik Negeri Bandung, yaitu:
 
-1. Mahasiswa JTK yang mengikuti mata kuliah berbasis PjBL yang memiliki self dan peer assessment sebagai bagian dari proses evaluasi. Studi ini menguji apakah proses penulisan narasi feedback yang dilengkapi bantuan digital scaffolding menghasilkan narasi feedback yang menunjukkan tingkat pemenuhan indikator tekstual yang lebih tinggi, mencakup aspek rubrik yang lebih lengkap, relevansi topik yang lebih baik, serta keselarasan yang lebih tinggi antara skor dan narasi dibandingkan proses penulisan tanpa scaffolding. Commented [AR11]: Apa yang dilihat dalam komteks penelitian dan RQ-nya
-
-- Bu Ani
-
-Kontribusi studi difokuskan pada kualitas output feedback yang dihasilkan selama sesi penulisan dengan dukungan sistem. Evaluasi mengenai perkembangan feedback literacy sebagai kapasitas yang bertahan memerlukan desain longitudinal yang berada di luar cakupan penelitian ini.
+1. Mahasiswa JTK yang mengikuti mata kuliah berbasis PjBL yang memiliki self dan peer assessment sebagai bagian dari proses evaluasi. Studi ini menguji apakah proses penulisan narasi feedback yang dilengkapi bantuan digital scaffolding menghasilkan narasi feedback yang menunjukkan tingkat pemenuhan indikator tekstual yang lebih tinggi, mencakup aspek rubrik yang lebih lengkap, relevansi topik yang lebih baik, serta keselarasan yang lebih tinggi antara skor dan narasi dibandingkan proses penulisan tanpa scaffolding (sebagai luaran yang secara langsung menjawab RQ 2). Kontribusi studi difokuskan pada kualitas output feedback yang dihasilkan selama sesi penulisan dengan dukungan sistem. Evaluasi mengenai perkembangan feedback literacy sebagai kapasitas yang bertahan memerlukan desain longitudinal yang berada di luar cakupan penelitian ini.
 
 2. Dosen pengampu mata kuliah berbasis PjBL yang menggunakan rubrik sebagai komponen evaluasi menerima output self dan peer assessment berupa skor numerik dan narasi kualitatif per kriteria. Dalam konteks ini, sistem menyediakan mekanisme deteksi otomatis terhadap indikator tekstual yang berkaitan dengan cakupan rubrik, relevansi topik, koherensi skor dan narasi, serta kedalaman elaborasi, disertai scaffolding untuk membantu mahasiswa memperbaiki narasi selama proses penulisan berlangsung. Output narasi feedback pada kondisi dengan scaffolding diharapkan memiliki tingkat pemenuhan indikator tekstual yang lebih tinggi sehingga menyediakan informasi evaluatif yang lebih terstruktur dibandingkan output tanpa digital scaffolding.. Reliabilitas dan karakteristik output yang dihasilkan perlu dipahami dalam konteks bahwa narasi feedback tersebut ditulis dengan dukungan digital scaffolding selama proses penilaian berlangsung.
 
-I.6 Dukungan Data
+**I.6 Dukungan Data**
 
-Penelitian ini menggunakan tiga kelompok data, yaitu data rubrik merupakan rubrik yang ditulis oleh dosen pengampu PjBL. Data historis serta data primer yang dikumpulkan melalui eksperimen. Data historis telah diperoleh melalui self dan peer assessment pada mata kuliah yang menerapkan PjBL di jurusan teknik komputer dan informatika Politeknik Negeri Bandung dengan total 10.098 data feedback sebagai berikut:
+Penelitian ini menggunakan tiga kelompok data utama. Pertama, data rubrik asesmen yang disusun oleh dosen pengampu PjBL. Kedua, data historis *self assessment* dan *peer assessment* dari mata kuliah yang menerapkan PjBL di Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung, yang mencakup total 10.098 baris data *feedback*. Ketiga, data primer yang dikumpulkan secara langsung melalui eksperimen lapangan. Secara rinci, struktur data yang dihimpun meliputi:
 
 1. Data rubrik self dan peer assessment, mencakup deskripsi aspek feedback serta hubungannya dengan kriteria skor.
 2. Data pertanyaan dari self dan peer assessment yang diberikan oleh dosen mengenai pertanyaan yang digunakan dalam feedback.
-
-Commented [AR12]: (Dilingkari) -Bu Ani
-
 3. Data hasil penilaian self dan peer assessment, yaitu skor dan teks feedback yang diisi oleh 95 mahasiswa terkait evaluasi anggota kelompok dan diri mereka sendiri dalam mata kuliah PjBL.
-
-Struktur data yang digunakan serta cara pengolahannya dijelaskan secara lebih rinci pada subbab III.3. Bagian ini hanya memberikan gambaran umum mengenai sumber dan jenis data yang digunakan dalam penelitian.
 
 **I.7 Ruang Lingkup dan Batasan**
 
@@ -768,8 +749,6 @@ Batasan Sistem: 7. Indikator tekstual yang dijadikan acuan komputasi sistem terb
 empat hal, yaitu: (1) cakupan rubrik, (2) koherensi skor dan narasi, (3)
 kedalaman elaborasi, (4) serta relevansi topik.
 
-Commented [AR13]: (Dilingkari) - Bu Ani
-
 Kategori: Ruang Lingkup dan Batasan
 8. Pipeline beroperasi secara deterministik tanpa kemampuan penalaran
 interpretatif. Sistem tidak mengadopsi dimensi taksonomi intensi
@@ -794,7 +773,7 @@ jangka panjang apabila bantuan sistem tersebut ditarik kembali.
 
 **I.8 Sistematika Penulisan**
 
-Sistematika dalam penulisan Tugas Akhir ini dibagi menjadi empat bab dengan penjelasan sebagai berikut:
+Sistematika dalam penulisan Tugas Akhir ini dibagi menjadi tujuh bab dengan penjelasan sebagai berikut:
 
 BAB I Bab ini berisi gambaran umum mengenai penelitian yang dilakukan, termasuk latar belakang penelitian yang menjelaskan permasalahan kualitas narasi feedback pada self dan peer assessment dalam lingkungan Project-Based Learning atau PjBL. Bab ini secara terstruktur menguraikan konteks dan rumusan masalah yang dirumuskan berdasarkan kajian awal, merumuskan research question (RQ) serta tujuan dan manfaat penelitian, serta menjelaskan ruang lingkup, batasan, sumber data, dan sistematika penulisan laporan yang mendukung pengembangan dan evaluasi intervensi digital scaffolding yang diusulkan.
 
@@ -855,8 +834,6 @@ Oleh karena itu, kehadiran narasi kualitatif merupakan komponen yang menjembatan
 
 Dalam penelitian ini, feedback dioperasionalkan sebagai kombinasi antara skor kuantitatif dan narasi kualitatif yang dihasilkan mahasiswa selama proses self dan peer assessment di lingkungan PjBL yang digambarkan pada Gambar II.4. Fokus utama penelitian diletakkan pada kualitas narasi kualitatif tersebut, karena teks (narasi merupakan manifestasi dari kemampuan mahasiswa dalam mengomunikasikan penilaian evaluatif mereka secara eksplisit dan selaras dengan kriteria rubrik. Dengan demikian, dalam penelitian ini, narasi kualitatif dievaluasi berdasarkan keempat indikator tekstual yaitu cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik, yang merepresentasikan manifestasi terbatas dari evaluative expression yaitu kemampuan untuk mengartikulasikan skor numerik menjadi narasi dapat dideteksi secara komputasional.
 
-Commented [AR15]: (Digarisbawahi) - Bu Ani
-
 Gambar II.4. Self dan Peer Assessment sebagai Feedback
 
 **II.1.5 Rubrik**
@@ -892,8 +869,6 @@ Dalam penelitian ini, pendekatan semantic embedding digunakan untuk menghasilkan
 **II.1.8 Rule Based**
 
 Rule-based merupakan pendekatan dalam expert system yang menggunakan sekumpulan aturan eksplisit (if–then rules) untuk memetakan kondisi tertentu menjadi aksi yang telah ditentukan sebelumnya. Pada sistem berbasis rule-based,  logika pengambilan keputusan didefinisikan secara eksplisit sehingga setiap keputusan dapat ditelusuri kembali berdasarkan aturan yang digunakan (Negnevitsky, 2005).
-
-Commented [AR16]: (Digarisbawahi) - Bu Ani
 
 Salah satu bentuk representasi aturan yang banyak digunakan dalam sistem rulebased adalah decision table. Decision table merupakan representasi tabular dari logika kondisional yang memetakan setiap kombinasi kondisi masukan (input conditions) ke aksi keluaran (output actions) secara eksplisit. Dibandingkan representasi berupa rangkaian if–else, decision table memberikan struktur yang lebih sistematis karena seluruh kemungkinan kombinasi kondisi dapat didokumentasikan dalam satu tabel (Crina & Abraham, 2011)
 
@@ -1019,17 +994,13 @@ Gambar II.15. Ilustrasi Penggunaan Template untuk Output Teks
 
 Dalam konteks penelitian ini, berbagai pendekatan generasi teks tersebut menjadi landasan untuk memahami bagaimana teks scaffolding dapat dihasilkan sebagai respons terhadap kondisi feedback mahasiswa. Setiap pendekatan merepresentasikan cara yang berbeda dalam memetakan hasil evaluasi terhadap narasi feedback menjadi bentuk teks yang dapat dikomunikasikan kembali kepada pengguna. Dengan demikian, kerangka konseptual untuk menempatkan mekanisme generasi teks dalam sistem yang dirancang, khususnya dalam kaitannya dengan kebutuhan akan kesesuaian instruksional, konsistensi respons, serta keterhubungan antara hasil evaluasi dan teks yang dihasilkan. Pemahaman mengenai pendekatan generasi teks ini diperlukan untuk menjustifikasi pemilihan arsitektur sistem. Dalam penelitian ini, pendekatan berbasis template statis digunakan untuk memastikan komponen output prompt beroperasi secara deterministik, konsisten, dan memitigasi risiko halusinasi generatif.
 
-II.1.14 Desain Eksperimen dan Evaluasi Statistik
+**II.1.14 Landasan Desain Eksperimen dan Evaluasi Statistik**
 
 Penelitian ini menerapkan metode kuantitatif berskala pilot study dengan desain randomized posttest-only control group dan alokasi acak (Campbell et al., 1963; Shadish et al., 2002). Penelitian ini menggunakan random assignment terhadap partisipan individual ke dalam kelompok treatment dan kelompok kontrol.
 
 Pemilihan Desain 6 didasarkan pada tujuan penelitian untuk mengevaluasi penggunaan digital scaffolding dalam kondisi pembelajaran yang mendekati praktik penggunaan aktual. Dalam konteks implementasi nyata, mahasiswa tidak menjalani pengukuran awal sebelum menggunakan digital scaffolding. Oleh karena itu, desain posttest-only dipilih agar proses penulisan narasi feedback dan penggunaan bantuan digital scaffolding dapat berlangsung secara alami tanpa intervensi tambahan berupa pre-test.
 
-Penggunaan desain posttest-only berbasis random assignment juga bertujuan menghindari testing effect atau bias yang muncul akibat interaksi partisipan dengan instrumen pre-test sebelum perlakuan diberikan (Campbell et al., 1963). Tanpa Commented [AR18]: (Digarisbawahi) - Bu Ani
-
-Commented [AR19]: Method? - Bu Ani
-
-adanya pre-test, potensi partisipan mengalami efek jenuh maupun pengaruh pengukuran awal yang dapat mengubah cara mereka menyusun narasi feedback  sebelum menerima bantuan digital scaffolding dapat diminimalkan..
+Penggunaan desain posttest-only berbasis random assignment juga bertujuan menghindari testing effect atau bias yang muncul akibat interaksi partisipan dengan instrumen pre-test sebelum perlakuan diberikan (Campbell et al., 1963). Tanpa adanya pre-test, potensi partisipan mengalami efek jenuh maupun pengaruh pengukuran awal yang dapat mengubah cara mereka menyusun narasi feedback sebelum menerima bantuan digital scaffolding dapat diminimalkan.
 
 Secara metodologis, Shadish et al. (2002) menegaskan bahwa random assigment merupakan instrumen paling kuat untuk menjamin kesetaraan karakteristik antar kelompok sebelum manipulasi dilakukan. Oleh karena itu, setiap perbedaan signifikan yang ditemukan pada post-test lebih mungkin dapat diatribusikan sebagai efek dari intervensi karena pengaruh perbedaan karakteristik awal antar kelompok telah diminimalkan antar kelompok melalui random assignment.
 
@@ -1055,9 +1026,9 @@ Perkembangan NLP dalam analisis feedback menunjukkan pergeseran dari pendekatan 
 
 Berdasarkan sintesis tersebut, dapat diidentifikasi dua kesenjangan penelitian. Pertama, meskipun berbagai penelitian telah mengidentifikasi karakteristik
 
-Commented [AR20]: (Dilingkari)
 
-- Bu Ani
+
+
 
 feedback yang berkaitan dengan kualitas narasi, belum banyak penelitian yang mengoperasionalkan karakteristik tersebut menjadi indikator tekstual yang dapat dideteksi secara otomatis selama proses penulisan berlangsung. Kedua, meskipun AI telah dimanfaatkan sebagai digital scaffolding, sebagian besar pendekatan masih memberikan bantuan setelah proses penulisan selesai atau belum mengintegrasikan mekanisme pengambilan keputusan berbasis aturan untuk menentukan kebutuhan bantuan secara konsisten. Kesenjangan inilah yang menjadi dasar pengembangan arsitektur digital scaffolding berbasis rubrik pada penelitian ini, yang mengintegrasikan pemrosesan NLP dengan mekanisme rule-based untuk memberikan conditional prompt secara real-time selama mahasiswa menyusun feedback pada aktivitas self assessment dan peer assessment di lingkungan PjBL.
 
@@ -1128,7 +1099,7 @@ $\alpha_{adj}$  |  Skalar (0,0125)  |  Signifikansi statistik dengan Bonferroni 
 
 Alur arsitektur data bersifat searah, yaitu  $\mathcal{R} \to Q \to F$ , sejalan dengan ilustrasi yang telah disajikan pada Gambar III.1. Artefak digital scaffolding yang diusulkan beroperasi sepenuhnya dalam batas variabel F, sistem tidak mengubah, menghasilkan, atau memodifikasi parameter  $\mathcal{R}$  maupun Q untuk menjaga instrumen evaluasi feedback yang telah ditetapkan. Setiap instance feedback direpresentasikan sebagai pasangan dua modalitas.
 
-Commented [AR21]: -- apa?
+
 
 III.1.2 Formulasi Sistem dan Pengukuran
 
@@ -1156,7 +1127,7 @@ $$If \exists i: d_i(F) = 1 \to P \tag{III.3}$$
 
 Fungsi pengambilan keputusan intervensi direpresentasikan melalui fungsi aturan +: 0,1 →  ∪ ∅, yang memetakan 16 kemungkinan kombinasi vektor keputusan biner ke dalam himpunan template prompt  yang selaras. Untuk memberikan gambaran operasional mengenai alur transformasi data dari nilai
 
-Commented [AR24]: (Dilingkari) - Bu Ani
+
 
 kontinu hasil pemrosesan NLP hingga menjadi keputusan intervensi, Tabel II.2 menyajikan simulasi data pada beberapa kondisi respons mahasiswa.
 
@@ -1221,13 +1192,13 @@ Penggunaan dataset dari Jurusan Teknik Komputer dan Informatika Politeknik Neger
 
 Data pengembangan dan validasi pipeline berasal dari data historis yang telah dikumpulkan dalam mata kuliah yang menerapkan PjBL di Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung pada tahun akademik 2025/2026. Data ini terdiri dari dua bagian, yaitu (1) data feedback yang didefinisikan pada subbab III.3.1.1 dan (2) data rubrik pada subbab III.3.1.2. Rubrik yang digunakan pada data ini telah didefinisikan pada Tabel II.1.
 
-Dalam konteks text classification pada [machine le](#page-5-0)arning, setiap instance data direpresentasikan sebagai satu objek analisis yang memiliki fitur dan label target (Manning et al., 2009). Dalam penelitian ini, satu objek analisis adalah satu pasangan narasi feedback dengan kriteria rubrik. Fitur dari objek ini adalah representasi semantik teks dalam ruang vektor yang dihasilkan oleh model sentence  Commented [AR26]: (Digarisbawahi)
+Dalam konteks text classification pada [machine le](#page-5-0)arning, setiap instance data direpresentasikan sebagai satu objek analisis yang memiliki fitur dan label target (Manning et al., 2009). Dalam penelitian ini, satu objek analisis adalah satu pasangan narasi feedback dengan kriteria rubrik. Fitur dari objek ini adalah representasi semantik teks dalam ruang vektor yang dihasilkan oleh model sentence  
 
-- Bu Ani
 
-Commented [AR27]: (Digarisbawahi)
 
-- Bu Ani
+
+
+
 
 embedding yang telah dijelaskan pada Lampiran 4. Label yang diprediksikan adalah keputusan biner TRUE/FALSE yang menyatakan apakah narasi tersebut diindikasikan membahas aspek rubrik. Skema ini mengikuti paradigma multi-label binary classification di mana satu objek dapat memiliki lebih dari satu label (Tsoumakas & Katakis, 2009) yang telah dijelaskan pada subbab II.1.6, mengingat satu narasi feedback dapat memenuhi atau tidak memenuhi beberapa kriteria feedback literacy secara simultan dan independen satu sama lain.
 
@@ -1618,17 +1589,17 @@ Tahap ini menguraikan bagaimana sistem digital scaffolding dikembangkan dan diin
 
 Langkah awal dilakukan dengan menganalisis arsitektur, database, dan antarmuka dari platform SAPA yang digunakan sebagai lingkungan eksperimen. Analisis ini difokuskan pada identifikasi titik integrasi di mana modul NLP dan rule-based engine tanpa mengubah atau menimbulkan gangguan pada fungsi utama assessment. Metode yang digunakan difokuskan pada penentuan titik injeksi logika rule-based dan inferensi model NLP ke dalam alur proses assessment mahasiswa.
 
-Commented [AR29]: ?
 
-- Bu ani
 
-Commented [AR30]: (Dilingkari)
+
+
+
 
 Bagaimana?
 
-- Bu Ani
 
-Commented [AR30R2]: fixed
+
+
 
 **III.6.5.2 Integrasi Pipeline ke dalam Lingkungan Eksperimen**
 
@@ -1908,7 +1879,7 @@ Berdasarkan langkah identifikasi dan studi pendahuluan yang telah diuraikan pada
 
 **IV.1.1 Karakteristik Data Narasi** *Feedback*
 
-Analisis dilakukan secara manual terhadap sampel acak dari data historis untuk mengisolasi karakteristik kemunculan pola dari penyimpangan terhadap keempat indikator tekstual narasi feedback, sebagaimana didefinisikan pada Tabel III.4. Narasi feedback yang dianalisis memiliki karakteristik sebagai teks bahasa alami yang ditulis secara bebas oleh mahasiswa. Berbeda dengan data terstruktur, narasi dapat menggunakan berbagai variasi ekspresi untuk menyampaikan penilaian yang sama sehingga evaluasi kualitas feedback tidak dapat dilakukan hanya berdasarkan keberadaan kata tertentu. Oleh karena itu, analisis pada subbab ini difokuskan pada Commented [AR31]: (Dilingkari) - Bu Ani
+Analisis dilakukan secara manual terhadap sampel acak dari data historis untuk mengisolasi karakteristik kemunculan pola dari penyimpangan terhadap keempat indikator tekstual narasi feedback, sebagaimana didefinisikan pada Tabel III.4. Narasi feedback yang dianalisis memiliki karakteristik sebagai teks bahasa alami yang ditulis secara bebas oleh mahasiswa. Berbeda dengan data terstruktur, narasi dapat menggunakan berbagai variasi ekspresi untuk menyampaikan penilaian yang sama sehingga evaluasi kualitas feedback tidak dapat dilakukan hanya berdasarkan keberadaan kata tertentu. Oleh karena itu, analisis pada subbab ini difokuskan pada 
 
 pola penyimpangan terhadap empat indikator tekstual yang telah didefinisikan sebelumnya.
 
@@ -2043,7 +2014,7 @@ Gambar IV.5 Distribusi Skor Antara Self dan Peer Assessment
 
 Berdasarkan Gambar I[V.5, ditemukan dis](#page-9-0)tribusi peer assessment dominan pada skor 4 dan 5, sementara self assessment memiliki sebaran pada skor yang lebih rendah. Hal tersebut menunjukkan bahwa mahasiswa cenderung memberikan skor yang lebih tinggi pada rekan sejawat dibandingkan dengan diri sendiri. Berdasarkan framework feedback litracy yang telah dijelaskan pada subbab II.1.9, pola ini dipahami sebagai leniency bias yang didorong oleh dinamika interpersonal, khususnya bias pertemanan pada kelompok (Panadero et al., 2017). Kondisi ini sejalan dengan temuan sebelumnya bahwa narasi pada peer assessment cenderung lebih singkat dan kurang mendalam.
 
-Temuan tersebut menjadi semakin krusial jika dihubungkan dengan data penurunan volume narasi di akhir semester. Mahasiswa tampak terbiasa mengeksekusi penilaian kuantitatif secara instan dengan memberikan skor tinggi, meskipun terdapat subjektivitas dan ketidakselarasan. Namun, tidak terdapat peningkatan dalam menguraikan narasi yang menjadi dasar pertimbangan angka tersebut. Hal Commented [AR32]: Hasil? - Bu Ani
+Temuan tersebut menjadi semakin krusial jika dihubungkan dengan data penurunan volume narasi di akhir semester. Mahasiswa tampak terbiasa mengeksekusi penilaian kuantitatif secara instan dengan memberikan skor tinggi, meskipun terdapat subjektivitas dan ketidakselarasan. Namun, tidak terdapat peningkatan dalam menguraikan narasi yang menjadi dasar pertimbangan angka tersebut. Hal 
 
 tersebut menegaskan bahwa kemudahan mahasiswa dalam mendistribusikan angka tidak diiringi oleh kemampuan mengartikulasikan alasan evaluatif secara naratif.
 
@@ -2059,9 +2030,9 @@ Berdasarkan temuan tersebut, solusi dirancang dengan spesifikasi sebagai berikut
 
 1. Sistem mampu mendeteksi keempat indikator tekstual narasi feedback yaitu cakupan rubrik, koherensi skor, kedalaman elaborasi dan relevansi topik yang dijelaskan lebih lanjut pada subbab
 
-Commented [AR33]: ?
 
-- Bu Ani
+
+
 
 2. Sistem mampu memicu teks scaffolding secara real-time dalam sesi penulisan ketika narasi feedback melanggar keempat indikator tekstual dan diberikan teks scaffolding berdasarkan vektor keputusan intervensi di mana setiap keputusan didasarkan pada threshold yang telah dikalibrasi berdasarkan sample data historis.
 3. Sistem mampu menghentikan pemberian scaffolding secara otomatis ketika seluruh indikator tekstual telah terpenuhi pada sesi penulisan yang sama..
@@ -2076,7 +2047,7 @@ Keberhasilan solusi dievaluasi melalui dua tahapan yang selaras dengan pertanyaa
 
 Subbab ini merupakan hasil akhir dari metodologi anotasi dataset yang telah didefinisikan pada subbab III.6.3.1. Sebagaimana dijelaskan, proses anotasi terdiri dari beberapa tahapan, yaitu: (1) pre-processing untuk melakukan dekomposisi
 
-Commented [AR34]: ? - Bu Ani
+
 
 terhadap rubrik, hasil tahapan ini disajikan pada subbab IV.2.1. Kemudian, untuk menjaga konsistensi, (2) implementasi panduan anotasi disajikan pada subbab IV.2.2 sebelum dilakukan proses anotasi. Setelah itu, (3) sampel hasil anotasi disajikan pada subbab IV.2.3, sebelum dilakukan (4) validasi pada subbab IV.2.3.3.
 
@@ -2189,8 +2160,8 @@ IV.2.2 Implementasi Panduan Anotasi
 
 Sebagai manifestasi dari subbab III.6.3.1E, panduan anotasi telah diimplementasikan pada Lampiran 1. Panduan ini digunakan sebagai acuan operasional dalam seluruh proses pelabelan dataset. Setiap anotator menggunakan definisi kriteria, aturan keputusan, dan contoh yang tercantum dalam panduan sebagai dasar dalam menentukan label, sehingga proses anotasi tidak bergantung pada interpretasi individual yang bersifat ad-hoc.
 
-Commented [AR35]: (Dilingkari)
-- Bu Ani
+
+
 
 Selama proses anotasi, panduan berfungsi sebagai single source of truth yang memastikan konsistensi antar anotator pada kasus-kasus yang memiliki potensi ambiguitas. Dalam situasi di mana interpretasi terhadap suatu narasi bersifat tidak jelas, keputusan pelabelan ditelusuri kembali ke aturan eksplisit dalam panduan, sehingga menjaga keseragaman penerapan kriteria pada seluruh dataset.
 
@@ -3498,7 +3469,7 @@ Total: 25 Responden
 
 Kuesioner pada kelompok treatment difokuskan pada pengukuran preceived usefullness dalam Gambar V.10 dan identifikasi cognitive load dari intervensi digital scaffolding selama proses penulisan dalam Gambar V.11. Berdasarkan rancangan instrumen pada Tabe[l IV.37, mahasiswa](#page-8-0) diminta memberikan evaluasi menggunakan skala linier (1-5), di mana skor 1 merepresentasikan "Sangat T[idak](#page-8-1)  Setuju" dan skor 5 merepresentasikan "Sangat Setuju". Data ini dihimpun dari 11 subjek yang secara aktif menggunakan sistem.
 
-Commented [AR36]: (kertas dilipat tanpa catatan) - Bu Ani
+
 
 Gambar V.10. Rata-rata Skor Evaluasi Penerimaan (TAM)
 
@@ -3768,7 +3739,17 @@ Akan tetapi, ketidakberhasilan pada satu siklus revisi bukan berarti kebutuhan b
 
 Merangkai temuan-temuan tersebut menunjukkan kemungkinan adanya satu pola yang konsisten, mahasiswa cenderung lebih sering mengalami kesulitan pada indikator cakupan rubrik dan koherensi skor-narasi yang menuntut keterkaitan yang lebih eksplisit antara narasi feedback dengan struktur penilaian yang digunakan. Ketika bantuan diberikan, mahasiswa umumnya merespons dengan menambahkan penjelasan ke dalam narasi yang sudah ada, bukan menulis ulang. Respons tersebut tidak selalu langsung menyelesaikan kebutuhan bantuan yang mendasarinya, terutama pada indikator yang menuntut perubahan struktur evaluatif. Namun melalui beberapa siklus revisi, sebagian kebutuhan tersebut akhirnya terselesaikan pada akhir sesi. Dengan demikian, bantuan digital scaffolding pada penelitian ini berfungsi lebih sebagai pemicu proses revisi bertahap dibandingkan sebagai instruksi yang menghasilkan perbaikan instan, dan dampaknya cenderung lebih terlihat pada indikator yang tampak selaras dengan strategi revisi yang umum dilakukan mahasiswa, yaitu perluasan elaborasi narasi.
 
-**V.3.2.3 Pembahasan Beban Kognitif dan Penerimaan Sistem**
+**V.3.2.3 Studi Kasus: Fenomena *False Positive* dan *False Negative* pada Analisis Semantik**
+
+Meskipun evaluasi kuantitatif menunjukkan performa komputasional yang moderat, observasi kualitatif terhadap *log* respons sistem mengungkap sejumlah fenomena kegagalan analisis (*False Positive* dan *False Negative*) yang merefleksikan batasan arsitektur *semantic embedding* dalam menangkap nuansa sosio-pragmatis interaksi PjBL mahasiswa. 
+
+Fenomena pertama (*False Positive* pada Koherensi Skor-Narasi) terjadi ketika mahasiswa memberikan skor rendah (misalnya 1 atau 2) namun menulis narasi *feedback* menggunakan bahasa eufemisme atau pelembutan, seperti *"rekan saya sudah berusaha sebaik mungkin, namun mungkin waktu pengerjaannya kurang pas"*. Model *embedding* sering kali gagal mendeteksi ketidakselarasan ini karena sistem mendeteksi token "berusaha" dan "sebaik mungkin" sebagai probabilitas semantik positif yang seolah-olah koheren dengan skor tinggi. Kegagalan ini mengonfirmasi literatur budaya (*face-saving act*) di mana upaya menghindari konflik interpersonal menghasilkan struktur linguistik yang menipu model NLP *zero-shot*.
+
+Fenomena kedua (*False Negative* pada Cakupan Rubrik) muncul ketika narasi mahasiswa secara eksplisit membahas komponen rubrik, namun menggunakan jargon teknis atau referensi yang sangat spesifik pada konteks proyek mereka (misalnya *"routing API di modul admin selalu error"*), alih-alih menggunakan terminologi umum rubrik (seperti *"kompetensi teknis perangkat lunak"*). Karena perhitungan *cosine similarity* bergantung pada kesamaan ruang semantik di *pre-trained corpus*, istilah teknis spesifik ini gagal dipetakan oleh model ke kriteria rubrik yang berpadanan, sehingga sistem menganggap narasi tersebut tidak mencakup rubrik. 
+
+Kedua fenomena kualitatif ini menjelaskan mengapa indikator koherensi skor-narasi dan cakupan rubrik tidak hanya sulit dipenuhi secara eksperimental oleh mahasiswa, namun juga rentan terhadap bias algoritma. Hal ini menegaskan bahwa fungsionalitas NLP di ranah pendidikan perlu diposisikan sebagai *scaffolding* formatif, bukan vonis mutlak (sumatif).
+
+**V.3.2.4 Pembahasan Beban Kognitif dan Penerimaan Sistem**
 
 Data eksperimen mengindikasikan bahwa sistem memberikan dukungan yang dipersepsikan membantu proses penyusunan narasi feedback, namun pada saat yang sama memunculkan beban kognitif ekstra akibat rancangan antarmuka yang kurang optimal.
 
@@ -3788,7 +3769,7 @@ Sintesis dari kedua fenomena di atas menyimpulkan bahwa digital scaffolding berb
 
 Akan tetapi, efektivitas pedagogis ini tereduksi oleh mekanisme feedback yang terlalu agresif. Intervensi sistem yang dilakukan secara instan pada setiap ketikan diduga berkontribusi terhadap meningkatkanya persepsi cognitive load pengguna. Untuk implementasi pada skala yang lebih luas, mekanisme real-time perlu dimodifikasi menggunakan suatu mekanisme adaptif untuk menentukan waktu terbaik memberikan intervensi, atau merelokasi penempatan teks scaffolding secara berdampingan dengan formulir input narasi feedback.
 
-**V.3.2.4 Sintesis Jawaban RQ 2**
+**V.3.2.5 Sintesis Jawaban RQ 2**
 
 Berdasarkan temuan yang telah dipaparkan pada V.3.2.2, V.3.2.1, dan V.3.2.3 dapat disusun rangkaian argumen berikut untuk menjawab RQ2 secara utuh.
 
@@ -3832,7 +3813,7 @@ Penelitian ini hanya mengevaluasi satu bentuk digital scaffolding yang diwujudka
 
 **ANALISIS DAMPAK HASIL PENELITIAN**
 
-Commented [AR37]: (kertas dilipas tanpa keterangan) - Bu Ani
+
 
 Bab ini menyajikan analisis outcome yang diharapkan dari penerapan hasil penelitian terhadap pemangku kepentingan yang telah diidentifikasi pada subbab I.5, serta evaluasi kinerja dan kegunaan aplikasi pendukung eksperimen (APE) SAPA setelah pipeline digital scaffolding diintegrasikan sebagaimana dipaparkan pada subbab IV.4. Evaluasi disajikan ke dalam tiga bagian, yaitu: (1) outcome yang diharapkan dari mahasiswa dan dosen sebagai pengguna/mitra penelitian, (2) hasil evaluasi kinerja dan kegunaan sistem setelah implementasi yang mencakup pengujian fungsionalitas, pengujian kinerja aplikasi, pengujian usabilitas, pengujian kinerja aplikasi, serta keterbatasan sistem, dan (3) status dokumen keberterimaan dari pengguna/mitra terhadap hasil eksperimen.
 
@@ -3856,7 +3837,7 @@ Pengujian fungsionalitas terhadap APE SAPA telah dilaksanakan sebagaimana dipapa
 
 Satu test case yang dinyatakan gagal terjadi pada pengujian indikator koherensi skor-narasi dengan skenario narasi yang kontradiktif, yaitu kondisi saat pengguna memasukkan skor tinggi namun menuliskan narasi yang merepresentasikan performa rendah. Sistem secara fungsional berhasil mendeteksi adanya inkonsistensi antara skor dan narasi, namun arsitektur model belum mampu mengekstraksi dan memprediksi angka skor aktual yang tersirat di dalam narasi secara presisi. Secara keseluruhan, hasil pengujian menunjukkan bahwa fitur-fitur utama APE SAPA hasil integrasi digital scaffolding bekerja sesuai spesifikasi, dengan satu limitasi spesifik pada kasus narasi yang bersentimen negatif.
 
-Commented [AR38]: (Kertas dilipat tanpa keterangan) - Bu Ani
+
 
 **VI.2.2 Pengujian Usabilitas**
 
@@ -3865,6 +3846,8 @@ Pengujian usabilitas dilakukan melalui kuesioner evaluasi pengguna terhadap kelo
 Meskipun demikian, hasil kuesioner juga mengindikasikan adanya extraneous cognitive load. Pertanyaan yang mengukur perasaan pusing akibat informasi yang teralu padat dan gangguan konsentrasi saat mengetik masing-masing mencatat skor 3,45. Identifikasi komponen antarmuka menunjukkan pola yang ironis, yaitu komponen "arahan mengenai apa yang harus ditulis (Sentence Starter)" merupakan komponen yang paling banyak dipilih sebagai paling membantu, namun pada saat yang sama juga menjadi komponen yang paling banyak dikeluhkan sebagai pengganggu. Saran kualitatif dari subjek eksperimen juga menyoroti isu teknis berupa pergeseran layar otomatis yang membingungkan saat teks scaffolding diperbaharui selagi mahasiswa mengetik. Secara keseluruhan, pengujian usabilitas menunjukkan bahwa sistem dinilai bermanfaat secara fungsional oleh penggunanya, tetapi masih memerlukan penyempurnaan pada sisi pengalaman pengguna agar manfaat tersebut tidak disertai gangguan konsentrasi yang berarti.
 
 **VI.2.3 Rekognisi Mitra atas Kebermanfaatan Hasil Penelitian**
+
+Hasil dari integrasi *digital scaffolding* ke dalam lingkungan PjBL ini telah didiskusikan dengan dosen pengampu mata kuliah terkait sebagai mitra utama penelitian. Berdasarkan observasi terhadap kualitas *output* penilaian yang masuk ke dalam sistem, mitra secara informal menyatakan bahwa narasi *feedback* yang dihasilkan pada kelompok dengan intervensi *scaffolding* menunjukkan kecenderungan penjabaran yang lebih informatif dibandingkan siklus penilaian tanpa intervensi. Mitra menyadari potensi instrumen ini untuk membantu meringankan beban pengawasan dosen terhadap kualitas *peer assessment*, karena sistem secara otonom memandu mahasiswa untuk melengkapi narasi mereka sebelum melakukan *submission*. Walaupun belum ada dokumen adopsi formal yang disahkan pada tahap *pilot study* ini, penerimaan awal yang positif ini mengonfirmasi bahwa luaran riset memiliki nilai guna praktis (*practical utility*) yang selaras dengan kebutuhan pengawalan mutu evaluasi pembelajaran di tingkat institusional.
 
 **BAB VII**
 
@@ -3897,6 +3880,8 @@ Berdasarkan kesimpulan dan keterbatasan penelitian yang telah dipaparkan pada su
 5. Replikasi penelitian pada konteks pembelajaran, mata kuliah, atau institusi yang berbeda di luar JTK Polban dan mata kuliah Manajemen Kualitas Terpadu, untuk menguji konsistensi temuan sebagaimana diidentifikasi pada subbab V.4.1, sekaligus memperbesar jumlah sampel agar power statistik penelitian lebih kuat.
 
 **VII.3 Rencana Keberlanjutan dan Komersialisasi Hasil Penelitian**
+
+Untuk memaksimalkan dampak dari penelitian ini, dirumuskan beberapa langkah keberlanjutan. Pertama, hasil riset empiris ini akan dipublikasikan ke dalam jurnal atau prosiding konferensi ilmiah yang berfokus pada inovasi pendidikan dan linguistik komputasional, guna menyumbangkan temuan pada diskursus *feedback literacy*. Kedua, secara institusional, *pipeline scaffolding* ini memiliki prospek teknis untuk diintegrasikan secara permanen ke dalam arsitektur aplikasi SAPA yang digunakan secara luas oleh Jurusan Teknik Komputer dan Informatika, sehingga instrumen ini dapat direplikasi pada berbagai mata kuliah PjBL lainnya di semester mendatang. Ketiga, apabila didukung oleh optimasi infrastruktur komputasi di masa depan, fungsionalitas sistem ini dapat diabstraksikan menjadi modul *plug-and-play* yang independen. Hal ini membuka ruang untuk integrasi lintas platform dengan *Learning Management System* (LMS) eksternal di luar institusi melalui skema lisensi B2B (*Business-to-Business*), yang menjadi pijakan awal menuju komersialisasi produk *ed-tech* spesifik.
 
 **DAFTAR PUSTAKA**
 
