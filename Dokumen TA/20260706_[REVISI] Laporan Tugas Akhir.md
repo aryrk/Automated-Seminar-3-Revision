@@ -1,4 +1,4 @@
-﻿**PEMANFAATAN** *DIGITAL SCAFFOLDING* **BERBASIS RUBRIK UNTUK MENDUKUNG INDIKATOR TEKSTUAL** *FEEDBACK LITERACY* **PADA** *PROJECT-BASED*
+**PEMANFAATAN** *DIGITAL SCAFFOLDING* **BERBASIS RUBRIK UNTUK MENDUKUNG INDIKATOR TEKSTUAL** *FEEDBACK LITERACY* **PADA** *PROJECT-BASED*
 
  LEARNING
 
@@ -207,7 +207,7 @@ III.6.5 Pembuatan APE 90
 III.6.6 Perancangan Skenario Eksperimen 91
 III.6.7 Penarikan Kesimpulan dan Perumusan Saran 112
 III.6.8 Komponen Rule Based Digital Scaffolding 114
-BAB IV HASIL PENGEMBANGAN APE 135
+BAB IV KONSTRUKSI DAN VALIDASI INSTRUMEN PENELITIAN 135
 IV.1 Analisis Problem Domain dan kebutuhan Eksperimen 135
 IV.1.1 Karakteristik Data Narasi Feedback 135
 IV.1.2 Hasil Kuantifikasi Masalah 142
@@ -246,7 +246,7 @@ V.4.2 Keterbatasan Desain Eksperimen yang Dipilih 245
 V.4.3 Keterbatasan Bentuk Digital Scaffolding 246
 BAB VI ANALISIS DAMPAK HASIL PENELITIAN 248
 VI.1 Outcome yang Diharapkan dari Pengguna/Mitra 248
-VI.2 Evaluasi Kinerja dan Keterimaan Aplikasi 249
+VI.2 Dampak Pedagogis Hasil Penelitian bagi Mitra (JTK) 249
 BAB VII PENUTUP 251
 VII.1 Kesimpulan 251
 VII.2 Saran 253
@@ -687,7 +687,7 @@ Berdasarkan ketiga kesenjangan tersebut, masih terdapat ruang penelitian untuk m
 
 **I.3 Research Question**
 
-- RQ 1: Sejauh mana pipeline digital scaffolding mampu mendeteksi keempat indikator tekstual narasi feedback yaitu cakupan rubrik, koherensi skornarasi, kedalaman elaborasi, dan relevansi topik, melalui kombinasi model semantik dan aturan heuristik berbasis rubrik?
+- RQ 1: Bagaimana tingkat akurasi dan reliabilitas model semantik NLP dan aturan heuristik dalam mendeteksi keempat indikator tekstual narasi feedback (cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik)?
 - RQ 2: Sejauh mana intervensi digital scaffolding berbasis rubrik memengaruhi pemenuhan keempat indikator tekstual narasi feedback pada mahasiswa dalam lingkungan eksperimen nyata, ditinjau dari perbedaan tingkat pemenuhan empat indikator tekstual antara kelompok treatment dan kontrol serta pola interaksi mahasiswa dengan scaffolding selama proses penyusunan narasi feedback?
 
 Commented [AR6]: ? Problem - Bu Ani
@@ -708,8 +708,8 @@ Commented [AR10]: Jawaban apa yang diharapkan? - Bu Ani
 
 Sejalan dengan rumusan masalah dan pertanyaan penelitian yang telah ditetapkan, tujuan utama dari penelitian ini dibagi menjadi dua sasaran komputasional dan eksperimental, yaitu:
 
-11. Membangun dan memblidasi pipeline digital scaffolding yang mengintegrasikan Natural Language Processing (NLP) sebagai instrumen riset. Arsitektur ini ditujukan untuk mendeteksi keempat indikator tekstual yaitu cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik secara real-time selama penulisan aktif narasi self dan peer assessment.
-12. Mengukur perbedaan tingkat pemenuhan keempat indikator tekstual melalui pilot study dengan perbandingan kelompok treatment yang menerima scaffolding dan kelompok kontrol tanpa scaffolding untuk menghasilkan estimasi effect size awal.
+1. Membangun dan mengevaluasi efikasi pipeline digital scaffolding yang mengintegrasikan Natural Language Processing (NLP) sebagai instrumen riset. Arsitektur ini ditujukan untuk mendeteksi keempat indikator tekstual yaitu cakupan rubrik, koherensi skor-narasi, kedalaman elaborasi, dan relevansi topik secara real-time selama penulisan aktif narasi self dan peer assessment.
+2. Mengukur perbedaan tingkat pemenuhan keempat indikator tekstual melalui pilot study dengan perbandingan kelompok treatment yang menerima scaffolding dan kelompok kontrol tanpa scaffolding untuk menghasilkan estimasi effect size awal.
 
 Kontribusi penelitian ini adalah:
 
@@ -2298,7 +2298,7 @@ Salah satu hal yang saya amati adalah bahwa pada aspek Jumlah Iklan yang Dikumpu
 
 **BAB IV**
 
-**HASIL PENGEMBANGAN APE**
+**KONSTRUKSI DAN VALIDASI INSTRUMEN PENELITIAN**
 
 Bab ini menjelaskan tahapan operasionalisasi variabel eksperimen ke dalam bentuk pipeline komputasional. Struktur pembahasan dimulai dengan spesifikasi arsitektur tingkat makro yang menghubungkan teori pedagogis dengan model NLP. Bagian utama bab ini kemudian mendeskripsikan konfigurasi logika, konstruksi teks, serta kalibrasi model yang digunakan sebagai instrumen utama dalam eksperimen.
 
@@ -3750,7 +3750,7 @@ Penelitian ini hanya mengevaluasi satu bentuk digital scaffolding yang diwujudka
 
 Commented [AR32]: (kertas dilipas tanpa keterangan) - Bu Ani
 
-Bab ini menyajikan analisis outcome yang diharapkan dari penerapan hasil penelitian terhadap pemangku kepentingan yang telah diidentifikasi pada subbab I.5, serta mengevaluasi sejauh mana instrumen digital scaffolding ini dapat diterima oleh pengguna secara fungsional maupun usabilitas berdasarkan temuan pada babbab sebelumnya.
+Bab ini menyajikan analisis outcome yang diharapkan dari penerapan hasil penelitian terhadap pemangku kepentingan yang telah diidentifikasi pada subbab I.5, serta mengevaluasi sejauh mana intervensi digital scaffolding ini memberikan dampak pedagogis bagi mahasiswa dan dosen di lingkungan JTK, bukan mengevaluasi fungsionalitas perangkat lunak.
 
 **VI.1 Outcome yang Diharapkan dari Pengguna/Mitra**
 
@@ -3762,11 +3762,11 @@ Kelompok kedua adalah dosen pengampu mata kuliah berbasis PjBL yang menggunakan 
 
 Hasil pilot study sebagaimana dipaparkan pada subbab V.2 hingga V.3 menjadi bukti awal sejauh mana kedua outcome tersebut tercapai, khususnya pada indikator kedalaman elaborasi yang menunjukkan indikasi dampak pada kedua jenis assessment.
 
-**VI.2 Evaluasi Kinerja dan Keterimaan Aplikasi**
+**VI.2 Dampak Pedagogis Hasil Penelitian bagi Mitra (JTK)**
 
-Subbab ini mengevaluasi kinerja APE SAPA secara keseluruhan setelah pipeline digital scaffolding diterapkan, ditinjau dari keterimaan fungsional dan pengalaman pengguna. Evaluasi ini mensintesis temuan utama yang telah diuraikan pada BAB IV dan BAB V untuk menakar dampak nyata sistem terhadap pihak pengguna.
+Subbab ini mengevaluasi dampak pedagogis dari instrumen digital scaffolding secara keseluruhan, ditinjau dari manfaatnya dalam mendukung proses refleksi mahasiswa dan evaluasi formatif dosen. Evaluasi ini mensintesis temuan utama yang telah diuraikan pada BAB IV dan BAB V untuk menakar dampak nyata riset ini bagi mitra (JTK).
 
-Dari sisi kinerja teknis, sebagaimana dirinci pada subbab IV.4.2, fungsionalitas sistem mengindikasikan realibilitas dalam menangani noise seperti input teks yang tidak bermakna maupun deteksi inkonsistensi yang kontradiktif. Keandalan ini membantu dosen sebagai pihak pemangku kepentingan untuk meminimalisir feedback dengan kualitas rendah yang tidak memenuhi indikator tekstual narasi. Secara fungsional, instrumen ini memenuhi standar kelayakan operasional untuk diterapkan di lingkungan PjBL.
+Dari sisi proses pembelajaran, intervensi ini membantu dosen sebagai pihak pemangku kepentingan untuk mengidentifikasi gap artikulasi dan meminimalisir *feedback* dengan kualitas rendah. Bagi mahasiswa, *scaffolding* berfungsi sebagai pendamping kognitif yang memberikan arahan adaptif saat mereka merumuskan penilaian di dalam *Zone of Proximal Development* (ZPD). Secara pedagogis, riset ini menunjukkan potensi penerapan sistem komputasional untuk mendukung pembentukan budaya *feedback literacy* yang lebih konstruktif di lingkungan PjBL JTK.
 
 Dari sisi keterimaan pengguna berdasarkan evaluasi usabilitas di subbab V.2.5, keberadaan sistem ini mendapatkan respons yang positif dari mahasiswa, khususnya dalam memfasilitasi mahasiswa mengingat kriteria rubrik yang terlewat. Meskipun dinilai sangat bermanfaat, analisis juga mengungkap efek samping berupa peningkatan beban kognitif pada pengguna. Hal ini dipicu oleh perubahan tampilan layar yang terjadi saat mahasiswa masih berada di tengah proses mengetik narasi.
 
