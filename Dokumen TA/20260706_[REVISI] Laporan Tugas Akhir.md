@@ -70,11 +70,11 @@ Tim Penguji:
 
 Ketua : Dr. Ani Rahmani, S.Si., M.T.
 
-<sup>196810141993032002</sup> â€¦â€¦â€¦â€¦â€¦â€¦..
+<sup>196810141993032002</sup> ………………..
 
 Anggota : Yudi Widhiyasana, S.Si., M.T.
 
-<sup>197407182001121002</sup> â€¦â€¦â€¦â€¦â€¦â€¦..
+<sup>197407182001121002</sup> ………………..
 
 **PERNYATAAN PENULIS**
 
@@ -249,6 +249,8 @@ VII.1 Kesimpulan 250
 VII.2 Saran 252
 VII.3 Rencana Keberlanjutan dan Komersialisasi Hasil Penelitian 252
 DAFTAR PUSTAKA 254
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 LAMPIRAN 255
 
 **DAFTAR GAMBAR**
@@ -690,22 +692,8 @@ Berdasarkan ketiga kesenjangan tersebut, masih terdapat ruang penelitian untuk m
 
 **I.3 Research Question**
 
-- RQ 1: Sejauh mana pipeline digital scaffolding mampu mendeteksi keempat indikator tekstual narasi feedback yaitu cakupan rubrik, koherensi skornarasi, kedalaman elaborasi, dan relevansi topik, melalui kombinasi model semantik dan aturan heuristik berbasis rubrik?
-- RQ 2: Sejauh mana intervensi digital scaffolding berbasis rubrik memengaruhi pemenuhan keempat indikator tekstual narasi feedback pada mahasiswa dalam lingkungan eksperimen nyata, ditinjau dari perbedaan tingkat pemenuhan empat indikator tekstual antara kelompok treatment dan kontrol serta pola interaksi mahasiswa dengan scaffolding selama proses penyusunan narasi feedback?
-
-Commented [AR6]: ? Problem - Bu Ani
-
-Commented [AR7]: Develop?
-
--Bu Ani
-
-Commented [M7R2]: Framming dibuat 'ruang penelitian' + evaluasi gap tsb
-
-Commented [AR8]: Jawaban apa yang diharapkan - Bu Ani
-
-Commented [AR9]: Ada latar belakang apa keempat indikator ini? - Bu Ani
-
-Commented [AR10]: Jawaban apa yang diharapkan? - Bu Ani
+- RQ 1: Sejauh mana tingkat keandalan (validitas komputasional) pipeline digital scaffolding berbasis Natural Language Processing (NLP) dalam mendeteksi pemenuhan keempat indikator tekstual narasi feedback secara otomatis?
+- RQ 2: Bagaimana dampak intervensi digital scaffolding terhadap pemenuhan indikator tekstual narasi feedback mahasiswa, serta bagaimana dinamika interaksi mahasiswa saat merespons intervensi tersebut di lingkungan pembelajaran nyata?
 
 **I.4 Tujuan Penelitian**
 
@@ -888,9 +876,9 @@ Dalam penelitian ini, rubrik diposisikan sebagai representasi eksplisit terhadap
 
 Tabel II.1. Contoh Instrumen Rubrik PjBL
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 **II.1.6 Natural Language Processing (NLP) dan Arsitektur Transformer**
 
@@ -900,9 +888,9 @@ Dalam penelitian ini, pendekatan semantic embedding digunakan untuk menghasilkan
 
 **II.1.7 Rule Based**
 
-Rule-based merupakan pendekatan dalam expert system yang menggunakan sekumpulan aturan eksplisit (ifâ€“then rules) untuk memetakan kondisi tertentu menjadi aksi yang telah ditentukan sebelumnya. Pada sistem berbasis rule-based,  logika pengambilan keputusan didefinisikan secara eksplisit sehingga setiap keputusan dapat ditelusuri kembali berdasarkan aturan yang digunakan (Negnevitsky, 2005).
+Rule-based merupakan pendekatan dalam expert system yang menggunakan sekumpulan aturan eksplisit (if–then rules) untuk memetakan kondisi tertentu menjadi aksi yang telah ditentukan sebelumnya. Pada sistem berbasis rule-based,  logika pengambilan keputusan didefinisikan secara eksplisit sehingga setiap keputusan dapat ditelusuri kembali berdasarkan aturan yang digunakan (Negnevitsky, 2005).
 
-Salah satu bentuk representasi aturan yang banyak digunakan dalam sistem rulebased adalah decision table. Decision table merupakan representasi tabular dari logika kondisional yang memetakan setiap kombinasi kondisi masukan (input conditions) ke aksi keluaran (output actions) secara eksplisit. Dibandingkan representasi berupa rangkaian ifâ€“else, decision table memberikan struktur yang lebih sistematis karena seluruh kemungkinan kombinasi kondisi dapat didokumentasikan dalam satu tabel (Crina & Abraham, 2011)
+Salah satu bentuk representasi aturan yang banyak digunakan dalam sistem rulebased adalah decision table. Decision table merupakan representasi tabular dari logika kondisional yang memetakan setiap kombinasi kondisi masukan (input conditions) ke aksi keluaran (output actions) secara eksplisit. Dibandingkan representasi berupa rangkaian if–else, decision table memberikan struktur yang lebih sistematis karena seluruh kemungkinan kombinasi kondisi dapat didokumentasikan dalam satu tabel (Crina & Abraham, 2011)
 
 Secara umum, sebuah decision table terdiri atas tiga komponen utama, yaitu: (1) condition stubs yang mendefinisikan variabel atau kondisi yang dievaluasi, (2) condition entries yang merepresentasikan kombinasi nilai dari setiap kondisi, dan (3) action entries yang mendefinisikan aksi yang dijalankan untuk setiap kombinasi kondisi tersebut.
 
@@ -970,6 +958,8 @@ Digital scaffolding merupakan implementasi prinsip scaffolding melalui mekanisme
 
 Meskipun media implementasinya berbeda, digital scaffolding tetap mempertahankan karakteristik utama scaffolding, yaitu bersifat contingent dan fading. Bantuan diberikan ketika sistem mengidentifikasi bahwa peserta didik mengalami kesulitan pada tugas yang sedang dikerjakan, kemudian dihentikan setelah peserta didik menunjukkan bahwa bantuan tersebut tidak lagi diperlukan (Ding et al., 2025; Pea, 2004).
 
+  Dalam penerapannya, intervensi yang diberikan oleh digital scaffolding tidak bersifat koersif, melainkan beroperasi sebagai *scaffolding nudge* (Oosterum, 2026). Konsep *scaffolding nudge* menjelaskan bahwa intervensi ringan pada pilihan individu dapat menginterupsi kedaulatan (*sovereignty*) sesaat, namun pada akhirnya bertujuan untuk memperkuat kemandirian jangka panjang (*non-alienation*) penggunanya agar dapat mengambil keputusan yang selaras dengan nilai-nilai evaluatif mereka. Oleh karena itu, kehadiran digital scaffolding dalam riset ini memosisikan intervensi hanya sebagai opsi panduan kognitif sementara, bukan sebagai paksaan yang mengebiri otonomi pembelajar.
+
 **II.1.12 Pendekatan Generasi Teks untuk Scaffolding**
 
 Digital scaffolding yang memberikan bantuan dalam bentuk teks memerlukan mekanisme Natural Language Generation (NLG), yaitu proses menghasilkan representasi bahasa alami berdasarkan suatu representasi nonlinguistik seperti data, aturan, maupun representasi semantik (Deemter et al., 2005). Dalam konteks sistem instruksional, mekanisme ini berfungsi mengubah hasil analisis kondisi pengguna menjadi teks yang dapat dipahami sebagai arahan atau umpan balik. Literatur NLG mengenal berbagai pendekatan yang berbeda dalam cara menghasilkan teks, mulai dari pendekatan generatif berbasis model bahasa hingga pendekatan berbasis template yang menggunakan struktur kalimat yang telah ditentukan sebelumnya.
@@ -1004,7 +994,7 @@ Perbedaan karakteristik tersebut menjadi landasan konseptual dalam memahami alte
 
 Tabel II.1 Literatur sejenis dan penulisnya
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Penelitian mengenai feedback literacy menunjukkan bahwa kualitas feedback tidak hanya ditentukan oleh kemampuan mahasiswa memberikan penilaian, tetapi juga oleh kemampuan mengomunikasikan penilaian tersebut dalam bentuk narasi yang dapat dipahami dan ditindaklanjuti. Dalam konteks PjBL, aktivitas self assessment dan peer assessment menempatkan mahasiswa sebagai pemberi sekaligus penerima feedback sehingga kemampuan menyusun narasi evaluatif menjadi bagian penting dari proses pembelajaran. Kajian Setiawan (2026a) yang mengungkapkan bahwa dalam ekosistem PjBL di Indonesia, sebagian besar mahasiswa mampu memberikan skor numerik tinggi tetapi kesulitan menyusun narasi feedback yang selaras dengan rubrik. Temuan tersebut menunjukkan masalah mendasar dalam kemampuan mahasiswa mengekspresikan evaluasi secara eksplisit dalam bentuk feedback bermakna, sehingga intervensi diperlukan saat proses penulisan berlangsung, bukan sekadar deteksi pasca-penulisan.
 
@@ -1046,15 +1036,15 @@ III.6.7: antarkelompok eksperimen.
 
 Pendekatan kuantitatif eksperimental dengan desain post-test-only beserta kelompok kontrol dan treatment dipilih. Untuk merepresentasikan esensi penelitian secara matematis dan mendefinisikan batasan dari artefak yang diusulkan, sistem digital scaffolding dirancang secara hybrid, komponen NLP yang telah dijelaskan pada Lampiran 4 bertugas mengukur kualitas semantik teks narasi secara komputasional, sedangkan komponen rule-based yang telah didefinisikan pada subbab II.1.7 menentukan apakah kualitas tersebut melewati threshold atau memerlukan intervensi. Tiga komponen utama dalam arsitektur ini adalah sebagai berikut:
 
-1. Rubrik (â„›): Kumpulan kriteria evaluasi yang tidak dapat diubah dan telah ditetapkan sebelumnya oleh institusi, didefinisikan sebagai â„› = , , â€¦ , .
-2. Pertanyaan kuantitatif dan kualitatif feedback (): Instruksi yang dihasilkan dari rubrik, didefinisikan sebagai fungsi dari rubrik: = -â„›.
-3. Respons siswa (): Feedback, atau variabel yang dapat berubah, didefinisikan sebagai tuple yang terdiri dari skor numerik kuantitatif dan narasi teks kualitatif -, yang ditandai sebagai = -, . Di mana âˆˆ !, dengan ! merepresentasikan himpunan skala yang digunakan, yaitu 1,2,3,4,5, sementara adalah teks narasi berbahasa Indonesia. Feedback literacy  diimplementasikan melalui fungsi penilaian # yang memetakan satu instance feedback ke vektor empat indikator.
+1. Rubrik (R): Kumpulan kriteria evaluasi yang tidak dapat diubah dan telah ditetapkan sebelumnya oleh institusi, didefinisikan sebagai R = , , … , .
+2. Pertanyaan kuantitatif dan kualitatif feedback (): Instruksi yang dihasilkan dari rubrik, didefinisikan sebagai fungsi dari rubrik: = -R.
+3. Respons siswa (): Feedback, atau variabel yang dapat berubah, didefinisikan sebagai tuple yang terdiri dari skor numerik kuantitatif dan narasi teks kualitatif -, yang ditandai sebagai = -, . Di mana ? !, dengan ! merepresentasikan himpunan skala yang digunakan, yaitu 1,2,3,4,5, sementara adalah teks narasi berbahasa Indonesia. Feedback literacy  diimplementasikan melalui fungsi penilaian # yang memetakan satu instance feedback ke vektor empat indikator.
 
 Korelasi dari ketiga komponen tersebut disajikan pada Gambar III.1 menggunakan rubrik pada Tabel II.1.
 
 Gambar III.1. Korelasi Rubrik, Pertanyaan, dan Feedback
 
-Untuk merepresentasikan sistem secara formal, penelitian ini menggunakan notasi matematis berikut. Rubrik direpresentasikan sebagai himpunan kriteria statis (â„›). Pertanyaan assessment diturunkan dari rubrik (). Respons mahasiswa direpresentasikan sebagai pasangan skor numerik dan teks narasi (). Setiap respons dievaluasi oleh empat fungsi pengukur ( âˆ’ &), masing-masing menghasilkan nilai dalam rentang [0,1] yang dibandingkan terhadap threshold similarity ('(),)) untuk memutuskan apakah intervensi diperlukan.
+Untuk merepresentasikan sistem secara formal, penelitian ini menggunakan notasi matematis berikut. Rubrik direpresentasikan sebagai himpunan kriteria statis (R). Pertanyaan assessment diturunkan dari rubrik (). Respons mahasiswa direpresentasikan sebagai pasangan skor numerik dan teks narasi (). Setiap respons dievaluasi oleh empat fungsi pengukur ( - &), masing-masing menghasilkan nilai dalam rentang [0,1] yang dibandingkan terhadap threshold similarity ('(),)) untuk memutuskan apakah intervensi diperlukan.
 
 Seluruh simbol dan definisi operasional yang digunakan dalam sistem dan analisis statistik dirangkum dalam Tabel III.2.
 
@@ -1065,7 +1055,7 @@ $\mathcal R$  |  Himpunan  |  Kumpulan kriteria rubrik statis yang ditetapkan in
 Q  |  Fungsi dari R  |  Pertanyaan assessment yang diturunkan dari rubrik.
 F  |  Tuple $(s_{num}, s_{txt})$  |  Respons mahasiswa berupa skor dan narasi feedback.
 S  |  Himpunan  |  Skala rubrik yang digunakan, yaitu {1,2,3,4,5}.
-Ð¤  |  Fungsi  |  Fungsi penilaian sistematis yang memetakan $F$ ke vektor indikator.
+?  |  Fungsi  |  Fungsi penilaian sistematis yang memetakan $F$ ke vektor indikator.
 $f_i$  |  $F \rightarrow [0,1]$  |  Fungsi pengukur indikator kualitas ke-i
 $\theta_{sim,i}$  |  Skalar [0,1]  |  Threshold similarity komputasional untuk indikator ke i, dikalibrasi dari data historis.
 $\theta_i$  |  Skalar [0,1]  |  Threshold keputusan intervensi untuk indikator ke-i, dalam penelitian ini bernilai mutlak 1 untuk memastikan pemenuhan indikator secara total.
@@ -1073,7 +1063,7 @@ $d_i$  |  {0,1}  |  Keputusan biner intervensi per indikator, dengan: 1. 0: Tida
 D  |  {0,1} <sup>4</sup>  |  Ruang keputusan biner berdimensi empat, dengan total 16 kombinasi. Merepresentasikan kombinasi hasil identifikasi indikator komputasi.
 d(F)  |  D  |  Vektor keputusan aktual hasil evaluasi empat indikator pada <i>renspons</i> mahasiswa <i>F</i> .
 $\mathcal{P}$  |  Himpunan  |  Kumpulan template conditional-prompt.
-Ðœ  |  $D \to \mathcal{P} \cup \{\emptyset\}$  |  Fungsi <i>rule-based</i> yang memetakan vektor keputusan ke <i>template prompt</i> .
+?  |  $D \to \mathcal{P} \cup \{\emptyset\}$  |  Fungsi <i>rule-based</i> yang memetakan vektor keputusan ke <i>template prompt</i> .
 V  |  Tuple $(v_{komponen}, s_{num})$  |  Variabel kontekstual dinamis untuk pengisian template.
 FE  |  Fungsi  |  Hasil operasi untuk dekomposisi rubrik.
 $T_{pillai}$  |  Skalar  |  Nilai statistik Pillai's Trace dari uji MANOVA.
@@ -1108,7 +1098,7 @@ Tujuan dari penelitian ini adalah merancang intervensi rule-based digital scaffo
 
 $$If \exists i: d_i(F) = 1 \to P \tag{III.3}$$
 
-Fungsi pengambilan keputusan intervensi direpresentasikan melalui fungsi aturan 0: 0,1& â†’ / âˆª âˆ…, yang memetakan 16 kemungkinan kombinasi vektor keputusan biner ke dalam himpunan template prompt / yang selaras. Untuk memberikan gambaran operasional mengenai alur transformasi data dari nilai kontinu hasil pemrosesan NLP hingga menjadi keputusan intervensi, Tabel III.3 menyajikan simulasi data pada beberapa kondisi respons mahasiswa.
+Fungsi pengambilan keputusan intervensi direpresentasikan melalui fungsi aturan 0: 0,1& ? / ? Ø, yang memetakan 16 kemungkinan kombinasi vektor keputusan biner ke dalam himpunan template prompt / yang selaras. Untuk memberikan gambaran operasional mengenai alur transformasi data dari nilai kontinu hasil pemrosesan NLP hingga menjadi keputusan intervensi, Tabel III.3 menyajikan simulasi data pada beberapa kondisi respons mahasiswa.
 
 Tabel III.3. Simulasi Alur Data dan Keputusan Intervensi Sistem
 
@@ -1165,7 +1155,7 @@ Rasio Kedalamar Elaborasi  |  Jumlah kata yang terdapat dalam narasi $feedback (
 Rasio Relevans Topik  |  Keselarasan konten teks yang relevan dengan kriteria rubrik ke konten tidak sesuai.  |  (Sun et al., 2023; Zhang & Schunn, 2023)
 Setiap pertanyaan <i>asessment</i> terikat pada suatu aspek rubrik target. <i>Embedding</i> narasi dibandingkan
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Keempat indikator tersebut merupakan variabel terikat pada tahap eksperimen. Nilainya diperoleh melalui pipeline evaluasi yang dikembangkan pada RQ1. Pemilihan indikator tersebut merepresentasikan aspek-aspek konstruk evaluative judgement dalam feedback literacy yang dikenalkan oleh Carless & Boud (2018) yang dapat dioperasionalkan secara komputasi berdasarkan narasi feedback, hal tersebut telah dijelaskan lebih dalam pada subbab II.1.8. Sementara, variabel bebas bersifat biner karena penelitian membandingkan kondisi dengan dan tanpa bantuan digital scaffolding ketika mengisi narasi feedback.
 
@@ -1281,7 +1271,7 @@ Gambar III.6. Tahapan Pelaksanaan Penelitian
 
 **III.6.1 Identifikasi Masalah dan Studi Pendahuluan**
 
-Tahap ini bertujuan memperoleh pemahaman awal mengenai karakteristik permasalahan yang menjadi dasar perancangan digital scaffolding. Kegiatan dilakukan melalui dua proses yang saling melengkapi, yaitu analisis konseptual terhadap karakteristik objek penelitian dan analisis empiris terhadap data historis self dan peer assessment. Data historis yang digunakan berasal dari 95 mahasiswa pada mata kuliah Proyek 1: Pemanfaatan Aplikasi Perkantoran yang dilaksanakan pada rentang Agustusâ€“Desember 2024 sebagaimana dijelaskan pada III.3.1.
+Tahap ini bertujuan memperoleh pemahaman awal mengenai karakteristik permasalahan yang menjadi dasar perancangan digital scaffolding. Kegiatan dilakukan melalui dua proses yang saling melengkapi, yaitu analisis konseptual terhadap karakteristik objek penelitian dan analisis empiris terhadap data historis self dan peer assessment. Data historis yang digunakan berasal dari 95 mahasiswa pada mata kuliah Proyek 1: Pemanfaatan Aplikasi Perkantoran yang dilaksanakan pada rentang Agustus–Desember 2024 sebagaimana dijelaskan pada III.3.1.
 
 Hasil dari tahap ini digunakan sebagai dasar dalam merumuskan kebutuhan sistem, menentukan pendekatan komputasional yang sesuai, serta menyusun spesifikasi pipeline yang akan dikembangkan. Seluruh hasil analisis dipaparkan pada Lampiran 6.
 
@@ -1325,7 +1315,7 @@ Gambar III.8. Pemetaan Dataset untuk Evaluasi
 
 Dari total populasi 10.098 baris data feedback historis, proses anotasi dilakukan terhadap sampel sebanyak 384 data. Jumlah sampel ini dihitung dan dijelaskan representasinya menggunakan Cochran formula pada rumus III.4 sebagaimana dijelaskan pada subbab III.3.1. Formulasi ini direpresentasikan sebagai standar metodologis yang teruji untuk penelitian cross sectional design populasi berskala besar (COCHRAN, 1977). Pada domain riset software engineering, formula Cochran secara empiris telah diaplikasikan untuk menentukan ukuran sampel minimum yang representatif dari populasi terbatas (Zul et al., 2024), serta digunakan secara aktif untuk mereduksi volume dataset teks berskala besar menjadi sampel representatif sebelum tahapan anotasi atau ekstraksi fitur berbasis Natural Language Processing (Ghali et al., 2025).
 
-Pengambilan sampel dilakukan secara acak berdasarkan semester dilaksanakannya assessment untuk memastikan representasi proporsional dari seluruh subkelompok populasi, sehingga dataset tidak didominasi oleh satu class atau satu periode semester pembelajaran tertentu. Selanjutnya, untuk memastikan ecological validity dari dataset (LÃ¼cking et al., 2022), distribusi sampel dievaluasi dengan cara menghitung proporsi narasi yang tidak memenuhi empat indikator tekstual narasi feedback. Evaluasi distribusi ini dilakukan di awal untuk memverifikasi bahwa sampel secara akurat merepresentasikan fenomena tekstual aktual di dunia nyata sebelum proses pelabelan dilanjutkan.
+Pengambilan sampel dilakukan secara acak berdasarkan semester dilaksanakannya assessment untuk memastikan representasi proporsional dari seluruh subkelompok populasi, sehingga dataset tidak didominasi oleh satu class atau satu periode semester pembelajaran tertentu. Selanjutnya, untuk memastikan ecological validity dari dataset (Lücking et al., 2022), distribusi sampel dievaluasi dengan cara menghitung proporsi narasi yang tidak memenuhi empat indikator tekstual narasi feedback. Evaluasi distribusi ini dilakukan di awal untuk memverifikasi bahwa sampel secara akurat merepresentasikan fenomena tekstual aktual di dunia nyata sebelum proses pelabelan dilanjutkan.
 
 **A. Dekomposisi Rubrik sebagai Pre Processing**
 
@@ -1337,20 +1327,20 @@ Gambar III.9. Pemetaan Dekomposisi Rubrik pada Anotasi Dataset
 
 Dekomposisi rubrik mengubah bentuk rubrik holistik menjadi unit-unit atomik diskrit yang dapat diproses secara independen oleh pipeline NLP, sebagaimana dijelaskan oleh subbab II.1.8.1.
 
-Secara formal, rubrik dianotasikan sebagai â„› yang memiliki satu atau lebih aspek (#) ), sebagaimana dinyatakan pada rumus III.5.
+Secara formal, rubrik dianotasikan sebagai R yang memiliki satu atau lebih aspek (#) ), sebagaimana dinyatakan pada rumus III.5.
 
 $$\mathcal{R} = \{A_1, A_2, \dots, A_n\} \tag{III.5}$$
 
-Di mana F âˆˆ 1,2, â€¦ , . Sebagai contoh, beberapa aspek [dalam](#page-13-0) rubrik yang didefinisikan pada Tabel II.1 adalah "Manajemen Waktu" dan "Kontribusi dalam Kelompok".
+Di mana F ? 1,2, … , . Sebagai contoh, beberapa aspek [dalam](#page-13-0) rubrik yang didefinisikan pada Tabel II.1 adalah "Manajemen Waktu" dan "Kontribusi dalam Kelompok".
 
 Setiap aspek (#) ) memiliki satu atau lebih kriteria penilaian (\),A), sebagaimana direpresentasikan dalam rumus III.6.
 
 $$A_i = \{ K_{i,1}, K_{i,2}, \dots, K_{i,m} \}$$
  (III.6)
 
-Dengan i merupakan aspek ke-i, dan ] âˆˆ 1,2, . . , . Sebagai contoh, aspek "Pembuatan Struktur Data" dalam rubrik pada Tabel II.1, memiliki kriteria "Banyaknya iklan dan keragaman platform yang digunakan."
+Dengan i merupakan aspek ke-i, dan ] ? 1,2, . . , . Sebagai contoh, aspek "Pembuatan Struktur Data" dalam rubrik pada Tabel II.1, memiliki kriteria "Banyaknya iklan dan keragaman platform yang digunakan."
 
-Dalam rubrik penilaian, setiap kriteria (\),A) memiliki komponen tingkat skor (<sup>6</sup> âˆˆ !), dengan K merupakan deret nilai yang memetakan rentang penilaian, contohnya K = 1,2,3,4,5. Komponen skor tersebut dihubungkan dengan deskripsi performa spesifik (\),A,(^ ), sebagaimana direpresentasikan pada rumus III.7.
+Dalam rubrik penilaian, setiap kriteria (\),A) memiliki komponen tingkat skor (<sup>6</sup> ? !), dengan K merupakan deret nilai yang memetakan rentang penilaian, contohnya K = 1,2,3,4,5. Komponen skor tersebut dihubungkan dengan deskripsi performa spesifik (\),A,(^ ), sebagaimana direpresentasikan pada rumus III.7.
 
 $$K_{i,j} = \{K_{i,j,s_1}, K_{i,j,s_2}, \dots, K_{i,j,s_n}\}$$
  (III.7)
@@ -1403,7 +1393,7 @@ kesulitan dalam mengumpulkan iklan)
 
 **2. Koherensi Feature-Set**
 
-Untuk mengukur koherensi antara narasi dengan skor yang diberikan, sistem harus mengekstrak deskripsi performa spesifik (\),A,(^ ) menjadi unit-unit kriteria evaluasi yang lebih atomik. Proses ini dilakukan secara manual untuk [setiap ti](#page-2-1)ngkat skor (<sup>6</sup> âˆˆ !), menghasilkan notasi pada rumus III.10.
+Untuk mengukur koherensi antara narasi dengan skor yang diberikan, sistem harus mengekstrak deskripsi performa spesifik (\),A,(^ ) menjadi unit-unit kriteria evaluasi yang lebih atomik. Proses ini dilakukan secara manual untuk [setiap ti](#page-2-1)ngkat skor (<sup>6</sup> ? !), menghasilkan notasi pada rumus III.10.
 
 $$COH(K_{i,j,s_k}) = \{c_{coh,1}, c_{coh,2}, \dots, c_{coh,q}\}$$
  (III.10)
@@ -1549,7 +1539,7 @@ Sempurna  |  laporan (NOUN)  |  predikat
 Klausa  |  "Aplikasi ini  |  Aplikasi (NOUN),  |  S = 2  |  Valid  |  Memiliki
 Adjektivial  |  lambat"  |  ini (PRON), lambat  |  P = 1  |  subjek dan
 Sempurna  |  (ADJ)  |  predikat non-
-â€¢  |  , ,  |  verbal
+•  |  , ,  |  verbal
 Input acak  |  "asdf hjkl"  |  -  |  S = 0  |  Invalid  |  Tidak
 _  |  P = 0  |  terdapat kelas
 kata baku
@@ -1614,7 +1604,7 @@ Tabel III.10. Contoh Perhitungan Indikator Cakupan Rubrik
 
 Narasi:  |  "Saya selalu mengelola waktu dengan baik"  |  ,
 $\theta_{sim,i}$ :: 0,7
-Unit Dekomposisi  |  Isi Narasi yang Relevan  |  Similarity  |  Å¾
+Unit Dekomposisi  |  Isi Narasi yang Relevan  |  Similarity  |  ž
 Unit Dekomposisi Ketepatan Memenuhi Deadline  |  Isi Narasi yang Relevan Tidak disebutkan  |  Similarity 0,5  |  <b>y</b> 0
 
 Berdasarkan Tabel III.10, narasi "Saya selalu mengelola waktu dengan baik" dengan threshold 0,7 memiliki pemenuhan indikator sebesar 0,5, sebagaimana disajikan pada rumus III.23.
@@ -1839,9 +1829,9 @@ Berdasarkan kerangka teori yang telah dijabarkan pada subbab II.1.12, dilakukan 
 
 Tabel III.15 Analisis Pendekatan Generasi Teks Scaffolding
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 **B. Kebutuhan Teks Scaffolding**
 
@@ -1849,7 +1839,7 @@ Keempat indikator tekstual narasi feedback yang dijelaskan pada II.1.8 memerluka
 
 Tabel III.16. Analisis Kebutuhan Teks Scaffolding untuk Setiap Indikator
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Dalam merancang conditional prompt, sistem mengadopsi strategi intervensi yang spesifik dan bersifat data-driven triggers. Keputusan desain ini didasarkan pada karakteristik tugas evaluasi yang bersifat holistik. Tugas yang bersifat prosedural umumnya efektif menggunakan pendekatan sequential scaffolding atau penjelasan step-by-step (Fleischer et al., 2023). Di sisi lain, tugas menulis narasi feedback menuntut mahasiswa untuk mengimplementasi evaluative judgement, yakni kemampuan untuk membuat keputusan secara komprehensif mengenai suatu pekerjaan (Tai et al., 2018). Oleh karena itu, intervensi scafoflding dipicu secara dinamis dan independen tepat pada indikator yang belum terpenuhi oleh mahasiswa saat menulis.
 
@@ -1882,7 +1872,7 @@ Untuk mengakomodasi seluruh kondisi yang mungkin terjadi, sistem mendefinisikan 
 
 Tabel III.18. Variabel Kontekstual yang digunakan Template
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Sebagai visualisasi dari variabel kontekstual pada Tabel III.18, Gambar III.25 menyajikan contoh variabel missing\_coverage pada aspek penilaian "Pengumpulan Iklan Lowongan Kerja". Disajikan tiga komponen penilaian rubrik, namun narasi tidak membahas komponen "variasi platform", sehingga komponen terebut ditransformasi menjadi input untuk template scaffolding.
 
@@ -2021,7 +2011,7 @@ Subjek eksperimen adalah mahasiswa JTK POLBA[N yang sedang men](#page-6-0)jalani
 
 1. Kriteria Inklusi, yaitu mahasiswa aktif yang terdaftar dalam satu mata kuliah yang menerapkan PjBL dan bersedia berpartisipasi secara sukarela tanpa konsekuensi nilai akademik.
 2. Random Assignment. Mahasiswa yang memenuhi kriteria didaftarkan ke dalam kelompok treatment dan kontrol, sebagaimana didefinisikan pada subbab III.6.6.2[A. Penentuan](#page-9-0) kelompok dilakukan secara acak menggunakan random assignment pada level individu untuk menghindari clustering effect. Proses random assignment dilakukan dengan menghasilkan nilai acak untuk setiap partisipan menggunakan fungsi randomisasi pada aplikasi Spreadsheet, sehingga setiap subjek memiliki probabilitas yang asma untuk masuk ke dalam kelompok treatment atau kontrol. Partisipan dialokasikan secara proporsional ke dalam kelompok treatment dan kontrol sehingga jumlah partisipan pada kedua kelompok tetap seimbang.
-3. Ukuran Sampel. Eksperimen ini diposisikan sebagai pilot study dengan target minimal n â‰ˆ 10 per kelompok. Ukuran ini belum memenuhi syarat untuk analisis konfirmatif, namun cukup untuk menghasilkan estimasi effect size awal yang dapat digunakan sebagai masukan dalam perencanaan penelitian. Hal ini didukung oleh Hertzog (2008) yang menyatakan bahwa sampel 10 hingga 20 partisipan per kelompok sudah memadai untuk mengevaluasi parameter feasibility dan mengestimasi varian awal. Selain itu, Julious (2005) merekomendasikan 12 subjek per kelompok sebagai rule of thumb untuk pilot
+3. Ukuran Sampel. Eksperimen ini diposisikan sebagai pilot study dengan target minimal n ˜ 10 per kelompok. Ukuran ini belum memenuhi syarat untuk analisis konfirmatif, namun cukup untuk menghasilkan estimasi effect size awal yang dapat digunakan sebagai masukan dalam perencanaan penelitian. Hal ini didukung oleh Hertzog (2008) yang menyatakan bahwa sampel 10 hingga 20 partisipan per kelompok sudah memadai untuk mengevaluasi parameter feasibility dan mengestimasi varian awal. Selain itu, Julious (2005) merekomendasikan 12 subjek per kelompok sebagai rule of thumb untuk pilot
 
 study. Menyadari keterbatasan populasi dan risiko statictical power yang rendah, hasil ekspermen diposisikan sebagai bukti awal yang berfokus pada effect size serta pola temuan yang muncul dibandingkan dipandang sebagai pengujian konfirmatif.
 
@@ -2159,7 +2149,7 @@ Jenis Assessment  |  P-value  |  Pillai Value  |  Signifikan (Ya/Tidak)
 
 Jika MANOVA menghasilkan < 0.05, terdapat efek multivariat yang signifikan dari intervensi terhadap keempat indikator secara keseluruhan. Analisa kemudian dilanjutkan ke tingkat indikator individu untuk mengidentifikasi indikator spesifik yang berkontribusi.
 
-Sebaliknya, jika MANOVA menghasilkan â‰¥ 0,05, tidak terdapat efek multivariat yang signifikan pada tingkat signifikansi yang ditetapkan. Karena penelitian ini diklasifikasikan sebagai pilot study dengan ukuran sampel â‰ˆ 10 partisipan untuk setiap kelompok, hasil tidak signifikan ini tidak dapat langsung disimpulkan sebagai bukti ketiadaan efek, melainkan indikasi tidak cukupnya statistical power untuk mendeteksi efek yang ada. Atas dasar ini, analisis follow-up pada tingkat indikator tetap dilaksanakan dengan tujuan utama untuk mengestimasi effect size.
+Sebaliknya, jika MANOVA menghasilkan = 0,05, tidak terdapat efek multivariat yang signifikan pada tingkat signifikansi yang ditetapkan. Karena penelitian ini diklasifikasikan sebagai pilot study dengan ukuran sampel ˜ 10 partisipan untuk setiap kelompok, hasil tidak signifikan ini tidak dapat langsung disimpulkan sebagai bukti ketiadaan efek, melainkan indikasi tidak cukupnya statistical power untuk mendeteksi efek yang ada. Atas dasar ini, analisis follow-up pada tingkat indikator tetap dilaksanakan dengan tujuan utama untuk mengestimasi effect size.
 
 Secara keseluruhan, analisis statistik pada penelitian ini difokuskan pada outcome, yaitu tingkat pemenuhan indikator tekstual pada mahasiswa. Data interaksi yang terekam selama proses penyusunan narasi feedback tidak digunakan sebagai dasar pengujian hipotesis utama. Data tersebut difungsikan secara eksklusif sebagai sumber interpretasi tambahan untuk mendeskripsikan mekanisme kerja digital scaffolding.
 
@@ -2173,12 +2163,12 @@ Tabel III.24 Tabel Interpretasi Keputusan Uji Asumsi
 
 Hasil Uji Normalitas  |  Hasil Uji Homogenitas  |  Keputusan Uji yang Digunakan  |  Effect Size yang Digunakan  |  Catatan
 Kedua kelompok normal > 0.05  |  Homogen ( > 0.05)  |  Independent samples t test  |  Cohen's d  |  Kondisi parametrik penuh
-Kedua kelompok normal > 0.05  |  Tidak homogen ( â‰¤ 0.05)  |  Welch's T test  |  Cohen's d  |  Robust terhadap heterogenitas varians
+Kedua kelompok normal > 0.05  |  Tidak homogen ( = 0.05)  |  Welch's T test  |  Cohen's d  |  Robust terhadap heterogenitas varians
 
 Hasil Uji  |  Hasil Uji  |  Keputusan Uji  |  Effect Size  |  Catatan
 Normalitas  |  Homogenitas  |  yang  |  yang
 Digunakan: Digunakan
-Salah satu kelompok tidak normal â‰¤ 0.05  |  Tidak dipertimbangkan  |  Mann Whitney U Test  |  Rank biserial correlation (r)  |  Alternatif non parametrik
+Salah satu kelompok tidak normal = 0.05  |  Tidak dipertimbangkan  |  Mann Whitney U Test  |  Rank biserial correlation (r)  |  Alternatif non parametrik
 
 Dengan demikian, dalam satu analisis follow-up, dimungkinkan bahwa sebagian indikator diuji menggunakan t-test atau Welch's t-test sementara indikator lain diuji menggunakan Mann-Whitney U.
 
@@ -2318,7 +2308,7 @@ Pelang[garan pada ind](#page-11-0)ikator cakupan rubrik () ditunjukkan oleh pola
 
 Tabel IV.1. Kasus narasi bersifat generik
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Tabel IV.1 menunjukkan fenomena pada data historis aktual dengan narasi "Sangat baik". Narasi tersebut tidak menjawab komponen penilaian rubrik, yaitu (1) apakah tugas [diselesaikan tep](#page-11-0)at waktu ataupun (2) eksistensi tugas yang terlambat yang dapat dikejar. Alih-alih, narasi hanya berupa pernyataan afektif generik dan tidak memuat referensi terhadap rubrik. Karakteristik teks ini sejalan dengan temuan (Setiawan, 2026a) yang menekankan bahwa teks generik dan afektif mereduksi fungsi evaluasi menjadi sekadar gestur sosial. Kondisi ini pada akhirnya menghilangkan seluruh informasi yang berguna bagi penerima feedback (assessee) untuk mengidentifikasi kualitas kerja mereka (Nicol et al., 2014).
 
@@ -2326,7 +2316,7 @@ Kasus lainnya yaitu mahasiswa berhasil mengidentifikasi satu kriteria rubrik, te
 
 Tabel IV.2. Kasus Cakupan Parsial
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Narasi pada Tabel IV.2 [yaitu "Rekan s](#page-12-0)aya mampu mengumpulkan iklan sebanyak yang dibutuhkan khususnya di platform facebook.", secara eksplisit menyinggung dimensi rubrik (1) banyaknya iklan yang dikumpulkan dan (2) platform sumber yang digunakan, namun gagal membahas dimensi (1) relevansi iklan yang diberikan dan (2) kesulitan yang dihadapi ketika mengumpulkan iklan. Kemunculan pola cakupan parsial ini menegaskan bahwa identifikasi cakupan rubrik memerlukan mekanisme yang mampu mengenali hubungan antara narasi mahasiswa dan deskriptor rubrik meskipun keduanya menggunakan formulasi bahasa yang berbeda dengan menetapkan threshold deteksi indikator cakupan rubrik ('(),).
 
@@ -2336,7 +2326,7 @@ Pelanggaran pada indikator koherensi skor narasi () ditunjukkan oleh pola kontra
 
 Tabel IV.3. Kasus Skor Tidak Koheren dengan Narasi yang ditulis
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Tabel IV.3 menunjukkan mahasiswa yang memberikan skor 1 untuk aspek rubrik "Pengumpulan Iklan Lowongan Pekerjaan.", dengan narasi "dia sangat rajin melebihi seluruh rekan tim.". Terjadi ketidakselarasan antara skor 1 yang pada idealnya menunjukkan kinerja yang rendah, namun disini narasi cenderung menggambarkan kinerja yang baik.
 
@@ -2344,7 +2334,7 @@ Ketidakselarasan tersebut membuktikan terjadinya pemisahan terhadap mekanisme pe
 
 Tabel IV.4. Kasus Inkoherensi Skor secara Parsial
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Tabel IV.4 menyajikan contoh inkoherensi di mana mahasiswa memilih skor kuantitatif 5, tetapi dengan narasi yang sebatas menyatakan "Baik dalam kontribusinya.". Jika mengacu pada rubrik, skor 5 berpasangan dengan standar deskriptif "Sangat baik.", tidak munculnya kata penguat "Sangat." dalam narasi menunjukkan artikulasi skor 5 yang belum memenuhi standar rubrik. Kondisi tersebut dapat dikategorikan sebagai kasus dimana teks mengalami penurunan akurasi penilaian sebesar satu hingga dua tingkat di bawah standar rubrik. Temuan ini menunjukkan bahwa proses identifikasi koherensi tidak hanya memerlukan pengenalan topik yang sama, tetapi juga kemampuan membedakan tingkat kualitas yang direpresentasikan dalam narasi
 
@@ -2422,7 +2412,7 @@ Berdasarkan Gambar IV.2, seluruh kluster data menunjukkan pola distribusi miring
 
 Kondisi median yang secara konsisten berada di bawah mean pada seluruh kluster mengonfirmasi bahwa distribusi didominasi oleh narasi pendek, dengan nilai ratarata yang tinggi dipengaruhi oleh sebagian kecil narasi panjang. Pola ini memiliki implikasi terhadap indikator kedalaman elaborasi, yaitu jika mayoritas respons berada di bawah 20 kata, terdapat risiko bahwa feedback yang diberikan bersifat superfisial dan kurang memuat elaborasi diagnostik yang bermakna bagi penerima feedback (assessee). Kondisi ini menjadi landasan empiris untuk penentuan threshold indikator kedalaman elaborasi ('(),D) pada tahapan eksperimen selanju[tnya.](#page-6-0)
 
-Gambar IV.3 menunjukkan bahwa panjang narasi tidak mengikuti pola peningkatan maupun penurunan yang konsisten terhadap skor kuantitatif. Distribusi panjang narasi pada skor 1 hingga skor 5 saling bertumpang tindih pada hampir seluruh kategori skor. Mahasiswa yang memberikan skor rendah (1â€“2) tidak selalu menulis narasi yang lebih singkat dibandingkan mahasiswa yang memberikan skor tinggi (4â€“5), demikian pula mahasiswa yang memberikan skor tinggi tidak secara konsisten menghasilkan narasi yang lebih panjang. Temuan ini menunjukkan bahwa besarnya skor numerik tidak dapat digunakan sebagai indikator tingkat elaborasi narasi feedback sendirian.
+Gambar IV.3 menunjukkan bahwa panjang narasi tidak mengikuti pola peningkatan maupun penurunan yang konsisten terhadap skor kuantitatif. Distribusi panjang narasi pada skor 1 hingga skor 5 saling bertumpang tindih pada hampir seluruh kategori skor. Mahasiswa yang memberikan skor rendah (1–2) tidak selalu menulis narasi yang lebih singkat dibandingkan mahasiswa yang memberikan skor tinggi (4–5), demikian pula mahasiswa yang memberikan skor tinggi tidak secara konsisten menghasilkan narasi yang lebih panjang. Temuan ini menunjukkan bahwa besarnya skor numerik tidak dapat digunakan sebagai indikator tingkat elaborasi narasi feedback sendirian.
 
 Gambar IV.3 Perbandingan Pola Assessment antar Skor dan Panjang Narasi
 
@@ -2620,7 +2610,7 @@ Pelabelan pada dataset ini memetakan narasi feedback () secara langsung terhadap
 
 Tabel IV.12. Sampel Dataset Koherensi Skor Narasi 1
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Tabel IV.13. Sampel Dataset Koherensi Skor Narasi 2
 
@@ -2694,11 +2684,11 @@ Berdasarkan Gambar IV.11, overlap antara kegagalan indikator cakupan rubrik dan 
 
 Temuan ini memberikan bukti empiris bahwa ketiga indikator menangkap pola kegagalan yang berbeda dan tidak bersifat redundan. Sebagian narasi hanya gagal pada satu indikator tertentu, sementara sebagian lainnya menunjukkan kombinasi kegagalan pada dua atau tiga indikator sekaligus. Variasi pola tersebut mengindikasikan bahwa kualitas feedback mahasiswa tidak dapat direpresentasikan secara memadai oleh satu indikator tunggal. Oleh karena itu, penggunaan pendekatan multi-indikator sebagaimana dirancang pada penelitian ini memperoleh justifik[asi empiris dari dist](#page-10-0)ribusi data aktual yang diamati.
 
-Gambar IV.12 menyajikan jumlah narasi feedback yang termasuk ke dalam kategori panjang (â‰¥ 25 kata) dan kategori pendek (< 25 kata). Lebih jauh, gambar tersebut mengaitkan hubungan jumlah kata dengan pemenuhan indikator cakupan rubrik ().
+Gambar IV.12 menyajikan jumlah narasi feedback yang termasuk ke dalam kategori panjang (= 25 kata) dan kategori pendek (< 25 kata). Lebih jauh, gambar tersebut mengaitkan hubungan jumlah kata dengan pemenuhan indikator cakupan rubrik ().
 
 Gambar IV.12 Pemenuhan Indikator Cakupan Rubrik berdasarkan Panjang
 
-Sebagaimana diungkapkan pada Gambar IV.12 menunjukkan distribusi panjang narasi berdasarkan threshold 25 kata yang digunakan pada indikator kedalaman elaborasi D. Dari 384 narasi yang dianalisis, sebanyak 328 narasi (85,4%) termasuk dalam kategori pendek (<25 kata), sedangkan hanya 56 narasi (14,6%) yang termasuk kategori panjang (â‰¥25 kata). Distribusi ini menunjukkan bahwa sebagian besar mahasiswa memberikan feedback dalam bentuk narasi yang relatif singkat.
+Sebagaimana diungkapkan pada Gambar IV.12 menunjukkan distribusi panjang narasi berdasarkan threshold 25 kata yang digunakan pada indikator kedalaman elaborasi D. Dari 384 narasi yang dianalisis, sebanyak 328 narasi (85,4%) termasuk dalam kategori pendek (<25 kata), sedangkan hanya 56 narasi (14,6%) yang termasuk kategori panjang (=25 kata). Distribusi ini menunjukkan bahwa sebagian besar mahasiswa memberikan feedback dalam bentuk narasi yang relatif singkat.
 
 Untuk mengevaluasi apakah panjang narasi berkaitan dengan kualitas isi yang lebih baik, dilakukan perbandingan terhadap pemenuhan indikator cakupan rubrik (). Hasil analisis menunjukkan bahwa narasi pendek memiliki coverage pass rate sebesar 13,1%, sedangkan narasi panjang mencapai 23,2%. Meskipun perbedaannya tidak terlalu besar, pola ini menunjukkan bahwa narasi yang lebih panjang memiliki peluang yang lebih tinggi untuk memuat elemen rubrik yang relevan.
 
@@ -2720,13 +2710,13 @@ Tabel [IV.14 mendefinis](#page-13-0)ikan bahwa pendekatan komputasional yang dig
 
 Tabel IV.14. Pemilihan Pendekatan Komputasional
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Pendekatan  |  Penelitian Terdahulu  |  Karakteristik Metode  |  Justifikasi Pemilihan
-Pendekatan LLM  |  Penelitian Terdahulu  Penelitian mengenai LLM untuk mengklasifikasikan teks tidak jarang dilakukan. Hal ini disebabkan oleh prosedur training dan fine-tuning yang bersidat opsional. Model dapat melakukan klasifikasi secara akurat menggunakan metode zeroshot, few-shot prompting, ataupun dynamic exemplar selection (Lan et al., 2024; Liu & Shi, 2020; Tripp, 2025).  |  Rarakteristik Metode Pendekatan ini menggunakan LLM sepenuhnya melakukan proses klasifikasi pada teks.  |  Meskipun performanya yang tinggi, pendekatan ini tidak sesuai dengan karakteristik tugas klasifikasi dan implikasi operasional karena membutuhkan sumber saya yang besar.  Dengan asumsi terdapat 96 mahasiswa yang mengisi masing-masing 10 pertanyaan dalam skema self dan peer assessment, total permintaan mencapai sekitar 5.280 API call untuk satu kali assessment. Jika diasumsikan rata-rata konsumsi 1.000 token per permintaan, maka total penggunaan mencapai sekitar 5,28 juta token.  Mengacu pada skema harga model berbiaya rendah (Â± \$0,15 per 1 juta token input dan Â± \$0,60 per 1 juta token output), estimasi biaya operasional berada pada kisaran \$1,5â€“\$3 atau sekitar Rp25.950â€“Rp51.900 per satu kali assessment (asumsi kurs Rp17.300/USD).  Meskipun nilai tersebut relatif kecil pada satu siklus, biaya meningkat secara linear terhadap jumlah pengguna, jumlah pertanyaan, serta frekuensi interaksi seperti iterasi revisi atau multi-step scaffolding. Selain itu, pendekatan berbasis API memperkenalkan ketergantungan eksternal serta biaya berulang yang dinamis.
+Pendekatan LLM  |  Penelitian Terdahulu  Penelitian mengenai LLM untuk mengklasifikasikan teks tidak jarang dilakukan. Hal ini disebabkan oleh prosedur training dan fine-tuning yang bersidat opsional. Model dapat melakukan klasifikasi secara akurat menggunakan metode zeroshot, few-shot prompting, ataupun dynamic exemplar selection (Lan et al., 2024; Liu & Shi, 2020; Tripp, 2025).  |  Rarakteristik Metode Pendekatan ini menggunakan LLM sepenuhnya melakukan proses klasifikasi pada teks.  |  Meskipun performanya yang tinggi, pendekatan ini tidak sesuai dengan karakteristik tugas klasifikasi dan implikasi operasional karena membutuhkan sumber saya yang besar.  Dengan asumsi terdapat 96 mahasiswa yang mengisi masing-masing 10 pertanyaan dalam skema self dan peer assessment, total permintaan mencapai sekitar 5.280 API call untuk satu kali assessment. Jika diasumsikan rata-rata konsumsi 1.000 token per permintaan, maka total penggunaan mencapai sekitar 5,28 juta token.  Mengacu pada skema harga model berbiaya rendah (± \$0,15 per 1 juta token input dan ± \$0,60 per 1 juta token output), estimasi biaya operasional berada pada kisaran \$1,5–\$3 atau sekitar Rp25.950–Rp51.900 per satu kali assessment (asumsi kurs Rp17.300/USD).  Meskipun nilai tersebut relatif kecil pada satu siklus, biaya meningkat secara linear terhadap jumlah pengguna, jumlah pertanyaan, serta frekuensi interaksi seperti iterasi revisi atau multi-step scaffolding. Selain itu, pendekatan berbasis API memperkenalkan ketergantungan eksternal serta biaya berulang yang dinamis.
 Semantic Text Similiarity in Embedding Space  |  Pendekatan semantic text similarity di ruang embedding telah dikembangkan dan divalidasi secara luas melalui beberapa penelitian berikut:  1. Reimers & Gurevych (2019) mengusulkan Sentence-BERT, sebuah modifikasi dari model pre-trained BERT yang menggunakan arsitektur siamese dan triplet untuk menghasilkan sentence  |  Pendekatan ini bekerja dengan cara mengukur jarak kedekatan dua buah vektor yang merepresentasikan kalimat.  |  Pendekatan semantic similarity berbasis SBERT dengan cosine similarity dipilih sebagai metode utama dalam penelitian ini karena memiliki keunggulan performa yang stabil, efisiensi tinggi, dan kesesuaian penuh dengan karakteristik data rubrik penilaian.  Secara empiris, Reimers & Gurevych (2019) menunjukkan bahwa arsitektur siamese network pada SBERT menghasilkan sentence embeddings yang bermakna secara semantik dan dapat dibandingkan langsung melalui cosine
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 **IV.3.2 Spesifikasi Final Pipeli[ne Digital Scaffold](#page-2-0)ing**
 
@@ -2746,9 +2736,9 @@ Seluru[h model](#page-3-0) kandidat yang dievaluasi dikelompokkan ke dalam tiga 
 
 Tabel IV.15. Kandidat Model Sentence Embedding
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Kelompok  |  Model  |  Justifikasi
 Model spesifik  |  denaya/indoSBERT  |  Model ini merupakan implementasi arsitektur
@@ -2793,7 +2783,7 @@ Tabel I[V.17 menyajikan](#page-8-0) performa seluruh kandidat model pada indikat
 
 Tabel IV.17. Performa Model pada Indikator Cakupan Rubrik ()
 
-Model  |  Optimal Threshold (Â°Â¢TÂ£,Ã­)  |  F1  |  Precision  |  Recall
+Model  |  Optimal Threshold (°¢T£,í)  |  F1  |  Precision  |  Recall
 paraphrase-multilingual-mpnet-base-v2  |  0,27  |  0,5822  |  0,4415  |  0,8545
 intfloat/multilingual-e5-base  |  0,81  |  0,5926  |  0,4604  |  0,8314
 intfloat/multilingual-e5-base dengan query / passage prefix  |  0,81  |  0,5760  |  0,4315  |  0,8661
@@ -2809,7 +2799,7 @@ Indikator koherensi skor dan narasi () memiliki pola yang serupa, sebagaimana di
 
 Tabel IV.18. Performa Model pada Indikator Koherensi Skor dan Narasi
 
-Model  |  Optimal Threshold (Â¢Â¢TÂ£,ÃŸ)  |  F1  |  Precision  |  Recall
+Model  |  Optimal Threshold (¢¢T£,ß)  |  F1  |  Precision  |  Recall
 paraphrase-multilingual-mpnet-base-v2  |  0,44  |  0,4193  |  0,3129  |  0,6353
 intfloat/multilingual-e5-base  |  0,84  |  0,3751  |  0,2778  |  0,5775
 intfloat/multilingual-e5-base dengan query / passage prefix  |  0,83  |  0,3958  |  0,3011  |  0,5775
@@ -2823,7 +2813,7 @@ Pola yang sama terjadi pada indikator relevansi topik (&), sebagaimana disajikan
 
 Tabel IV.19. Performa Model pada Indikator Relevansi Topik
 
-Model  |  Optimal Threshold Â°Â¢TÂ£,Â²  |  F1  |  Precision  |  Recall
+Model  |  Optimal Threshold °¢T£,²  |  F1  |  Precision  |  Recall
 paraphrase-multilingual-mpnet-base-v2  |  0,53  |  0,3071  |  0,3209  |  0,2944
 intfloat/multilingual-e5-base  |  0,84  |  0,2924  |  0,2418  |  0,3698
 intfloat/multilingual-e5-base dengan query / passage prefix  |  0,83  |  0,3188  |  0,2421  |  0,4668
@@ -2837,12 +2827,12 @@ Secara keseluruhan, sintesis dari ketiga pengujian whole-text ini secara konklus
 
 Sebagai ekstensi dari pengukuran performa model yang dilakukan pada subbab IV.3.3.1, subbab ini mengevaluasi implementasi semantic chunking yang telah didefin[isikan pada](#page-8-1) subbab III.6.3.2B. Hal tersebut dilakukan untuk mengukur dampak metode tersebut terhadap setiap indikator komputasi untuk setiap model embedding.
 
-Tabel IV.20 menyajikan nilai F1 untuk setiap indikator komputasi pada seluruh kandidat model embedding, dengan Î”F1(%) merepresentasikan selisih performa dibandingkan dengan metode whole-text embedding pada subbab IV.3.3.1.
+Tabel IV.20 menyajikan nilai F1 untuk setiap indikator komputasi pada seluruh kandidat model embedding, dengan ?F1(%) merepresentasikan selisih performa dibandingkan dengan metode whole-text embedding pada subbab IV.3.3.1.
 
 Tabel IV.20. Peningkatan Performa Model dengan Semantic Chunking
 
 Model  |  Cakupan Rubrik (f <sub>1</sub> )  |  Koherensi Skor dan Narasi (f <sub>2</sub> )  |  Relevansi Topik (f <sub>4</sub> )
-F1Score  |  Î”F1(%)  |  F1Score  |  Î”F1(%)  |  F1Score  |  Î”F1(%)
+F1Score  |  ?F1(%)  |  F1Score  |  ?F1(%)  |  F1Score  |  ?F1(%)
 paraphrase-multilingual- mpnet-base-v2  |  0,5820  |  -0,034%  |  0,4216  |  0,549%  |  0,3200  |  4,201 %
 intfloat/multilingual-e5- base  |  0,6002  |  1,282%  |  0,3829  |  2,079%  |  0,2966  |  1,436 %
 intfloat/multilingual-e5- base + Prefix  |  0,5826  |  1,146%  |  0,3922  |  -0,910%  |  0,3202  |  0,439 %
@@ -2860,7 +2850,7 @@ namun terbukti berhasil menjaga stabilitas deteksi kriteria mencapai F1 0,6140. 
 
 Tabel IV.21. Performa Cakupan Rubrik dengan Semantic Chunking
 
-Model  |  Optimal Threshold (Â°Â¢TÂ£,Ã­)  |  F1  |  Precision  |  Recall
+Model  |  Optimal Threshold (°¢T£,í)  |  F1  |  Precision  |  Recall
 paraphrase-multilingual-mpnet-base-v2  |  0,27  |  0,5820  |  0,4406  |  0,8568
 intfloat/multilingual-e5-base  |  0,81  |  0,6002  |  0,4646  |  0,8476
 intfloat/multilingual-e5-base dengan query / passage prefix  |  0,81  |  0,5826  |  0,4327  |  0,8915
@@ -2872,11 +2862,11 @@ Penurunan performa yang terjadi pada indikator relevansi topik (&) dan koherensi
 
 **IV.3.3.3 Evaluasi Dampak Sifat Mutual Exlusivity pada Koherensi Skor dan Narasi**
 
-Evaluasi yang dilakukan pada subbab ini merupakan manifestasi dari sifat mutual exclusivity yang didefinisikan pada subbab 2 dan 2. Hal tersebut dilakukan untuk mengukur dampak terhadap aturan eksplisit dalam memprediksi label pasangan narasi dengan feature-set koherensi skor dan narasi (de4-\),A) yang didapatkan pada subbab IV.2.1.2. Hasil eksperimen disajikan pada Tabel IV.22, dengan Î”F1(%) merepresentasikan selisih nilai F1 dengan whole-text embedding dalam subbab IV.3.3.1.
+Evaluasi yang dilakukan pada subbab ini merupakan manifestasi dari sifat mutual exclusivity yang didefinisikan pada subbab 2 dan 2. Hal tersebut dilakukan untuk mengukur dampak terhadap aturan eksplisit dalam memprediksi label pasangan narasi dengan feature-set koherensi skor dan narasi (de4-\),A) yang didapatkan pada subbab IV.2.1.2. Hasil eksperimen disajikan pada Tabel IV.22, dengan ?F1(%) merepresentasikan selisih nilai F1 dengan whole-text embedding dalam subbab IV.3.3.1.
 
 Tabel IV.22. Performa Sifat Mutual Exclusivity pada
 
-Model  |  Opitmal Threshold (Â°Â¢TÂ£,ÃŸ)  |  F1  |  âˆ†F1 (%)  |  Precision  |  Recall
+Model  |  Opitmal Threshold (°¢T£,ß)  |  F1  |  ?F1 (%)  |  Precision  |  Recall
 paraphrase-multilingual-mpnet base-v2  |  0,35  |  0,4315  |  2,910 %  |  0,3422  |  0,5836
 intfloat/multilingual-e5-base  |  0,84  |  0,3954  |  5,412 %  |  0,3717  |  0,4225
 intfloat/multilingual-e5-base dengan query / passage prefix  |  0,83  |  0,3932  |  -0,657 %  |  0,3700  |  0,4195
@@ -3021,19 +3011,19 @@ Untuk menjamin reliabilitas instrumen digital scaffolding sebelum diujikan pada 
 
 Secara keseluruhan, rangkaian eksekusi 107 skenario komputasiona[l ini](#page-7-0)  mengindikasikan bahwa pipeline beroperasi dengan tingkat validitas fungsional yang relatif baik. Dengan terpetakannya seluruh toleransi dan batasan presisi model, instrumen scaffolding ini relatif reliabel dan dapat dipertanggungjawabkan untuk tahap pengumpulan data eksperimen lapangan.
 
-**A. Konsistensi Heuristik Elaborasi (**Ã«**)**
+**A. Konsistensi Heuristik Elaborasi (**ë**)**
 
 Pengujian empiris pada threshold mengindikasikan bahwa heuristik beroperasi secara presisi pada titik 25 kata. Skenario input sepanjang 24 kata secara deterministik memicu intervensi, sedangkan skenario 25 kata diloloskan oleh sistem tanpa terpengaruh oleh noise seperti spasi ganda.
 
-**B. Ketahanan Terhadap Variasi Semantik (**Ã«Ã­**)**
+**B. Ketahanan Terhadap Variasi Semantik (**ëí**)**
 
 Model embedding (intfloat/multilingual-e5-large-instruct) mengindikasikan robustness terhadap fenomena parafrase. Sistem dapat mengukur cakupan rubrik baik pada penggunaan istilah formal akademis maupun ragam bahasa informal, hal tersebut memberikan indikasi bahwa kemampuan semantik relatif melampaui sekadar pencocokan keywords dasar.
 
-**C. Bias Polaritas pada Deteksi Koherensi (**Ã«ÃŸ**)**
+**C. Bias Polaritas pada Deteksi Koherensi (**ëß**)**
 
 Matriks pengujian komprehensif yang dilakukan dengan kombinasi 5 skor numerik dengan 3 variasi sentimen teks mendeteksi keberadaan bias polaritas. Model dapat mendeteksi inkoherensi pada skor ekstrem, contohnya skor 5 bersentimen negatif dinilai tidak koheren. Akan tetapi, pada skor 2, 3, ataupun 4, model menunjukkan sensitivitas yang rentan terhadap false-positive.
 
-**D. Keterbatasan Filter Relevansi Topik (**Ã«Â²**)**
+**D. Keterbatasan Filter Relevansi Topik (**ë²**)**
 
 Uji coba pada narasi off-domain seperti artikel berita menunjukkan bahwa algoritma pada dasarnya menghitung kedekatan kosinus vektor. Jika teks offdomain memuat serangkaian kata yang secara vektor berdekatan dengan jangkar rubrik, teks tersebut berpeluang diinterpretasikan sebagai relevan oleh sistem.
 
@@ -3067,7 +3057,7 @@ No  |  Dimensi  |  Pertanyaan  |  Tipe
 7  |  TAM (Perceived Usefulness)  |  Kehadiran teks AI mempermudah Skala linier 1 sampai 5 saya memahami struktur penilaian pada assessment.
 8  |  Kualitatif Eksplanatori  |  Apakah Anda merasa teks AI yang muncul sudah akurat dalam mendeteksi kekurangan tulisan Anda? Jelaskan alasannya.  |  Teks jawaban panjang
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 **IV.5.3 Rubrik Eksperimen**
 
@@ -3077,7 +3067,7 @@ Rubrik didefinisikan k[emudian m](#page-13-0)elewati tahapan dekomposisi sebagai
 
 Tabel IV.26. Rubrik CATME yang Dihasilkan
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 IV.5.3.1 Feature Set Cakupan dan Relevansi Topik Rubrik Eksperimen
 
@@ -3177,7 +3167,7 @@ Bab ini menyajikan hasil dan pembahasan dari eksperimen yang telah dirancang dan
 
 **V.1 Ringkasan Metodologi Eksperimen**
 
-Sebagaimana telah diuraikan secara rinci pada BAB III, penelitian ini menggunakan metode kuantitatif dengan desain randomized post-test-only control group dan alokasi acak. Eksperimen ini dirancang untuk menjawab dua pertanyaan penelitian. Tujuan pertama, yaitu RQ 1, adalah mengevaluasi sejauh mana pipeline digital scaffolding mampu mendeteksi empat indikator tekstual narasi feedback, yaitu cakupan rubrik (), koherensi skor dan narasi (), kedalaman elaborasi (D), serta relevansi topik (&) melalui kombinasi model semantik dan aturan heuristik. Tujuan kedua, yaitu RQ 2, adalah mengukur perbedaan tingkat pemenuhan indikator tersebut antar kelompok mahasiswa yang menerima scaffolding (treatment) dan kelompok yang tidak menerima bantuan sama sekali (kontrol).
+Sebagaimana telah diuraikan secara rinci pada BAB III, penelitian ini menggunakan metode kuantitatif dengan desain randomized post-test-only control group dan alokasi acak. Eksperimen ini dirancang untuk menjawab dua pertanyaan penelitian. Tujuan pertama, yaitu RQ 1, difokuskan pada pengujian tingkat keandalan (validitas komputasional) dari pipeline digital scaffolding berbasis NLP dalam mendeteksi keempat indikator tekstual secara otomatis. Tujuan kedua, yaitu RQ 2, bertujuan untuk mengukur dampak intervensi tersebut terhadap pemenuhan indikator tekstual pada kelompok mahasiswa yang menerima scaffolding (treatment) dibandingkan dengan kelompok kontrol, serta mengevaluasi dinamika interaksi mahasiswa saat menggunakan sistem tersebut.
 
 Untuk mencapai tujuan tersebut, eksperimen dikondisikan sebagai pilot study yang melibatkan mahasiswa program studi Teknik Informatika di Politeknik Negeri Bandung. Partisipan merupakan mahasiswa yang sedang menempuh mata kuliah berbasis PjBL, di mana alokasi ke dalam kelompok treatment dan kontrol dilakukan secara acak dengan rincian distribusi yang telah dipetakan pada subbab IV.5.1.
 
@@ -3202,7 +3192,7 @@ Cakupan Rubrik  |  0.84  |  0.6140  |  0.5312  |  0.7275  |  315  |  278  |  118
 Relevansi Topik  |  0.85  |  0.4296  |  0.4265  |  0.4327  |  241  |  324  |  316  |  9103
 Koherensi Skor  |  0.87  |  0.5314  |  0.4409  |  0.6687  |  220  |  279  |  109  |  1381
 
-**V.2.1.1 Evaluasi Deteksi Indikator Cakupan Rubrik (**Ã«Ã­**)**
+**V.2.1.1 Evaluasi Deteksi Indikator Cakupan Rubrik (**ëí**)**
 
 Deteksi pada indikator cakupan rubrik mencapai nilai F1-Score sebesar 0,6140 pada threshold 0,84 menggunakan pendekatan semantic chunking yang didefinisikan dalam subbab III.6.3.2B. Pada konfigurasi ini, pipeline menghasilkan 315 kasus true positive (TP), 118 false negative (FN), dan 389 true negative (TN). Nilai recall tercatat sebesar 0,7275 dan precission sebesar 0,5312. Pola trade-off antara precission dan recall terhadap penyesuaian threshold divisualisasikan pada Gambar V.1.
 
@@ -3218,7 +3208,7 @@ FP  |  278  |  0.8574  |  0.0141  |  0.8401  |  0.9073
 TN  |  389  |  0.8197  |  0.0145  |  0.7678  |  0.8399
 TP  |  315  |  0.8677  |  0.0181  |  0.8403  |  0.9146
 
-**V.2.1.2 Evaluasi Deteksi Indikator Koherensi Skor dan Narasi (**Ã«ÃŸ**)**
+**V.2.1.2 Evaluasi Deteksi Indikator Koherensi Skor dan Narasi (**ëß**)**
 
 Evaluasi pada indikator koherensi skor dan narasi menggunakan pendekatan mutually exclusive yang didefinisikan pada subbab III.6.3.2B, performa pada indikator ini mencapai nilai F1-Score optimal sebesar 0,53 pada threhold 0,89. Hasil klasifikasi pada titik kompromi ini mencatat 189 kasus True Positive (TP), 236 False Positive (FP), 140 False Negative (FN), dan 1.424 True Negative (TN). Dinamika pertukaran nilai presisi, recall, dan F1-Score terhadap pergeseran threshold divisualisasikan pada Gambar V.2.
 
@@ -3234,11 +3224,11 @@ FP  |  236  |  0.9052  |  0.0119  |  0.8900  |  0.9465
 TN  |  1424  |  0.8526  |  0.0222  |  0.7781  |  0.8900
 TP  |  189  |  0.9100  |  0.0144  |  0.8901  |  0.9550
 
-**V.2.1.3 Evaluasi Deteksi Indikator Elaborasi (**Ã«**)**
+**V.2.1.3 Evaluasi Deteksi Indikator Elaborasi (**ë**)**
 
 Indikator kedalaman elaborasi dievaluasi tanpa melibatkan proses klasifikasi berbasis similarity terhadap anotasi acuan. Mekanisme kerja indikator ini menggunakan threshold deterministik dengan batas minimal 25 kata leksikal. Hasil perhitungan pada data historis menunjukkan bahwa narasi yang mencapai atau melebihi threshold 25 kata memiliki proporsi pemenuhan cakupan rubrik sebesar 23,2%. Sementara itu, narasi dengan panjang di bawah threshold tersebut mencatat tingkat pemenuhan cakupan rubrik yang rendah, yaitu sebesar 13,1%.
 
-**V.2.1.4 Evaluasi Deteksi Indikator Relevansi Topik (**Ã«Â²**)**
+**V.2.1.4 Evaluasi Deteksi Indikator Relevansi Topik (**ë²**)**
 
 Deteksi relevansi topik dievaluasi menggunakan pendekatan whole-text embedding pada seluruh narasi. Pendekatan ini menghasilkan nilai F1-Score optimal sebesar 0,4296 pada threshold 0,85. Pada titik kalibrasi tersebut, metrik precission tercatat sebesar 0,4265 dan recall sebesar 0,43[27. Hasil klasifik](#page-5-0)asi prediksi memuat 241 kasus true positive (TP), 324 false positive (FP)), 316 false negative (FN), dan 9.103 true negative (TN). Pola perubahan persisi dan recall terhadap penyesuaian threshold disajikan pada Gambar V.3.
 
@@ -3447,7 +3437,7 @@ Kerangka evaluasi pertama berfokus pada capaian komputasional menggunakan metrik
 
 Berdasarkan keseluruhan hasil evaluasi, keempat indikator menunjukkan karakteristik deteksi yang berbeda. Cakupan rubrik menghasilkan performa yang relatif stabil untuk mengidentifikasi keberadaan aspek-aspek rubrik. Koherensi skor dan narasi merupakan indikator yang paling menantang karena memerlukan penalaran terhadap tingkat kualitas jawaban. Kedalaman elaborasi dioperasionalkan menggunakan pendekatan deterministik berbasis jumlah kata sehingga tidak dievaluasi sebagai tugas klasifikasi semantik. Sementara itu, relevansi topik masih mampu mengenali domain pembahasan, namun performanya menurun ketika hubungan antara narasi dan aspek rubrik harus disimpulkan secara implisit.
 
-**V.3.1.1 Pembahasan Indikator Cakupan Rubrik (**Ã«Ã­**)**
+**V.3.1.1 Pembahasan Indikator Cakupan Rubrik (**ëí**)**
 
 Berdasarkan hasil evaluasi komputasional pada indikator cakupan rubrik dalam subbab IV.3.3.4, nilai recall (0,7275) tampak lebih tinggi dibandingkan precision (0,5312). Hal ini merepresentasikan sensitivitas pipeline yang lebih tinggi terhadap kebenaran unit dekomposisi di dalam narasi mahasiswa. Konsekuensi dari sensitivitas ini adalah meningkatnya jumlah deteksi positif yang kurang tepat (FP).
 
@@ -3498,13 +3488,13 @@ Label  |  Prediksi  |  Aspek Rubrik yang Dijawab  |  Dekomposisi Rubrik  |  Nara
 1  |  0  |  Pemahaman terhadap Isi Iklan  |  Tingkat Pemahaman Konten Iklan  |  Yups, I'd say she did
 1  |  0  |  Pemahaman terhadap Isi Iklan  |  Tingkat Pemahaman Konten Iklan  |  Saya mengumpulkan dulu informasi apa yang terdapat dalam data tersebut dan apa yang bisa saya olah dari data tersebut serta saya masukkan ke dalam sturkut kolom yang kelompok saya punya
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Sampel pada Tabel V.14 memperlihatkan kesulitan model dalam menangani narasi implisit. Mahasiswa sering mendeskripsikan aktivitas konkret tanpa menggunakan terminologi rubrik. Seba[gai contoh, nara](#page-7-0)si "memilih platform Linked-In yan berupa teks dll, hal ini menjadi kemudahan bagi saya" gagal melewati threshold 0,84 untuk kriteria "Kemudahan dalam Pengumpulan Data". Penilaian manusia dapat memahami hubungan tersebut melalui proses inferensi. Model embedding mengandalkan semantic similarity tekstual dan gagal melakukan inferensi terhadap gabungan implisit tersebut.
 
 Dalam konteks penerapan digital scaffolding pada zone of proximal development (ZPD), sebagaimana didefinisikan pada subbab II.1.9, kasus FN menyebabkan mahasiswa yang memerlukan bantuan gagal menerima intervensi. Kasus FP memicu pemberian scaffolding tambahan yang bersifat redundan. Mahasiswa dapat mengabaikan scaffolding redundan tersebut tanpa merusak pemahaman mereka.
 
-**V.3.1.2 Pembahasan Indikator Koherensi Skor dan Narasi (**Ã«ÃŸ**)**
+**V.3.1.2 Pembahasan Indikator Koherensi Skor dan Narasi (**ëß**)**
 
 Hasil evaluasi komputasional pada indikator koherensi skor dan narasi memperlihatkan overlap yang tinggi antar prediksi benar dan salah, sebagaimana dijabarkan pada subbab V.2.1.2. Rata-rata skor similarity untuk kelas TP (0,9100) dan FP (0,9052) memiliki selisih yang sangat tipis. Kondisi ini memperlihatkan bahwa pipeline digital scaffolding cenderung memberikan skor similarity yang tinggi pada sebagian besar narasi, sehingga membatasi ruang pemisah antara klasifikasi TRUE dan FALSE.
 
@@ -3554,13 +3544,13 @@ Label  |  Prediksi  |  Aspek Rubrik yang Dijawab  |  Dekomposisi Rubrik  |  Nara
 1  |  0  |  Pengumpulan Iklan Lowongan Kerja  |  Platform tidak bervariasi  |  dia sudah selesai  |  farras tidak menglami kesulita dan farras mengurus linkid dan dia mengumpulkan datanya itu sangat cepat pada minggu ke 2
 1  |  0  |  Pengumpulan Iklan Lowongan Kerja  |  Platform tidak bervariasi  |  facebook,  |  rekan saya mengumpulkan dan menginputkan data loker dari iya juga ketua
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Kasus FN umumnya muncul ketika mahasiswa menyampaikan bukti evaluasi secara tersirat melalui deskripsi aktivitas konkret atau penyebutan entitas spesifik. Narasi yang menyebutkan penggunaan "media sosial Facebook" atau "Linkedin" merupakan bukti praktis dari kriteria "Platform Bervariasi". Penilai manusia dapat mengubungkan tindakan tersebut dengan kriteria rubrik melalui proses interpretasi. Namun, karena hubungan tersebut dinyatakan menggunakan pengalaman nyata dan bukan terminologi rubrik, model embedding gagal mendeteksinya.
 
 Secara keseluruhan, indikator koherensi skor menyingkap tantangan utama pipeline komputasional berbasis embedding. Sistem mampu mendeteksi deskriptor skor yang sedang dibahas, tetapi menghadapi keterbatasan ketika harus mendiskriminasi tingkat pencapaian ordinal serta menginterpretasikan informasi implisit di dalam narasi mahasiswa.
 
-**V.3.1.3 Pembahasan Indikator Elaborasi (**Ã«**)**
+**V.3.1.3 Pembahasan Indikator Elaborasi (**ë**)**
 
 Berbeda dengan ketiga indikator lainnya yang mengandalkan model embedding untuk mengevaluasi semantik teks, indikator kedalaman elaborasi berbasiskan pada konten leksikal secara struktural, sebagaimana dipaparkan pada subbab V.2.1.3. Pendekatan ini dilandasi oleh asumsi bahwa narasi yang melewati threshold 25 kata menyediakan ruang yang lebih luas bagi mahasiswa untuk menguraikan alasan, menyertakan contoh, atau menjelaskan proses evaluasi yang mendasari penilaian mereka.
 
@@ -3568,7 +3558,7 @@ Perbedaan proporsi pemenuhan cakupan rubrik antara narasi panjang (23,2%) dan na
 
 Meskipun demikian, panjang kalimat tidak dapat diinterpretasikan sebagai representasi mutlak dari kualitas elaborasi. Terdapat kemungkinan mahasiswa menghasilkan narasi yang panjang namun berputar-putar tanpa makna, atau sebaliknya, menyusun narasi singkat yang sangat padat dan substantif. Oleh karena itu, threshold 25 kata diposisikan secara fungsional sebagai indikator untuk mengidentifikasi kemungkinan kurangnya elaborasi, bukan sebagai pengukur kualitas yang holistik. Di dalam digital scaffolding, informasi kedalaman elaborasi tidak beroperasi secara terisolasi, melainkan dipertimbangkan bersama keseluruhan indikator tekstual lainnya dalam pengambilan keputusan.
 
-**V.3.1.4 Pembahasan Indikator Relevansi Topik (**Ã«Â²**)**
+**V.3.1.4 Pembahasan Indikator Relevansi Topik (**ë²**)**
 
 Meskipun subbab V.2.1.4 menyatakan bahwa terdapat overlap antar distribusi skor pada Tabel V.4, data menunjukkan bahwa rata-rata skor TAPI tetap berada di atas FP, sementara FN dan TN terkonsentrasi pada rentang skor yang lebih rendah. Pola ini mengonfirmasi bahwa pipeline digital scaffolding mampu menghasilkan prediksi yang cukup relevan. Pipeline digital scaffolding dapat membedakan keberadaan topik evaluatif pada tingkat tertentu dan mengenali apakah narasi mahasiswa sedang membahas aspek yang sesuai dengan pertanyaan rubrik, meskipun belum mencapai pemisahan class yang tegas.
 
@@ -3618,7 +3608,7 @@ Label  |  Prediksi  |  Aspek Rubrik yang Dijawab  |  Dekomposisi Rubrik  |  Nara
 1  |  0  |  Pemahaman terhadap Isi Iklan  |  Tingkat Pemahaman Konten Iklan  |  Yups, I'd say she did
 1  |  0  |  Pengumpulan Iklan Lowongan Kerja  |  Kemudahan dalam Pengumpulan Data  |  Karena Faridha bagian platform TikTok juga (sama dengan Emir) mereka jadi lebih cepat dan mudah dalam mencari loker
 
-[Tabel tidak terbaca: teks terfragmentasi di PDF asli â€” lihat dokumen sumber]
+[Tabel tidak terbaca: teks terfragmentasi di PDF asli — lihat dokumen sumber]
 
 Secara keseluruhan, pemrosesan whole-text embedding terbukti cukup efektif untuk mendukung digital scaffolding, khususnya dalam mendeteksi keselarasan fokus narasi mahasiswa terhadap aspek evaluasi. Model embedding berkinerja baik dalam mengenali topik evaluatif eksplisit, namun performanya menurun ketika dihadapkan pada bukti perilaku yang membutuhkan interpretasi implisit. Dalam konteks penelitian ini, kapabilitas tersebut sudah memadai untuk memicu intervensi scaffolding agar mahasiswa tetap mempertahankan relevansi feedback dengan aspek yang ditetapkan dengan rubrik.
 
@@ -3704,6 +3694,14 @@ Pertama, digital scaffolding berhasil mengidentifikasi kebutuhan ba[ntuan untu](
 
 Rangkaian argumen tersebut secara langsung menjelaskan mengapa hasil pengujian statistik pada subbab V.2.3 menunjukkan kedalaman elaborasi sebagai satu-satunya indikator yang signifikan secara konsisten pada Self maupun Peer Assessment, sementara cakupan rubrik, koherensi skor, dan relevansi topik tidak menunjukkan perbedaan signifikan antara kelompok treatment dan kontrol. Dengan demikian, dampak digital scaffolding terhadap pemenuhan indikator tekstual narasi feedback  yang merupakan manifestasi terbatas dari kemampuan evaluative expression dalam kerangka feedback literacy pada mahasiswa tidak bersifat seragam di seluruh indikator, melainkan paling kuat termanifestasi pada indikator yang selaras dengan bentuk revisi yang secara alami dilakukan mahasiswa, yaitu perluasan elaborasi narasi. Pada indikator yang menuntut perubahan struktur evaluatif yang lebih mendalam, dampak bantuan digital scaffolding pada penelitian ini masih terbatas dan memerlukan bentuk digital scaffolding yang lebih eksplisit, lebih bertahap, atau disertai contoh konkret, serta membutuhkan perancangan mekanisme interaksi yang meminimalkan disrupsi kognitif visual agar mahasiswa dapat menjaga konsentrasi saat mengartikulasikan evaluasi mereka.
 
+  **V.3.3 Sintesis Teoretis: Posisi Temuan Terhadap Lanskap Digital Scaffolding Terkini**
+  
+  Rangkaian temuan eksperimental pada subbab V.3.2 terkait dominasi revisi penambahan teks dan beban kognitif memperkuat dalil teoretis dalam riset digital scaffolding kontemporer. Tinjauan sistematis literatur terbaru oleh Jang, Kim, & So (2025) menyimpulkan bahwa mayoritas instrumen scaffolding saat ini bersifat text-based dan berfokus pada conceptual scaffolding. Sifat konseptual ini sangat efektif untuk mengarahkan penyelesaian tugas (seperti memicu mahasiswa melengkapi aspek cakupan rubrik yang tertinggal), namun kurang memadai untuk mendorong refleksi tingkat tinggi. Hal ini secara presisi menjelaskan mengapa APE yang dirancang dalam penelitian ini, yang memberikan instruksi tekstual deterministik, berhasil mendorong mahasiswa untuk menambah elaborasi teks (strategi insertion), namun gagal memicu perombakan koherensi skor-narasi yang membutuhkan metacognitive scaffolding tingkat tinggi.
+  
+  Selain itu, fenomena split-attention dan auto-scroll yang dialami pengguna menyoroti krusialnya mengintegrasikan affective scaffolding untuk mengelola frustrasi kognitif. Konsep Scaffolding Nudge (Oosterum, 2026) mendalilkan bahwa intervensi harus bersifat memandu tanpa merampas otonomi. Namun, ketika intervensi tersebut muncul secara agresif (real-time) tanpa dukungan afektif (Jang et al., 2025), nudge yang berniat baik justru menjelma menjadi beban kognitif ekstra. Temuan ini membuktikan bahwa efektivitas digital scaffolding tidak hanya bergantung pada akurasi deteksi Natural Language Processing (NLP), melainkan sangat terikat pada mekanisme penyampaiannya (UI/UX).
+  
+  Secara garis besar, arsitektur APE berbasis Sentence-BERT dalam penelitian ini berhasil mengkonfirmasi kekuatan sekaligus kelemahan model text-based non-adaptive scaffolding. Sebagai jembatan menuju eksperimentasi masa depan, keterbatasan sistem klasifikasi teks semantik statis ini merekomendasikan transisi menuju Generative AI (GenAI) yang bersifat adaptive (Jang et al., 2025). Model interaksi berbasis conversational agents berpotensi memfasilitasi dialog metakognitif dua arah, sehingga tidak hanya menginstruksikan mahasiswa untuk menambah kata, namun juga membimbing mereka menyelaraskan nalar evaluatif antara skor dan narasi feedback.
+  
 **V.4 Keterbatasan Penelitian**
 
 Temuan yang diperoleh pada penelitian ini perlu dipahami dalam konteks desain, populasi, dan lingkungan eksperimen yang digunakan. Oleh karena itu interpretasi hasil tidak dimaksudkan untuk menghasilkan kesimpulan yang bersifat universal mengenai potensi kontribusi digital scaffolding dalam mendukung penulisan narasi feedback yang lebih artikulatif pada konteks pembelajaran. Sebaliknya, hasil penelitan memberikan bukti empiris mengenai sejauh mana digital scaffolding  berbasis rubrik bekerja secara komputasional dan kondisi eksperimen yang diuji, sekaligus mengidentifikasi sejumlah keterbatasan yang menjadi peluang pengembangan bagi penelitian selanjutnya.
@@ -3800,7 +3798,11 @@ Untuk memaksimalkan dampak dari penelitian ini, dirumuskan beberapa langkah kebe
 
 **DAFTAR PUSTAKA**
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 LAMPIRAN
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 1. Guide Book Anotasi Dataset
 
@@ -3814,6 +3816,8 @@ PROGRAM SARJANA TERAPAN
 PROGRAM STUDI TEKNIK INFORMATIKA
 JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA
 POLITEKNIK NEGERI BANDUNG
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 2. Lamporan TA Self Peer Assessment (SAPA)
 
@@ -3841,6 +3845,8 @@ JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA
 
 POLITEKNIK NEGERI BANDUNG
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran 3. Test Result Integrasi Digital Scaffolding pada SAPA
 
 Test Case ID Case Halaman Antarmuka  |  Module* (Feature)  |  Case* (-/+/edge)  |  Test Case Name* (Scenario)  |  Precondition* (GIVEN)  |  Steps to execute* (WHEN)  |  Test Data*  |  Expected Result* (THEN)  |  As Expected  |  Result* (PASS/FAIL)  |  Remark
@@ -3849,7 +3855,9 @@ TC02  |  Reflective  |  positif  |  Halaman Import Reflective Assessment  |  Use
 TCOS  |  Assessment  |  positif  |  Halaman Daffar Self Assessment  |  - User fortila membuka browser - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortigate stedistry, sela udata - fortiga  |  1. Lyeur capate melanite jould "Seef Assessment Propose" of Lyeur capate melanite jour size of the seasonment jour period capate, codes; status, codes year, project came, codes; status, codes year, project came, codes; status, codes year, project came, codes; status, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, codes year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, year, y  |  Terither includ self assessment poject list, dan tabel your memilik kilolom yang sama dengan espected  |  PASS
 TCO4  |  Assessment  |  positif  |  Halaman Daffar Peer Assumement  |  User forth membas browser     Tentrepat whistings with data before assessment paid database     pore assessment paid database     sebagai dosen     User breads of hateman     sessessment person     User breads of hateman     sessessment person     sessessment proceds     sessessment proceds  |  1. Lyeer capate melanite judui "Parer Assessment Propert Lover Gear melanite judui "Parer Assessment Propert Indicate Capate Seate Judei 2014 (1994) and partial resident data publication content status control capate data publication and partial resident data publication and partial resident data publication of the partial resident lands cantal kickem "Battan Year". A User degate melanite lands untuk kickem "Battan Year". So Liver datap melanite lands untuk kickem "Versiden Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate Seate S  |  Teithia juda peer assessment proper list discount proper list discount half principal proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper list discount proper  |  PASS
 TCOS  |  Reflective  |  positif  |  Halsman Daffar Reflective Assessment  |  User feith membuka browser     Tertagea brofelstyr salt data     Tertagea brofelstyr salt data     User feith metalukara logi     Sesagea foliam     User feith metalukara logi     Sesagea foliam     Tertagea feith metalukara logi     Sesagea foliam     Tertagea feith metalukara logi     Sesagea foliam     Tertagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi     Sesagea feith metalukara logi  |  Team to "List Reference"     Team to to the Preference     Team to to "Perference Assessment"  |  1. User dazen melleta joul "Refederich Avesserment" with water of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of the control of  |  PASS
-TC06  |  Assessment  |  positif  |  Halaman Detail Self Assessment  |  User telah membuka browser Terdapat sediaknya satu data ser assessiment pada dasandese - User telah melakukan login sebagai dosen - User berada di halaman assessment - self assessment pada uri berkut http://bcathost.  |  Tekan tombol 'Ãœetail' pada salah satu assessment  |  User dapat melinat judul 'Self Assessment'     User dapat melina nama pojecia dan batch year     User dapat melina nama pojecia dan batch year     User dapat melinat nomoco toggie "Luniakan"     User dapat melinat tombol Start Assessment     User dapat melinat data pertarnyaan dan rubrik     assessment  |  Terlihat judul self assessment, nama project, batich year, togolg quankan scancolong, tomool start assessment, sena pertanyaan  |  PASS
+TC06  |  Assessment  |  positif  |  Halaman Detail Self Assessment  |  User telah membuka browser Terdapat sediaknya satu data ser assessiment pada dasandese - User telah melakukan login sebagai dosen - User berada di halaman assessment - self assessment pada uri berkut http://bcathost.  |  Tekan tombol 'Üetail' pada salah satu assessment  |  User dapat melinat judul 'Self Assessment'     User dapat melina nama pojecia dan batch year     User dapat melina nama pojecia dan batch year     User dapat melinat nomoco toggie "Luniakan"     User dapat melinat tombol Start Assessment     User dapat melinat data pertarnyaan dan rubrik     assessment  |  Terlihat judul self assessment, nama project, batich year, togolg quankan scancolong, tomool start assessment, sena pertanyaan  |  PASS
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 4. Teori NLP Arsitektur Transformer
 
@@ -3857,6 +3865,8 @@ Lampiran 4. Teori NLP Arsitektur Transformer
 
 **LAMPIRAN TUGAS AKHIR**
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan Program Sarjana Terapan Program Studi Teknik Informatika di Jurusan Teknik Komputer dan Informatika
 
 **Oleh:**
@@ -3864,6 +3874,8 @@ Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan P
 Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 PROGRAM SARJANA TERAPAN PROGRAM STUDI TEKNIK INFORMATIKA JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA POLITEKNIK NEGERI BANDUNG 2026
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 5. Struktur Data Penelitian
 
@@ -3871,6 +3883,8 @@ Lampiran 5. Struktur Data Penelitian
 
 **LAMPIRAN TUGAS AKHIR**
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan Program Sarjana Terapan Program Studi Teknik Informatika di Jurusan Teknik Komputer dan Informatika
 
 **Oleh:**
@@ -3878,6 +3892,8 @@ Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan P
 Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 PROGRAM SARJANA TERAPAN PROGRAM STUDI TEKNIK INFORMATIKA JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA POLITEKNIK NEGERI BANDUNG 2026
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 6. Analisis Sistem Perancangan Teknis
 
@@ -3885,6 +3901,8 @@ Lampiran 6. Analisis Sistem Perancangan Teknis
 
 **LAMPIRAN TUGAS AKHIR**
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan Program Sarjana Terapan Program Studi Teknik Informatika di Jurusan Teknik Komputer dan Informatika
 
 **Oleh:**
@@ -3892,6 +3910,8 @@ Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan P
 Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 PROGRAM SARJANA TERAPAN PROGRAM STUDI TEKNIK INFORMATIKA JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA POLITEKNIK NEGERI BANDUNG 2026
+
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
 
 Lampiran 7. Perbaikan UI APE
 
@@ -3899,6 +3919,8 @@ Lampiran 7. Perbaikan UI APE
 
 **LAMPIRAN TUGAS AKHIR**
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran ini disusun untuk memenuhi salah satu syarat menyelesaikan Pendidikan Program Sarjana Terapan Program Studi Teknik Informatika di Jurusan Teknik Komputer dan Informatika
 
 **Oleh:**
@@ -3907,20 +3929,22 @@ Aryo Rakatama 221524003 Muhammad Rama Nurimani 221524021
 
 PROGRAM SARJANA TERAPAN PROGRAM STUDI TEKNIK INFORMATIKA JURUSAN TEKNIK KOMPUTER DAN INFORMATIKA POLITEKNIK NEGERI BANDUNG 2026
 
+Jang, H., Kim, S., & So, H.-J. (2025). Technology-based scaffolding for ill-structured problem-solving: a systematic review and emerging directions with AI. *Learning: Research and Practice*. https://doi.org/10.1080/23735082.2025.2591403
+
 Lampiran 8. Detail Validasi Skenario Logika Komputasional
 
 Test Case ID  |  Module* (Feature)  |  Case* (-/+/edge)  |  Test Case Name* (Scenario)  |  Precondition* (GIVEN)  |  Sleps to execute* (WHEN)  |  Test Data*  |  Expected Result* (THEN)  |  As Expected  |  Result* (PASS/FAIL)  |  ) Remark
-TC-NLP-A01  |  NLP Logic Validation  |  positif  |  Baseline â€” Ideal (semua Indikator terpenuhi)  |  - API NLP skilf pada http://localhoet:8080/feedback/anal yzo  |  Kirim POST request dengan skor 5  |  Rekan saya menunjukkan komitmen kerja yang sangat iningi selama proyek bertanggung. Dia selalu memasilkan kualitas hasil akhir memenuhi shandar yang disepakati, melakukan evaluasi secara berkala dan segara memperbalik kekurangan. Kontribusinya sangat menontukan keberbasilah tim.  |  d3=0  |  valid=True, d1=0, d2=0, d3=0, d4=0  |  PASS  |  -
-TC-NLP-A02  |  NLP Logic Validation  |  hitieog  |  Baseline â€” Ideal Panjang  |  - APT NLP aktil pada http://localhost:0000/feedback/anal yze  |  Kirim POST request dengan skor 4  |  Sepenjang proyek, rekan seye menunjukkan dedikasi yang kuat terhadap standar kualitas pekerjaan. Komitmen kerjanya terihat dari setiap lierasi revisi yang disukian dengan teliti. Meskipun belum sempurna, dia selalu mengevelusi hasil kerjanya dan berupaya memperbaikinya sebelum dikumpulkan.  |  d3 <b>â‰ƒ</b> 0  |  valid=True, d1=0, d2=1, d3=0, d4=1  |  PASS  |  -
-TC-NLP-B01  |  NLP Logic Validation  |  negatif  |  Malas â€” Hanya 1 kata  |  API NLP aktif pada http://localhoet:8080/feedback/anal vzc  |  Kirim POST request dengan ekor 3  |  Balk.  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
-FC-NLP-B02  |  NLP Logic Validation  |  negatif  |  Meles â€” 5 keta  |  - API NLP sktif pads http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 3  |  Dia bekerja cukup baik.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=0  |  PASS  |  -
-TC-NLP-B03  |  NLP Logic Validation  |  negatif  |  Malas â€” 15 kata  |  - API NLP aktif pada http://localhost:8080/feedback/anal yzc  |  Kirim POST request dengan skor 4  |  Rekan saya cukup bertanggung jawab dan selalu menyelesalkan tugas yang diberikan kepadanya tepat waktu.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=1  |  PASS
-TC-NLP-B04  |  NLP Logic Validation  |  negatif  |  Malas â€” 20 kata  |  API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 4  |  Dia cukup baik dalam mengerjakan proyek ini. Selalu hadir dalam meeting dan mengumpulkan tugas tepat waktu. Kerja sama juga cukup baik.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=0  |  PASS
-TC-NLP-B05  |  NLP Logic Validation  |  edge  |  Malas â€” Topat 24 Keta (Edge Case Bawah f3)  |  - API NLP aktif pada http://localhost:0080/feedback/anal yzn  |  Kirim POST request dengan skor 4  |  Rekan saya menunjukkan komitmen kerja yang balik dalam menjaga standar kualitas sarta kualitas hasil akhir yang selalu memuaskan seluruh anggota tim kami selama provek  |  d3=1  |  velid=Truc, d1=0, d2=1, d3=1, d4=1  |  PASS  |  -
-TC NLP B06  |  NLP Logic Validation  |  odgo  |  Malas â€” Tepat 26 Kata (Edge Case Atas 13)  |  - API NLP aktif pada http://localhost:8080/feedback/anal yzn  |  Kirim POST request dengen akor 4  |  Rekan saya menunjukkan komitmen kerja yang belik delam menjaga standar kualitas serta kualitas hasil akhir yang selalu memuaskan seluruh anggota tim kami selama proyek ini  |  d3=0  |  valid=Truo, d1=0, d2=1, d3=0, d4=1  |  PASS  |  -
-TC-NLP-B07  |  NLP Logic Validation  |  negatif  |  Malas â€” Input Kosong  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan akor 3  |  d3-1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS  |  -
-fC-NLP-B08  |  NLP Logic Validation  |  negatif  |  Malas â€” Hanya Spasi Panjang  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 3  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
-TC-NLP-B09  |  NLP Logic Validation  |  negatif  |  Malas â€” Mengisi Angka Saja  |  - API NLP aktif pada http://localhost:8080/fcedback/anal yze  |  Kirim POST request dengan skor 3  |  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
-TC-NLP-C01  |  NLP Logic Validation  |  positif  |  Copy-Paste â€” Satu kalimat diulang 5x  |  API NLP aktif pada http://localhost.8080/feedback/anal yze  |  Kirim POST request dengen skor 4  |  Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik.  |  d3=0  |  valid=True, d1=1, d2=1, d3=0, d4=0  |  PASS
-TC-NLP-C02  |  NLP Logic Validation  |  positif  |  Copy-Paste â€” Kata 'baik' diulang 30x  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 4  |  baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik  |  Observasional  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS  |  Observasiona
-TC-NLP-D01  |  NLP Logic Validation  |  negatif  |  Basa-Basi â€” Pujian generik tanpa koyword rubrik  |  - API NLP aktif pada http://localhoet:8080/feedback/anal yzo  |  Kirim POST request dengan ekor 5  |  Rekan saya adalah orang yang eangat baik, ramah, dan eolalu mau membantu ciapapun yang kesulitan. Dia mudah bergaul dan menyenangkan diajak bekerjasama. Orangnya juga jujur dan lidak pemah berbohong kepada anggota tim.  |  d1=1  |  valid=True, d1=1, d2=0, d3=0, d4=0  |  PASS  |  -
+TC-NLP-A01  |  NLP Logic Validation  |  positif  |  Baseline — Ideal (semua Indikator terpenuhi)  |  - API NLP skilf pada http://localhoet:8080/feedback/anal yzo  |  Kirim POST request dengan skor 5  |  Rekan saya menunjukkan komitmen kerja yang sangat iningi selama proyek bertanggung. Dia selalu memasilkan kualitas hasil akhir memenuhi shandar yang disepakati, melakukan evaluasi secara berkala dan segara memperbalik kekurangan. Kontribusinya sangat menontukan keberbasilah tim.  |  d3=0  |  valid=True, d1=0, d2=0, d3=0, d4=0  |  PASS  |  -
+TC-NLP-A02  |  NLP Logic Validation  |  hitieog  |  Baseline — Ideal Panjang  |  - APT NLP aktil pada http://localhost:0000/feedback/anal yze  |  Kirim POST request dengan skor 4  |  Sepenjang proyek, rekan seye menunjukkan dedikasi yang kuat terhadap standar kualitas pekerjaan. Komitmen kerjanya terihat dari setiap lierasi revisi yang disukian dengan teliti. Meskipun belum sempurna, dia selalu mengevelusi hasil kerjanya dan berupaya memperbaikinya sebelum dikumpulkan.  |  d3 <b>?</b> 0  |  valid=True, d1=0, d2=1, d3=0, d4=1  |  PASS  |  -
+TC-NLP-B01  |  NLP Logic Validation  |  negatif  |  Malas — Hanya 1 kata  |  API NLP aktif pada http://localhoet:8080/feedback/anal vzc  |  Kirim POST request dengan ekor 3  |  Balk.  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
+FC-NLP-B02  |  NLP Logic Validation  |  negatif  |  Meles — 5 keta  |  - API NLP sktif pads http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 3  |  Dia bekerja cukup baik.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=0  |  PASS  |  -
+TC-NLP-B03  |  NLP Logic Validation  |  negatif  |  Malas — 15 kata  |  - API NLP aktif pada http://localhost:8080/feedback/anal yzc  |  Kirim POST request dengan skor 4  |  Rekan saya cukup bertanggung jawab dan selalu menyelesalkan tugas yang diberikan kepadanya tepat waktu.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=1  |  PASS
+TC-NLP-B04  |  NLP Logic Validation  |  negatif  |  Malas — 20 kata  |  API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 4  |  Dia cukup baik dalam mengerjakan proyek ini. Selalu hadir dalam meeting dan mengumpulkan tugas tepat waktu. Kerja sama juga cukup baik.  |  d3=1  |  valid=True, d1=1, d2=1, d3=1, d4=0  |  PASS
+TC-NLP-B05  |  NLP Logic Validation  |  edge  |  Malas — Topat 24 Keta (Edge Case Bawah f3)  |  - API NLP aktif pada http://localhost:0080/feedback/anal yzn  |  Kirim POST request dengan skor 4  |  Rekan saya menunjukkan komitmen kerja yang balik dalam menjaga standar kualitas sarta kualitas hasil akhir yang selalu memuaskan seluruh anggota tim kami selama provek  |  d3=1  |  velid=Truc, d1=0, d2=1, d3=1, d4=1  |  PASS  |  -
+TC NLP B06  |  NLP Logic Validation  |  odgo  |  Malas — Tepat 26 Kata (Edge Case Atas 13)  |  - API NLP aktif pada http://localhost:8080/feedback/anal yzn  |  Kirim POST request dengen akor 4  |  Rekan saya menunjukkan komitmen kerja yang belik delam menjaga standar kualitas serta kualitas hasil akhir yang selalu memuaskan seluruh anggota tim kami selama proyek ini  |  d3=0  |  valid=Truo, d1=0, d2=1, d3=0, d4=1  |  PASS  |  -
+TC-NLP-B07  |  NLP Logic Validation  |  negatif  |  Malas — Input Kosong  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan akor 3  |  d3-1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS  |  -
+fC-NLP-B08  |  NLP Logic Validation  |  negatif  |  Malas — Hanya Spasi Panjang  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 3  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
+TC-NLP-B09  |  NLP Logic Validation  |  negatif  |  Malas — Mengisi Angka Saja  |  - API NLP aktif pada http://localhost:8080/fcedback/anal yze  |  Kirim POST request dengan skor 3  |  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26  |  d3=1  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS
+TC-NLP-C01  |  NLP Logic Validation  |  positif  |  Copy-Paste — Satu kalimat diulang 5x  |  API NLP aktif pada http://localhost.8080/feedback/anal yze  |  Kirim POST request dengen skor 4  |  Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik. Rekan saya bekerja dengan baik.  |  d3=0  |  valid=True, d1=1, d2=1, d3=0, d4=0  |  PASS
+TC-NLP-C02  |  NLP Logic Validation  |  positif  |  Copy-Paste — Kata 'baik' diulang 30x  |  - API NLP aktif pada http://localhost:8080/feedback/anal yze  |  Kirim POST request dengan skor 4  |  baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik baik  |  Observasional  |  valid=False, d1=1, d2=1, d3=1, d4=1  |  PASS  |  Observasiona
+TC-NLP-D01  |  NLP Logic Validation  |  negatif  |  Basa-Basi — Pujian generik tanpa koyword rubrik  |  - API NLP aktif pada http://localhoet:8080/feedback/anal yzo  |  Kirim POST request dengan ekor 5  |  Rekan saya adalah orang yang eangat baik, ramah, dan eolalu mau membantu ciapapun yang kesulitan. Dia mudah bergaul dan menyenangkan diajak bekerjasama. Orangnya juga jujur dan lidak pemah berbohong kepada anggota tim.  |  d1=1  |  valid=True, d1=1, d2=0, d3=0, d4=0  |  PASS  |  -
