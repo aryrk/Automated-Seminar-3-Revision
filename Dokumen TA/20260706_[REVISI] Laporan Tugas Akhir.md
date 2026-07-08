@@ -2302,7 +2302,7 @@ Salah satu hal yang saya amati adalah bahwa pada aspek Jumlah Iklan yang Dikumpu
 
 Bab ini menjelaskan tahapan operasionalisasi variabel eksperimen ke dalam bentuk pipeline komputasional. Struktur pembahasan dimulai dengan spesifikasi arsitektur tingkat makro yang menghubungkan teori pedagogis dengan model NLP. Bagian utama bab ini kemudian mendeskripsikan konfigurasi logika, konstruksi teks, serta kalibrasi model yang digunakan sebagai instrumen utama dalam eksperimen.
 
-**IV.1 Analisis Problem Domain dan kebutuhan Eksperimen**
+**IV.1 Analisis Masalah dan Kebutuhan Instrumen Eksperimen**
 
 Berdasarkan langkah identifikasi dan studi pendahuluan yang telah diuraikan pada subbab III.6.1, subbab ini menyajikan analisis terhadap karakteristik permasalahan yang ditemukan pada data historis Self Assessment dan Peer Assessment sebagai dasar perancangan pipeline digital scaffolding. Analisis dilakukan untuk mengidentifikasi bagaimana mahasiswa mengartikulasikan penilaian ke dalam bentuk narasi feedback serta bentuk penyimpangan yang muncul terhadap indikator tekstual narasi feedback yang telah dirumuskan pada BAB II. Selain karakteristik kualitatif, subbab ini juga menyajikan kuantifikasi kondisi aktual berdasarkan data historis sehingga urgensi intervensi scaffolding dapat dijustifikasi secara empiris sebelum proses perumusan pipeline instrumen dilakukan.
 
@@ -2450,24 +2450,19 @@ Kondisi tersebut menunjukkan adanya ruang urgensi untuk intervensi yang dapat me
 
 Seluruh temuan yang telah dipaparkan mengonfirmasi tiga hasil utama, yaitu (1) adanya asimetri alokasi effort atau usaha antara self assessment dan peer assessment, (2) ditemukannya penurunan kuantitas narasi lintas waktu antara tengah semester dan akhir semester, serta (3) ditemukannya fenomena yang terisolasi antara nilai numerik dengan kedalaman eksplorasi teks. Ketiga hal tersebut memperkuat motivasi penelitian, di mana kemampuan mahasiswa dalam mengartikulasi skor ke dalam bentuk narasi feedback tidak berkembang secara alami tanpa adanya intervensi, dan hanya melalui pengulangan proses pengisian instrumen.
 
-**IV.1.3 Kebutuhan Eksperimen dan Objektif Solusi**
+**IV.1.3 Karakteristik Instrumen Eksperimen**
 
-Subbab ini adalah manifestasi dari tahapan perumusan kebutuhan eksperimen yang didefinisikan pada subbab III.6.2. Objektif dari solusi didasarkan pada temuan empiris subbab IV.1.1 hingga IV.1.2, yang menegaskan bahwa skor kuantitatif dan narasi pendukung tidak selalu berkembang secara selaras selama proses assessment. Penurunan kualitas narasi yang teridentifika[si menun](#page-3-0)tut instrumen eksperimen (APE) yang memonitor teks dan ecara proaktif memandu mahasiswa.
+Subbab ini merupakan penjabaran dari tahapan perumusan instrumen eksperimen yang didefinisikan pada subbab III.6.2. Temuan empiris pada subbab IV.1.1 hingga IV.1.2 menegaskan bahwa skor kuantitatif dan narasi pendukung tidak selalu berkembang secara selaras selama proses assessment. Adanya penurunan kualitas narasi mengindikasikan perlunya sebuah instrumen eksperimen komputasional yang mampu mengevaluasi teks dan memandu mahasiswa secara proaktif selama proses penulisan berlangsung.
 
-Berdasarkan kebutuhan eksperimen tersebut, solusi dirancang dengan spesifikasi fungsional sebagai berikut:
+Untuk memenuhi kebutuhan tersebut, instrumen eksperimen dirancang dengan karakteristik operasional sebagai berikut:
 
-1. Sistem mampu mendeteksi keempat indikator tekstual secara komputasional, yaitu cakupan rubrik, koherensi skor, kedalaman elaborasi dan relevansi topik.
-2. Sistem mampu memicu teks scaffolding secara real-time dalam sesi penulisan ketika narasi feedback melanggar keempat indikator tekstual. Pemberian
+1. Instrumen beroperasi secara deterministik untuk mengevaluasi pemenuhan keempat indikator tekstual, yaitu cakupan rubrik, koherensi skor, kedalaman elaborasi, dan relevansi topik.
+2. Instrumen dirancang untuk memberikan intervensi scaffolding berupa panduan tekstual secara proaktif apabila narasi feedback mahasiswa belum memenuhi standar indikator tekstual berdasarkan threshold yang telah dikalibrasi.
+3. Pemberian intervensi scaffolding bersifat non-koersif dan akan berhenti secara otomatis saat narasi telah memenuhi seluruh kriteria operasional.
 
-Commented [AR29]: ? - Bu Ani
+Batasan eksperimen pada instrumen ini difokuskan murni pada evaluasi tekstual berdasarkan keempat indikator yang dapat diukur secara komputasional. Evaluasi ini tidak mencakup aspek interpretatif atau linguistik tingkat lanjut yang membutuhkan justifikasi manusia secara manual, sebagaimana telah dibatasi pada subbab I.7.
 
-intervensi ini didasarkan pada threshold yang telah dikalibrasi menggunakan data historis.
-
-3. Sistem mampu menghentikan pemberian scaffolding secara otomatis ketika seluruh indikator tekstual telah terpenuhi pada sesi penulisan yang sama..
-
-Batasan operasional sistem ditetapkan pada evaluasi keempat indikator tekstual narasi feedback. Dengan demikian, sistem hanya mengevaluasi indikator yang dapat dioperasionalkan secara komputasional berdasarkan teks narasi, dan tidak mencakup aspek linguistik maupun evaluatif yang masih memerlukan interpretasi manusia sebagaimana dijelaskan pada subbab I.7.
-
-Objektif solusi difokuskan pada penyediaan scaffolding selama proses penulisan narasi berlangsung untuk membantu mahasiswa menghasilkan narasi yang lebih selaras dengan indikator tekstual yang digunakan sebagai dasar pemberian scaffolding.
+Intervensi difokuskan untuk mengukur dampak kehadiran instrumen scaffolding terhadap kemampuan mahasiswa dalam mengartikulasikan penilaian evaluatif (evaluative expression) selama proses penulisan aktif.
 
 Keberhasilan solusi dievaluasi melalui dua tahapan yang selaras dengan pertanyaan penelitian. Tahap pertama menjawab RQ1, yaitu mengevaluasi kemampuan pipeline mendeteksi keempat indikator tekstual menggunakan metrik precision, recall, dan F1-score. Tahap kedua menjawab RQ2 melalui pilot study untuk mengukur perbedaan tingkat pemenuhan indikator tekstual antara kelompok treatment dan kelompok kontrol menggunakan analisis multivariat, analisis univariat, dan estimasi effect size.
 
