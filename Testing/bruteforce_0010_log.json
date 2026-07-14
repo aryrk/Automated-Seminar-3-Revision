@@ -1,0 +1,371 @@
+[
+  {
+    "narasi": "Kualitas pekerjaan sempurna.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen kerja tinggi.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Standar kualitas dijaga.",
+    "skor": 5,
+    "key": "1111",
+    "d1": 1,
+    "d2": 1,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Hasil akhir sangat bagus.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Kualitas sangat tinggi.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Evaluasi selalu dilakukan.",
+    "skor": 5,
+    "key": "1010",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Sangat menjaga kualitas.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen sangat kuat.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Kualitas hasil baik.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Perbaikan kualitas rutin.",
+    "skor": 5,
+    "key": "1111",
+    "d1": 1,
+    "d2": 1,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen kerjanya terhadap standar kualitas sangat tinggi.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Hasil akhir pekerjaannya selalu dievaluasi dan kualitasnya luar biasa.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Dia sangat menjaga standar kualitas dalam setiap pekerjaannya.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Evaluasi dan perbaikan kualitas pekerjaan rutin dilakukan.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Kualitas hasil akhir dari pekerjaannya sangat memuaskan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Selalu memastikan kualitas pekerjaan mencapai standar tertinggi.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Standar mutu dijaga ketat dalam setiap evaluasi akhir.",
+    "skor": 5,
+    "key": "1010",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Komitmen yang kuat untuk menghasilkan kualitas yang sempurna.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Hasil kerjanya bagus karena selalu berpedoman pada standar.",
+    "skor": 5,
+    "key": "1010",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Evaluasi pekerjaan dilakukan demi menjaga kualitas hasil akhir.",
+    "skor": 5,
+    "key": "1011",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen terhadap standar kualitas sangat baik. Kualitas hasil akhir memuaskan. Evaluasi dan perbaikan pekerjaan senantiasa dilakukan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Pekerjaannya selalu dievaluasi. Kualitas hasil akhir sangat tinggi karena komitmen kerjanya tidak pernah menurun sepanjang proyek.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Selalu menjaga standar kualitas. Evaluasi akhir membuktikan bahwa komitmen kerjanya menghasilkan perbaikan mutu yang sangat memuaskan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Tidak pernah mengabaikan standar kualitas. Evaluasi rutin dan perbaikan kualitas pekerjaan menjadi komitmen utamanya setiap saat.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Hasil akhirnya selalu bagus. Dia menunjukkan komitmen tinggi dalam menjaga standar kualitas dan rutin melakukan evaluasi.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Mutu pekerjaannya tiada duanya. Dia sungguh berdedikasi tinggi terhadap mutu dan terus mengevaluasi kekurangannya.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Standar mutu sangat prima. Dedikasi terhadap hasil akhir sangat baik. Selalu ada evaluasi mutu.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Hasil kinerjanya sangat bermutu tinggi. Dia punya komitmen kuat pada standar pekerjaannya.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Pengecekan mutu selalu dilakukan. Hasil pekerjaannya sungguh luar biasa berkualitas tinggi dan bagus.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Selalu melakukan perbaikan mutu. Komitmennya pada standar mutu sangat mengagumkan.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Komitmen kerja. Standar kualitas. Kualitas hasil akhir. Evaluasi. Perbaikan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen kerja tinggi. Standar kualitas tinggi. Kualitas hasil akhir tinggi. Evaluasi sering. Perbaikan sering.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Menjaga komitmen kerja. Menjaga standar kualitas. Menjaga kualitas hasil akhir. Melakukan evaluasi. Melakukan perbaikan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Komitmen, standar, kualitas, hasil akhir, evaluasi, perbaikan.",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Kualitas kualitas kualitas kualitas kualitas standar standar standar standar standar komitmen komitmen komitmen",
+    "skor": 5,
+    "key": "0111",
+    "d1": 0,
+    "d2": 1,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Evaluasi kualitas hasil akhir evaluasi perbaikan kualitas standar komitmen kerja",
+    "skor": 5,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Kualitas hasil akhir sangat berkualitas. Standar kualitas di atas standar. Komitmen kualitas tinggi.",
+    "skor": 5,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Komitmen kerjanya sangat buruk. Standar kualitas diabaikan. Kualitas hasil akhir hancur. Evaluasi pekerjaan tidak ada.",
+    "skor": 1,
+    "key": "0010",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Sama sekali tidak menjaga standar kualitas. Komitmennya nol. Kualitas hasil akhir sangat mengecewakan. Tanpa evaluasi.",
+    "skor": 1,
+    "key": "1010",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  },
+  {
+    "narasi": "Kualitas pekerjaan sangat jelek. Standar kualitas sama sekali tidak dipatuhi. Tidak punya komitmen.",
+    "skor": 1,
+    "key": "0011",
+    "d1": 0,
+    "d2": 0,
+    "d3": 1,
+    "d4": 1
+  },
+  {
+    "narasi": "Sangat buruk komitmennya terhadap standar kualitas. Hasil akhirnya sangat jelek dan tidak ada evaluasi.",
+    "skor": 1,
+    "key": "1010",
+    "d1": 1,
+    "d2": 0,
+    "d3": 1,
+    "d4": 0
+  }
+]

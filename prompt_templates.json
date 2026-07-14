@@ -1,0 +1,121 @@
+{
+    "invalid": {
+        "active": [],
+        "variables": [],
+        "diagnostic": "Lengkapi narasi anda dengan membahas komponen penilaian pada rubrik.",
+        "directive": "",
+        "starter": ""
+    },
+    "0000": {
+        "active": [],
+        "variables": [],
+        "diagnostic": "Feedback sudah sesuai dengan rubrik penilaian, lanjutkan menulis jika diperlukan.",
+        "directive": "",
+        "starter": ""
+    },
+    "0001": {
+        "active": ["Relevansi Topik"],
+        "variables": ["target_aspect"],
+        "diagnostic": "Narasi masih kurang berfokus pada {target_aspect} yang diminta rubrik.",
+        "directive": "Fokuskan narasi pada {target_aspect} dan uraikan perilaku yang relevan dengan aspek tersebut.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya melihat bahwa"
+    },
+    "0010": {
+        "active": ["Kedalaman Elaborasi"],
+        "variables": [],
+        "diagnostic": "Narasi masih bersifat umum, narasi yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Tambahkan satu contoh kejadian nyata sehingga pembaca dapat memahami dasar penilaian.",
+        "starter": "Salah satu contoh yang saya amati adalah"
+    },
+    "0011": {
+        "active": ["Relevansi Topik", "Kedalaman Elaborasi"],
+        "variables": ["target_aspect"],
+        "diagnostic": "Narasi masih kurang berfokus pada {target_aspect} dan narasi yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Fokuskan pada {target_aspect} dan perkuat dengan satu contoh nyata yang teramati.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya melihat bahwa [kejadian konkret terkait {target_aspect}]. Sebagai contoh, [contoh kejadian konkret lainnya terkait {target_aspect}]"
+    },
+    "0100": {
+        "active": ["Koherensi Evaluatif"],
+        "variables": ["input_skor", "predicted_skor"],
+        "diagnostic": "Tampaknya narasi saat ini lebih mencerminkan skor {predicted_skor}, sementara skor yang diberikan adalah {input_skor}.",
+        "directive": "Uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor}, atau sesuaikan skor dengan narasi yang ada.",
+        "starter": "Salah satu alasan saya memberikan skor {input_skor} adalah karena"
+    },
+    "0101": {
+        "active": ["Relevansi Topik", "Koherensi Evaluatif"],
+        "variables": ["target_aspect", "input_skor", "predicted_skor"],
+        "diagnostic": "Narasi masih kurang berfokus pada {target_aspect}. Narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan.",
+        "directive": "Fokuskan pada {target_aspect} dan uraikan kejadian atau perilaku yang menjadi alasan pemberian skor {input_skor} atau sesuaikan skor dengan narasi yang ada.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya memberikan skor {input_skor} karena"
+    },
+    "0110": {
+        "active": ["Koherensi Evaluatif", "Kedalaman Elaborasi"],
+        "variables": ["predicted_skor", "input_skor"],
+        "diagnostic": "Tampaknya narasi saat ini lebih mencerminkan skor {predicted_skor} sementara skor yang diberikan adalah {input_skor}. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor} atau sesuaikan skor dengan narasi yang ada. Tambahkan satu contoh nyata yang mendukung penilaian.",
+        "starter": "Saya memberikan skor {input_skor} karena saya melihat bahwa [dasar penilaian yang mencerminkan skor {input_skor}], misalnya [contoh kejadian konkret]"
+    },
+    "0111": {
+        "active": ["Relevansi Topik", "Koherensi Evaluatif", "Kedalaman Elaborasi"],
+        "variables": ["target_aspect", "input_skor", "predicted_skor"],
+        "diagnostic": "Narasi masih kurang berfokus pada {target_aspect}, narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Fokuskan pada {target_aspect} dan uraikan kejadian atau perilaku yang menjadi alasan pemberian skor {input_skor} atau sesuaikan skor dengan narasi yang ada. Perkuat dengan satu contoh nyata.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya memberikan skor {input_skor} karena saya melihat bahwa [dasar penilaian yang mencerminkan skor {input_skor}], misalnya [contoh kejadian konkret terkait {target_aspect}]"
+    },
+    "1000": {
+        "active": ["Cakupan Rubrik"],
+        "variables": ["missing_coverage"],
+        "diagnostic": "Narasi masih kurang menyinggung {missing_coverage} yang termasuk dalam rubrik penilaian.",
+        "directive": "Lengkapi narasi dengan uraian tentang {missing_coverage}, ceritakan perilaku spesifik yang teramati.",
+        "starter": "Salah satu hal yang saya amati adalah bahwa {coverage_expanded}"
+    },
+    "1001": {
+        "active": ["Relevansi Topik", "Cakupan Rubrik"],
+        "variables": ["target_aspect", "missing_coverage"],
+        "diagnostic": "Narasi masih kurang berfokus pada {target_aspect} dan belum mencakup {missing_coverage} yang diminta rubrik.",
+        "directive": "Fokuskan pada {target_aspect} dan lengkapi dengan uraian tentang {missing_coverage}.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya juga melihat bahwa {coverage_expanded}"
+    },
+    "1010": {
+        "active": ["Cakupan Rubrik", "Kedalaman Elaborasi"],
+        "variables": ["missing_coverage"],
+        "diagnostic": "Narasi belum mencakup {missing_coverage} dan narasi yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Lengkapi dengan uraian tentang {missing_coverage}, disertai satu contoh nyata yang teramati.",
+        "starter": "Salah satu contoh yang saya amati adalah bahwa {coverage_expanded}"
+    },
+    "1011": {
+        "active": ["Relevansi Topik", "Cakupan Rubrik", "Kedalaman Elaborasi"],
+        "variables": ["target_aspect", "missing_coverage"],
+        "diagnostic": "Narasi belum berfokus pada {target_aspect}, belum mencakup {missing_coverage}, dan narasi yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Fokuskan pada {target_aspect}, lengkapi dengan {missing_coverage}, dan perkuat dengan satu contoh nyata.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya melihat bahwa {coverage_expanded}"
+    },
+    "1100": {
+        "active": ["Cakupan Rubrik", "Koherensi Evaluatif"],
+        "variables": ["missing_coverage", "predicted_skor", "input_skor"],
+        "diagnostic": "Narasi belum mencakup {missing_coverage}, narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan.",
+        "directive": "Lengkapi dengan uraian tentang {missing_coverage} dan uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor}, atau sesuaikan skor dengan narasi yang ada.",
+        "starter": "Saya melihat bahwa {coverage_expanded}. Salah satu alasan saya memberikan skor {input_skor} adalah karena [dasar penilaian yang mencerminkan skor {input_skor}]"
+    },
+    "1101": {
+        "active": ["Relevansi Topik", "Cakupan Rubrik", "Koherensi Evaluatif"],
+        "variables": ["target_aspect", "missing_coverage", "predicted_skor", "input_skor"],
+        "diagnostic": "Narasi belum berfokus pada {target_aspect}, belum mencakup {missing_coverage}, dan narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan.",
+        "directive": "Fokuskan pada {target_aspect}, lengkapi dengan {missing_coverage}, dan uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor}, atau sesuaikan skor dengan narasi yang ada.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya melihat bahwa {coverage_expanded}. Saya memberikan skor {input_skor} karena [dasar penilaian yang mencerminkan skor {input_skor}]"
+    },
+    "1110": {
+        "active": ["Cakupan Rubrik", "Koherensi Evaluatif", "Kedalaman Elaborasi"],
+        "variables": ["missing_coverage", "predicted_skor", "input_skor"],
+        "diagnostic": "Narasi belum mencakup {missing_coverage}, narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Lengkapi dengan uraian tentang {missing_coverage}, uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor}, atau sesuaikan skor dengan narasi yang ada. Tambahkan satu contoh nyata yang mendukung penilaian.",
+        "starter": "Saya melihat bahwa {coverage_expanded}. Saya memberikan skor {input_skor} karena saya mengamati bahwa [dasar penilaian yang mencerminkan skor {input_skor}], misalnya [contoh kejadian konkret]"
+    },
+    "1111": {
+        "active": ["Relevansi Topik", "Cakupan Rubrik", "Koherensi Evaluatif", "Kedalaman Elaborasi"],
+        "variables": ["target_aspect", "missing_coverage", "predicted_skor", "input_skor"],
+        "diagnostic": "Narasi belum berfokus pada {target_aspect}, belum mencakup kriteria penilaian mengenai {missing_coverage}, narasi yang kamu berikan lebih mencerminkan skor {predicted_skor} daripada skor {input_skor} yang diberikan. Selain itu, contoh yang ada belum cukup untuk mendukung penilaian.",
+        "directive": "Fokuskan pada {target_aspect}, lengkapi dengan {missing_coverage}, dan uraikan kejadian atau perilaku konkret yang menjadi alasan pemberian skor {input_skor}, atau sesuaikan skor dengan narasi yang ada. Tambahkan satu contoh nyata yang mendukung penilaian.",
+        "starter": "Dalam kegiatan terkait {target_aspect}, saya melihat bahwa {coverage_expanded}. Saya memberikan skor {input_skor} karena saya mengamati bahwa [dasar penilaian yang mencerminkan skor {input_skor}]"
+    }
+}
