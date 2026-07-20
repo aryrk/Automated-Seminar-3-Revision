@@ -1,0 +1,35 @@
+[00:00:00 - 00:01:30] Pembukaan
+Moderator membuka sidang Tugas Akhir untuk Aryo Rakatama dan Muhammad Rama Nurimani. Moderator menanyakan kesiapan peserta dan menjelaskan bahwa sidang akan terdiri dari sesi presentasi (sekitar 30 menit) dan dilanjutkan dengan sesi tanya jawab. Setelah itu, akan ada diskusi tertutup oleh penguji untuk menentukan status kelulusan (lulus tanpa perbaikan, lulus dengan perbaikan, mengulang sidang, atau mengulang TA).
+
+[00:01:30 - 00:06:55] Presentasi: Pendahuluan dan Metodologi (Aryo Rakatama)
+Aryo memulai presentasi mengenai "Pemanfaatan Digital Scaffolding Berbasis Rubrik untuk Mendukung Indikator Tekstual Feedback Literasi pada Project Based Learning". Aryo menjelaskan perubahan yang dilakukan pasca Seminar 3, termasuk penambahan skenario validasi instrumen dan pemindahan bagian development ke lampiran. Ia menjelaskan batasan riset, arsitektur transformasi teks menjadi vektor menggunakan tokenization, word embedding (model intfloat/multilingual-e5-base), transformer attention, dan pooling layer. Aryo juga memaparkan hasil pengujian fungsional template scaffolding (17 template) dan behavioral testing pada pipeline menggunakan 107 skenario uji (94 lolos).
+
+[00:06:55 - 00:14:45] Presentasi: Eksperimen dan Hasil RQ1 & RQ2 (Muhammad Rama Nurimani)
+Rama melanjutkan presentasi, menjelaskan asal-usul 4 indikator tekstual yang diadopsi (Cakupan Rubrik, Koherensi Skor, Kedalaman Elaborasi, dan Relevansi Topik). Rama membahas konsep intervensi digital scaffolding yang bersifat "memaksa pada level visibilitas, namun non-koersif pada level tindakan". Rama kemudian menjelaskan metodologi RQ2 menggunakan Post-Test Only Control Group Design dengan analisis MANOVA. Hasil RQ1 menunjukkan performa pipeline yang tidak seragam antar indikator (lebih baik pada indikator observasional dibanding yang butuh inferensi). 
+
+[00:14:45 - 00:24:40] Presentasi: Kesimpulan dan Saran (Aryo & Rama)
+Aryo dan Rama menyimpulkan bahwa intervensi memberikan dampak signifikan secara statistik hanya pada Kedalaman Elaborasi di Peer Assessment (mendorong mahasiswa menambah teks). Indikator lain yang butuh pemahaman lebih dalam (koherensi skor) tidak cukup hanya mengandalkan model embedding dan desain scaffolding biner (muncul/tidak muncul). Mereka menyarankan perlunya peningkatan performa pipeline, penggunaan pre-test pada desain eksperimen selanjutnya, dan eksplorasi bentuk scaffolding lain (seperti reflektif atau metakognitif).
+
+[00:24:40 - 00:29:25] Sesi Tanya Jawab: Perbedaan Peer dan Self Assessment (Penguji 1 - Bu Hani)
+Bu Hani menanyakan fenomena perbedaan hasil tulisan antara Peer Assessment dan Self Assessment dari data historis. Rama menjawab bahwa secara natural, narasi Self Assessment lebih panjang karena mahasiswa lebih leluasa mendeskripsikan pengalamannya sendiri, sedangkan Peer Assessment melibatkan interaksi eksternal dan perbandingan dengan teman, sehingga skor self assessment cenderung lebih tinggi dari peer assessment. 
+
+[00:29:25 - 00:41:40] Sesi Tanya Jawab: Konsep Intervensi dan Feedback Literasi (Penguji 1 & 2)
+Penguji mempertanyakan ranah intervensi yang dilakukan, apakah intervensi ini bertujuan untuk memperbaiki kemampuan menulis secara umum atau spesifik pada feedback literasi (evaluative expression vs evaluative judgement). Aryo menjelaskan bahwa sistem ini berfokus pada "evaluative expression" (kemampuan siswa menulis narasi yang bisa dimaknai sebagai penilaian). Penguji juga mengingatkan agar membedakan tulisan yang sekadar "panjang dan rapi" dengan tulisan yang "relevan dengan rubrik".
+
+[00:41:40 - 00:49:30] Sesi Tanya Jawab: Teori Scaffolding dan Vygotsky (Penguji 3 - Pak Irwan)
+Pak Irwan mempertanyakan pemahaman peserta mengenai teori Scaffolding dari Vygotsky (Zone of Proximal Development). Ia meminta peserta mengklasifikasikan jenis scaffolding yang dibangun dalam penelitian ini (kognitif, metakognitif, prosedural, afektif). Rama dan Aryo mendiskusikan bahwa sistem mereka condong ke arah metakognitif, karena membantu siswa merefleksikan kembali tulisannya terhadap rubrik. Penguji juga menekankan konsep "fading" dalam scaffolding, di mana bantuan harus bisa ditarik secara bertahap saat siswa sudah mandiri, bukan bantuan statis yang selalu ada.
+
+[00:49:30 - 01:04:00] Sesi Tanya Jawab: Signifikansi Statistik dan MANOVA (Penguji 4 - Pak Yudi)
+Pak Yudi mengkritisi penggunaan MANOVA dan mempertanyakan signifikansinya mengingat jumlah data/sampel yang kecil (56 mahasiswa). Ia meminta justifikasi statistik mengapa indikator tertentu (seperti Kedalaman Elaborasi) memiliki nilai P-Value yang signifikan sedangkan yang lain tidak. Pak Yudi juga memberikan koreksi pada beberapa angka statistik di laporan yang tidak konsisten, serta menyarankan agar argumentasi terkait statistik lebih dipertajam di laporan akhir.
+
+[01:04:00 - 01:17:00] Sesi Tanya Jawab: Model Multilingual E5 dan Tokenization (Penguji 4 & 1)
+Diskusi bergeser ke ranah teknis mengenai penggunaan model E5-Multilingual. Penguji bertanya mengapa menggunakan model multilingual jika datanya murni Bahasa Indonesia, dan apakah ada potensi bias atau penurunan performa. Rama menjelaskan bahwa model multilingual digunakan karena performanya yang stabil dan kemampuannya memetakan konteks semantik lintas bahasa. Penguji meminta peserta membuktikan jumlah token Bahasa Indonesia vs Bahasa Inggris di dalam vocabulary model tersebut, dan bagaimana model menangani token/kata yang tidak ada di kamus (Out of Vocabulary / Unknown tokens).
+
+[01:17:00 - 01:34:00] Sesi Tanya Jawab: Saran Perbaikan Laporan dan Penutup
+Para penguji secara bergantian memberikan masukan final terkait penulisan laporan. Mereka menyarankan peserta untuk:
+1. Memperjelas jenis scaffolding yang digunakan.
+2. Memperbaiki argumentasi statistik (MANOVA dan uji asumsi normalitas).
+3. Mengklarifikasi pembenaran teknis terkait model multilingual.
+Moderator kemudian menutup sesi tanya jawab dan meminta peserta keluar ruangan agar para penguji dapat melakukan rapat tertutup untuk menentukan nilai dan kelulusan.
+
+(Catatan: Transkrip ini telah dibersihkan dari noise, salah ketik, dan halusinasi dari model Whisper sebelumnya seperti penyebutan "Kabir", "Worcestershire", dan frasa-frasa acak lainnya yang muncul akibat audio hening atau tumpang tindih.)
