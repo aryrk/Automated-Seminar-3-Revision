@@ -1,0 +1,1099 @@
+[00:00:00.00 - 00:00:01.60] SPEAKER_01: Selamat ulang tahun.
+[00:00:01.70 - 00:00:18.80] SPEAKER_01: Nurimani, Nurimani akan mewaksanakan SIDA tugas akhir program satwa yang terlantang, yang akan dibuka penyanyi terbiasa.  Eh, sebelum kami mulai, apakah Anda sudah siap?
+[00:00:19.40 - 00:00:22.90] SPEAKER_01: Seperti Nadia
+[00:00:23.40 - 00:00:25.90] SPEAKER_02: nanti kita akan tinggal sesungguhnya.
+[00:00:26.30 - 00:00:28.50] SPEAKER_02: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[00:00:29.30 - 00:00:31.10] SPEAKER_02: Saya akan tinggal di kota ini mulai tahun depan.
+[00:00:31.20 - 00:00:33.50] SPEAKER_02: karena dia bisa berguna karena jago
+[00:00:33.50 - 00:00:35.10] SPEAKER_02: Biar lebih kasar
+[00:00:36.10 - 00:00:42.10] SPEAKER_02: Kemudian Anda sedang tertutup untuk memutuskan status.
+[00:00:45.70 - 00:00:47.30] SPEAKER_02: tidak dapat status ya
+[00:00:47.30 - 00:00:48.90] SPEAKER_02: dipo gitu ya
+[00:00:49.40 - 00:00:51.00] SPEAKER_02: pas status
+[00:00:51.40 - 00:00:53.80] SPEAKER_03: Lulus tanpa perbaikan.
+[00:00:54.30 - 00:00:57.10] SPEAKER_03: Lulus dan berbaikan.
+[00:00:57.70 - 00:01:01.80] SPEAKER_03: apa lagi pak umumnya pulang sidang?
+[00:01:01.80 - 00:01:04.00] SPEAKER_03: Anto mengulang peat.
+[00:01:04.60 - 00:01:08.10] SPEAKER_02: Saya akan tinggal di salah satu dari itu nanti kita ada.
+[00:01:08.10 - 00:01:15.20] SPEAKER_02: lihat dan hasil perlaksanaan sedang.
+[00:01:15.20 - 00:01:22.70] SPEAKER_03: Basalkan kita silakan keluar untuk kami berdiskusi dan terakhir sesi pengumuman
+[00:01:22.70 - 00:01:30.00] SPEAKER_01: Sekarang pukul tujuh empat puluh, silakan dimulai pendapatan dari pendapatan.
+[00:01:30.00 - 00:01:31.70] SPEAKER_01: Oke.
+[00:01:33.70 - 00:01:43.10] SPEAKER_00: Bismillahirrahmanirrahim. Assalamualaikum warahmatullahi wabarakatuh. Selamat pagi Bapak Ibu Pengugi dan Penduding.
+[00:01:43.10 - 00:02:06.40] SPEAKER_00: Terima kasih atas kesempatannya hari ini, kami dari kota 403 akan mempresentasikan tugas akhir kami mengenai pemanfaatan digital scaffolding berbasis rubrik untuk mendukung indikator tekstual feedback literasi pada proyek Base Learning, beranggota kan saya sendiri, Aryo Rakatama, dan rekan saya Muhammad Rama Nurimani.
+[00:02:06.90 - 00:02:16.00] SPEAKER_00: Pada presentasi ini, kami susun dengan memprioritaskan masukan dari Bapak dan Ibu Pancesi Sedina 3 kemarin.
+[00:02:16.00 - 00:02:35.90] SPEAKER_00: Kami sudah melakukan beberapa perubahan, diantaranya penambahan skenario untuk memvalidasi instrumen, kemudian relokasi hal-hal yang berbau development ke lampiran, serta penajaman kajian teoritis mengenai scaffolding dan signifikansi statistik.
+[00:02:37.30 - 00:02:47.10] SPEAKER_00: Kemudian untuk memperjelas batasan riset, di sini kami memetakan apa yang kami adopsi dan apa yang menjadi kontribusi kami.
+[00:02:47.30 - 00:02:53.80] SPEAKER_00: Untuk konsep empat pola tekstual pada narasi feedback dan konsep prompt.
+[00:02:53.80 - 00:03:19.50] SPEAKER_00: Kerangka teoris scaffolding, data historis berjumlah 10.098 feedback. Rubrik historis, rubrik yang digunakan pada saat eksperimen, model embedding pretrain, dan platform SAPA itu merupakan hal-hal yang kami adopsi. Given. Di sisi lain operasionalisasi empat indikator pipeline NLT real-time.
+[00:03:19.50 - 00:03:38.60] SPEAKER_00: Anokasi data dan kalibrasi threshold pembuatan delisentabel untuk mekanisme tempat scaffolding, pelaksanaan eksperimen RQ2 untuk mengukur signifikansi dan efek size, serta integrasi pipeline ke sapa, itu merupakan kontribusi dari penelitian kami.
+[00:03:38.60 - 00:03:56.10] SPEAKER_00: Kemudian menjawab mengenai pertanyaan seminar tiga sebelumnya, yaitu bagaimana sebuah teks ditransformasi menjadi vektor. Secara garis besar, teks itu masuk ke layer tokenization untuk dipecah menjadi potongan-potongan kecil.
+[00:03:56.10 - 00:04:00.20] SPEAKER_00: Setiap token dicari nilai vektor awalnya.
+[00:04:00.20 - 00:04:03.40] SPEAKER_00: pada wake database hasil pre-train.
+[00:04:03.40 - 00:04:14.30] SPEAKER_00: Kemudian masuk ke layar transformer atension untuk menentukan seberapa besar pengaruh suatu kata terhadap kata-kata lainnya.
+[00:04:14.80 - 00:04:30.40] SPEAKER_00: Khusus untuk transforma attention ini, setiap model memiliki supplier yang berbeda. Pada model E-5 yang kami gunakan, di sini ada 24 layer attention yang di mana suppliernya adalah add dan normalisasi.
+[00:04:30.40 - 00:04:34.10] SPEAKER_00: untuk menjaga informasi dari teks.
+[00:04:34.70 - 00:04:40.40] SPEAKER_00: sebelum akhirnya masuk ke pooling layer yang merangkum seluruh vektor.
+[00:04:40.40 - 00:04:48.40] SPEAKER_00: hingga menghasilkan vektor final yang representatif yang dapat diolah, termasuk untuk cosine singularity.
+[00:04:49.10 - 00:04:56.60] SPEAKER_00: Selain itu, kami juga menguji fungsionalitas dari Rule-Based System dan Template Scaffolding.
+[00:04:56.60 - 00:05:10.40] SPEAKER_00: Di sini kami menguji menggunakan generatif AI, memposisikan diri sebagai mahasiswa yang menulis feedback, dan tujuannya untuk mencoba memicu seluruh kondisi prom yang disediakan.
+[00:05:11.90 - 00:05:47.20] SPEAKER_00: Hasilnya, seluruh tujuh belas templet itu dapat dieksekusi, tetapi dengan catatan pada Template 0010, yaitu kondisi di mana seluruh indikator terpenuhi terkecuali elaborasi, itu sulit. Bisa tetapi sulit, karena semakin singkat feedbacknya secara natural, semakin sulit juga untuk memenuhi indikator-indikator lainnya, terutama cakupan rubrik, sehingga sulit untuk mendapatkan isolasi pada indikator elaborasi, meskipun pada akhirnya bisa dicapai.
+[00:05:47.80 - 00:05:57.50] SPEAKER_00: Kemudian kami juga melakukan behavioral testing pada pipeline fokusnya untuk mendeteksi indikator-indikator tadi oleh NLP.
+[00:05:58.10 - 00:06:03.90] SPEAKER_00: Objek pengujian di sini adalah ketahanan pipeline terhadap variasi input.
+[00:06:04.00 - 00:06:25.10] SPEAKER_00: Di sini, kami merancang 107 skenario dan mengadopsi kerangka checklist menggunakan prinsip Minimum Functionality, Invariance, dan Directional Expectation Tests, masih menggunakan generatif AI untuk memposisikan diri sebagai mahasiswa dan membuat variansi-variasi tests.
+[00:06:26.60 - 00:06:46.80] SPEAKER_00: Hasilnya, 94 skenario dinyatakan lolos, tapi ada indikasi bahwa batasan instrumen, terutama pada keterbatasan indikator relevasi topik, jadi indikator ini masih bisa ditipu oleh teks-teks yang di luar domain rubrik, misalnya potongan berita.
+[00:06:46.80 - 00:06:58.40] SPEAKER_00: karena indikator ini bekerja secara terikat berdasarkan semantik similarity pada kriteria rubrik lainnya, yang tidak menjadi fokus penilaian.
+[00:07:00.80 - 00:07:34.40] SPEAKER_06: Selanjutnya, terdapat masukan mengenai asal usul utama dari keempat indikator yang diadopsi.  Indikator ini diadopsi dari PAPR yang terbit pada tahun 2026, di mana digitaskapoding ini memanfaatkan empat diskors signal pada PAPR tersebut.  Lalu, empat diskors signal tersebut diadopsi menjadi empat indikator tertekstual narasi VIP, yaitu keempat indikator ini, dengan masalah yang diteksi untuk cekupan rubrik, yaitu narasi yang tidak membahas kriteria rubrik, koherensi skor, yaitu.  Penjelasan tidak konsisten dengan skor yang diberikan.
+[00:07:34.40 - 00:07:46.60] SPEAKER_06: Lalu, kedalaman elaborasi terkait narasi spinback yang terlalu singkat dan relevasi topik yaitu isi narasi yang tidak membahas hal-aspek-hal di luar aspek rubrik yang sedang dievaluasi.
+[00:07:49.10 - 00:08:17.20] SPEAKER_06: Selanjutnya, terdapat masukan dua terkait intervensi. Intervensi pada digital scaffolding ini bersifat memaksa pada level visibilitas atau kemunculannya, jadi di level kemunculan, mahasiswa tidak dapat memilih untuk tidak melihat intervensi digital scaffolding, namun bersifat non-koersif yaitu tanpa paksaan, pada level tindakan, sehingga, meskipun secara visibilitas tetap dipaksa, namun
+[00:08:17.20 - 00:08:27.60] SPEAKER_06: Apakah mahasiswa akan melindang lanjuti, ataupun mengabaikan bersifat tanpa paksaan, ataupun tanpa memblokir submisi jawaban narasi feedback tersebut?
+[00:08:29.70 - 00:08:59.00] SPEAKER_06: Selanjutnya yaitu signifikansi dalam konteks eksperimen pada RQ yang kedua, di mana signifikan di sini merupakan perbedaan yang dapat diamati antara kelompok treatmen yang mendapatkan intervensi digital scaffolding dan kelompok kontrol yang tidak mendapatkan, di mana perbedaan ini secara signifikan itu perbedaan merupakan bukan kebetulan belaka, sementara tidak signifikan di sini merupakan perbedaan tersebut bisa jadi berupa kebetulan ataupun variasi acak.
+[00:08:59.10 - 00:09:17.20] SPEAKER_06: random, lalu bagaimana kami menerapkannya di RTU yang kedua ini, kami menguji secara multivariat untuk menguji ke empat indikator ini sebagai satu konstruk kualitas narasi feedback dan secara univariat untuk melihat efek dari setiap indikator tersebut.
+[00:09:20.10 - 00:09:27.50] SPEAKER_06: Sanjutnya, kami juga sudah mengorganisasi dokumen terkait yang berbawah development kepada
+[00:09:27.50 - 00:09:31.70] SPEAKER_06: lampiran dan sebagian yang berada di bab empat ke bab tiga.
+[00:09:35.40 - 00:09:45.00] SPEAKER_00: Selanjutnya, kami perlu menekankan kembali pada kerangka metodologi yang kami gunakan, terutama yang belum ditonjolkan pada sesi seminar sebelumnya.
+[00:09:45.10 - 00:09:58.20] SPEAKER_00: Untuk tahapan penelitian, ini masih sama, terbagi dalam dua fase, yaitu fase pemodelan pipeline sebagai instrumen penelitian, dan fase eksperimen dengan subjek manusia.
+[00:09:58.60 - 00:10:18.60] SPEAKER_00: Pertama, untuk RQ1, objek yang kami cari adalah konfigurasi pipeline NLP yang optimal, yaitu mencari kombinasi model, embeding, dan metode ekstraksi yang menghasilkan deteksi paling akurat untuk keempat indikator.
+[00:10:18.60 - 00:10:23.50] SPEAKER_00: Kami mencarinya menggunakan eksperimen terhadap lima kandidat model.
+[00:10:23.50 - 00:10:33.20] SPEAKER_00: yang diuji dengan pendekatan vortex embedding dan semantik chunking untuk indikator cakupan rubrik dan elevasi topik.
+[00:10:33.20 - 00:10:42.00] SPEAKER_00: Ditambah dengan batasan mutual exclusivity untuk koherensi skor narasi guna mempersempit ruang prediksi model.
+[00:10:42.30 - 00:10:56.30] SPEAKER_00: Hasil atau konfigurasi akhir dari pengujian ini menjadi acuan konfigurasi APE untuk melaksanakan RQ-2 dan dapat direplikasi untuk penelitian serupa di masa depan.
+[00:10:58.30 - 00:11:30.00] SPEAKER_06: Selanjutnya untuk RQ yang kedua, kami melakukan eksperimen setelah diketahui konfigurasi dari RQ yang pertama, di mana eksperimen ini mengacu pada desain RAM, yaitu Post-Task-only Control Group Design, di mana keberadaan scaffolding pada kelombok kontrol dan kelombok treatment ditentukan oleh Random Assignment, ataupun pengacakan, di mana pengacakan ini mengasumsikan bahwa pada kedua kelombok tersebut memiliki variansi mahasiswa yang berkemampuan sama.  Di mana.
+[00:11:30.00 - 00:11:44.80] SPEAKER_06: Dengan variabel terikat, yaitu kualitas narasi feedback yang dioperasionalkan menjadi keempat indikator, dan mengasihkan tiga data yaitu respons pesoner, data evaluasi kontrol dan treatment, dan data interaksi mahasiswa yang berinteraksi dengan digital scaffolding.
+[00:11:44.90 - 00:11:53.80] SPEAKER_06: Yang pertama, data questionnaire ini digunakan untuk melihat penerimaan subjek terhadap digital scaffolding yang diterima pada kelompok treatmen.
+[00:11:53.90 - 00:12:10.30] SPEAKER_06: Selanjutnya, data evaluasi di mana pada kelompok kontrol, kami melakukan pengukuran setelah dilakukannya eksperimen karena pada saat sesi eksperimen, kelompok kontrol ini tidak menerima digitaskaboli, sementara untuk kelompok treatment sudah direkam sejak awal eksperimen.
+[00:12:10.40 - 00:12:15.50] SPEAKER_06: Kalau dilakukan pengujian secara multifariat untuk melihat perbedaan inter-
+[00:12:15.50 - 00:12:27.90] SPEAKER_06: Perbedaan pengaruh intervensi digital skavoli ini pada kedua ngomong tersebut dan melakukan follow-up pada univariat untuk melihat bagaimana pengaruh setiap indikator tersebut pada digital skavoli.
+[00:12:27.90 - 00:12:39.20] SPEAKER_06: Lalu selanjutnya yaitu pada data interaksi kami melihat untuk melihat interaksi bagaimana pola revisi pola perubahan mahasiswa yang mendapatkan intervensi digital scavolding
+[00:12:43.80 - 00:13:02.30] SPEAKER_06: Untuk menjawab etui yang pertama ini, setelah diketahui konfigurasi pada etui yang pertama yaitu untuk indikator cekupan rubrik menggunakan model embedding yang sama untuk keempat indikator dengan optimal threshold yang didapatkan dari sesi kalibrasi dan pemodelan pipeline dengan pendekatan yang dipilih.
+[00:13:02.30 - 00:13:05.30] SPEAKER_06: Berdasarkan hasil kalibrasi tersebut.
+[00:13:10.80 - 00:13:47.70] SPEAKER_06: Stanjutnya, untuk temuan pada RQ yang pertama, di mana pipeline digital scalability yang kami bangun sebelum menjawab RQ yang kedua di mana performa ini tidak seragam antar indikator, di mana untuk konstruk indikator yang membutuhkan inferensi ataupun pemahaman tingkat manusia lebih sulit ditetaksi oleh pipeline digital scalability yang berbasis model embedding ini, di mana kemampuan pipeline dikatakan tidak seragam. tergantung pada konstruksi indikator feedback literasi yang sedang dideteksi.
+[00:13:56.40 - 00:14:13.90] SPEAKER_06: Selanjutnya, model dapat mengenali topik pada indikator tekstur narasi feedback literasi ini. Namun, ketika mulai menilai kualitas pada narasi tersebut, model mulai mengalami kesulitan ketika membutuhkan
+[00:14:14.70 - 00:14:39.60] SPEAKER_06: pemahaman lebih lanjut, kita dapat melihat pada false positive dan true positive di mana antara, terdapat selisih yang sangat tipis yaitu ketika model mulai mengenali narasi yang mengandung kata kurang dan sangat baik ini pada mode embedding pada ruang vektornya itu sangat berdekatan sehingga bisa dikatakan sulit dibedakan menggunakan model embedding saja.
+[00:14:45.20 - 00:14:49.50] SPEAKER_00: oke selanjutnya terkait eh efektivitas teknik
+[00:14:49.60 - 00:14:54.30] SPEAKER_00: untuk cakupan rubrik itu rata-rata performanya meningkat.
+[00:14:54.50 - 00:14:56.60] SPEAKER_00: panas nemantik cangkih
+[00:14:56.60 - 00:15:00.60] SPEAKER_00: Untuk indikator koherensi skor dan relevansi
+[00:15:00.60 - 00:15:09.20] SPEAKER_00: Penggunakan metode simetik chunking justru relatif menurun performanya, dan sedangkan untuk indikator koherensi skor
+[00:15:09.20 - 00:15:15.50] SPEAKER_00: Semua model konsisten naik menggunakan metode mutual exclusivity.
+[00:15:15.60 - 00:15:21.00] SPEAKER_00: Meskipun memang ada konsekuensi false negative dan false positive.
+[00:15:21.00 - 00:15:27.30] SPEAKER_00: Pos negatif akan mengakibatkan bahwa bantuan tidak diberikan meskipun dibutuhkan.
+[00:15:27.30 - 00:15:33.60] SPEAKER_00: Sedangkan palsu positif risikonya adalah bantuan diberikan pada hal dan tidak dibutuhkan.
+[00:15:36.80 - 00:15:39.90] SPEAKER_00: Untuk kesimpulannya...
+[00:15:40.40 - 00:16:03.90] SPEAKER_00: Performa lebih tinggi pada indikator observasional langsung tetapi menurun pada indikator yang menuntut perbedaan tingkat kualitas ordinal, sehingga implikasinya performa pipeline harus dimaknai bukan hanya dari akurasi komputasional tetapi juga kesesuaiannya dengan prinsip kontigensi yang mendasari scaffolding.
+[00:16:06.40 - 00:16:30.10] SPEAKER_06: Selanjutnya, pada R3 yang kedua, dengan tiga data yang didapatkan pada sesi eksperimen, ditemukan bahwa secara multifariat perbedaan antara kelompok kontrol dan kelompok statement signifikan hanya pada peer assessment, sementara pada self-assessment belum signifikan. Jika kita melihat pada setiap indikator tersebut, hanya kedalaman elaborasi saja di mana indikator tersebut
+[00:16:30.10 - 00:16:32.60] SPEAKER_06: mengenkori jumlah siswa untuk menambah.
+[00:16:32.60 - 00:16:40.80] SPEAKER_06: Teks pada menambah teks atau informasi pada narasi feedback mereka dengan efek size yang lebih besar dibandingkan tiga indikator lainnya.
+[00:16:40.90 - 00:17:43.70] SPEAKER_06: Lalu, kenapa kedalaman elaborasi saja? Sajalah yang signifikan secara statistik. Jika dilihat dari strategi bagaimana mahasiswa merevisi narasi mereka ketika diberikan digital scaffolding, mereka cenderung melakukan penambahan informasi ataupun menambah teks pada narasi feedback mereka. Hal ini sesuai dengan konstruk indikator pada kedalaman elaborasi yaitu terkait jumlah kata di mana ketika isinya diperkaya maka indikator tersebut dapat dipenuhi.  Sementara untuk cakupan dan koherensi di mana keduanya menuntut revisi yang berbeda diindikasikan dengan bahwa penambahan narasi ini tidak selalu berujung pada pemenuhan indikator tersebut. Sanjutnya, pada hal ini juga dibuktikan pada cakupan rubrik. Meskipun mahasiswa telah diberikan intervensi digital scaffolding, mereka cenderung tidak dapat memenuhi dan bantuan tersebut tetap bertahan meskipun digital scaffolding diberikan secara berulang terus-menerus hingga akhir sesi eksperimen.
+[00:17:44.60 - 00:17:51.00] SPEAKER_06: Jika kita melihat pada revisi pertama dan pada akhir sesi eksperimen,
+[00:17:51.00 - 00:18:42.10] SPEAKER_06: Pipeline digital scaffolding ini bisa dikatakan memicu revisi bertahap bukan perbaikan secara instan, jadi ketika diberikan intervensi, mahasiswa cenderung bertahap memperbaiki indikator tersebut, hingga pada sasi akhir eksperimen, lalu ditemukan juga pada data kvisioner di mana mahasiswa merasa fitur arahan mengenai apa yang harus ditulis pada intervensi scaffolding yang diberikan sebagai fitur yang paling membantu juga sebagai fitur yang paling mengganggu menurut mayoritas responden di mana hal ini dapat ditekankan bahwa pemberian teks scaffolding yang terkait substansi dan isi merupakan hal yang berbeda secara desain pada juga terkait pada penyampaiannya jadi terkait isi dan penyampaian merupakan dua hal yang perlu diperhatikan pada penelitian selanjutnya.
+[00:18:43.20 - 00:19:05.50] SPEAKER_06: Sehingga dapat dikatakan pada article yang kedua ini bahwa kedalaman elaborasi dan cekupan rubrik merupakan dua konstruk yang berbeda di mana digital scaffolding ini menunjukkan dampak yang paling kuat pada indikator yang selaras dengan revisi mahasiswa, jadi karena khususnya pada kedalaman elaborasi di mana indikator tersebut
+[00:19:05.90 - 00:19:26.60] SPEAKER_06: menuntut mahasiswa untuk menambah informasi pada narasi mereka sementara untuk cakupan rubrik dan koherensi, di mana membutuhkan bentuk televisi yang lain karena dengan pemenuhan tidak selalu berujung pada pemenuhan indikator tersebut, dampaknya belum dapat terlihat sehingga mekanisme muncul dan tidak munculnya
+[00:19:26.60 - 00:19:31.90] SPEAKER_06: indikator tersebut karena pada penelitian kami bersifat biner.
+[00:19:31.90 - 00:19:47.20] SPEAKER_06: Mekanisme digital scaffolding itu dikatakan belum cukup untuk memenuhi indikator yang membutuhkan penalaran ataupun perubahan struktur narasi lebih lanjut.
+[00:19:47.20 - 00:19:59.40] SPEAKER_06: Dipersepsikan juga sebagai fitur yang paling mengganggu sehingga evaluasi konten atau substansi dari isi teks cardholding dan bagaimana penyampaiannya pada pengguna merupakan dua hal yang berbeda.
+[00:20:00.90 - 00:20:09.10] SPEAKER_06: Namun, penilaian ini juga memiliki keterbatasan. Yang pertama, validitas eksternal yaitu pada
+[00:20:10.00 - 00:20:50.40] SPEAKER_06: Penelitian yang dilakukan, konteks mahasiswa yang dilakukan eksperimen hanya pada mahasiswa satu institusi saja, sehingga terkait institusi-institusi lain, konteks budaya pada jurusan lain, berupakan di luar cakupan penelitian dining. Yang kedua yaitu desain eksperimen hanya mengukur perbedaan antara kedua kelompok, bukan perbedaan antara perbedaan individu tersebut, karena dengan proses ini hanya mengasumsikan bahwa kemampuan awam mahasiswa diasumsikan sama melalui pengacakan random assignment.
+[00:20:50.40 - 00:21:16.80] SPEAKER_06: Yang berbasis rubrik, skafodi berbentuk lain, seperti berbentuk reflektif, metakognitif, ataupun prosedurlar, belum dieksplorasi lebih lanjut.  Yang keempat yaitu dataset yang digunakan juga terbatas hanya pada satu dataset yang didapatkan.  Yang digunakan untuk seleksi model, kalibrasi, dan juga threshold yang didapatkan pada peniruan ini belum tentu dapat digunakan pada rubrik lain dan konteks eksmerimen yang berbeda.
+[00:21:18.80 - 00:21:39.80] SPEAKER_06: Lalu, terkait dampak hasil penelitian, pada mahasiswa diharapkan narasi feedback mereka lebih terbantu untuk selaras dengan adanya bantuan pipeline digital skapolimuni.  Lalu, untuk dosen, dosen dapat melihat dinamika yang sebelumnya hanya tertutup melalui narasi yang generik.
+[00:21:41.10 - 00:21:46.10] SPEAKER_06: dapat memberikan narasi yang lebih selaras dengan feedback tersebut.
+[00:21:48.70 - 00:21:59.70] SPEAKER_06: Padasaran berdasarkan kesimpulannya yaitu pada RQ pertama dimana mendeteksi keempat indikator tersebut pada pepleng digital scaffolding, kemampuannya
+[00:21:59.70 - 00:22:01.10] SPEAKER_06: dikatakan
+[00:22:01.10 - 00:22:06.90] SPEAKER_06: Lebih cocok ketika konstruk indikator ataupun narasi yang dideteksi.
+[00:22:06.90 - 00:22:29.40] SPEAKER_06: Berbasis kesamaan atau similariti dengan rubrik yang digunakan. Sementara konstruk yang membutuhkan inferensi atau pemahaman lebih lanjut, dikatakan belum cukup hanya dengan model embedding saja.
+[00:22:29.40 - 00:22:33.40] SPEAKER_06: selaras dengan indikator yang sedang dideteksi.
+[00:22:33.40 - 00:23:22.80] SPEAKER_06: Sehingga dapat dikatakan bahwa model embedding pada digital scaffolding ini bergantung apakah konstruknya bersifat observasional langsung pada text-narrasi yang ada atau membutuhkan inferensi lebih lanjut, yang tidak dapat dilakukan oleh model embedding saja. Geluk, mekanisme adding, fading, ataupun kemuncul atau tidak munculnya indikator yang bersifat linear tersebut hanya cukup untuk menyelaraskan atau memenuhi indikator yang bersifat revisi penambahan narasi, indikator konstruk yang membutuhkan evaluasi lebih lanjut atau pemahaman lebih lanjut ini, membedukan bentuk digital scaffolding lain dan mempertimbangkan bentuk digital scaffolding yang berbeda dan eskalasi bantuan ketika indikator tersebut diduga. Tidak kujung terpenuhi, sejak awal pemben-
+[00:23:23.40 - 00:23:26.10] SPEAKER_06: membuat kekuatan digital Skapodi.
+[00:23:27.60 - 00:23:33.60] SPEAKER_00: Kemudian untuk saran penelitian lanjutnya perlu adanya peningkatan performa?
+[00:23:33.60 - 00:23:43.10] SPEAKER_00: Pada deteksi indikator, terutama yang membutuhkan pemahaman mendalam seperti koherensi skor narasi dan relevasi topik yang kedua.
+[00:23:43.10 - 00:23:56.10] SPEAKER_00: Kami menggunakan desain eksperimen post-test-only, sehingga memang perlu adanya desain eksperimen pre-test pada penelitian lanjutan untuk mengatasi keterbatasan post-test-only.
+[00:23:56.10 - 00:24:05.50] SPEAKER_00: Kemudian perlu dilakukan evaluasi pipeline lebih dalam dengan data set yang memiliki domain lebih luas dan tentunya perlu displitting
+[00:24:06.20 - 00:24:12.00] SPEAKER_00: Selain itu juga perlu replikasi di institusi atau mata kuliah lain.
+[00:24:12.00 - 00:24:22.50] SPEAKER_00: Lalu untuk keberlanjutan dan komersialisasi TA, pertama kami mengharapkan dapat melakukan publikasi ke jurnal pendidikan dan linguistik komputasional.
+[00:24:22.70 - 00:24:38.20] SPEAKER_00: Selain itu juga bisa dilakukan replikasi ke mata kuliah PjBe lain melalui aplikasi Sapa dan pipeline yang kami gunakan ini berpotensi menjadi modul yang bisa digunakan pada aplikasi mana pun.
+[00:24:43.30 - 00:24:44.70] SPEAKER_01: terima kasih
+[00:24:49.10 - 00:24:50.20] SPEAKER_03: Saya akan tinggal di kota ini mulai tahun depan.
+[00:24:50.50 - 00:24:51.90] SPEAKER_03: didemonstrasikan.
+[00:24:55.80 - 00:24:59.20] SPEAKER_03: pemberian intervensi
+[00:25:00.70 - 00:25:05.70] SPEAKER_07: nggak terlibat atau udah berubah nggak dari 1993 nggak ada salah sekali untuk gambarin
+[00:25:09.60 - 00:25:16.10] SPEAKER_01: tadi mau nambah dikit ah saya mau kantor lagi menanai dulu
+[00:25:16.10 - 00:25:18.90] SPEAKER_01: oh itu dulu ya
+[00:25:18.90 - 00:25:30.40] SPEAKER_03: Ini kan dibatasi untuk field assessment dan self-assessment. Itu ada perbedaan dari sisi...
+[00:25:30.60 - 00:25:37.30] SPEAKER_01: substansi PECS yang mungkin siswa buat.
+[00:25:38.30 - 00:25:39.40] SPEAKER_00: halo
+[00:25:39.50 - 00:25:42.50] SPEAKER_00: itu ada di sini lho sebentar
+[00:25:48.90 - 00:25:51.50] SPEAKER_00: Jadi pada self-assessment
+[00:25:51.50 - 00:26:03.00] SPEAKER_00: Siswa itu membuat jawaban berupa narasi dan skor untuk dirinya sendiri sehingga reflektif terhadap diri sendiri. Subjeknya adalah diri dia sendiri.
+[00:26:03.10 - 00:26:07.50] SPEAKER_00: Pada Peer Assessment, ini formatnya masih sama persis.
+[00:26:07.50 - 00:26:24.80] SPEAKER_00: tetapi siswa sebagai asesor memberikan narasi dan skor asesmen untuk mahasiswa lain sebagai assese, tetapi secara pengetikan ataupun bentuk narasi dan skor itu masih sama persis, hanya berbeda pada subjeknya saja.
+[00:26:27.60 - 00:26:28.90] SPEAKER_03: betul
+[00:26:30.10 - 00:26:32.50] SPEAKER_03: i hasil
+[00:26:33.00 - 00:26:35.50] SPEAKER_03: udah tari yang paling kalian ingin ya?
+[00:26:35.70 - 00:26:41.60] SPEAKER_03: Itu ekspresinya memang beda, kelihatan, lahir dari analisis.
+[00:26:41.60 - 00:26:48.80] SPEAKER_03: Itunya, analisis narasinya ada nggak yang patut dikaji?
+[00:26:49.00 - 00:26:59.20] SPEAKER_03: Yang misalnya, dari hasilnya, hasil penumpukan data dari mahasiswa yang jadi sampel.
+[00:26:59.50 - 00:27:06.30] SPEAKER_03: Ya, ada fenomen apa dari tulisan-tulisan siswa-siswa? Ada ibu?
+[00:27:06.30 - 00:27:08.90] SPEAKER_01: terimakasih.
+[00:27:09.60 - 00:27:11.20] SPEAKER_06: tutup
+[00:27:12.80 - 00:27:17.80] SPEAKER_03: karakteristik, data, dan narasi.
+[00:27:18.00 - 00:27:19.60] SPEAKER_08: mau nonton video lainnya?
+[00:27:20.10 - 00:27:30.50] SPEAKER_08: membantu sekaligus menyulitkan.
+[00:27:33.40 - 00:27:35.00] SPEAKER_06: kalau
+[00:27:35.40 - 00:27:40.30] SPEAKER_06: kalau data yang dieksperimentkan eeh belum
+[00:27:40.50 - 00:28:24.10] SPEAKER_06: tapi sebelum dilakukan eksperimen itu dilakukan juga analisis ke data yang existing, yang historis.  Memang dari awal, self-assessment ini cenderung lebih panjang secara narasi, jadi mungkin karena dari mahasiswa sendiri sebagai mungkin dari saya mahasiswa sendiri juga, ketika mengisi self-assessment kan hanya perlu mendeskripsikan ataupun menjelaskan apa yang saya alami. Sementara ketika melakukan peer-assessment memang cenderung ada interaksi keluar, apakah seperti melihat teman saya itu seperti apa, melakukan pekerjaan tersebut dan membandingkannya ke rubrik, jadi secara pengisian ataupun
+[00:28:24.10 - 00:28:30.40] SPEAKER_06: eh sens dari pengisiannya juga memang berbeda dan dari eh analisis
+[00:28:31.10 - 00:28:33.80] SPEAKER_06: yang dilakukan juga ketika
+[00:28:33.80 - 00:28:35.50] SPEAKER_06: ehh
+[00:28:36.80 - 00:28:38.30] SPEAKER_06: Mengisi.
+[00:28:38.30 - 00:29:09.00] SPEAKER_06: Skor jika pada data historis memang skor pada Self ini cenderung lebih tinggi daripada skor Peer yang diberikan Peer mereka ke diri tersebut, jadi jika melihat dari existing masalahnya memang dari awal skornya memang selalu ada gap, mungkin kalau secara gap pasti selalu ada namun skor Self cenderung memang lebih tinggi pada Pepper yang kami temukan. Bukan
+[00:29:09.00 - 00:29:14.50] SPEAKER_06: ee dan secara narasi memang sel cendrung lebih panjang juga pada sel tersebut.
+[00:29:25.20 - 00:29:28.00] SPEAKER_03: intervensi yang dilakukan.
+[00:29:28.30 - 00:29:29.70] SPEAKER_03: Sampai jumpa!
+[00:29:31.20 - 00:29:40.90] SPEAKER_03: Ada teori nggak tentang intervensi? Maksudnya di dunia pembelajaran, intervensi itu ada jenis-jenis intervensi itu ada apa saja?
+[00:29:40.90 - 00:30:28.60] SPEAKER_06: Kalau yang kami temukan itu, intervensi itu tidak selalu bersifat memaksa, bukan tidak selalu bersifat bahwa harus selalu diikuti.  Nah pada scaffolding yang kami buat itu, bisa dibilang ada dua levels intervensinya.  Dari segi kemunculan text scaffolding kan, mahasiswa tidak dapat, tidak memiliki pilihan untuk tidak melihat digital scaffolding-nya.  Tidak dapat, tidak memiliki pilihan untuk tidak melihat text tersebut.  Ya, harus melihat tapi terkait tindak lanjutnya setelah diberikan intervensi tersebut bersifat tidak memaksa ketika mereka, apakah mereka mau mendidik longsite ataupun mengabaikan?
+[00:30:28.60 - 00:30:35.60] SPEAKER_06: itu bersifat tidak memaksa sesuai dengan scaffolding yaitu sendiri yaitu bantuan sementara
+[00:30:35.70 - 00:30:37.30] SPEAKER_03: Kalian ada teori tentang...
+[00:30:41.00 - 00:30:42.10] SPEAKER_00: gak akan kelihatan.
+[00:30:42.30 - 00:30:58.50] SPEAKER_03: Di digital ini kan?
+[00:30:58.50 - 00:31:07.90] SPEAKER_03: intervensi dalam rangka menulis saja atau ada intervensi supaya mungkin menentu?
+[00:31:07.90 - 00:31:13.60] SPEAKER_03: oh kantor intervensi yang katanya ya menolak orang-orang muda.
+[00:31:13.60 - 00:31:15.80] SPEAKER_03: mukib gitu ya
+[00:31:15.80 - 00:31:17.40] SPEAKER_03: kemusik
+[00:31:17.40 - 00:31:21.30] SPEAKER_03: Sampai kesana gitu, yang tervensi itu menurut
+[00:31:21.30 - 00:31:26.40] SPEAKER_03: Mereka tuh, nah ini yang kalian lakukan, intergensi di level mana.
+[00:31:26.40 - 00:32:19.20] SPEAKER_00: kalau terkait integrasi DTA kami itu berangkat dari feedback literasinya ibu jadi menurut peperpa ilmuan feedback literasi ini bisa dipecah menjadi evaluatif expression dan evaluatif judgment dan evaluatif expression dan evaluatif judgment jadi untuk evaluatif judgment itu kemampuan siswa menilai diri sendiri dan ini pada umumnya secara default sudah bisa ibu siswanya ibu dan untuk evaluatif expression itu kemampuan siswa menulis narasi yang bisa dimaknai berdasarkan evaluatif judgmen siswa kurangnya di evaluatif expression sehingga intervensi kami ini untuk membantu meningkatkan evaluatif expression tersebut
+[00:32:19.20 - 00:32:23.10] SPEAKER_03: Waktu saya gini, kan di biwana...
+[00:32:23.50 - 00:32:32.10] SPEAKER_03: Pembangunan itu jadi saya telah melakukan itu menganali jenis-jenis intervensi. Lalu kalian, saya?
+[00:32:32.80 - 00:32:40.80] SPEAKER_03: Hanya di sini, tidak sampai intervensi emosi, segala macam yang susah ngumpulnya ya.
+[00:32:40.90 - 00:32:42.40] SPEAKER_03: Emm
+[00:32:42.80 - 00:32:44.30] SPEAKER_03: ada nggak itu?
+[00:32:44.30 - 00:32:47.30] SPEAKER_03: dinyatakan bahwa itu.
+[00:32:47.30 - 00:32:51.00] SPEAKER_03: Dikaitkan dengan tulis terhadap napasan di sini.
+[00:32:51.20 - 00:33:00.40] SPEAKER_03: Boleh saja dari dua jenis yang Pak Ilwan sampaikan, apakah gelulahnya diakomodasi di riset ini atau?
+[00:33:00.40 - 00:33:08.10] SPEAKER_00: satu saja kemampuan menulisnya hanya tadi bu yang evaluatif ekspresin kemampuan menulisnya kemampuan menulis
+[00:33:08.10 - 00:33:09.10] SPEAKER_01: Banyak banget itu tuh
+[00:33:09.70 - 00:33:12.50] SPEAKER_07: Boleh saya nyanyi kedusin yang terakhir?
+[00:33:12.50 - 00:33:15.00] SPEAKER_07: Kamu menulis Wigowski kalau masak?
+[00:33:15.90 - 00:33:23.40] SPEAKER_07: Berikut segitu, buku pertama yang disuruh oleh Mama Booinger ke saya untuk dibaca ketika saya tetap kalian jadi dosen.
+[00:33:26.10 - 00:33:33.10] SPEAKER_07: Coba jadi Gonski, FG Gonski, S H G Gonski.
+[00:33:44.60 - 00:33:45.70] SPEAKER_07: udah lah
+[00:33:49.10 - 00:33:51.90] SPEAKER_07: findoutpeepee findoutpeepee
+[00:33:53.20 - 00:33:54.60] SPEAKER_07: terima kasih
+[00:33:59.00 - 00:34:01.40] SPEAKER_07: eem itu nyambung dengan
+[00:34:02.60 - 00:34:03.80] SPEAKER_07: tinggal yang smosis itu.
+[00:34:27.30 - 00:34:35.40] SPEAKER_03: Tapi kalau ini kan interaksi, intervensi di sini memang mengganti dosen kan yang sebelumnya?
+[00:34:35.40 - 00:34:38.60] SPEAKER_08: Bukan mengganti, tapi...
+[00:34:38.60 - 00:34:46.20] SPEAKER_08: nah itu bisa harusnya bisa sih hmm itu
+[00:34:46.20 - 00:34:50.00] SPEAKER_00: kamu cici tebek kan? iya cici tebek
+[00:34:50.00 - 00:35:03.50] SPEAKER_00: Apa?  Bersebelah telapon.  Ini DVD-nya. DVD kan cuma seperti ini.  Di situ, kan?  Ngomong sekali voli itu menyebutkan DVD.  Eh, kita nggak ngutuk sih. Kita ngutuk lebih tuk.
+[00:35:03.50 - 00:35:04.80] SPEAKER_07: sino saya nih
+[00:35:04.80 - 00:35:15.40] SPEAKER_00: Ee di sini yang kami ambil dari ini adalah konteks John O'Froxima developmentnya sih Pak Anton.
+[00:35:15.60 - 00:35:28.10] SPEAKER_07: Konteks apa tadi? Zone of proximal development, salah satunya melibatkan skapuli. Konteks skapuli itu ada berbagai macam.
+[00:35:28.10 - 00:35:34.30] SPEAKER_03: Maksud saya dan kalau memang itu secara teori ada luas, penting juga.
+[00:35:34.30 - 00:35:37.90] SPEAKER_03: menyatakan bahwa kehidupan kita sendiri.
+[00:35:38.70 - 00:35:40.00] SPEAKER_03: maksudnya ya
+[00:35:40.00 - 00:35:48.10] SPEAKER_08: tidak berharap menemani ya jangan over expect pasti si audiensnya
+[00:35:48.60 - 00:35:53.50] SPEAKER_07: Oke, gimana itu adalah enami, enami yang contoh ya?
+[00:35:53.50 - 00:35:57.50] SPEAKER_07: Kalau kamu bisa jawabin di sel, tanya-tanya terakhir itu ada macam-macam.
+[00:35:58.50 - 00:36:19.40] SPEAKER_03: Ada kognitif, ada meta-kognitif, ada persenturan, ada meta-kognitif scaffolding, ada personal scaffolding, sama yang afektif, afektif scaffolding.
+[00:36:19.80 - 00:36:21.50] SPEAKER_07: oh iya kamu masukin Man
+[00:36:21.50 - 00:36:22.50] SPEAKER_07: Empat.
+[00:36:23.70 - 00:36:30.20] SPEAKER_07: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[00:36:30.60 - 00:36:45.60] SPEAKER_03: Di dunia, maksudnya dunia orang lidah itu ada banyak, kan apakah itu semuanya, yang pasti tidak mungkin lah semuanya, tapi kita perlu menyatakan di mana.
+[00:36:45.60 - 00:36:47.50] SPEAKER_03: uhhh
+[00:36:47.60 - 00:36:49.40] SPEAKER_03: fokus kita
+[00:36:49.50 - 00:37:10.40] SPEAKER_03: supaya ada penemuan, tapi tadi eh apa tadi pengulisnya katanya, konmotif ekspresinya, ekspresen dalam rangka, dari kemampuan dia mengekspresikan gitu, lalu dituliskan, oh ya, nah berikutnya ini saya katanya ya, katanya
+[00:37:10.40 - 00:37:14.30] SPEAKER_03: Bagaimana perbedakan antara?
+[00:37:14.30 - 00:37:17.50] SPEAKER_03: Menarik untuk lihat.
+[00:37:18.20 - 00:37:23.10] SPEAKER_03: meningkatkan kemampuan menulis dengan lebih baik.
+[00:37:23.10 - 00:37:26.90] SPEAKER_03: Membedakan dengan feedback literasi.
+[00:37:27.20 - 00:37:29.20] SPEAKER_00: kumpir aku sujuk tadi mah
+[00:37:29.20 - 00:37:33.50] SPEAKER_08: Sekarang belum dilanjut bulannya kamu sudah apa?
+[00:37:33.60 - 00:37:37.00] SPEAKER_08: mungkin kurang dekat, tetap di sini ya
+[00:37:38.30 - 00:37:42.20] SPEAKER_08: Biarin nanti keluarganya kayak gini.
+[00:37:42.90 - 00:37:45.70] SPEAKER_02: terima kasih
+[00:37:45.70 - 00:37:51.80] SPEAKER_02: easy lah, list ke tengah aja biar banyak yang di masuk juga list ke tengah
+[00:37:52.90 - 00:38:04.80] SPEAKER_03: Di kasus ini, bagaimana membedakan ini yang sedang dianalisa, yang sedang dinilai, kemampuan menulisnya, atau?
+[00:38:04.80 - 00:38:06.90] SPEAKER_03: feedback listrasinya
+[00:38:11.10 - 00:38:18.00] SPEAKER_03: Kalau harapannya kan ini ya, feedback literasinya kan di sini?
+[00:38:18.20 - 00:38:24.10] SPEAKER_00: Ah ini kata peksua itu gimana?
+[00:38:24.10 - 00:38:31.30] SPEAKER_00: Tidak perlu bahas lebih tertentu kompetensis generasi, di dalam generasi dan di depan.
+[00:38:31.30 - 00:38:54.40] SPEAKER_06: Jadi, investrasi secara gamblang secara general itu kan sebuah teori yang menunjukkan bahwa terkait bagaimana menggunakan win-back untuk pembangunan diri.
+[00:38:54.50 - 00:39:33.70] SPEAKER_06: Lebih terhadap disebelah itu pun karena sesuatu yang berada di luar dini mereka, ada saja kan evaluatif atau penilaian atau konsep infrastruktur itu kan dulu bisa dioperasionalkan ke dalam digital scaffolding yang membentuk, yang memerlukan komputasi ataupun memerlukan operasionalisasi dari teori tersebut. Lalu ditemukan bahwa salah satu dari evaluatif yang disediakan, evaluatif yang disediakan hanya terkait pemberian nilai yang disebutkan ini.
+[00:39:33.70 - 00:39:35.20] SPEAKER_06: Boleh belum bisa?
+[00:39:35.20 - 00:39:48.20] SPEAKER_06: terkait justifikasi ataupun penjelasan yang tersebut merupakan dua hal yang berbeda yaitu evaluative expression, evaluative expression yaitu terkait
+[00:39:48.50 - 00:40:07.40] SPEAKER_06: Penulisan bentuk atau bentuk linguistik dari jelasan teks tersebut dan dua hal-dua hal tersebut membutuhkan buah konteks yang berbeda.
+[00:40:07.50 - 00:40:23.20] SPEAKER_06: rambu-rambu dari si, eh, faulted expression is good yang dapat diamati pada teks langsung, karena kan mungkin ada, eh, indikator-indikator yang memerlukan, eh, seperti ya tadi, emosi, apa, efektif, dan lain-lain itu kan tidak bisa
+[00:40:23.70 - 00:41:24.00] SPEAKER_06: Hanya diamati dari teks saja yang perlu pemahaman dan perlu sebuah ilmu yang baru seperti mungkin pedalomi tadi ataupun psikologi tadi untuk indikator-indikator yang tidak dapat diobservasi langsung dari teks. Makanya ada empat diskursi yang tadi yang diteliti pada benteng sebelumnya yang mengunjukkan bahwa pimpinan operasi itu secara terbatas ataupun ya terbatas jadi dapat diamati loh pada sebuah teks yang ada, sebuah teks relasi pimpinan itu yaitu yang tadi ada terkait elaboration, justification, dan big reference, dan terkait score. Empat diskursi yang tadi itu diadaptasi pada paper ini jadi empat indikator.
+[00:41:24.20 - 00:41:32.00] SPEAKER_06: Di sisi empat ini memang sudah datu nikah sebelumnya hanya dulu kita datu nikah ini dioperasionalkan menjadi...
+[00:41:32.80 - 00:41:40.40] SPEAKER_06: pendeteksi yang lebih lanjutnya di...lanjut menjadi di kioskopologi ini.
+[00:41:40.40 - 00:41:44.00] SPEAKER_07: telewon kalau saya boleh gak saya nak kamu baca ini buku gak
+[00:41:44.10 - 00:41:52.00] SPEAKER_06: Di bagian ZIP di sana, lalu pada yang terkait bisnis sekolah niat dapat.
+[00:41:52.00 - 00:42:05.30] SPEAKER_06: Anda, yang saya tumpukan itu dari wrapper yang saya ketayakan di Samasihana, mengacu juga pada ini.  Jadilah, kalau wrapper Sabuni kan memang berangkatnya dari wrapper ini, Pak.
+[00:42:28.10 - 00:42:29.70] SPEAKER_07: ini yang saya paham ya
+[00:42:30.10 - 00:42:35.00] SPEAKER_07: kognitif sama metakognitif aja berbeda secara scaffolding gitu.
+[00:42:35.60 - 00:42:38.40] SPEAKER_07: ya belum bicara ngomong di gitar lo
+[00:42:39.30 - 00:42:45.00] SPEAKER_07: cara scaffolding berbeda jadi kalau metakognitif kamu pakai EI apa?
+[00:42:45.00 - 00:42:46.30] SPEAKER_07: Gemini.
+[00:42:48.20 - 00:42:50.20] SPEAKER_07: kau pakai air nggak?
+[00:42:50.20 - 00:42:55.40] SPEAKER_07: Begini esok kayaknya kayak begini deh jep sejenis Capoldi nggak ada apa aja.
+[00:42:58.30 - 00:43:00.20] SPEAKER_07: biar gampang disbusuri.
+[00:43:07.20 - 00:43:12.10] SPEAKER_07: dalam scaffolding dalam apa dong nanti scaffolding sipil gitu bangunan.
+[00:43:23.90 - 00:43:26.00] SPEAKER_07: pernah nanya gini enggak dea nya?
+[00:43:27.80 - 00:43:29.30] SPEAKER_01: kalau minum alkohol
+[00:43:32.00 - 00:43:33.60] SPEAKER_06: jadi menuntut diri kita pengen nyaman
+[00:43:33.60 - 00:43:45.60] SPEAKER_06: ya yang mana jenis yang apa  ya oke lah ke punya kamu masuk yang mana
+[00:43:45.60 - 00:43:46.60] SPEAKER_06: Eeeem
+[00:43:46.60 - 00:43:49.10] SPEAKER_06: Secara ternyata.
+[00:43:50.20 - 00:43:53.40] SPEAKER_06: eemm jenis coklat dingin sendiri
+[00:43:53.50 - 00:44:23.40] SPEAKER_06: memang tidak lebih sedikit kan dari kertas itu, tapi kami inginkan bahwa ada kempen lanjutannya yang dikonversitasi ini juga bahwa dibagi dua lagi secara karakteristik scaffolding, scaffolding yaitu hal scaffolding yang memang scaffolding yaitu disiapkan sebelum proses pembeliannya, atau yang dibuat salah scaffolding yaitu scaffolding yang memang dilakukan on-the-fly seperti ini, itu teknisnya, itu teknisnya ini kagumnya nih.
+[00:44:25.30 - 00:44:29.00] SPEAKER_07: contoh ya kalau misalkan emm...
+[00:44:31.30 - 00:44:33.60] SPEAKER_07: gimana ya contohnya ya
+[00:44:33.70 - 00:44:35.50] SPEAKER_07: eemmm
+[00:44:35.50 - 00:44:36.70] SPEAKER_07: keyan
+[00:44:36.70 - 00:44:40.30] SPEAKER_07: tadi bu Ani kan hanya bawa dasar scaffolding nya bu ya.
+[00:44:41.10 - 00:44:45.70] SPEAKER_07: desain scaffolding gitu jadi misalkan
+[00:44:49.60 - 00:44:51.00] SPEAKER_07: Gini teng.
+[00:44:51.00 - 00:44:53.90] SPEAKER_07: fungsi rubrik scaffolding bukan?
+[00:44:59.70 - 00:45:12.40] SPEAKER_06: sebuah scaffolding itu, disebut scaffolding itu, nada salah satunya itu terkait interstandibity-nya itu terkait pemahaman antara scaffolding yang sendiri-
+[00:45:12.50 - 00:45:15.50] SPEAKER_07: rubrik penilaian gitu nih yang ada di mana.
+[00:45:17.90 - 00:45:25.80] SPEAKER_07: di form yang kamu print itu ada rubrik penelitian sindang saya untuk tipe satu research ini skandal lingkungan
+[00:45:32.00 - 00:45:33.70] SPEAKER_07: bukan bukan sekali
+[00:45:33.90 - 00:45:35.00] SPEAKER_07: bukan
+[00:45:35.00 - 00:45:36.20] SPEAKER_07: terima
+[00:45:36.20 - 00:45:45.50] SPEAKER_06: karena sekaliin kan bisa di tarik bisa berdua sebentar kalau kita nggak ngeluh-ngeluhin kamu baca dulu sebelum kamu memutuskan
+[00:45:45.70 - 00:45:46.80] SPEAKER_04: Terima kasih.
+[00:46:20.70 - 00:46:22.20] SPEAKER_07: Itu sudah digital.
+[00:46:22.80 - 00:46:27.00] SPEAKER_07: Yang tadi ditanyakan itu konsep dasarnya.
+[00:46:27.10 - 00:46:31.20] SPEAKER_07: kepoliin sehingga kalau kamu digitisasi...
+[00:46:31.20 - 00:46:35.00] SPEAKER_07: kan mendigitisasi sesuatu yang sifatnya fundamentalnya ya
+[00:46:35.50 - 00:46:38.20] SPEAKER_07: kalau temporal itu kamu ngomong apaan?
+[00:46:38.20 - 00:46:58.10] SPEAKER_06: Karena memang salah satu siri scaffolding itu bersifat bisa ditarik gitu Pak, enggak bukan batuan yang terus-terusan ada, kan bisa di belakang itu ada scaffolding dan distribusi kondisi yaitu batuan yang memang terus ada kayak populator, dan kalau scaffolding itu berbeda, dia harus bisa ditarik Pak.
+[00:46:58.10 - 00:47:05.90] SPEAKER_07: Bukan scaffolding itu sebuah tool untuk merekonstruksi sesuatu.
+[00:47:10.20 - 00:47:14.50] SPEAKER_07: Dinatur susananya setuju saya terus jadi rekonstruksi ulang kan?
+[00:47:14.80 - 00:47:16.40] SPEAKER_07: Udah lama kan.
+[00:47:16.50 - 00:47:19.20] SPEAKER_07: tidak mau tertentu itu rubrik buat apa
+[00:47:19.20 - 00:47:22.10] SPEAKER_07: Penilaian, penilaian pakai terus nggak?
+[00:47:23.40 - 00:47:24.80] SPEAKER_07: tiga
+[00:47:30.30 - 00:47:33.20] SPEAKER_07: dia hanya akan dipakai...
+[00:47:33.40 - 00:47:36.90] SPEAKER_07: Eh, tapi Anda terus.
+[00:47:37.20 - 00:47:44.80] SPEAKER_08: ada terus rubriken kayaknya pertanyaannya diingat yang pertanyaannya yang lebih awal ya
+[00:47:44.80 - 00:47:48.00] SPEAKER_08: secara fungsinya buka disini betul
+[00:47:48.00 - 00:47:50.50] SPEAKER_08: Fuchsia Noble itu
+[00:47:50.50 - 00:47:52.00] SPEAKER_08: Saya akan tinggal di kota ini mulai tahun depan.
+[00:47:53.50 - 00:48:02.10] SPEAKER_08: biarnya membenakai temporal-temporal itu, yang menurut telur ada aspek temporal ketika diunjuk, gitu kan
+[00:48:02.30 - 00:48:04.20] SPEAKER_08: nah dia kan
+[00:48:04.40 - 00:48:13.90] SPEAKER_08: Magma yang diambil digunakan buah bakal diadopsi yang diperlukan.
+[00:48:14.00 - 00:48:15.10] SPEAKER_08: Iya tentu
+[00:48:15.10 - 00:48:17.60] SPEAKER_08: terima kasih sudah menonton video ini sampai jumpa di video selanjutnya
+[00:48:18.90 - 00:48:20.30] SPEAKER_07: sumpah teh
+[00:48:20.70 - 00:48:22.10] SPEAKER_07: ada itu?
+[00:48:22.10 - 00:48:25.00] SPEAKER_07: ni saya nyoba ngeprom juga
+[00:48:25.70 - 00:48:30.10] SPEAKER_07: kalau saya dapatnya kompetitif scaffolding itu.
+[00:48:30.30 - 00:48:32.20] SPEAKER_07: membantu siswa
+[00:48:32.20 - 00:48:36.00] SPEAKER_07: ehh mengerti sesuatu yang harus dia cari
+[00:48:36.70 - 00:48:38.20] SPEAKER_07: Hium.
+[00:48:39.00 - 00:48:40.50] SPEAKER_07: bahkan apa.
+[00:48:40.50 - 00:48:46.00] SPEAKER_07: Rubri itu ya, yang jajari ya itu gitu, yang kedua MetaKognitif.
+[00:48:46.00 - 00:48:47.40] SPEAKER_07: reflect
+[00:48:47.60 - 00:48:50.00] SPEAKER_07: How they are reviewing, katanya.
+[00:48:50.20 - 00:48:54.80] SPEAKER_07: bunya kamu harusnya menetap kognitif ya ketiga prosedural
+[00:48:55.00 - 00:49:06.60] SPEAKER_07: membantu proses biasanya kan ada step gitu ya sosial nah kalau sosial itu yang sering dibahas lebih jurusan osmosis lah apa gitu
+[00:49:07.80 - 00:49:11.20] SPEAKER_07: mereka kamu kayak berdua juga part of it kayaknya
+[00:49:12.50 - 00:49:18.90] SPEAKER_07: punya kamu masukin ke mana kalau saya menganggapnya mental kognitif ketika mental kognitif
+[00:49:18.90 - 00:49:32.00] SPEAKER_07: berarti kan selalu ada yang liat ya kenapa nanti setelah gua ini saya mau nanya karena buatin aja jadi awal saya mau nanya di ujung buat saya cara manova cara macam-macam itu jadi menarik ketika kamu ngomongin tadi
+[00:49:33.20 - 00:49:41.50] SPEAKER_07: kenapa pakai multivarian kenapa pakai manova karena ditanya sedikit pak, sedikit plus sedikit gimana menurut yang bahasan saya menggabung
+[00:49:41.50 - 00:49:46.40] SPEAKER_03: beribuannya itu kalau saya tadi lebih ke ini tadi kan katanya kalau
+[00:49:46.40 - 00:50:00.40] SPEAKER_03: awalnya self-assessment itu biasanya lebih panjang karena mungkin dia bisa mengekspresikan natural ya, pede-pede, ah tapi kalau melihat, menilai, terkait apa
+[00:50:00.40 - 00:50:04.80] SPEAKER_03: Teks bagaimana sih?
+[00:50:04.90 - 00:50:07.30] SPEAKER_03: Apa kayaknya lah keser deh
+[00:50:07.50 - 00:50:11.70] SPEAKER_03: Memilah mengembedakan antara.
+[00:50:11.70 - 00:50:14.90] SPEAKER_03: kalau teks panjang itu kan bisa tidak
+[00:50:14.90 - 00:50:18.40] SPEAKER_03: tidak terlalu merespons feedback-
+[00:50:18.40 - 00:50:21.70] SPEAKER_03: dari dosen atau dari sistem kan?
+[00:50:21.70 - 00:50:24.10] SPEAKER_03: dia nulis panjang tapi kok
+[00:50:24.10 - 00:50:28.20] SPEAKER_03: tidak relevan dengan feedback yang diberikan sepertinya
+[00:50:28.50 - 00:50:29.70] SPEAKER_03: Apa nggak?
+[00:50:29.70 - 00:50:39.40] SPEAKER_03: tulisannya tuh bagus rapi grammar juga tapi nggak nyambung dengan kan bisa begitu si siswa tu nulis
+[00:50:39.90 - 00:50:40.80] SPEAKER_03: thanks for watching
+[00:50:40.80 - 00:50:43.70] SPEAKER_03: di kasus ini itu gimana?
+[00:50:45.90 - 00:50:47.90] SPEAKER_00: terkait pantat kegelupan.
+[00:50:47.90 - 00:50:49.30] SPEAKER_00: terima kasih ya pak
+[00:50:49.30 - 00:50:54.80] SPEAKER_00: Kami pandang ini memang statis saja minimal.
+[00:50:55.50 - 00:51:12.30] SPEAKER_00: tidak mau katanya bagus atau tidak masih dianggap sama, tidak ada deteksi apakah realistiknya kerus atau tidak, banyak lain tidak, tapi dibantu juga oleh ini atau ini atau lain.
+[00:51:13.80 - 00:51:16.20] SPEAKER_00: komunis kontra kuasa
+[00:51:16.30 - 00:51:20.70] SPEAKER_03: ya maksud saya gini tetika ada sesuatu nilai
+[00:51:21.70 - 00:51:24.30] SPEAKER_03: karena kan tadi dua puluh lima kata itu
+[00:51:24.70 - 00:51:28.30] SPEAKER_07: Itu ada bentuknya tuh iya.
+[00:51:28.50 - 00:51:33.50] SPEAKER_03: tadi bayangan saya mah, ketika self assessment panjang lewat sesuatu
+[00:51:34.20 - 00:51:36.70] SPEAKER_03: Atau memang dibatasi atau gimana?
+[00:51:37.20 - 00:51:38.40] SPEAKER_00: oh iya
+[00:51:38.40 - 00:51:53.60] SPEAKER_00: Memang bebas tutupin kek, dan kita memang sedikit rasa hilang, dan kita akan terpastikan historis. Di tahun kan, kalau ada genak-genak asli di sini, minimal dikatakan ini.
+[00:51:53.60 - 00:51:57.70] SPEAKER_00: elaborasinya panjang, itu lebih dari pasangan penduduk dan penduduk kota.
+[00:51:58.10 - 00:52:03.60] SPEAKER_03: Maksudnya dari data yang kalian terima dari mahasiswa atau oleh?
+[00:52:03.60 - 00:52:11.00] SPEAKER_03: Data lensiben, data fungi, dan data feedback istilis. Kalau ada lima kata mana tepannya nih?
+[00:52:11.80 - 00:52:18.40] SPEAKER_05: kalau emak-emak kebanyakan cuma satu kartun boleh kosong? bagus awalnya kosong boleh
+[00:52:19.20 - 00:52:36.40] SPEAKER_03: tadi yang saya bilang saya bayangkan panjang itu ada siswa menulis mengekspresikan dirinya lagi sel assessment panjang lebat tulisannya bagus maksudnya tulisan bagus itu jelas tapi tidak
+[00:52:36.50 - 00:52:38.20] SPEAKER_03: kurang tapi
+[00:52:38.20 - 00:52:41.30] SPEAKER_03: merespon feedback nya tertekan lah gitu ya pah
+[00:52:41.90 - 00:52:48.40] SPEAKER_08: gitu lah ntar dulu feedback gitu sama nggak feedback yang dibicarakan
+[00:52:48.40 - 00:52:58.70] SPEAKER_00: Feedback literasinya. Feedback itu maksudnya narasi yang ditulis oleh mahasiswa untuk merespon mahasiswanya.
+[00:52:59.40 - 00:53:05.90] SPEAKER_03: bukan kalau yang saya bayangkan kan ee si sistem kita tu
+[00:53:05.90 - 00:53:10.60] SPEAKER_03: Menggait supaya siswa lebih baik.
+[00:53:10.80 - 00:53:12.70] SPEAKER_03: wahhh
+[00:53:12.80 - 00:53:21.40] SPEAKER_08: Mungkin itunya perlu terus dicapakkan dulu ke batang belakang, yaitu Phil dan Sel.
+[00:53:21.90 - 00:53:26.10] SPEAKER_08: Jadi itu bisa mengluansai feedback?
+[00:53:26.10 - 00:53:31.60] SPEAKER_08: Tapi juga hanya sesbennya aja, pas sesben kan belum tutupi bukan?
+[00:53:34.50 - 00:53:40.00] SPEAKER_06: Jadi yang menjadikannya sebuah video itu ketika sekolah itu dimutip.
+[00:53:40.00 - 00:53:51.70] SPEAKER_06: berikan perjelasan, memberikan narasi kualitas, berikan perjelasan skor lulus B.  Hal itu, setelah yang menunjukkan skor satu itu, meninginkan narasi feedback yang terjadi.
+[00:53:52.30 - 00:54:02.00] SPEAKER_06: Namun, terkayu perbedaan antara self dan guilt baik dari secara sens dan dari hasil.
+[00:54:02.00 - 00:54:04.50] SPEAKER_06: terbit asal dulu bahwa orang itu beda
+[00:54:07.00 - 00:54:27.80] SPEAKER_03: yang apa apa berbeda cuman tadi kan ee ketika kalian bilang biasanya yang pil itu panjang panjang saya kan mikirnya panjang juga belum tentu pernah belum tentu sesuai yang kan bisa aja dia nulis secara gerewarnya betul bagus jelas tapi tidak berupa
+[00:54:27.80 - 00:54:33.40] SPEAKER_03: tidak menjawab pertanyaan yang seharusnya gitu itu gimana sih
+[00:54:33.40 - 00:54:36.70] SPEAKER_03: sistem ini bekerja
+[00:54:38.20 - 00:54:42.70] SPEAKER_08: Sepertinya pemohonan dikaitkan dengan hakat dan teks.
+[00:54:42.70 - 00:54:44.40] SPEAKER_08: susah menjelaskan.
+[00:54:44.40 - 00:54:52.80] SPEAKER_08: ee itu pertanyaan saya nanti hehehehe
+[00:54:52.80 - 00:54:58.20] SPEAKER_03: pokoknya yang paling awal adalah nulik emang padma kan ee
+[00:54:58.20 - 00:55:05.80] SPEAKER_03: emang fakta ya kita ngajar bertarung tangan kan ada yang jawabannya banyak lebih banyak tapi kita tidak menjawab
+[00:55:05.80 - 00:55:23.10] SPEAKER_08: tidak tepat gitu ya dan mudah-mudahan dengan ini diimplementasi tadi itu itu terjadi tadi intervensi itu akan terjadi tidak lama lagi itu lah yang belakangnya lima satu satu tiga laporan kamulian
+[00:55:23.90 - 00:55:25.00] SPEAKER_07: terjemahkan
+[00:55:26.20 - 00:55:27.90] SPEAKER_07: saya udah buat catatan klub
+[00:55:28.70 - 00:55:30.70] SPEAKER_07: empat satu set
+[00:55:33.20 - 00:55:35.10] SPEAKER_07: kamu ngomong gitu bukan
+[00:55:39.10 - 00:55:41.70] SPEAKER_07: iya coba benarnya itu
+[00:55:41.80 - 00:55:47.60] SPEAKER_07: yang tanya bukan nih ini terlalu jauh satu satu tiga lima satu satu tiga eh
+[00:55:48.10 - 00:55:54.50] SPEAKER_08: empat satu satu tiga empat satu tiga satu satu tiga enggak enggak kenapa empat.
+[00:55:54.60 - 00:55:56.00] SPEAKER_07: bener bang
+[00:55:56.10 - 00:56:00.70] SPEAKER_07: Empat satu satu tiga justru ini ini kedalam penelaburasi.
+[00:56:02.80 - 00:56:04.80] SPEAKER_07: Betul gak yang terebuan ini?
+[00:56:05.20 - 00:56:06.30] SPEAKER_07: Iya.
+[00:56:14.30 - 00:56:21.10] SPEAKER_07: tahu kan contoh kasus rekan saya sangat baik dalam pengumpulan dan mengekstrakan data
+[00:56:21.20 - 00:56:32.40] SPEAKER_03: itu kan ya kan iya ayah rusak rusak ngomong padahal substansinya nggak ada nah itu dimana mau ekstrak akhir niman
+[00:56:32.40 - 00:56:39.20] SPEAKER_07: tidak menjawab laporan kamu tapi kok saya lebih hafal ya
+[00:56:39.50 - 00:56:42.40] SPEAKER_07: ada bulu disana juga ditanyain bulu
+[00:56:42.50 - 00:56:55.60] SPEAKER_08: nggak sih saya memperbasalkan pengalaman ya tapi kalau di mereka memang jadi kualitas narasi itu dilihat bersama dengan angka itu kan atau udah nanti
+[00:56:55.60 - 00:57:03.00] SPEAKER_08: tapi itu hanya apa yang terdiamkan ini juga utuh belakang-belakangnya jadi bisa dikatakan
+[00:57:03.00 - 00:57:07.00] SPEAKER_08: kita balik nuansa feedbacknya sampai akhir ini lebih
+[00:57:07.00 - 00:57:09.40] SPEAKER_08: terimakasih ya pak
+[00:57:11.00 - 00:57:12.60] SPEAKER_04: nggak kan? nggak kan?
+[00:57:12.60 - 00:57:17.80] SPEAKER_04: pastasaya lebih hafal ke bagian kelas akhir bagian itu kalau ini saya lebih hafal gimana cerita itu
+[00:57:18.00 - 00:57:24.70] SPEAKER_04: prosedur yang ditandaiin mereka udah terlalu
+[00:57:25.20 - 00:57:29.30] SPEAKER_08: ke pekerjaan yang telah dilakukan ke pelatar belakangnya.
+[00:57:29.40 - 00:57:36.60] SPEAKER_06: Kalau sekarang, ya terawalnya memang ada datan dari...
+[00:57:36.60 - 00:58:01.40] SPEAKER_06: part of teaching, jadi sebelum dengan-dengan dianalisis soal empat indikator tadi, dicek dulu apakah ini bisa pas pada filter pertama itu post-teaching yang lalu, ada indikator yang memberikan kopi jadi dia, dan sepupu yang dibeli tadi jadi dia dapat si model-modelnya itu melihat kesamaan seperti ini, misalkan ada
+[00:58:01.40 - 00:58:06.10] SPEAKER_06: eemm narasinya itu memenunjukkan eem
+[00:58:06.40 - 00:58:09.50] SPEAKER_06: unit apapun kalau aspek
+[00:58:09.50 - 00:58:45.50] SPEAKER_06: Pada rubrik lalu dikulis oleh mahasiswa pada narasi yang menjalankan ekspor tersebut.  Jadi, ketika Limbasovo yang melihat lagi ke rubrik dan melihat ke narasi, oh, aspek ini sudah dibahas sebagai narasi, maka dia, bisa dikatakan, memenuhi narasi. Sebenarnya memang ada mekanisme terkait. Pembecaan text-text yang dididik bisa dicocokkan satu persatu dari hasil pembecaan text-narasinya itu dicocokkan satu-satu ke si aspek rubrik, jadi bisa diketahui secara melalui aktor.
+[00:58:45.60 - 00:58:49.40] SPEAKER_06: Kasih simul dan padat langsung sekali dibuat sendiri.
+[00:58:49.50 - 00:58:53.40] SPEAKER_08: dari pisau yang membenam itu ke pertanyaan awal
+[00:58:53.40 - 00:59:01.20] SPEAKER_08: apakah rubrik itu balik ke mana usir rubrik itu sekali? sekali itu tidak bukan barusan itu jawab dua
+[00:59:03.40 - 00:59:04.60] SPEAKER_03: terima kasih
+[00:59:06.30 - 00:59:25.70] SPEAKER_03: Oke, tapi kalian sudah menghadapinya, ya?  Itu kan?  Nah, tapi berikutnya jadi ini, saya keingetan, dan barusan ditriger lagi, karena kemarin yang payudisi seminar tiga itu, barusan kalian bilang dilihat kesamaan semantiknya.
+[00:59:25.80 - 00:59:38.80] SPEAKER_03: moga mari payuri S L R kan oh ngomong-ngomong semantik wah berat oh anak ketiga ada ngomong-ngomong semantik similanti kalau kalian makan
+[00:59:38.80 - 00:59:42.40] SPEAKER_03: kok lo bisa gitu yang jarangnya ya
+[00:59:42.80 - 00:59:47.10] SPEAKER_03: Apa tadi? Lihat kesamaan semantiknya.
+[00:59:47.10 - 00:59:56.20] SPEAKER_03: Gimana, misalnya ada jawaban tersisa seperti apa, lalu oleh sistemnya diapakkan, kalau ini artinya apa?
+[00:59:56.20 - 01:00:10.20] SPEAKER_00: Secara teknis seperti itu, kemudian situ sudah siapkan sebetulnya simulasi mengeluhari alur besar dari Dunedin yang mulai memasukkan mata ke Dunedin.
+[01:00:11.30 - 01:00:26.80] SPEAKER_00: Bisa lebih ke situ kan, sehingga saya tidak kelihatan.
+[01:00:27.30 - 01:00:28.50] SPEAKER_00: terimakasih atas menonton
+[01:00:30.00 - 01:00:38.10] SPEAKER_00: sementara pendidikan lubik seharusnya itu membahas benteng terkait jumlah iklan misalnya.
+[01:00:38.20 - 01:00:58.20] SPEAKER_03: Ada sentens Abdul Azim Madjan yang komplementary ngurib, sentens dia itu bagus lah apa maksudnya?  Beras mudari yang ikut ikut siswa.  Kalimat kan?  Yang menjelaskan seorang.  Penilaian siswa nya bagus, kita akan lihat narasinya ya.
+[01:00:58.50 - 01:01:06.00] SPEAKER_00: narasi isi narasi mahasiswa yang diketikkan mahasiswa bagus cuman satu kata
+[01:01:06.00 - 01:01:12.70] SPEAKER_03: lalu ngobrol semantik simen rutin nya gimana kalau semantik itu makna
+[01:01:12.80 - 01:01:27.30] SPEAKER_03: Kata bisa kata, bisa kata kan bisa kalimat, kalimat filosofinya. Oke bagus dulu, terus?
+[01:01:27.30 - 01:01:53.00] SPEAKER_00: Dari jumlah iklan itu dipecah di UML AHIKLN, berdasarkan token yang Anda dibentukkan dengan bagus, serta penambahan spesial token ini kalau Anda diberi bahwa yang harus dilawan itu selalu ada CRS, WB, PAS, PAS Expositivision, dan yang terakhir selalu ada Hard Stock.
+[01:01:53.00 - 01:01:55.30] SPEAKER_07: Sep itu apa ya?
+[01:01:55.40 - 01:01:57.80] SPEAKER_00: Apa?
+[01:01:58.30 - 01:02:01.00] SPEAKER_07: cuma itu aja atau ada yang lain
+[01:02:01.00 - 01:02:10.30] SPEAKER_00: Ada yang lain tapi secara adhipat awal dan akhirnya ini apa yang lain itu contohnya adiling anius, ada juga.
+[01:02:10.30 - 01:02:13.30] SPEAKER_00: Aku lupa di ketika...
+[01:02:13.30 - 01:02:24.50] SPEAKER_00: Ada teks yang tidak terdaftar di Google.
+[01:02:24.60 - 01:02:26.40] SPEAKER_00: yang dipakai ini
+[01:02:26.60 - 01:02:27.80] SPEAKER_00: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[01:02:28.00 - 01:02:29.50] SPEAKER_03: terima kasih
+[01:02:30.20 - 01:02:44.00] SPEAKER_00: Bagi misalnya, eksmodel itu sebenarnya sudah menyimpan daftar mastercontent dan representasi vektor statis hasil linkering.
+[01:02:44.00 - 01:02:57.40] SPEAKER_00: bahwa kata entering itu representasi makna semantik dari token entering itu adalah 0,96 0,77 dan lain sebagainya
+[01:02:57.40 - 01:03:00.80] SPEAKER_07: ini kalian lupa kan? kak kalian lupa? bukan
+[01:03:01.10 - 01:03:08.30] SPEAKER_07: itu kan tokennya ini token punya orang kan enggak itu ini betul gua sayang inggris ya
+[01:03:09.10 - 01:03:19.60] SPEAKER_07: oh ini saya ambil dari buka simpan iya saya tanya jadi tergantung kapan yang kalian atur ya iya nanti ada kan isi busanya yang disew
+[01:03:19.60 - 01:03:36.60] SPEAKER_00: eemm untuk osimulus D untuk mengindahkan tanggung yang bahasa Inggris Pak, tapi untuk osimulus A itu memenuhi lingual, tetapi osimulus D itu bahasa Inggris, yaudah gapapa, pesanan untuk lingual ada, itu yang ini kan.
+[01:03:37.20 - 01:03:38.80] SPEAKER_07: Terima kasih.
+[01:03:38.80 - 01:03:39.90] SPEAKER_07: terima kasih.
+[01:03:42.40 - 01:03:43.80] SPEAKER_07: terima kasih for watching
+[01:03:43.80 - 01:03:46.60] SPEAKER_07: yaudah cukup nya duluan cukup nya dulu
+[01:03:50.00 - 01:03:52.70] SPEAKER_07: Wernickhoff kalau nggak salah...
+[01:03:54.00 - 01:04:06.70] SPEAKER_00: ya enggak enggak langsung lanjut aja langsung lanjut ini memang bagus kalau kesini jadi caranya itu ini kan ada tokennya ada bagus di token ini nah kita cari
+[01:04:10.40 - 01:04:28.40] SPEAKER_00: Secara normal, tidak ada, tetapi memang token ini dilaporkan dari suatu algoritma sehingga bisa merepresentasikan semua pengendalam kata. Jika kasusnya seperti ini bagus, tidak ada, artinya pelan-pelan jadi, apa namanya, dihapus begitu.
+[01:04:28.40 - 01:04:36.10] SPEAKER_00: terus dulu tinggal pasti tinggal anak terus dihapus sampai cari potongan terbesar, nah bebek.
+[01:04:36.20 - 01:04:40.90] SPEAKER_00: B itu representasinya ini, kita simpan, tadi kan utuh.
+[01:04:40.90 - 01:04:46.60] SPEAKER_00: Oh, tapi ini suksesnya tidak ada, itu belum menjadi fosfiksi.
+[01:04:46.60 - 01:04:54.70] SPEAKER_00: Buktinya digabung, ini bisa menjadi dua topir yang berbeda, tapi itu secara memenatmasi. Ini adalah bagusan terakhir.
+[01:04:54.70 - 01:04:58.00] SPEAKER_00: bentuk bukes itu representasi tokohnya.
+[01:04:58.00 - 01:04:59.20] SPEAKER_00: sukiyaki
+[01:05:00.80 - 01:05:19.20] SPEAKER_00: Ini dilakukan sampai semua kataknya abis. Selain representasi vektor dari topen juga model menyimpan representasi posisi u, jadi model embedding tentunya harus telah dikahui. Meskipun kataknya persis sama,
+[01:05:19.20 - 01:05:26.50] SPEAKER_00: tapi posisinya berbeda itu representasi pektorannya mungkin sama.
+[01:05:26.70 - 01:05:29.50] SPEAKER_00: posisi dalam kalimat kecil.
+[01:05:29.70 - 01:05:38.70] SPEAKER_03: Kalau misalnya nulisnya baik itu jadi beda juga ya sektornya, kalau menurut kita kan bagus dengan baik T.
+[01:05:38.70 - 01:05:45.70] SPEAKER_03: sama ya iya betul kalau tadi nulisnya baik bela reaktornya bagus bela reaktor
+[01:05:46.20 - 01:05:50.70] SPEAKER_03: Tapi dalam konteks tadi, kesamaan semantik.
+[01:05:50.70 - 01:06:30.50] SPEAKER_00: Sejak mana ini bisa diandalkan?  Oke, terkait hal tersebut dari model Sentence Ending yang digilati menggunakan Constructive Laws.  Jadi memang posisi awal model bisa jadi random, bisa jadi tidak bisa diandalkan, tapi secara iteratif, training ke training menggunakan Constructive Laws sehingga model itu bisa mendekatkan teks yang maknanya mirip dan menjauhkan teks yang maknanya bertelahkan.  Itu sudah dikaji, sudah pasti kalian telah ah dan percaya gitu, percaya bahwa...
+[01:06:31.10 - 01:06:34.50] SPEAKER_03: bahwa hasil itu bisa diantarkan.
+[01:06:34.50 - 01:06:48.00] SPEAKER_00: Kalau terhadap model-model kandidat termasuk ipaek, sudah dikanyi meskipun tidak dipesukan secara langsung pada dokumen ini.
+[01:06:48.00 - 01:06:54.00] SPEAKER_03: Maksudnya kan secara teori harusnya begitu ya, dia akan mendekatkan?
+[01:06:55.00 - 01:07:03.40] SPEAKER_03: Semakin similar diangkatnya jadi, nah terus kalian buktikan kalian kan memteori begitu katanya, lalu kalian
+[01:07:03.40 - 01:07:08.20] SPEAKER_03: coba dengan berbagai kasus, oh iya, itu gimana
+[01:07:10.60 - 01:07:13.40] SPEAKER_03: ada empat medis itu kan ini ya
+[01:07:13.40 - 01:07:22.60] SPEAKER_00: Bahkan kursi emang bisa ini kepunyaan kamu bisa nulisnya bisa ini jadi yang DPA itu mungkin di luar mata final itu gimana konteks final final ter
+[01:07:22.70 - 01:07:27.60] SPEAKER_07: Indonesia konteks butilinol itu seperti apa.
+[01:07:28.00 - 01:07:30.20] SPEAKER_00: Ini dari tukang dan batang.
+[01:07:30.60 - 01:07:39.90] SPEAKER_00: treningnya itu berdasarkan di artikel atau teks sebelum saya masak.
+[01:07:40.60 - 01:07:43.40] SPEAKER_07: Kenapa bukan itu yang dibiakkan?
+[01:07:44.60 - 01:07:46.40] SPEAKER_07: ini kan bahasa Inggris
+[01:07:46.40 - 01:07:57.10] SPEAKER_00: Oh, karena tokinya umumnya dibetak untuk makin luas, sehingga untuk simulasi ini, yang berfungsi rotasi menggunakan token dari perkeranaan.
+[01:07:57.10 - 01:07:59.90] SPEAKER_00: Tapi secara konteks masih sama.
+[01:08:00.60 - 01:08:02.50] SPEAKER_07: nasi sama enggak dong
+[01:08:04.70 - 01:08:07.20] SPEAKER_07: nggak ngak
+[01:08:08.80 - 01:08:12.40] SPEAKER_07: Mutilingual kita gak usah ngomong bahasa asing atos aja.
+[01:08:12.70 - 01:08:15.70] SPEAKER_07: Bersusunnya sampai bahasa Jawa, beda kan?
+[01:08:15.70 - 01:08:17.30] SPEAKER_07: bener
+[01:08:17.40 - 01:08:27.00] SPEAKER_03: nggak semua bahasa asing tapi memang kalau poinsaya kalau ngomong semantik similaritituh kalau iya dan
+[01:08:27.00 - 01:08:30.30] SPEAKER_03: Apalagi kalau ada kalimatannya.
+[01:08:30.40 - 01:08:32.80] SPEAKER_03: kali ini kan baru satu kata
+[01:08:32.80 - 01:08:36.40] SPEAKER_03: kalau kali kalian gini ya kali ma kan?
+[01:08:36.40 - 01:08:39.10] SPEAKER_03: lebih ramai lagi ini ngga ada gini
+[01:08:39.20 - 01:08:41.10] SPEAKER_03: cepat-cepat
+[01:08:41.10 - 01:08:47.80] SPEAKER_03: Analisis ya, maksudnya eksperimen di sini.
+[01:08:48.50 - 01:08:54.30] SPEAKER_01: tadi ini kan bagus similar itu mana dengan mana maksudnya
+[01:08:54.30 - 01:09:17.60] SPEAKER_03: dengan rubrik mana mendekat rubrik bagus sekali itu yang tadi maksimal dua puluh lima kata itu ini ya sentence ini minimal oh minimal terus saya menangkapnya maksimal makanya tadi dua lima kan sedikit dua baris
+[01:09:17.60 - 01:09:32.40] SPEAKER_03: Minimal atau maksimal? Minimal. Minimal boleh mengatakan?  Untuk indikator kelonerasi diri, tapi untuk embeding ini mungkin 519 maksimal.
+[01:09:32.40 - 01:09:40.80] SPEAKER_00: Nah, kasusnya coba misalnya kalimat ini ya?
+[01:09:41.00 - 01:10:01.80] SPEAKER_00: Tadi baru sekali sudah dikumpulkan, posisi menunggu juga sudah dikumpulkan, dan kata ini “Wqweriki”, ini akan saya jelaskan, ini juga hasil pre-training untuk mengetahui dampak suatu kata atau kata olin dalam sintesis album.
+[01:10:02.90 - 01:10:12.10] SPEAKER_00: Ini pertama dari daftar, apa namanya tadi? Dua situasi yang kita dikumpulkan.
+[01:10:12.10 - 01:10:24.40] SPEAKER_00: Basetokennya, sebentuk setiap base vector untuk setiap token mungkin dipumpulkan di dua posisinya. Contohnya ini kan ada token 0 serantauan 6, 7 token.
+[01:10:24.90 - 01:10:34.20] SPEAKER_00: Ungutlukan tujuh posisi vektor dan base vektor dari token ditambah dengan vektor posisi.
+[01:10:34.20 - 01:10:41.70] SPEAKER_00: Sehingga ini merepresentasikan vektor awal dari token yang telah dimonetisasi oleh posisi.
+[01:10:41.70 - 01:10:42.70] SPEAKER_00: Saya akan tinggal di kota ini selama bertahun-tahun depan.
+[01:10:42.80 - 01:10:46.70] SPEAKER_00: Nah, sebenarnya, eh, pada...
+[01:10:46.70 - 01:10:50.20] SPEAKER_00: Kita sebagai manusia, bisa mengetahui bahwa
+[01:10:50.20 - 01:11:02.00] SPEAKER_00: Sesuatu kapal itu punya makna, tapi fungsi ini tidak. Ini masuk ke Transformer Attention, di sini saya cuma menjelaskan terkait Self-Attention.
+[01:11:02.00 - 01:11:07.90] SPEAKER_03: tapi intinya kalian udah lakukan analisis dan kesimpulan apa yang
+[01:11:07.90 - 01:11:12.00] SPEAKER_03: Kalian mendapatkan sedina.
+[01:11:12.00 - 01:11:15.40] SPEAKER_03: validitas hasil penelitian kita.
+[01:11:16.20 - 01:11:20.60] SPEAKER_03: meyakinkan sejak mana gitu.
+[01:11:20.60 - 01:11:30.80] SPEAKER_03: Cuma ini kan dibatasi oleh data di JTK, JTK kan berbahasa Indonesia saat ini kan?
+[01:11:31.00 - 01:11:37.30] SPEAKER_03: Kenapa nggak tokennya disiapkan untuk mengakomodasi?
+[01:11:37.30 - 01:11:40.40] SPEAKER_03: Bahasa yang memang jadi sampel.
+[01:11:40.60 - 01:11:42.20] SPEAKER_03: penelitian
+[01:11:45.50 - 01:11:46.70] SPEAKER_00: ohhh
+[01:11:47.30 - 01:11:50.40] SPEAKER_00: Mungkin jawabannya mungkin lebih berkait.
+[01:11:50.40 - 01:12:09.60] SPEAKER_00: analisa seberapa percayaanmu secara formal itu dijawab oleh R11, tapi secara informalnya sebetulnya sudah dicoba-coba kalau kita melakukannya, saya nggak butuh coba-coba tapi pemkembangan kamu terhadap apa yang kamu coba itu lebih saya perlu
+[01:12:09.60 - 01:12:16.60] SPEAKER_07: Saya nggak perlu denger kamu cepet-cepet kamu nggak cepet-cepet pun karena kamu sudah belajar sebelumnya sebelum bekas seri ini selesai buat saya.
+[01:12:16.70 - 01:12:19.50] SPEAKER_07: tapi kalau kamu coba-coba kamu nggak apa-apa apa-apa
+[01:12:19.50 - 01:12:21.30] SPEAKER_07: ya percoba juga gitu
+[01:12:21.30 - 01:12:22.70] SPEAKER_07: contoh ya
+[01:12:22.70 - 01:12:28.20] SPEAKER_07: kalau penelitian harusnya saya bisa tanya ini kamu ngomong apa konsensus penelitian?
+[01:12:28.30 - 01:12:30.20] SPEAKER_07: kayak gimana sih bisa semuanya gitu ya
+[01:12:33.60 - 01:12:36.10] SPEAKER_07: yang faktor yang mana ini kan ada banyak macam-macam...
+[01:12:36.10 - 01:12:37.30] SPEAKER_07: terima kasih for watching
+[01:12:38.50 - 01:12:41.90] SPEAKER_07: eh terus?
+[01:12:41.90 - 01:12:46.20] SPEAKER_07: gimana cara jadi itu cara jadi satu kayak gini
+[01:12:47.20 - 01:12:50.40] SPEAKER_00: Ini tadi kan akhir-akhin ya Pak Sektor?
+[01:12:57.90 - 01:13:04.40] SPEAKER_07: Ee gini, ini kan tadi katanya banyak tuh token.
+[01:13:04.40 - 01:13:06.50] SPEAKER_07: pekan ya pekan
+[01:13:06.50 - 01:13:09.30] SPEAKER_07: bahwasimilar atau enggak itu kan...
+[01:13:09.30 - 01:13:10.90] SPEAKER_07: dranjat ya?
+[01:13:11.60 - 01:13:15.40] SPEAKER_07: menjadi darjat itu kan gimana ceritanya kan banyak ini.
+[01:13:15.40 - 01:13:18.80] SPEAKER_07: jadi satu dan satu faktor satu faktor itu gimana
+[01:13:19.70 - 01:13:25.30] SPEAKER_00: Ini dari MNDG ini, masuk juga ke pensiun liar 4.
+[01:13:25.30 - 01:13:48.30] SPEAKER_00: Untuk mengukur apakah ada teks yang mempengaruhi teks lainnya, ini contohnya ada kata, yaitu surat Allah, dan T, maksud misalnya, kita sebagai manusia bisa mengetahui bahwa...
+[01:13:48.30 - 01:13:50.90] SPEAKER_07: ya terus gimana ceritanya
+[01:13:51.70 - 01:13:53.30] SPEAKER_07: Kenter tokem.
+[01:14:01.80 - 01:14:07.50] SPEAKER_07: kalau kamu ngomong attention gini deh kamu memang riset KNLP nya tau nggak sih
+[01:14:08.40 - 01:14:09.60] SPEAKER_07: nggak
+[01:14:09.60 - 01:14:11.30] SPEAKER_07: nggak bosan kan nelpy
+[01:14:11.30 - 01:14:12.70] SPEAKER_07: ya
+[01:14:12.70 - 01:14:15.60] SPEAKER_07: ini ibu saya boleh boleh ya
+[01:14:17.30 - 01:14:20.60] SPEAKER_07: Di abstract ini ya, ini abstract udah pesen
+[01:14:22.80 - 01:14:24.80] SPEAKER_07: bener nggak kayak
+[01:14:25.50 - 01:14:27.40] SPEAKER_07: kamu bisa nunjukin gak
+[01:14:27.40 - 01:14:31.80] SPEAKER_07: Yang tadi, kedalaman elaborasi F-154...
+[01:14:31.80 - 01:14:35.30] SPEAKER_07: sama dengan 4,7 lampu yang lebih kecil dari 005
+[01:14:37.70 - 01:14:39.00] SPEAKER_07: betul
+[01:14:39.20 - 01:14:41.20] SPEAKER_07: ini ke tu heeh
+[01:14:41.70 - 01:14:43.90] SPEAKER_07: itu di mana ya saya bisa liatnya.
+[01:14:43.90 - 01:14:45.20] SPEAKER_07: terbang.
+[01:14:47.50 - 01:14:54.00] SPEAKER_06: kalau ini setelah didapatkan konfigurasi iya dimana saya bisa lihat di laporan anda di..
+[01:14:55.50 - 01:14:58.90] SPEAKER_07: buat beli namun. iya silahkan tunjukkan.
+[01:15:06.40 - 01:15:12.10] SPEAKER_06: Di lima dua tiga. Angkanya sama kan?
+[01:15:24.30 - 01:15:33.10] SPEAKER_07: ini nyambung dengan tadi pertanyaan bu Andy ya kamu buat sesuatu itu bisa dipercaya atau enggak yang saya tanya yang Andy Absrah itu di mana dia laporan kamu.
+[01:15:33.10 - 01:15:35.10] SPEAKER_07: angkatnya sama apa nggak?
+[01:15:40.40 - 01:15:46.00] SPEAKER_07: Yang benar itu ini kok.  Hah? yang benar berapa jadi?
+[01:15:49.80 - 01:15:51.50] SPEAKER_07: yang bener yang ini pasti
+[01:15:51.50 - 01:15:54.10] SPEAKER_07: Jadi, F nya berapa?
+[01:15:56.60 - 01:16:01.20] SPEAKER_07: kamu ceklah di depan F satu koma lima empat tuh ya.
+[01:16:01.30 - 01:16:04.20] SPEAKER_07: di abstrak coba makanya buka di abstraknya
+[01:16:05.20 - 01:16:07.50] SPEAKER_07: Atau setannya lebih mendasar deh?
+[01:16:07.50 - 01:16:09.90] SPEAKER_07: Kenapa harus pakai manova?
+[01:16:15.50 - 01:16:22.40] SPEAKER_07: iya tau pertanyaannya kenapa punya kamu harus pake manova saya ngetanya yang lain jadi eee
+[01:16:23.70 - 01:16:33.00] SPEAKER_06: Konteks multivariat ya?
+[01:16:33.10 - 01:16:36.40] SPEAKER_07: ya multifartun kayak gimana?
+[01:16:37.60 - 01:16:52.20] SPEAKER_07: Oke, artinya tulisan F satu koma lima empat itu artinya F satu koma lima empat itu artinya F satu koma lima empat
+[01:16:52.20 - 01:16:55.40] SPEAKER_07: sama dengan 4,76
+[01:16:55.40 - 01:16:59.70] SPEAKER_07: dengan P lebih kecil dari 0,05
+[01:17:02.20 - 01:17:04.50] SPEAKER_07: sementara ring apa
+[01:17:04.60 - 01:17:10.80] SPEAKER_07: rang bisreal korelesinya 0,49 nah itu kalau misalnya menurut kamu itu salah yang mana yang benar?
+[01:17:13.30 - 01:17:15.20] SPEAKER_07: jelaskan ke saya.
+[01:17:58.40 - 01:18:00.00] SPEAKER_01: ini salah itu gimana
+[01:18:03.00 - 01:18:04.90] SPEAKER_07: iya saya enggak apa-apa
+[01:18:06.60 - 01:18:07.90] SPEAKER_07: eh
+[01:18:08.30 - 01:18:15.10] SPEAKER_07: kalau tulisan salah tinggal direvisi tapi kalau komponen salah gimana ngenilainya kan itu problemnya
+[01:18:15.60 - 01:18:17.00] SPEAKER_07: gini ya
+[01:18:17.10 - 01:18:20.70] SPEAKER_07: gunanya tanya jawab itu kan untuk ukur yang barusan
+[01:18:38.90 - 01:18:42.70] SPEAKER_07: gini ya aku dengar kita nih kamu kan katanya riset
+[01:18:42.90 - 01:18:53.10] SPEAKER_07: yang kamu reset bukan NLP nya bukan apa nya saya masih oke gak ada isu buat saya kamu buat pipeline buat pipeline itu akan diukur.
+[01:18:53.30 - 01:19:02.30] SPEAKER_07: jadi saya pengen dengar alasan kenapa pakai manova bukan pak yang lain adanova bukan kenapa kamu pakai manova
+[01:19:02.30 - 01:19:06.50] SPEAKER_07: Itu sebetulnya ada filosofinya. Kenapa kamu pakai Manova?
+[01:19:08.70 - 01:19:09.80] SPEAKER_07: Iya.
+[01:19:09.80 - 01:19:10.70] SPEAKER_07: kan
+[01:19:10.70 - 01:19:15.80] SPEAKER_07: terus kalau kamu sudah paham itu, bacakan angkat tadi keluar berdasarkan pemahaman itu ya
+[01:19:16.50 - 01:19:18.10] SPEAKER_07: gitu kan
+[01:19:19.30 - 01:19:21.30] SPEAKER_07: atau saya salah ngerti
+[01:19:23.80 - 01:19:28.90] SPEAKER_07: Harusnya iya oke, artinya angkat tadi keluar dari mana.
+[01:19:30.00 - 01:19:33.90] SPEAKER_07: karena itu kaya kan dengan tadi yang pertanyaan bu Ani berat kan
+[01:19:33.90 - 01:19:38.60] SPEAKER_07: Ehh jadi bahwa ini layak di..
+[01:19:38.60 - 01:19:49.40] SPEAKER_03: kita percaya ya saya enggak tanya NLP saya enggak tanya itu ya saya anggap kamu pernah melakukan kajian lah
+[01:19:49.80 - 01:19:56.10] SPEAKER_07: Biarpun saya ngujai kemarin tentang bersemua tentang itu, saya jadi...
+[01:19:56.10 - 01:20:08.10] SPEAKER_07: enggak menggandain bener tuh ya saya enggak bener nggak bener tapi oke tadi-tadi pertanyaan bu Ani itu ini ini angka gimana nih terus ada Pilaitris
+[01:20:08.60 - 01:20:10.00] SPEAKER_07: terima kasih terima kasih terima kasih terima kasih
+[01:20:10.00 - 01:20:15.00] SPEAKER_07: Kenapa pakai itu kenapa itu harus digunakan kan ada filosofinya.
+[01:20:16.20 - 01:20:18.00] SPEAKER_07: Ee...paham!
+[01:20:18.00 - 01:20:25.30] SPEAKER_07: paham oke kamu paham silakan angkat tadi salah terus sekarang kamu pakai dan dari mana salah berarti
+[01:20:26.30 - 01:20:28.10] SPEAKER_07: gitu aja sih Paul
+[01:20:30.60 - 01:20:32.60] SPEAKER_00: itu yang membuat saya lebih baik.
+[01:20:36.20 - 01:20:37.80] SPEAKER_07: F berapa.
+[01:20:46.10 - 01:20:48.00] SPEAKER_07: kok langsung diferyut?
+[01:20:48.80 - 01:20:49.90] SPEAKER_07: terima kasih
+[01:20:55.30 - 01:20:58.60] SPEAKER_07: bukannya manova F saya tanya F kan.
+[01:20:59.60 - 01:21:02.30] SPEAKER_07: menonton 2F kan gitu nya
+[01:21:02.50 - 01:21:05.90] SPEAKER_07: F berapa sama dengan berapa gitu.
+[01:21:10.40 - 01:21:12.30] SPEAKER_07: pek nya berapa
+[01:21:21.10 - 01:21:23.90] SPEAKER_07: Oke saya ulangin ya, ngerti nggak?
+[01:21:26.00 - 01:21:29.50] SPEAKER_07: ngerti kalau ngerti mungkin gini dulu deh
+[01:21:29.60 - 01:21:33.20] SPEAKER_07: Kenapa Manova disantikan sama apa tadi?
+[01:21:33.30 - 01:21:35.10] SPEAKER_07: ring biserianya
+[01:21:37.40 - 01:21:41.90] SPEAKER_07: Padahal rangkai serial itu efek dari.
+[01:21:42.20 - 01:21:44.00] SPEAKER_07: apa man
+[01:21:44.30 - 01:21:45.70] SPEAKER_07: man winning
+[01:21:45.80 - 01:21:47.60] SPEAKER_07: sepemaman saya begitu
+[01:21:51.00 - 01:22:09.80] SPEAKER_06: supaya ketahui simpatinya itu secara bersamaan dilakukan. Iya betul-betul ingin melihat di antara empat yang berarti Uli Besar Manjuk, yang mana sih yang paling signifikan, indikator mana yang memiliki efek atau yang menyumbang Uli Besar Manjuk?
+[01:22:09.80 - 01:22:24.60] SPEAKER_07: paling banyak ok ada rumusnya nggak sih ok ada rumusnya nggak biar kamu ngomong ke saya menunjukin rumus dari pemahaman kamu dengan data seperti apa sehingga akannya begini
+[01:22:28.70 - 01:22:31.50] SPEAKER_07: gini-gini sepakat dulu yang tadi bener apa salah
+[01:22:34.50 - 01:22:38.60] SPEAKER_07: salah kalau buat sih bukan salah kamu nya nggak paham
+[01:22:40.00 - 01:22:41.90] SPEAKER_07: Prediksi saya ya.
+[01:22:42.50 - 01:22:44.50] SPEAKER_07: silahkan nanti dikoreksi
+[01:22:44.90 - 01:22:48.10] SPEAKER_07: F satu lima F satu koma lima empat.
+[01:22:48.60 - 01:22:50.90] SPEAKER_07: bener ya di abseleksi ya
+[01:22:50.90 - 01:22:52.70] SPEAKER_07: N nya berapa itu?
+[01:22:53.10 - 01:22:55.40] SPEAKER_07: kalau F satu koma lima empat.
+[01:22:59.50 - 01:23:03.00] SPEAKER_07: kalau saya ngelihatnya N nya lima enam terus.
+[01:23:03.10 - 01:23:06.40] SPEAKER_07: data yang dienalsis hanya 32 orang
+[01:23:07.80 - 01:23:09.40] SPEAKER_07: gara gara itu.
+[01:23:12.70 - 01:23:14.50] SPEAKER_07: kalau versi saya.
+[01:23:15.20 - 01:23:18.60] SPEAKER_07: atau kamu mengapa hitungan kita kayak begini oke.
+[01:23:18.60 - 01:23:22.90] SPEAKER_07: Yang ini yang bener oke tunjukkan udah gitu aja selesai.
+[01:23:23.20 - 01:23:25.90] SPEAKER_06: jadi maksudnya salah itu eee
+[01:23:25.90 - 01:23:34.40] SPEAKER_06: kamu menyampaikan itu di Australia itu sebab gliderestnya ya itu angka itu dari mana
+[01:23:34.60 - 01:23:36.90] SPEAKER_07: dilepon kamu nggak ada.
+[01:23:37.60 - 01:23:44.20] SPEAKER_07: kalau belum dituliskan, jelaskan sekarang ke saya itu dapatnya gimana
+[01:23:44.90 - 01:23:47.70] SPEAKER_07: bisa ketakutan inggrisnya dan lain-lain.
+[01:23:48.30 - 01:23:52.80] SPEAKER_08: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[01:24:13.60 - 01:24:21.10] SPEAKER_07: ini salah oke gak ada masalah kamu salah tulis oke tapi kalau ini salah berarti yang benarnya dong yang benarnya gimana
+[01:24:24.80 - 01:24:29.50] SPEAKER_07: agar tadi bahwa ini yang kamu lakukan itu boleh
+[01:24:31.20 - 01:24:34.30] SPEAKER_07: wah bener bisa dipercaya
+[01:24:49.00 - 01:24:50.20] SPEAKER_07: Halo.
+[01:24:59.80 - 01:25:03.80] SPEAKER_07: tidak menjadi fokus F2 apa sih disitu manova kan?
+[01:25:03.80 - 01:25:04.80] SPEAKER_00: Iya dong.
+[01:25:05.00 - 01:25:08.10] SPEAKER_07: nah makanya saya tanya kenapa harus pakai manfaat
+[01:25:08.10 - 01:25:16.90] SPEAKER_00: gini untuk meminimalisir kemungkinan life-threatening faktor itu bukan karena gedetannya sedikit untuk gedetannya seperti itu
+[01:25:16.90 - 01:25:18.40] SPEAKER_00: Saya akan tirai tersebut nanti, tirai tersebut.
+[01:25:19.00 - 01:25:26.40] SPEAKER_00: sifatnya robus terhadap etasitik menentuk lain juga konfirmasi yang terakhir.
+[01:25:27.90 - 01:25:37.70] SPEAKER_06: tadi itu berbeda terus kan simpatikator itu secara bersama kebedaan antara tumpuan kontrol dan trikun makanya saya tanya Adam bukan dengan tanya sedikit kan
+[01:25:38.60 - 01:25:41.20] SPEAKER_07: pilih Itres pilih Itres buat
+[01:25:41.80 - 01:25:45.40] SPEAKER_06: Karena nggak harus dirumah karena nggak perlu pelanggaran karya.
+[01:25:52.30 - 01:25:54.70] SPEAKER_07: itu yang meneleponan kamu?
+[01:26:11.70 - 01:26:20.80] SPEAKER_07: gini deh kenapa saya tanya manovanya dulu di bab tiga itu jika hasil uji mengonfirmasi normalitas
+[01:26:20.80 - 01:26:24.30] SPEAKER_07: blablablablabla annexes dilanjutkan.
+[01:26:26.10 - 01:26:29.80] SPEAKER_07: tabel lima delapan coba lihat tabel lima delapan
+[01:26:34.20 - 01:26:36.00] SPEAKER_07: tabel lima delapan.
+[01:26:47.00 - 01:26:48.20] SPEAKER_07: ada nggak?
+[01:27:12.30 - 01:27:13.40] SPEAKER_07: ada ya
+[01:27:14.70 - 01:27:16.10] SPEAKER_07: coba ceh
+[01:27:20.40 - 01:27:22.90] SPEAKER_07: moyuritas indikator lama malah tau nggak
+[01:27:24.10 - 01:27:25.20] SPEAKER_06: tidak
+[01:27:25.20 - 01:27:28.70] SPEAKER_07: pertanyaannya kenapa manualnya telah dijalankan
+[01:27:30.20 - 01:27:35.70] SPEAKER_06: Baca lagi bab tiga yang kamu tulis.
+[01:27:35.90 - 01:27:45.50] SPEAKER_06: kondisi itu kadang dalam konteks pilot standing. Iya, gitu loh. Aku mengharapkan signifikansi, tapi melihat bahwa
+[01:27:45.80 - 01:27:52.20] SPEAKER_06: lagi tau dari si indikator yang tersebut dari perbedaannya antara kelompok gini-gini-gini
+[01:27:52.20 - 01:27:59.50] SPEAKER_07: saya tanya gitu karena konsisten ya antara pernyataan kamu di babdika, di babdika gimana tadi?
+[01:28:00.00 - 01:28:04.80] SPEAKER_07: Ini nunggu nyambung ke yang tadi gara gara saya baca di babsikan ya.
+[01:28:04.90 - 01:28:07.30] SPEAKER_07: Itu, eh.
+[01:28:07.30 - 01:28:10.00] SPEAKER_07: Anda hasil uji mengapa?
+[01:28:10.00 - 01:28:13.60] SPEAKER_07: mengonfirmasi normalitas kalau nggak salah dibantikan itu.
+[01:28:20.80 - 01:28:23.70] SPEAKER_07: Hannes dilanjutkan ke Manovac.
+[01:28:35.90 - 01:28:40.60] SPEAKER_07: Sekitar pasti ada kata-kata analisis dilanjutkan ke Manofla gitu lah.
+[01:28:47.50 - 01:28:49.40] SPEAKER_07: gitu ya secara flow ya.
+[01:28:52.90 - 01:28:56.20] SPEAKER_07: sarat-sarat pakai Monovato apa tadi?
+[01:29:00.00 - 01:29:06.70] SPEAKER_07: jika hasil uji mengonfirmasi normalitasnya gimana maka dia dilanjutkan ke manova gitu nggak?
+[01:29:14.00 - 01:29:17.70] SPEAKER_07: Itu makanya kenapa saya tak tanya angka tadi gitu loh.
+[01:29:21.70 - 01:29:24.40] SPEAKER_07: di atas kamu ngomongnya apa?
+[01:29:25.10 - 01:29:30.70] SPEAKER_07: dilakukan apa dihitung gimana semuanya enggak enggak ada penang merahnya.
+[01:29:30.90 - 01:29:32.70] SPEAKER_07: versi saya
+[01:29:36.20 - 01:29:41.20] SPEAKER_07: Kami sudah memkonfirmasi yang diabstrak salah oke nggak papa yang mana yang benar.
+[01:29:42.40 - 01:29:46.10] SPEAKER_07: eemm atau ada yang salah saya salah nggak
+[01:29:46.30 - 01:29:47.80] SPEAKER_07: dah tulisan kamu
+[01:29:47.80 - 01:29:50.40] SPEAKER_07: enggak bener nih kamu tulis gitu ya
+[01:29:50.40 - 01:29:51.60] SPEAKER_07: bener kan
+[01:29:51.80 - 01:29:53.70] SPEAKER_07: eh makanya saya tanya
+[01:30:08.50 - 01:30:17.60] SPEAKER_07: gini datanya tidak normal tapi kamu lanjutkan ke Manova bertentangan dong dengan tulisan kamu yang pertama tadi yang dibapdika ya
+[01:30:17.80 - 01:30:19.20] SPEAKER_07: bener kan
+[01:30:19.60 - 01:30:20.70] SPEAKER_07: iya
+[01:30:20.70 - 01:30:22.30] SPEAKER_07: kok bisa gitu lo
+[01:30:22.30 - 01:30:25.40] SPEAKER_07: dia bilang tinggal kamu ngomong nggak boleh tapi kamu lakukan
+[01:30:32.70 - 01:30:37.20] SPEAKER_07: Sehingga nilai tampil salah di abstrak.
+[01:30:42.70 - 01:30:44.70] SPEAKER_07: versi saya ya
+[01:30:54.00 - 01:30:55.30] SPEAKER_07: kei.
+[01:30:56.00 - 01:30:58.40] SPEAKER_07: Salah? Bagaimana?
+[01:30:58.90 - 01:31:11.40] SPEAKER_06: membelam secara aturnya statistiknya memang ee tidak dilakukan cepat-cepat ini karena ee kolaborasi penulikan ini ee emang melihatnya jadi boleh kayak gitu
+[01:31:14.10 - 01:31:26.40] SPEAKER_07: aturan sakih di statistiknya memang tidak, tidak boleh kan dilakukan seperti itu di penelitian berarti kan kamu sudah melanggar kainah yang seharusnya ada di dalam statistik kan ya
+[01:31:27.30 - 01:31:31.80] SPEAKER_07: kalau sayang boleh tapi ada alasannya boleh kenapa.
+[01:31:43.30 - 01:31:54.70] SPEAKER_00: Cidasih milikan di sini artinya memang belum cukup statistical power, sehingga aset yang dimanfaatkan untuk mengukur estimasi.
+[01:31:54.70 - 01:31:56.80] SPEAKER_00: Nabi? Nabi siapa?
+[01:31:56.80 - 01:31:58.10] SPEAKER_00: oh iya
+[01:31:58.10 - 01:31:59.20] SPEAKER_00: emm
+[01:32:01.10 - 01:32:02.40] SPEAKER_07: gitu
+[01:32:05.10 - 01:32:06.40] SPEAKER_07: Ibu kan?
+[01:32:08.00 - 01:32:10.30] SPEAKER_07: ini kalian pasti ada kalitan ya
+[01:32:10.30 - 01:32:11.50] SPEAKER_07: eeemmmmm
+[01:32:13.70 - 01:32:16.60] SPEAKER_07: kalau saya ngomong atrisi nyamuk gak?
+[01:32:23.90 - 01:32:26.40] SPEAKER_07: tudah pernah kamu ada usaha terisi nggak?
+[01:32:29.80 - 01:32:32.50] SPEAKER_07: bisa tetapi lo koren
+[01:32:32.50 - 01:32:35.10] SPEAKER_07: laparan kamu sih tidak ada kata-kata terisi nggak?
+[01:32:36.90 - 01:32:38.10] SPEAKER_07: ada?
+[01:32:38.10 - 01:32:42.00] SPEAKER_07: enggak ada tapi kamu ngerti kan konteks artistik sekarang telah jadi
+[01:32:49.30 - 01:32:52.10] SPEAKER_07: oke atau kalau enggak.
+[01:32:52.10 - 01:32:55.10] SPEAKER_07: Hanya satu data yang terkumpul.
+[01:32:56.80 - 01:32:58.50] SPEAKER_07: ada kalimat gitu kan
+[01:33:14.00 - 01:33:17.20] SPEAKER_07: empat lima satu deh satu enam enam orang nya.
+[01:33:19.70 - 01:33:24.50] SPEAKER_07: empat lima satu satu satu enam enam versus satu tujuh empat.
+[01:33:24.60 - 01:33:26.90] SPEAKER_07: Sama kayak tadi nih kasusnya.
+[01:33:35.70 - 01:33:40.60] SPEAKER_07: kalau yang tadi konsep apa konsep ee Manova?
+[01:33:41.00 - 01:33:42.50] SPEAKER_07: sekaran
+[01:33:42.50 - 01:33:44.30] SPEAKER_07: konsep datanya
+[01:33:46.60 - 01:33:52.60] SPEAKER_07: coba 166 dengan 174 ini ngga bertolak belakang ngga ini yang kamu tulis
+[01:33:52.70 - 01:33:54.10] SPEAKER_07: versi kamu
+[01:34:00.10 - 01:34:03.10] SPEAKER_07: satu enam enam empat lima satu kan
+[01:34:04.00 - 01:34:06.30] SPEAKER_07: saya tahu ngepet lima satunya
+[01:34:08.40 - 01:34:10.10] SPEAKER_07: pas lima satu
+[01:34:12.00 - 01:34:13.20] SPEAKER_07: ah
+[01:34:13.20 - 01:34:14.60] SPEAKER_07: dia ngomong apa
+[01:34:16.50 - 01:34:22.10] SPEAKER_07: lima puluh enam mahasiswa dipetakan dua puluh tujuh treatment dokumen kontrol gitu ya.
+[01:34:22.20 - 01:34:23.50] SPEAKER_07: okey.
+[01:34:26.80 - 01:34:28.30] SPEAKER_07: lima lima
+[01:34:32.50 - 01:34:34.10] SPEAKER_07: tapai lima lima
+[01:34:44.90 - 01:34:46.40] SPEAKER_07: Oke ada?
+[01:34:46.40 - 01:34:50.50] SPEAKER_00: coba dicek kan kalian
+[01:34:51.00 - 01:34:52.50] SPEAKER_07: tepuk tiga
+[01:34:53.60 - 01:34:56.30] SPEAKER_07: eh kamu belum beli makan
+[01:34:57.30 - 01:35:15.40] SPEAKER_00: nggak nggak nggak nggak konteksnya tadi kamu ngomong ada 56 mahasiswa ada 17 treatment ada 29 kontrols
+[01:35:17.40 - 01:35:18.40] SPEAKER_00: tapi alkoholisi.
+[01:35:18.90 - 01:35:22.00] SPEAKER_07: Ah, artinya ada atrisi itu.
+[01:35:22.00 - 01:35:24.70] SPEAKER_07: Yang hilang berapa persen?
+[01:35:26.30 - 01:35:30.00] SPEAKER_07: nah pertanyaannya penghitungan kamu konsisten ke mana
+[01:35:34.30 - 01:35:39.90] SPEAKER_07: nah itu yang saya bilang ini manovanya gara gara ini kalau saya ngelihat
+[01:35:39.90 - 01:35:41.70] SPEAKER_07: angkatnya kok salah ya
+[01:35:43.40 - 01:35:49.70] SPEAKER_07: sebetulnya gara gara saya melihat manova angkanya beda jadi saya baca ininya gitu.
+[01:35:50.20 - 01:35:51.30] SPEAKER_02: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[01:35:51.70 - 01:35:55.40] SPEAKER_07: itu bukan enggak tahu saya ya gara-gara itu tetap bukan.
+[01:35:56.20 - 01:35:57.90] SPEAKER_06: oh jadi eee
+[01:35:58.70 - 01:36:12.30] SPEAKER_06: untuk mahasiswa yang tidak mendiri dan tidak ikut eksperimen memang tidak dihitung, jadi semuanya berdasarkan dari tabel empat.
+[01:36:12.60 - 01:36:14.20] SPEAKER_07: Ada biasa?
+[01:36:15.80 - 01:36:17.40] SPEAKER_07: ehem ehem
+[01:36:18.90 - 01:36:23.60] SPEAKER_07: Ini saya jadi nggak nanya informatika ya, nanya masalah kim jadinya.
+[01:36:27.90 - 01:36:29.30] SPEAKER_07: terima kasih.
+[01:36:29.90 - 01:36:30.90] SPEAKER_07: oh kaya rendah
+[01:36:31.00 - 01:36:34.90] SPEAKER_07: Nah apalagi tidak random dong.
+[01:36:37.00 - 01:36:53.00] SPEAKER_06: memang untuk kebatasan dari desain pelitihan proses berlimit karena semuanya berasumsi sama dari randomisasi tersebut memang jadi jadi-gini-gini kamu ada random assignment kan ya ada random assignment kan?
+[01:36:53.00 - 01:36:55.80] SPEAKER_07: Renungan semini menjamin kesetaraan nggak?
+[01:36:56.30 - 01:37:01.10] SPEAKER_06: Cara desain eksperimen yang diikuti memang.
+[01:37:01.10 - 01:37:07.10] SPEAKER_06: Kesamanya kalau diasumsi kan sama oleh tandingan keseluruhan.
+[01:37:07.10 - 01:37:09.20] SPEAKER_07: siapa yang asumsiin ter
+[01:37:10.20 - 01:37:18.00] SPEAKER_07: ya itu ya secara semantis makanya saya tanya banyak kan dirender 43 persen ya
+[01:37:18.70 - 01:37:20.00] SPEAKER_07: gitu gak?
+[01:37:20.00 - 01:37:22.10] SPEAKER_07: yang kamu random
+[01:37:25.80 - 01:37:26.90] SPEAKER_07: emm
+[01:37:30.70 - 01:37:32.20] SPEAKER_07: gini deh
+[01:37:32.30 - 01:37:34.70] SPEAKER_07: dua tujuh jadi lima belas yah.
+[01:37:38.00 - 01:37:40.40] SPEAKER_07: kehilan per persen
+[01:37:40.70 - 01:37:41.80] SPEAKER_07: Pak.
+[01:37:42.70 - 01:37:44.50] SPEAKER_07: empat puluh lebih lah harusnya
+[01:37:49.00 - 01:37:51.90] SPEAKER_07: part berapa ya pokoknya matologilah pasti
+[01:37:52.00 - 01:37:54.80] SPEAKER_07: berapa lima puluh lima
+[01:37:54.80 - 01:37:57.00] SPEAKER_07: eh kontrol.
+[01:37:57.00 - 01:37:59.20] SPEAKER_07: dua sembilan jadi tujuh belas.
+[01:38:02.50 - 01:38:03.80] SPEAKER_07: Saya akan tinggal di kota ini selanjutnya.
+[01:38:05.60 - 01:38:07.30] SPEAKER_07: Emmmm
+[01:38:07.40 - 01:38:10.50] SPEAKER_07: ada analysis nya ini boleh dipake emang nggak gitu.
+[01:38:10.80 - 01:38:15.60] SPEAKER_07: kalau ngakik ada maksud gini ini kan tetap dong ngak mudah berkurang kan ya
+[01:38:15.80 - 01:38:18.50] SPEAKER_07: boleh dipake apa nggak gitu pertanyaannya.
+[01:38:20.30 - 01:38:22.30] SPEAKER_07: datanya boleh dipake gak ini?
+[01:38:22.30 - 01:38:24.50] SPEAKER_07: dari apa yang didesain dari awal?
+[01:38:35.90 - 01:38:40.40] SPEAKER_07: atau saya kasih petunjuk nih ini nyambung dengan Pila yang kamu bilang tadi nak
+[01:38:40.60 - 01:38:41.70] SPEAKER_06: iya loh
+[01:38:41.80 - 01:38:46.00] SPEAKER_07: ya tinggal di Mapping itu ya kalau bilang Pilai tadi
+[01:38:46.90 - 01:38:48.10] SPEAKER_06: jumlah
+[01:38:48.30 - 01:38:51.50] SPEAKER_06: nggak tahan berkumpulnya sedikit dan kalau
+[01:38:52.00 - 01:38:54.40] SPEAKER_06: terakhur lima tahun lagi sebenernya
+[01:38:55.30 - 01:38:56.60] SPEAKER_06: belum
+[01:38:56.80 - 01:39:08.60] SPEAKER_06: tahu mana, jadi makanya tentunya lebih privatitas karena dia lebih robas daripada simpelan lainnya.
+[01:39:09.00 - 01:39:13.20] SPEAKER_07: terus kalau lo bahas artinya masuk ke manova bisa enggak?
+[01:39:13.70 - 01:39:16.10] SPEAKER_07: dengan menunjukkin itu aja sebetulnya.
+[01:39:27.90 - 01:39:29.00] SPEAKER_06: iya
+[01:39:34.90 - 01:39:46.40] SPEAKER_06: Bukan, yang saya tanya, kamu menulis semua itu di situ, kamu paham nggak gunanya apa dan kenapa ada di situ?
+[01:39:48.50 - 01:39:52.50] SPEAKER_07: paham kalau paham ya jelasin yang barusan saya tanya
+[01:39:54.20 - 01:39:58.00] SPEAKER_07: bagaimana bukan bukan
+[01:39:58.00 - 01:40:07.80] SPEAKER_07: korelasi antara datanya sedikit kamu desain seperti apa sehingga kamu harus menggunakan pilih lain yang ditutup ke Manova
+[01:40:08.50 - 01:40:11.00] SPEAKER_07: Ada korelasinya nggak sih semua itu?
+[01:40:11.40 - 01:40:13.50] SPEAKER_07: Anda ya dijelaskan itu saja!
+[01:40:15.20 - 01:40:19.30] SPEAKER_07: eh gini-gini-gini-gini kenapa saya tanya itu?
+[01:40:20.60 - 01:40:23.60] SPEAKER_07: kamu reset di NLP nya atau di
+[01:40:23.60 - 01:40:25.10] SPEAKER_07: lihat barusan
+[01:40:26.00 - 01:40:27.90] SPEAKER_07: ya barusan kan ya
+[01:40:27.90 - 01:40:32.00] SPEAKER_07: dipaik lain kan ya yaudah siapa nanya tentang pipeline?
+[01:40:32.90 - 01:40:36.80] SPEAKER_07: saya enggak tanya tentang apa nlp nya enggak saya tanya tentang apa lain
+[01:40:38.20 - 01:40:39.90] SPEAKER_07: Yow!
+[01:40:44.00 - 01:40:46.40] SPEAKER_07: Ada korelasi nggak semuanya itu?
+[01:40:49.40 - 01:40:50.50] SPEAKER_07: eh
+[01:40:50.80 - 01:40:53.50] SPEAKER_07: ada yaudah sob jelaskan
+[01:41:06.40 - 01:41:10.40] SPEAKER_07: Ini masih ada pertanyaan sebetulnya ya.
+[01:41:11.10 - 01:41:12.70] SPEAKER_07: Iya kan.
+[01:41:12.70 - 01:41:14.60] SPEAKER_07: nanti di lima dua
+[01:41:15.00 - 01:41:18.00] SPEAKER_07: Di lima dua itu ada semantik cangking.
+[01:41:18.00 - 01:41:19.90] SPEAKER_07: yang tadi buat anjing hilang
+[01:41:25.40 - 01:41:28.00] SPEAKER_07: Semantik cangking lima dua kalau nggak salah
+[01:41:30.50 - 01:41:31.80] SPEAKER_07: bener nggak
+[01:41:36.50 - 01:41:38.40] SPEAKER_07: gambar lima dua.
+[01:41:38.40 - 01:41:40.70] SPEAKER_07: sori-sori gambar lima dua
+[01:41:49.10 - 01:41:50.60] SPEAKER_07: seperti jogging
+[01:41:51.00 - 01:41:53.00] SPEAKER_07: ini semua tuncak King bener
+[01:41:56.40 - 01:41:58.30] SPEAKER_07: coba dipikir dulu
+[01:42:04.90 - 01:42:06.80] SPEAKER_07: Itu apa F2 ya?
+[01:42:08.10 - 01:42:09.70] SPEAKER_07: gitu deh duet
+[01:42:10.40 - 01:42:17.60] SPEAKER_07: F dua itu kalau tidak salah kamu pendekatannya mutual eksklusif.
+[01:42:18.70 - 01:42:21.20] SPEAKER_07: dan menolak cangking justru.
+[01:42:22.80 - 01:42:27.80] SPEAKER_00: Itu labelnya, nggak sintron dengan gambarnya Pak Gambar yang...
+[01:42:27.80 - 01:42:31.20] SPEAKER_00: Apa yang mempunyai kamar ini? Jangan melihat kamar ini sebagai pusat.
+[01:42:31.20 - 01:42:33.30] SPEAKER_07: Oke berarti.
+[01:42:33.90 - 01:42:35.50] SPEAKER_07: Harusnya gimana?
+[01:42:36.00 - 01:42:37.00] SPEAKER_00: Saya akan tinggal di kota ini mulai tahun depan.
+[01:42:37.10 - 01:42:43.40] SPEAKER_00: Untuk kripsinya Pak, tapi secara deskripsi itu sudah sesuai.
+[01:42:46.20 - 01:42:51.50] SPEAKER_07: gini kenapa saya tanya ini saya menganggap ini kayaknya kamu salah kopi pasti.
+[01:42:54.20 - 01:42:56.30] SPEAKER_07: lima dua satu dua.
+[01:42:57.90 - 01:42:59.70] SPEAKER_07: lima dua satu dua
+[01:43:00.30 - 01:43:03.30] SPEAKER_07: Menghasilkan F1 0 koma lima nol.
+[01:43:16.70 - 01:43:18.10] SPEAKER_07: benar nggak?
+[01:43:18.90 - 01:43:20.30] SPEAKER_07: bener iya?
+[01:43:21.90 - 01:43:27.70] SPEAKER_07: Tex 5212 mengasihkan F1 nya 0,50 bener gak?
+[01:43:39.60 - 01:43:44.30] SPEAKER_07: Lima di lima dua satu dua lima dua satu dua.
+[01:43:47.90 - 01:43:48.90] SPEAKER_07: heem
+[01:43:52.60 - 01:43:55.60] SPEAKER_07: nilai Evan skor sebesar 0,7
+[01:43:55.60 - 01:43:57.20] SPEAKER_07: lima tiga itu ya
+[01:43:58.40 - 01:44:00.20] SPEAKER_07: Berapa?
+[01:44:00.30 - 01:44:01.50] SPEAKER_07: man!
+[01:44:02.80 - 01:44:05.90] SPEAKER_07: Itu sama persis dengan bass lain haltex nya.
+[01:44:11.20 - 01:44:12.20] SPEAKER_07: han?
+[01:44:16.60 - 01:44:18.30] SPEAKER_07: selalu bersukses
+[01:44:24.80 - 01:44:27.60] SPEAKER_07: kalau sama persis artinya harusnya...
+[01:44:28.30 - 01:44:30.60] SPEAKER_07: butual eksklusif aku bukan
+[01:44:31.30 - 01:44:33.80] SPEAKER_07: atau salah salah copy paste
+[01:44:33.80 - 01:44:35.20] SPEAKER_07: bener-bener pariwisata di sekolah.
+[01:44:38.80 - 01:44:46.90] SPEAKER_00: kalau banyak aka yang salah-salah gini saya salah ngerti nggak jadinya?
+[01:44:50.10 - 01:44:53.20] SPEAKER_07: ya yang mana yang salah yang mananya
+[01:44:54.40 - 01:44:55.60] SPEAKER_00: kan misalnya cewek tua
+[01:44:57.40 - 01:44:59.20] SPEAKER_07: dah tandain
+[01:45:03.40 - 01:45:06.50] SPEAKER_07: Oke saya mau tanya yang lebih ini dah.
+[01:45:06.80 - 01:45:09.30] SPEAKER_07: udah ngomongin lah
+[01:45:09.30 - 01:45:14.50] SPEAKER_07: biletan belakang semua para grad kepakaian itu penelitian kamu kan
+[01:45:23.70 - 01:45:26.40] SPEAKER_07: oh beli aku eh iya
+[01:45:31.20 - 01:45:32.60] SPEAKER_06: Yakin?
+[01:45:34.40 - 01:45:35.70] SPEAKER_06: paling nggak ketahuan
+[01:45:37.60 - 01:45:38.90] SPEAKER_06: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[01:45:39.60 - 01:45:41.10] SPEAKER_06: terima kasih ya
+[01:45:41.30 - 01:45:47.20] SPEAKER_07: yang ini aja deh kamu bahas NLV disini emang kamu riset NLV enggak kan
+[01:45:48.20 - 01:45:50.80] SPEAKER_07: coba cek aja urusan dan lv yang mana
+[01:45:51.10 - 01:45:52.90] SPEAKER_07: kan kamu buat
+[01:45:58.50 - 01:46:01.70] SPEAKER_07: Kalau ini latar belakang, penting kan dirumusan ada ya.
+[01:46:02.50 - 01:46:06.30] SPEAKER_07: eh oke gelombang busanya sekarang ada enggak?
+[01:46:06.30 - 01:46:08.20] SPEAKER_07: kalau pesen ada
+[01:46:10.00 - 01:46:14.00] SPEAKER_07: dari first questions sama di belakang-belakang yang akan ikut juga gak?
+[01:46:14.40 - 01:46:19.20] SPEAKER_07: Artinya kalau dibuang dibuang konsisten yang enggak perlu ya buang.
+[01:46:21.50 - 01:46:26.40] SPEAKER_07: atau mau ada kalau mau ada ya boleh nanti bisa tanya tentang NLP nya gitu loh
+[01:46:34.10 - 01:46:39.10] SPEAKER_07: versi saya tapi nggak tau sama koordinator mungkin di sub seperti itu.
+[01:46:41.70 - 01:46:43.20] SPEAKER_07:  Terima kasih.
+[01:46:43.20 - 01:46:44.70] SPEAKER_07: gimana-gimana
+[01:46:47.20 - 01:46:54.30] SPEAKER_06: Memang tidak berfokus di NFT, tapi jadi kayak pernah ada-
+[01:46:54.30 - 01:47:00.10] SPEAKER_06: kaitan momentum NLP maka kami mention dia dan untuk apa.
+[01:47:03.30 - 01:47:04.50] SPEAKER_06: ehem
+[01:47:04.90 - 01:47:08.30] SPEAKER_06: Bungan Siongkang tak.
+[01:47:10.00 - 01:47:13.10] SPEAKER_07: gitu yang rekam kayaknya terlalu banyak
+[01:47:13.10 - 01:47:16.80] SPEAKER_07: pedal tea kamu mana mendingan dalam tean turusan kamu aja.
+[01:47:16.80 - 01:47:24.10] SPEAKER_07: nggak usah keurusan orang gitu kasih saya tapi ya mungkin ada diskusi juga dengan pemimpin.
+[01:47:24.10 - 01:47:28.80] SPEAKER_06: kapan yang berbau NLT itu tidak...enggak emm...
+[01:47:28.80 - 01:47:32.90] SPEAKER_07: Kalau misalkan e kayak papri deh.
+[01:47:33.30 - 01:47:35.90] SPEAKER_07: papri itu komputer fize
+[01:47:35.90 - 01:47:39.50] SPEAKER_07: mau nabitu Sperman, Pak Pri jadi jago Sperman.
+[01:47:39.80 - 01:47:43.20] SPEAKER_07: bukan kan kamu terdiri sini kan
+[01:47:43.20 - 01:47:45.30] SPEAKER_07: namanya kamu apa?
+[01:47:48.10 - 01:47:49.40] SPEAKER_01: maksudnya nggak dipilih
+[01:47:50.00 - 01:47:56.70] SPEAKER_07: porsimensirnya bukan porsimensirnya itu kecil itu buat apa gitu lo
+[01:48:01.50 - 01:48:11.10] SPEAKER_07: karena ditinjau pustaka, pjbl oke, sel pesusman oke, penasusman oke, feedback oke, rubrik oke, nlp dan asik tertransforman.
+[01:48:11.50 - 01:48:14.40] SPEAKER_07: kamu peduliin tentang itu emang? enggak.
+[01:48:15.40 - 01:48:17.00] SPEAKER_07: Rubesh!
+[01:48:17.20 - 01:48:19.70] SPEAKER_07: Beragam serasi oke buat saya?
+[01:48:20.30 - 01:48:23.10] SPEAKER_07: tepuk musuh dirubik John
+[01:48:23.10 - 01:48:25.40] SPEAKER_07: terus sekapolding sekapolding
+[01:48:26.80 - 01:48:28.70] SPEAKER_07: karena itu sejenis
+[01:48:30.60 - 01:48:34.10] SPEAKER_07: sejenis ini lima limanya emang kamu
+[01:48:34.60 - 01:48:36.80] SPEAKER_07: sejenis benan teatang lo
+[01:48:41.70 - 01:48:45.10] SPEAKER_07: Oke kalau misalkan.
+[01:48:45.10 - 01:48:48.80] SPEAKER_07: kamu ngukur tadi apa pipenya aja.
+[01:48:49.30 - 01:48:51.30] SPEAKER_07: kayaknya bukan.
+[01:48:51.30 - 01:48:53.90] SPEAKER_07: ngga so-ngga ini semua gitu-gitunya.
+[01:48:53.90 - 01:48:55.50] SPEAKER_07: kalau posjebnis
+[01:48:56.10 - 01:48:58.30] SPEAKER_07: Ditiru bojukan.
+[01:49:03.90 - 01:49:06.70] SPEAKER_07: tapi ya silakan diskusikan lagi tahan.
+[01:49:06.70 - 01:49:09.20] SPEAKER_07: pemimpin lah nanti.
+[01:49:09.30 - 01:49:14.30] SPEAKER_06: Beberapa memang untuk mendukung Patky yang pertama dan Patky yang kencang.
+[01:49:16.90 - 01:49:18.50] SPEAKER_06: Thank you.
+[01:49:19.00 - 01:49:23.50] SPEAKER_06: HQ satu kan terkait kemampuan deteksi pipelinenya.
+[01:49:23.50 - 01:49:28.10] SPEAKER_06: Jadi memang ada beberapa foto-foto menunjukkan.
+[01:49:29.10 - 01:49:32.00] SPEAKER_06: eem sedikit bisnya
+[01:49:32.70 - 01:49:37.90] SPEAKER_06: Meskipun memang bukan contoh utama, tapi perlu referensinya begitu.
+[01:49:41.50 - 01:49:43.10] SPEAKER_07: Oke.
+[01:49:44.70 - 01:49:46.30] SPEAKER_07: ehh
+[01:49:46.40 - 01:49:50.70] SPEAKER_07: Saya nggak tahu ya, cuma cek deh halaman 40 sama 48.
+[01:49:50.70 - 01:49:52.30] SPEAKER_07: karena bocah ini.
+[01:49:52.40 - 01:49:56.80] SPEAKER_07: Yaitu konsistensi di tulisan, pemahaman.
+[01:49:56.80 - 01:49:58.50] SPEAKER_07: lipet puluh sub.
+[01:49:58.50 - 01:50:04.00] SPEAKER_07: terakhir itu tiga tiga satu menangnya tiga tiga satu kalau masalah itunya.
+[01:50:06.60 - 01:50:08.80] SPEAKER_07: Pjbl tunak akademik.
+[01:50:16.10 - 01:50:18.60] SPEAKER_07: dua ribu lima dua ribu dua enam bener gak?
+[01:50:19.20 - 01:50:20.50] SPEAKER_07: bener’
+[01:50:21.10 - 01:50:24.00] SPEAKER_07: Oke tiga enam satunya.
+[01:50:32.80 - 01:50:37.20] SPEAKER_07: Agustus Desember ke masalah Agustus Desember 2024.
+[01:50:40.30 - 01:50:42.60] SPEAKER_07: bukan data set yang sama kayaknya.
+[01:51:29.80 - 01:51:32.00] SPEAKER_07: ya enggak tahu enggak tahu saya enggak tahu
+[01:51:32.00 - 01:51:36.80] SPEAKER_07: Apakah ini dengan sengaja taipo atau gimana kan saya nggak tahu.
+[01:51:39.60 - 01:51:49.40] SPEAKER_06: Saya dua ribu lopak dua ribu dua lima karena pelaksanaannya pada Agustus Disember dua ribu dua puluh empat untuk Proyek 1 pada semester berakhir.
+[01:51:51.80 - 01:51:54.70] SPEAKER_07: gitu jadi gue bisa gitu saya ngomong dari awal.
+[01:51:55.80 - 01:52:00.50] SPEAKER_07: Saya sebetulnya lebih menganggap bahwa, oh ketika terjadi apa ya?
+[01:52:00.50 - 01:52:08.00] SPEAKER_07: terjadi miskonsepsi ketika mengisi itu kan faktornya bukan miskonsepsi ya
+[01:52:08.00 - 01:52:13.50] SPEAKER_07: karena waktu ngisi kan anak anak ngga tau kok saya juga mungkin lagi mahasiswa kayak gitu.
+[01:52:13.50 - 01:52:16.80] SPEAKER_07: nggak ngerti konsep kenapa saya harus melakukan peer-review
+[01:52:17.00 - 01:52:19.60] SPEAKER_07: Jadi ada kadang banyak yang isi asal.
+[01:52:20.20 - 01:52:40.30] SPEAKER_07: Ah, enggak ada bisa jadi bu bukan anaknya yang salah bisa jadi dosennya yang salah memberikan rubriknya ya kayak gitu artinya The Whole System, nah bahkan ketika bicara digital saya bisa ngomong
+[01:52:40.30 - 01:52:46.20] SPEAKER_07: emang yuk ayuk ayuk itu udah bener hee karena itu nanti urusannya kayak yang tadi gitu bu
+[01:52:46.20 - 01:52:52.50] SPEAKER_07: ohh iya harus diingatkan bareng ini lah ohh tidak perlu saya memang nggak ngerti kurikulum katakan boleh juga
+[01:52:52.80 - 01:53:18.80] SPEAKER_08: gak ngerti saya udah mana mau dirapal dia dari banyak perspektif kan utuhnya iya tapi jangan sampai skatbol itu menjadi makanan istri itu pak harus ada lubang ngacau eh boleh boleh boleh bergoyang iya setelah di pengalaman kogreden ya misi dulu kalau nggak berarti dia tidak merasa
+[01:53:18.80 - 01:53:21.40] SPEAKER_08: ada Delta jaman sekarang lah
+[01:53:21.40 - 01:53:27.00] SPEAKER_08: yang tidak merasa bahwa hidup itu berjuana, yang itu tampaknya salah langsung hamuk.
+[01:53:27.00 - 01:53:29.20] SPEAKER_08: Dunia nyata kayak gitu.
+[01:53:29.20 - 01:53:36.20] SPEAKER_03: Kita ngisi rubriknya pakai air ya? Lantung paranja!
+[01:53:36.20 - 01:53:39.20] SPEAKER_07: paling tidak kena
+[01:53:39.20 - 01:53:43.30] SPEAKER_07: Itu yang saya nggak suka sebetulnya, menyimum dua lima buku.
+[01:53:43.30 - 01:53:46.20] SPEAKER_07: Kamara mah kamar, cuman bukan-bukan iya.
+[01:53:46.60 - 01:54:04.20] SPEAKER_07: Ya enggak kena berarti? Kena terhadap hubungi, tapi enggak. Berarti salah dengan konteks scaffolding Pak, karena scaffolding itu harus bentuk pemahaman tadi, kognitif, metakognitif, apa efektif dari anaknya, bukan orang lain gitu.
+[01:54:04.80 - 01:54:10.10] SPEAKER_03: eh kita ini Pak Yudi plus batu tris satu lagi satu lagi
+[01:54:10.10 - 01:54:11.80] SPEAKER_07: urusan yang kemarin
+[01:54:11.80 - 01:54:13.40] SPEAKER_07: urusan itu baru urusan
+[01:54:13.40 - 01:54:14.60] SPEAKER_07: eem
+[01:54:14.60 - 01:54:16.80] SPEAKER_07: ini kalau saya lihat
+[01:54:17.20 - 01:54:20.30] SPEAKER_07: si scaffolding itu nyala terus ya?
+[01:54:20.40 - 01:54:21.70] SPEAKER_06: oh jadi ehm
+[01:54:22.30 - 01:55:02.20] SPEAKER_06: Kalau biasa, dalam bidang itu ada konsep pending atau bidang si penggunanya itu mencapai suatu target atau suatu kompetensi itu di bidang skateboarding.  Skateboarding itu harus ditarik dan tidak boleh tidak menggunakannya lain. Kalau biasa namanya development pending jadi, tapi karena bidang ini kan hanya satu sesi, satu sesi eksperimen, tidak ada pengukuran lagi di masa mendatang jadi, oh nononono, saya tau itu papernya, PA, coba kamu cek saya yakin PA, ada dua pending.
+[01:55:02.30 - 01:55:09.80] SPEAKER_06: Apa ada video nya itu ada konteks lainnya juga oke artinya kalau kamu baca tu paper.
+[01:55:10.00 - 01:55:14.50] SPEAKER_07: Ya baca tu paper bener gak itu satu terus.
+[01:55:16.20 - 01:55:20.90] SPEAKER_06: harusnya saya berubah lebih gradual, gradasi
+[01:55:22.10 - 01:55:26.60] SPEAKER_07: Gini, tadi kan yang dibilang ada kontingensi dark fading.
+[01:55:32.20 - 01:55:39.20] SPEAKER_07: Maksudku, kalau kamu ngerefer itu, tapi kamu nggak lakukan bertep.
+[01:55:39.20 - 01:55:43.00] SPEAKER_07: ini kamu river tapi yang kamu lakukan bertentangan dengan ini gitu loh
+[01:55:43.20 - 01:55:47.10] SPEAKER_07: ada coating incident rating nggak? lihat kamu berarti
+[01:55:47.10 - 01:55:59.90] SPEAKER_07: ya terus ngapain aja disitu makanya saya bilang ini itu kan muncul terus kan orang mungkin juga muncul gitu kan muncul
+[01:55:59.90 - 01:56:01.80] SPEAKER_00: Nantinya bisa diperlakukan konsumisi umum.
+[01:56:06.20 - 01:56:10.00] SPEAKER_07: kalau dipersikain dengan dosen ada dosen suka bowling nggak gua tanyanya sekarang
+[01:56:14.30 - 01:56:15.50] SPEAKER_06: Saya akan tinggal di luar negeri saya.
+[01:56:15.50 - 01:56:32.80] SPEAKER_07: gini gini makanya saya tanya itu P A nya kamu baca apa enggak iya nasib mending itu kayak gimana
+[01:56:33.00 - 01:56:36.50] SPEAKER_07: kotingensi dan klinik itu nyambung dengan yang Pak Joner loh
+[01:56:38.70 - 01:56:40.60] SPEAKER_07: harus memberikan ruangan.
+[01:56:41.30 - 01:56:48.30] SPEAKER_07: oh untuk berkembangnya gini bukan jadi mekan gini kalau kamu itu ada terus
+[01:56:48.40 - 01:56:50.50] SPEAKER_07: kan mekanistik jadinya
+[01:56:50.80 - 01:56:53.40] SPEAKER_08: Gini-gini dianggap lihat paham pesis.
+[01:56:53.40 - 01:56:57.70] SPEAKER_08: E pekerjaan kalian kalau dilihat secara.
+[01:56:57.70 - 01:57:02.40] SPEAKER_08: keseluruhan lebih-lebih kertas disebut pengembangan.
+[01:57:02.40 - 01:57:03.80] SPEAKER_08: menyerahkan
+[01:57:04.00 - 01:57:34.20] SPEAKER_08: Tapi saya bilang waktu itu, malah minta tolong, saya nggak setuju, harus penelitian. Kenapa? Karena harusnya kalau dia dibuat perlu, itu masih panjang jalurannya, tetapi agar kita bisa menyatakan ini skarpolin yang kita butuhkan, harus ada penelitiannya. Jadi kami harus itu harus bisa menggunakan lagi menjawab dari perspektif semacam solusi atau lagi mempertahankan jawaban.
+[01:57:34.20 - 01:57:51.00] SPEAKER_08: pakta yang pedes yang penyetun bukan karena meneliti nah itu ada distan sebenarnya disitu isu besar kalian satu merasa meneliti tapi belakang-belakang pemikirannya seperti menjawab
+[01:57:51.60 - 01:57:55.90] SPEAKER_08: Masalah jadi ada bedanya problem solving?
+[01:57:55.90 - 01:58:04.10] SPEAKER_08: Research, Development, dan Implementasi sebenarnya, sejati dia kalau bicara filosofi penemangan.
+[01:58:04.10 - 01:58:07.60] SPEAKER_08: aplikasi biasa lebih jauh sebenarnya gitu tapi ya
+[01:58:07.60 - 01:58:13.00] SPEAKER_03: kalau tak masih panjang ceritanya kalau kamu tugasnya menjawab rq iya kan
+[01:58:13.90 - 01:58:16.60] SPEAKER_03: kalau memperlebihannya.
+[01:58:17.70 - 01:58:28.00] SPEAKER_03: dah siapa budaku? kayak saya satu lagi, gini di beberapa bagian tuh, sana kan ya alfiudua yang diangkat, benar-benar
+[01:58:28.00 - 01:58:33.00] SPEAKER_03: Iya bahkan kontribusi kun artiusatu enggak disebut.
+[01:58:33.80 - 01:58:36.90] SPEAKER_03: apa ini kalau gagasannya
+[01:58:40.60 - 01:58:42.00] SPEAKER_03: ya kan
+[01:58:42.60 - 01:58:50.20] SPEAKER_03: Ini juga di bagi sebuah interpretasi juga anti dua yang dibahas.
+[01:58:52.00 - 01:58:53.50] SPEAKER_06: Berkat aksi heroik Kabir, Worcestershire memenangkan pertandingan lewat beberapa babak.
+[01:58:53.60 - 01:58:57.30] SPEAKER_06: Saya bilang, bukan memang F-21 dibutuhkan untuk...
+[01:58:57.30 - 01:59:02.50] SPEAKER_06: eem prerequisite nya rq2 itu jadi ah iya gapapa gapapa
+[01:59:03.10 - 01:59:10.10] SPEAKER_03: tapi kalau penelitian kita juga memang mau menjawab arti satu
+[01:59:10.70 - 01:59:12.10] SPEAKER_03: Ikut dong!
+[01:59:12.30 - 01:59:26.60] SPEAKER_03: kan itu yang tugas kita, maksudnya tadi tugas kita itu menyelesaikan, eh menjawab Ancyu, nah apakah Ancyu satu memang bukan Ancyu gitu sehingga tidak disebut-sebut di belakang itu.
+[01:59:30.60 - 01:59:40.90] SPEAKER_03: di beberapa penjantung langsung ada itu lah karena ada apa ya kalau niatnya karena arti satu itu sebetulnya buat disiapkan supaya
+[01:59:41.00 - 01:59:42.70] SPEAKER_03: untuk support
+[01:59:42.70 - 01:59:44.90] SPEAKER_03: menjawab waktu itu lah
+[01:59:44.90 - 01:59:49.20] SPEAKER_03: tapi pertanyaan berikutnya irbis satu mau dijawab nggak gitu.
+[01:59:49.60 - 02:00:03.00] SPEAKER_06: Mungkin lebih ke terkesan seperti apa kalian satu ini melupa step by step, step dalam kedua atau memang sebuah resolusi yang berbeda?
+[02:00:03.00 - 02:00:15.90] SPEAKER_03: menurut metodologi penelitian kan tugas penelitian kita adalah menjawab arkiu, kalau arkiu ada dua paling pindah dua-duanya di Jawa kemudian di banyak bagian saya lihat.
+[02:00:15.90 - 02:00:18.60] SPEAKER_03: hati dua terus dimulai itu
+[02:00:19.40 - 02:00:25.40] SPEAKER_03: termasuk interpretasi apa tadi saya lihat ada sebab interpretasi.
+[02:00:25.60 - 02:00:33.90] SPEAKER_03: saya kan arti dua yang kalian angkat ke mana arti satunya itu ingin tahu ke gas sana itu apa dibalik itu
+[02:00:34.50 - 02:00:41.40] SPEAKER_03: termasuk di kontribusi, kita menyebut kontribusi dari ini ini, langsung ke F2 juga.
+[02:00:45.60 - 02:00:53.10] SPEAKER_03: dirulungkan aja karena itu jadi menarik jangan-jangan abu-abu memang bukan arti kan ya.
+[02:00:54.90 - 02:01:04.20] SPEAKER_03: kan konsisten apa ya konsisten memang kita mau gitu ya nanti diomongkan yang kedua saya mau tanyain ni
+[02:01:04.40 - 02:01:07.30] SPEAKER_03: Hasil penelitian kita ini.
+[02:01:08.20 - 02:01:13.80] SPEAKER_03: kalau kalian kan banyak baca Pepper suka ada ini Threat to Validity
+[02:01:14.70 - 02:01:16.10] SPEAKER_03: ya kan
+[02:01:16.10 - 02:01:28.00] SPEAKER_03: Nah di konteks penelitian cita ada gimana apa saja karena tadi yang topennya multilingue padahal kasusnya berubah sedikit ya, apakah Anda?
+[02:01:28.10 - 02:01:33.00] SPEAKER_02: oh ada potensi ada potensi
+[02:01:33.50 - 02:01:46.10] SPEAKER_03: Tokennya isinya Bahasa Inggris, air studi kasusnya Bahasa Inggrisnya, lalu kita nyebut akuran, apalagi kan akurasi isinya-isinya apa tadi, kesimpulannya begini, apakah”
+[02:01:46.50 - 02:01:52.10] SPEAKER_03: kesimpulan kita betul-betul valid dengan kasus ion token yang ada dulu.
+[02:01:53.40 - 02:01:55.20] SPEAKER_03: makan nggak
+[02:01:55.30 - 02:01:57.60] SPEAKER_03: tetapkan kalahinan
+[02:01:57.70 - 02:02:09.00] SPEAKER_03: -Malah bahasa Inggris banyaknya ya. Apa yang dipakai? Jata Harst lebih kasih kita masih bisa banget.
+[02:02:09.00 - 02:02:10.10] SPEAKER_01: terima kasih
+[02:02:10.80 - 02:02:18.10] SPEAKER_03: Cukup banyak, maksud cukup mewakili nggak? Oke, tokang bahasa Inggrisnya di bahasa kalian.
+[02:02:18.30 - 02:02:31.90] SPEAKER_00: Itu di ATIS juga dikoperasi dengan model yang khusus masih Indonesia, dan ternyata memang model yang khusus masih Indonesia justru performanya di bawah model Motlin Wall 4.
+[02:02:32.50 - 02:02:34.20] SPEAKER_00: Saya akan tinggal di kota ini mulai tahun depan.
+[02:02:35.60 - 02:02:42.10] SPEAKER_03: bukan eh saya nggak ngerti sih, tapi macung saya dengan token ingang.
+[02:02:42.10 - 02:02:45.70] SPEAKER_03: masak desain cuma sedikit sementara
+[02:02:45.70 - 02:02:49.90] SPEAKER_03: Pack kita bahasa Inggris ya semuanya gitu
+[02:02:51.00 - 02:02:54.20] SPEAKER_03: ngerti kan jadi saya ada
+[02:02:54.20 - 02:03:00.10] SPEAKER_08: ada sedikit request agar itu di
+[02:03:00.20 - 02:03:08.60] SPEAKER_02: di apa juga apa, di akomodasi, di profil model.
+[02:03:08.60 - 02:03:13.20] SPEAKER_08: kamu pake medley apa kizostero medley coba bukan medley nih
+[02:03:15.60 - 02:03:17.40] SPEAKER_07: Muenlinghof.
+[02:03:20.80 - 02:03:22.40] SPEAKER_07: Buat Mikhov.
+[02:03:22.40 - 02:03:25.20] SPEAKER_07: M U E N N.
+[02:03:29.70 - 02:03:31.10] SPEAKER_07: en en
+[02:03:32.90 - 02:03:34.80] SPEAKER_07: Ah...
+[02:03:34.90 - 02:03:36.70] SPEAKER_07: ini yang kamu bilang ya?
+[02:03:38.40 - 02:03:41.00] SPEAKER_07: yang multitu yang bawahnya.
+[02:03:42.90 - 02:03:45.50] SPEAKER_07: Oke, yang saya tanya.
+[02:03:46.10 - 02:03:47.80] SPEAKER_07: yang saya tanya nih
+[02:03:48.50 - 02:03:50.20] SPEAKER_07: eem
+[02:03:50.80 - 02:03:52.50] SPEAKER_07: itu tahun berapa ya?
+[02:03:53.60 - 02:03:54.90] SPEAKER_01: lo liat gak?
+[02:03:54.90 - 02:03:57.00] SPEAKER_07: bukan yang atas
+[02:03:57.00 - 02:04:00.20] SPEAKER_07: pat belas coba lihat referensi kamu
+[02:04:14.00 - 02:04:15.10] SPEAKER_07: bener
+[02:04:16.50 - 02:04:18.30] SPEAKER_07: daruh empat belas benar’
+[02:04:20.40 - 02:04:23.40] SPEAKER_07: nggak bukan yang satu lagi masih ada pasti
+[02:04:23.80 - 02:04:25.10] SPEAKER_07: kok bener kok entar gue
+[02:04:25.20 - 02:04:28.00] SPEAKER_07: benar dua empat belas benar
+[02:04:30.90 - 02:04:33.40] SPEAKER_07: eem kayaknya dong gitu
+[02:04:36.00 - 02:04:37.40] SPEAKER_07: tadi ah
+[02:04:37.80 - 02:04:40.80] SPEAKER_07: coba kamu cek ke apa
+[02:04:41.50 - 02:04:42.70] SPEAKER_07: Saya akan terbangun lagi, ya.
+[02:04:44.00 - 02:04:46.30] SPEAKER_07: Itu kan isi erantologia.
+[02:04:46.30 - 02:04:47.60] SPEAKER_07: kalau nggak salah
+[02:04:49.50 - 02:04:52.00] SPEAKER_07: pernah mengakses es silentologi?
+[02:04:55.30 - 02:04:56.90] SPEAKER_07: heemm...
+[02:05:05.20 - 02:05:06.80] SPEAKER_07: eemm
+[02:05:07.80 - 02:05:09.30] SPEAKER_07: gini-gini-gini
+[02:05:09.30 - 02:05:15.80] SPEAKER_07: Ee Excellental gitu situs untuk NLP jadi ee saya juga lumayan ngikutin.
+[02:05:15.90 - 02:05:17.50] SPEAKER_07: Eee
+[02:05:17.60 - 02:05:21.50] SPEAKER_07: Yang kamu tulis kayaknya nggak mungkin terbit tahun depan belas itu aja.
+[02:05:21.70 - 02:05:23.80] SPEAKER_07: Kemungkinan kamu salah citasi.
+[02:05:28.40 - 02:05:29.70] SPEAKER_07: terima kasih udah sungguh enak
+[02:05:29.70 - 02:05:33.70] SPEAKER_07: salah ngambil dia karena kok dia silentologinya?
+[02:05:34.20 - 02:05:36.10] SPEAKER_07: saya buka bener
+[02:05:41.70 - 02:05:46.50] SPEAKER_07: NTB Massive Tax Amending Benchmark 2023.
+[02:05:46.90 - 02:05:48.70] SPEAKER_07: bukan dua empat bus
+[02:05:50.10 - 02:05:51.40] SPEAKER_00: saya memang benar-benar
+[02:05:52.30 - 02:05:55.10] SPEAKER_07: eem masa sih
+[02:05:58.10 - 02:06:01.20] SPEAKER_07: NTB Massive Tax Empathic Benchmark.
+[02:06:01.20 - 02:06:02.30] SPEAKER_05: udah lama banget ini udah lama banget
+[02:06:03.50 - 02:06:04.80] SPEAKER_05: Saya akan tinggal di kota ini dari bulan depan.
+[02:06:05.30 - 02:06:07.20] SPEAKER_07: hahahaha
+[02:06:07.60 - 02:06:14.60] SPEAKER_07: ini yang ternakan dan tertakan
+[02:06:14.60 - 02:06:19.00] SPEAKER_05: manual antuk makan nya
+[02:06:21.10 - 02:06:30.20] SPEAKER_05: selalu di cek mendelai pun harus di cek lagi iya enggak kalau dari kalau pakai mendelai oh iya pasti sebenarnya tuh mendelai itu udah pakai AI-AI loh kata saya
+[02:06:30.20 - 02:06:38.70] SPEAKER_05: Jadi kalau masukinnya PDR, kalau ngambilnya situasi yang dari sana, dia udah ngambilnya dari mana.
+[02:06:38.90 - 02:06:44.50] SPEAKER_07: kalau masukinnya ke depon juga tiba tiba siap siap siap siap siap siap siap siap siap siap siap siap siap siap
+[02:06:44.60 - 02:06:50.70] SPEAKER_07: makannya kapan kok bisa ini udah empat belas ya belum makannya ini barang
+[02:06:51.60 - 02:06:53.60] SPEAKER_03: nih ternyata
+[02:06:53.70 - 02:06:55.90] SPEAKER_07: telah kalah banyak.
+[02:06:56.20 - 02:07:02.00] SPEAKER_07: ni antologi ini metanya ya
+[02:07:02.00 - 02:07:04.00] SPEAKER_07: makanya dapat bahas
+[02:07:04.50 - 02:07:06.80] SPEAKER_07: kayaknya ngga ada rumput bass
+[02:07:06.90 - 02:07:19.70] SPEAKER_07: ni kalau ngomongin dari sini intinya terluan iya makanya kamu kan PNF dari mana gini gini PNF dari Tokopedia kan jauh dari Tokopedia
+[02:07:20.00 - 02:07:23.60] SPEAKER_07: legir tuh hal apa liat iya tidak saya
+[02:07:27.40 - 02:07:28.70] SPEAKER_07: eh
+[02:07:29.80 - 02:07:31.90] SPEAKER_07: Silakan dicek yang lain.
+[02:07:32.80 - 02:07:42.90] SPEAKER_07: Yang ini sama setiga pertanyaan gerega pertanyaan sama dengan bu Anne pas saya cek referensinya ini nggak mungkin tahun 2014 saya buka kok beneran
+[02:07:42.90 - 02:07:45.40] SPEAKER_07: Nih ya kamu lihat sendiri ya.
+[02:07:45.50 - 02:07:47.70] SPEAKER_07: saya buka dua dua tigaan
+[02:07:48.20 - 02:07:52.10] SPEAKER_07: Jadi ini nggak mungkin Bu, lahir tahun 2014, teknologinya belum ada.
+[02:07:52.10 - 02:07:53.10] SPEAKER_07: hahaha
+[02:07:53.10 - 02:07:58.10] SPEAKER_07: terjadi umpat mas itu adalah halaman bukan taun
+[02:07:59.70 - 02:08:11.00] SPEAKER_07: tapi kadang-kadang kita dalam keseriusan perlu tersenyum
+[02:08:11.20 - 02:08:12.50] SPEAKER_07: hahahahahaha
+[02:08:12.80 - 02:08:20.20] SPEAKER_03: halaman cerita tahun lalu eh tapi yang tadi dulu deh yang saya kenapa yang kedua yang diantak nih mana mana
+[02:08:20.40 - 02:08:21.80] SPEAKER_01: tutupi
+[02:08:22.10 - 02:08:39.00] SPEAKER_03: Sama, dikontribusi aja coba, biasanya episode itu bukan kontribusi gitu loh Pak Ilang.
+[02:08:40.30 - 02:08:49.10] SPEAKER_05: Kalau di bursuk koron, pokoknya kamu tidak perlu ambil hadiran kelima itu, cuman satu ini yang terbuatmu yang tentang kamu.
+[02:08:50.70 - 02:08:52.90] SPEAKER_01: beli barang yang beli sama sekali
+[02:08:53.20 - 02:09:01.20] SPEAKER_03: Ya, bukan sejauh mana saja akan terjadi, yang pasti kan...
+[02:09:01.20 - 02:09:51.20] SPEAKER_06: udah dikaji, sudah ini ya, ada kontribusinya. Bisa digunalisasi konfigurasi dan model eksperimen kan hak karena si data dan si penyelidikan eksperimen itu hanya menjadi kasar jadi, terkait institusi atau perusahaan perlu disesuaikan lebih lama.
+[02:09:51.20 - 02:10:00.60] SPEAKER_03: bahasa bahasa indonesia nya sedikit lah katakan iya kan padahal tata kita tuh yang bahasa indonesia panjang
+[02:10:00.80 - 02:10:04.20] SPEAKER_03: Ada ini nggak ada potensi.
+[02:10:06.00 - 02:10:17.70] SPEAKER_06: Potensi valuitasnya tidak seperti yang kita angkat, jadi diluarkan karya, dieksperimentasi adalah perlu.
+[02:10:17.70 - 02:10:31.00] SPEAKER_03: Analisis soal kenapa ya Indonesia mobil lumayan dibagiin ke bahasa Indonesia.
+[02:10:31.20 - 02:10:34.30] SPEAKER_03: eemm murti
+[02:10:37.00 - 02:10:50.90] SPEAKER_03: kan yang terjadi kan gitu sekarang itu ya, data bisa multi, tapi na, speks itu kan bisa-bisa, nah itu ada potensi apa dengan kondisi begitu?
+[02:10:51.40 - 02:10:54.70] SPEAKER_03: Dari model yang kalian sudah studi.
+[02:10:55.40 - 02:11:04.00] SPEAKER_00: Ada potensi bahwa bahasa Indonesia tetapi pemukanya mungkin melibatkan pokoknya.
+[02:11:04.00 - 02:11:06.80] SPEAKER_00: terepresentasikan dari masalah ini.
+[02:11:06.90 - 02:11:11.10] SPEAKER_03: sehingga pengaruh ke kesimpulan kita.
+[02:11:13.60 - 02:11:15.10] SPEAKER_06: kepada
+[02:11:15.70 - 02:11:27.30] SPEAKER_03: Aku rasa itu ada potensi apa gitu loh, dan itu kan biasanya pengiruan dinyatakannya untuk kasus-kasus yang ada di sekeliling warga lah ya.
+[02:11:27.30 - 02:11:32.10] SPEAKER_07: kamu ngomong lebih bagus ada dasarnya nggak untuk menjawab tadi pertanyaan bu Ani?
+[02:11:32.10 - 02:11:34.30] SPEAKER_07: kan kamu tadi ngomong ini bagus ya
+[02:11:37.70 - 02:11:39.50] SPEAKER_06: jika dari eksperimen terakhir.
+[02:11:39.50 - 02:11:42.70] SPEAKER_06: secara datang memang lebih bagus mungkin tidak mau
+[02:11:42.80 - 02:11:44.20] SPEAKER_06: Mouldie out!
+[02:11:44.50 - 02:11:45.60] SPEAKER_06: apa karier diri
+[02:11:45.60 - 02:11:47.50] SPEAKER_06: Anda mengaruh.
+[02:11:47.50 - 02:11:53.70] SPEAKER_06: terkait kenalasi yang berbahasa Indonesia tidak telah diangkat.
+[02:11:57.40 - 02:12:02.60] SPEAKER_05: Iya, jadi istilahnya apa ya?
+[02:12:03.80 - 02:12:15.70] SPEAKER_05: kosa kata yang diiliki oleh penerjemah yang multilang multibahasa dengan kosa kata yang diiliki oleh penerjemah yang bahasa Indonesia itu lebih banyak dan lebih bagus ya, lebih sebenarnya.
+[02:12:16.50 - 02:12:19.30] SPEAKER_05: itu jadi walaupun unik kalau saya-saya jelati.
+[02:12:19.30 - 02:12:41.20] SPEAKER_05: Maksudnya lebih lengkap ya, artinya sebetulnya yang multi itu kuasa kata Bahasa Indonesia lengkap juga, nah itu yang kalian harus lihat dan analisa, jadi jangan tidak bisa menjawab, bayanginnya multi-limite.
+[02:12:41.20 - 02:12:58.50] SPEAKER_03: Berapa uas datanya bahasa Indonesia nya kecil banget kan nanti begitu masuk teks bahasa Indonesia kan bingung asin semua ini nggak begitu berarti kalian menggambarkan tadi si token nya kurang keren
+[02:12:58.80 - 02:13:00.80] SPEAKER_03: Untuk menjawab.
+[02:13:01.80 - 02:13:11.00] SPEAKER_07: kebanyakan saya tuh ya oke cross lingual generalization thru multitask fine tuning
+[02:13:12.00 - 02:13:14.60] SPEAKER_07: Ada kontak fans kuning jangan salah.
+[02:13:17.10 - 02:13:19.50] SPEAKER_03: oke diluar dulu ya
+[02:13:20.90 - 02:13:24.60] SPEAKER_05: karena klekamnya tinggi bawah ini.
+[02:13:25.10 - 02:13:33.60] SPEAKER_05: Ada orang Indonesia yang nyanyi?
